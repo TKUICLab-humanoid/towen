@@ -1,0 +1,5 @@
+  File "/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula/sp/SP_boson.py", line 78
+    theta = min(2 theta-1)     #直走
+                ^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

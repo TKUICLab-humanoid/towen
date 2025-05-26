@@ -1,0 +1,18 @@
+running egg_info
+creating ../../../../build/strategy/strategy.egg-info
+writing ../../../../build/strategy/strategy.egg-info/PKG-INFO
+writing dependency_links to ../../../../build/strategy/strategy.egg-info/dependency_links.txt
+writing entry points to ../../../../build/strategy/strategy.egg-info/entry_points.txt
+writing requirements to ../../../../build/strategy/strategy.egg-info/requires.txt
+writing top-level names to ../../../../build/strategy/strategy.egg-info/top_level.txt
+writing manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+reading manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+writing manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+running build
+running install
+running install_data
+creating /home/iclab/Desktop/humanoid/install/strategy/share
+creating /home/iclab/Desktop/humanoid/install/strategy/share/ament_index
+creating /home/iclab/Desktop/humanoid/install/strategy/share/ament_index/resource_index
+creating /home/iclab/Desktop/humanoid/install/strategy/share/ament_index/resource_index/packages
+error: can't copy 'resource/strategy': doesn't exist or not a regular file

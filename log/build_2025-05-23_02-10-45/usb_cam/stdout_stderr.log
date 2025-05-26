@@ -1,0 +1,15 @@
+[ 14%] Built target usb_cam
+[ 28%] Built target gtest
+[ 42%] Built target usb_cam_node_exe
+[ 57%] Built target gtest_main
+[ 64%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[ 78%] Built target test_pixel_formats
+[ 92%] Built target test_usb_cam_utils
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’:
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:542:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass usb_cam::UsbCam[m[K’ has no member named ‘[01m[Kget_v4l_parameter[m[K’; did you mean ‘[01m[Kset_v4l_parameter[m[K’?
+  542 |       cached_auto_wb_temp_ = m_camera->[01;31m[Kget_v4l_parameter[m[K("white_balance_temperature");
+      |                                        [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                                        [32m[Kset_v4l_parameter[m[K
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,59 @@
+running egg_info
+creating ../../build/imageprocess/imageprocess.egg-info
+writing ../../build/imageprocess/imageprocess.egg-info/PKG-INFO
+writing dependency_links to ../../build/imageprocess/imageprocess.egg-info/dependency_links.txt
+writing entry points to ../../build/imageprocess/imageprocess.egg-info/entry_points.txt
+writing requirements to ../../build/imageprocess/imageprocess.egg-info/requires.txt
+writing top-level names to ../../build/imageprocess/imageprocess.egg-info/top_level.txt
+writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+reading manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/iclab/Desktop/humanoid/build/imageprocess/build
+creating /home/iclab/Desktop/humanoid/build/imageprocess/build/lib
+creating /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/__init__.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/image_test.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/123123.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/camera_segment_headless.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/dataunit.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/image_0417.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/imageprocess.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/image.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+copying imageprocess/modelparameter.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+running install
+running install_lib
+creating /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/__init__.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/image_test.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/123123.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/camera_segment_headless.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/dataunit.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/image_0417.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/imageprocess.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/image.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/modelparameter.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/image_test.py to image_test.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/123123.py to 123123.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/camera_segment_headless.py to camera_segment_headless.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/dataunit.py to dataunit.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/image_0417.py to image_0417.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/imageprocess.py to imageprocess.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/image.py to image.cpython-310.pyc
+byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/modelparameter.py to modelparameter.cpython-310.pyc
+running install_data
+creating /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index
+creating /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index/resource_index
+creating /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index/resource_index/packages
+copying resource/imageprocess -> /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index/resource_index/packages
+copying package.xml -> /home/iclab/Desktop/humanoid/install/imageprocess/share/imageprocess
+running install_egg_info
+Copying ../../build/imageprocess/imageprocess.egg-info to /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info
+running install_scripts
+Installing image script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+Installing image_test script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+Installing imageprocess script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+writing list of installed files to '/home/iclab/Desktop/humanoid/build/imageprocess/install.log'

@@ -1,0 +1,20 @@
+[3.142s] Invoking command in '/home/iclab/Desktop/humanoid/src/strategy/strategy/sp': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/strategy build --build-base /home/iclab/Desktop/humanoid/build/strategy/build install --record /home/iclab/Desktop/humanoid/build/strategy/install.log --single-version-externally-managed install_data
+[3.921s] running egg_info
+[3.924s] creating ../../../../build/strategy/strategy.egg-info
+[3.925s] writing ../../../../build/strategy/strategy.egg-info/PKG-INFO
+[3.926s] writing dependency_links to ../../../../build/strategy/strategy.egg-info/dependency_links.txt
+[3.926s] writing entry points to ../../../../build/strategy/strategy.egg-info/entry_points.txt
+[3.927s] writing requirements to ../../../../build/strategy/strategy.egg-info/requires.txt
+[3.928s] writing top-level names to ../../../../build/strategy/strategy.egg-info/top_level.txt
+[3.928s] writing manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+[3.930s] reading manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+[3.932s] writing manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+[3.933s] running build
+[3.934s] running install
+[3.935s] running install_data
+[3.935s] creating /home/iclab/Desktop/humanoid/install/strategy/share
+[3.936s] creating /home/iclab/Desktop/humanoid/install/strategy/share/ament_index
+[3.937s] creating /home/iclab/Desktop/humanoid/install/strategy/share/ament_index/resource_index
+[3.937s] creating /home/iclab/Desktop/humanoid/install/strategy/share/ament_index/resource_index/packages
+[3.937s] error: can't copy 'resource/strategy': doesn't exist or not a regular file
+[4.053s] Invoked command in '/home/iclab/Desktop/humanoid/src/strategy/strategy/sp' returned '1': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/strategy build --build-base /home/iclab/Desktop/humanoid/build/strategy/build install --record /home/iclab/Desktop/humanoid/build/strategy/install.log --single-version-externally-managed install_data

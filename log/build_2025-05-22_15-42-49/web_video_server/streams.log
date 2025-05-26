@@ -1,0 +1,7 @@
+[2.017s] Invoking command in '/home/iclab/Desktop/humanoid/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/web_video_server -- -j6 -l6
+[2.135s] [  9%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[2.175s] [ 18%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o[0m
+[2.182s] [ 27%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o[0m
+[2.200s] [ 36%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o[0m
+[2.206s] [ 45%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o[0m
+[2.265s] [ 54%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o[0m

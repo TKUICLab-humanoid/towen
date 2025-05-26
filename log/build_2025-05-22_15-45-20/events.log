@@ -1,0 +1,1539 @@
+[0.000000] (-) TimerEvent: {}
+[0.001264] (imageprocess) JobQueued: {'identifier': 'imageprocess', 'dependencies': OrderedDict()}
+[0.001630] (motionpackage) JobQueued: {'identifier': 'motionpackage', 'dependencies': OrderedDict()}
+[0.001960] (strategy) JobQueued: {'identifier': 'strategy', 'dependencies': OrderedDict()}
+[0.002077] (tku_msgs) JobQueued: {'identifier': 'tku_msgs', 'dependencies': OrderedDict()}
+[0.002163] (web_video_server) JobQueued: {'identifier': 'web_video_server', 'dependencies': OrderedDict()}
+[0.002278] (wula) JobQueued: {'identifier': 'wula', 'dependencies': OrderedDict()}
+[0.002361] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict([('tku_msgs', '/home/iclab/Desktop/humanoid/install/tku_msgs')])}
+[0.002453] (tku_msgs) JobStarted: {'identifier': 'tku_msgs'}
+[0.018144] (imageprocess) JobStarted: {'identifier': 'imageprocess'}
+[0.033460] (motionpackage) JobStarted: {'identifier': 'motionpackage'}
+[0.048486] (strategy) JobStarted: {'identifier': 'strategy'}
+[0.059936] (web_video_server) JobStarted: {'identifier': 'web_video_server'}
+[0.072926] (wula) JobStarted: {'identifier': 'wula'}
+[0.088762] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'cmake'}
+[0.090611] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'build'}
+[0.092033] (tku_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/humanoid/build/tku_msgs', '--', '-j6', '-l6'], 'cwd': '/home/iclab/Desktop/humanoid/build/tku_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,5366,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'iclab'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/iclab'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/iclab'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/iclab/.nvm/versions/node/v22.13.0/bin'), ('NVM_INC', '/home/iclab/.nvm/versions/node/v22.13.0/include/node'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('BYOBU_PREFIX', '/usr'), ('SYSTEMD_EXEC_PID', '3176'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/iclab/.nvm'), ('BYOBU_WINDOW_NAME', '-'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'iclab'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('BYOBU_ACCENT', '\\#75507B'), ('JETSON_SERIAL_NUMBER', '1422023035152'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'screen-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.6/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2440,unix/ubuntu:/tmp/.ICE-unix/2440'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30919a12_436b_484e_9219_1d72ed4d66db'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/home/iclab/.byobu/.ssh-agent'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('BYOBU_DATE', '%Y-%m-%d'), ('GDMSESSION', 'ubuntu'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/iclab/.byobu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('BYOBU_PAGER', 'sensible-pager'), ('BYOBU_DARK', '\\#333333'), ('QT_IM_MODULE', 'ibus'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-iclab-EBA9vbZ7'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/iclab/Desktop/humanoid/build/tku_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%1'), ('JETSON_JETPACK', ''), ('JETSON_P_NUMBER', 'p3767-0005'), ('BYOBU_TTY', '/dev/pts/0'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099516] (-) TimerEvent: {}
+[0.202970] (-) TimerEvent: {}
+[0.303972] (-) TimerEvent: {}
+[0.405194] (-) TimerEvent: {}
+[0.506245] (-) TimerEvent: {}
+[0.606918] (-) TimerEvent: {}
+[0.707574] (-) TimerEvent: {}
+[0.809734] (-) TimerEvent: {}
+[0.910449] (-) TimerEvent: {}
+[1.011545] (-) TimerEvent: {}
+[1.112639] (-) TimerEvent: {}
+[1.214472] (-) TimerEvent: {}
+[1.320614] (-) TimerEvent: {}
+[1.422076] (-) TimerEvent: {}
+[1.522701] (-) TimerEvent: {}
+[1.623390] (-) TimerEvent: {}
+[1.724028] (-) TimerEvent: {}
+[1.824711] (-) TimerEvent: {}
+[1.925713] (-) TimerEvent: {}
+[2.026954] (-) TimerEvent: {}
+[2.128218] (-) TimerEvent: {}
+[2.232021] (-) TimerEvent: {}
+[2.340005] (-) TimerEvent: {}
+[2.441483] (-) TimerEvent: {}
+[2.542167] (-) TimerEvent: {}
+[2.652001] (-) TimerEvent: {}
+[2.752628] (-) TimerEvent: {}
+[2.853291] (-) TimerEvent: {}
+[2.916826] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'cmake'}
+[2.918375] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'build'}
+[2.919027] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/humanoid/build/web_video_server', '--', '-j6', '-l6'], 'cwd': '/home/iclab/Desktop/humanoid/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,5366,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'iclab'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('HOME', '/home/iclab'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/home/iclab'), ('TERM_PROGRAM_VERSION', '3.2a'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/iclab/.nvm/versions/node/v22.13.0/bin'), ('NVM_INC', '/home/iclab/.nvm/versions/node/v22.13.0/include/node'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('BYOBU_PREFIX', '/usr'), ('SYSTEMD_EXEC_PID', '3176'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('NVM_DIR', '/home/iclab/.nvm'), ('BYOBU_WINDOW_NAME', '-'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'iclab'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('BYOBU_ACCENT', '\\#75507B'), ('JETSON_SERIAL_NUMBER', '1422023035152'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'iclab'), ('TERM', 'screen-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/cuda-12.6/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2440,unix/ubuntu:/tmp/.ICE-unix/2440'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/30919a12_436b_484e_9219_1d72ed4d66db'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('GNOME_TERMINAL_SERVICE', ':1.92'), ('TERM_PROGRAM', 'tmux'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/home/iclab/.byobu/.ssh-agent'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('BYOBU_DATE', '%Y-%m-%d'), ('GDMSESSION', 'ubuntu'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/iclab/.byobu'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('BYOBU_PAGER', 'sensible-pager'), ('BYOBU_DARK', '\\#333333'), ('QT_IM_MODULE', 'ibus'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-iclab-EBA9vbZ7'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/iclab/Desktop/humanoid/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('TMUX_PANE', '%1'), ('JETSON_JETPACK', ''), ('JETSON_P_NUMBER', 'p3767-0005'), ('BYOBU_TTY', '/dev/pts/0'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.953924] (-) TimerEvent: {}
+[2.963447] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_generator_c\x1b[0m\n'}
+[2.964169] (tku_msgs) StdoutLine: {'line': b'[  0%] Built target tku_msgs__cpp\n'}
+[2.964367] (tku_msgs) StdoutLine: {'line': b'[  0%] Built target ament_cmake_python_copy_tku_msgs\n'}
+[2.964519] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.964659] (tku_msgs) StdoutLine: {'line': b'[ 13%] Built target tku_msgs__rosidl_generator_c\n'}
+[2.964799] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[2.964929] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.965077] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.965207] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.965333] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/object_list__type_support.cpp.o\x1b[0m\n'}
+[2.965456] (tku_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_data__type_support.cpp.o\x1b[0m\n'}
+[2.965577] (tku_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.965689] (tku_msgs) StdoutLine: {'line': b'writing tku_msgs.egg-info/PKG-INFO\n'}
+[2.965806] (tku_msgs) StdoutLine: {'line': b'writing dependency_links to tku_msgs.egg-info/dependency_links.txt\n'}
+[2.965919] (tku_msgs) StdoutLine: {'line': b'writing top-level names to tku_msgs.egg-info/top_level.txt\n'}
+[2.966028] (tku_msgs) StdoutLine: {'line': b"reading manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[2.966138] (tku_msgs) StdoutLine: {'line': b"writing manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[2.966250] (tku_msgs) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_build_tku_msgs_egg\n'}
+[2.966364] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.966479] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera__type_support.cpp.o\x1b[0m\n'}
+[2.966599] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/draw_image__type_support.cpp.o\x1b[0m\n'}
+[2.966721] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera_save__type_support.cpp.o\x1b[0m\n'}
+[3.054110] (-) TimerEvent: {}
+[3.154801] (-) TimerEvent: {}
+[3.256031] (-) TimerEvent: {}
+[3.360017] (-) TimerEvent: {}
+[3.366571] (web_video_server) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o\x1b[0m\n'}
+[3.370623] (web_video_server) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o\x1b[0m\n'}
+[3.398538] (web_video_server) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o\x1b[0m\n'}
+[3.410069] (web_video_server) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o\x1b[0m\n'}
+[3.433859] (web_video_server) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o\x1b[0m\n'}
+[3.443526] (web_video_server) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o\x1b[0m\n'}
+[3.460178] (-) TimerEvent: {}
+[3.560890] (-) TimerEvent: {}
+[3.661866] (-) TimerEvent: {}
+[3.784043] (-) TimerEvent: {}
+[3.885023] (-) TimerEvent: {}
+[3.986756] (-) TimerEvent: {}
+[4.087753] (-) TimerEvent: {}
+[4.189167] (-) TimerEvent: {}
+[4.290135] (-) TimerEvent: {}
+[4.391161] (-) TimerEvent: {}
+[4.493734] (-) TimerEvent: {}
+[4.513132] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/location__type_support.cpp.o\x1b[0m\n'}
+[4.593884] (-) TimerEvent: {}
+[4.675854] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[4.694052] (-) TimerEvent: {}
+[4.795173] (-) TimerEvent: {}
+[4.896172] (-) TimerEvent: {}
+[5.016032] (-) TimerEvent: {}
+[5.117268] (-) TimerEvent: {}
+[5.218612] (-) TimerEvent: {}
+[5.319404] (-) TimerEvent: {}
+[5.428025] (-) TimerEvent: {}
+[5.474414] (strategy) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../../../build/strategy', 'build', '--build-base', '/home/iclab/Desktop/humanoid/build/strategy/build', 'install', '--record', '/home/iclab/Desktop/humanoid/build/strategy/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/iclab/Desktop/humanoid/src/strategy/strategy/sp', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,5366,1', 'BYOBU_SED': 'sed', 'BYOBU_LIGHT': '\\#EEEEEE', 'BYOBU_EDITOR': 'sensible-editor', 'USER': 'iclab', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:', 'HOME': '/home/iclab', 'BYOBU_TIME': '%H:%M:%S', 'OLDPWD': '/home/iclab', 'TERM_PROGRAM_VERSION': '3.2a', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/iclab/.nvm/versions/node/v22.13.0/bin', 'NVM_INC': '/home/iclab/.nvm/versions/node/v22.13.0/include/node', 'JETSON_L4T': '36.4.3', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'BYOBU_PREFIX': '/usr', 'SYSTEMD_EXEC_PID': '3176', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'NVM_DIR': '/home/iclab/.nvm', 'BYOBU_WINDOW_NAME': '-', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'iclab', 'BYOBU_TERM': 'screen-256color', 'BYOBU_ULIMIT': 'ulimit', 'BYOBU_HIGHLIGHT': '\\#DD4814', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (Developer kit)', 'BYOBU_ACCENT': '\\#75507B', 'JETSON_SERIAL_NUMBER': '1422023035152', 'BYOBU_CHARMAP': 'UTF-8', 'BYOBU_READLINK': 'readlink', 'BYOBU_DISTRO': 'Ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'iclab', 'TERM': 'screen-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/usr/local/cuda-12.6/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/2440,unix/ubuntu:/tmp/.ICE-unix/2440', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/30919a12_436b_484e_9219_1d72ed4d66db', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'GNOME_TERMINAL_SERVICE': ':1.92', 'TERM_PROGRAM': 'tmux', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/home/iclab/.byobu/.ssh-agent', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'BYOBU_DATE': '%Y-%m-%d', 'GDMSESSION': 'ubuntu', 'BYOBU_PYTHON': 'python3', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'BYOBU_CONFIG_DIR': '/home/iclab/.byobu', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'BYOBU_PAGER': 'sensible-pager', 'BYOBU_DARK': '\\#333333', 'QT_IM_MODULE': 'ibus', 'BYOBU_RUN_DIR': '/dev/shm/byobu-iclab-EBA9vbZ7', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/iclab/Desktop/humanoid/build/strategy', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'BYOBU_BACKEND': 'tmux', 'PYTHONPATH': '/home/iclab/Desktop/humanoid/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/strategy/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'TMUX_PANE': '%1', 'JETSON_JETPACK': '', 'JETSON_P_NUMBER': 'p3767-0005', 'BYOBU_TTY': '/dev/pts/0'}, 'shell': False}
+[5.528231] (-) TimerEvent: {}
+[5.629273] (-) TimerEvent: {}
+[5.730374] (-) TimerEvent: {}
+[5.836081] (-) TimerEvent: {}
+[5.937089] (-) TimerEvent: {}
+[6.038304] (-) TimerEvent: {}
+[6.139713] (-) TimerEvent: {}
+[6.241260] (-) TimerEvent: {}
+[6.342907] (-) TimerEvent: {}
+[6.443566] (-) TimerEvent: {}
+[6.544792] (-) TimerEvent: {}
+[6.646039] (-) TimerEvent: {}
+[6.747282] (-) TimerEvent: {}
+[6.848701] (-) TimerEvent: {}
+[6.866765] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/parameter__type_support.cpp.o\x1b[0m\n'}
+[6.948862] (-) TimerEvent: {}
+[7.049521] (-) TimerEvent: {}
+[7.150460] (-) TimerEvent: {}
+[7.251177] (-) TimerEvent: {}
+[7.351891] (-) TimerEvent: {}
+[7.452536] (-) TimerEvent: {}
+[7.546252] (tku_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[7.552684] (-) TimerEvent: {}
+[7.653402] (-) TimerEvent: {}
+[7.754670] (-) TimerEvent: {}
+[7.855349] (-) TimerEvent: {}
+[7.956027] (-) TimerEvent: {}
+[8.056697] (-) TimerEvent: {}
+[8.149810] (strategy) StdoutLine: {'line': b'running egg_info\n'}
+[8.156873] (-) TimerEvent: {}
+[8.174614] (strategy) StdoutLine: {'line': b'writing ../../../../build/strategy/strategy.egg-info/PKG-INFO\n'}
+[8.175484] (strategy) StdoutLine: {'line': b'writing dependency_links to ../../../../build/strategy/strategy.egg-info/dependency_links.txt\n'}
+[8.181061] (strategy) StdoutLine: {'line': b'writing entry points to ../../../../build/strategy/strategy.egg-info/entry_points.txt\n'}
+[8.181570] (strategy) StdoutLine: {'line': b'writing requirements to ../../../../build/strategy/strategy.egg-info/requires.txt\n'}
+[8.181765] (strategy) StdoutLine: {'line': b'writing top-level names to ../../../../build/strategy/strategy.egg-info/top_level.txt\n'}
+[8.183894] (strategy) StdoutLine: {'line': b"reading manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'\n"}
+[8.206387] (strategy) StdoutLine: {'line': b"writing manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'\n"}
+[8.206937] (strategy) StdoutLine: {'line': b'running build\n'}
+[8.207116] (strategy) StdoutLine: {'line': b'running install\n'}
+[8.207747] (strategy) StdoutLine: {'line': b'running install_data\n'}
+[8.208059] (strategy) StderrLine: {'line': b"error: can't copy 'resource/strategy': doesn't exist or not a regular file\n"}
+[8.257059] (-) TimerEvent: {}
+[8.357989] (-) TimerEvent: {}
+[8.458714] (-) TimerEvent: {}
+[8.510608] (strategy) CommandEnded: {'returncode': 1}
+[8.511740] (strategy) JobEnded: {'identifier': 'strategy', 'rc': 1}
+[8.558892] (-) TimerEvent: {}
+[8.663505] (-) TimerEvent: {}
+[8.772045] (-) TimerEvent: {}
+[8.846835] (motionpackage) JobEnded: {'identifier': 'motionpackage', 'rc': 'SIGINT'}
+[8.872230] (-) TimerEvent: {}
+[8.972904] (-) TimerEvent: {}
+[9.073614] (-) TimerEvent: {}
+[9.136761] (imageprocess) JobEnded: {'identifier': 'imageprocess', 'rc': 'SIGINT'}
+[9.144505] (wula) JobEnded: {'identifier': 'wula', 'rc': 'SIGINT'}
+[9.173804] (-) TimerEvent: {}
+[9.274504] (-) TimerEvent: {}
+[9.375254] (-) TimerEvent: {}
+[9.454779] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/interface__type_support.cpp.o\x1b[0m\n'}
+[9.475450] (-) TimerEvent: {}
+[9.576544] (-) TimerEvent: {}
+[9.677209] (-) TimerEvent: {}
+[9.777910] (-) TimerEvent: {}
+[9.878969] (-) TimerEvent: {}
+[9.882585] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[9.979144] (-) TimerEvent: {}
+[10.080455] (-) TimerEvent: {}
+[10.104939] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[10.192070] (-) TimerEvent: {}
+[10.302990] (-) TimerEvent: {}
+[10.365896] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/button_color_form__type_support.c.o\x1b[0m\n'}
+[10.371852] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[10.391069] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/color_array__type_support.cpp.o\x1b[0m\n'}
+[10.403176] (-) TimerEvent: {}
+[10.442644] (tku_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/object_list__type_support.cpp.o\x1b[0m\n'}
+[10.503349] (-) TimerEvent: {}
+[10.599716] (tku_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/color_data__type_support.cpp.o\x1b[0m\n'}
+[10.603520] (-) TimerEvent: {}
+[10.688981] (tku_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/color_array__type_support.c.o\x1b[0m\n'}
+[10.707069] (-) TimerEvent: {}
+[10.808350] (-) TimerEvent: {}
+[10.875247] (tku_msgs) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/draw_image__type_support.cpp.o\x1b[0m\n'}
+[10.908581] (-) TimerEvent: {}
+[10.965910] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/color_data__type_support.c.o\x1b[0m\n'}
+[11.008744] (-) TimerEvent: {}
+[11.095477] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[11.108928] (-) TimerEvent: {}
+[11.132383] (tku_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/draw_image__type_support.c.o\x1b[0m\n'}
+[11.209086] (-) TimerEvent: {}
+[11.260886] (tku_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[11.309262] (-) TimerEvent: {}
+[11.359170] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/hsv_value__type_support.c.o\x1b[0m\n'}
+[11.409428] (-) TimerEvent: {}
+[11.445559] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/button_color_form__type_support_c.cpp.o\x1b[0m\n'}
+[11.509586] (-) TimerEvent: {}
+[11.513701] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/object_list__type_support.cpp.o\x1b[0m\n'}
+[11.609749] (-) TimerEvent: {}
+[11.656169] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/label_model_object_list__type_support.c.o\x1b[0m\n'}
+[11.671144] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/camera__type_support.cpp.o\x1b[0m\n'}
+[11.716384] (-) TimerEvent: {}
+[11.750807] (tku_msgs) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/object_list__type_support.c.o\x1b[0m\n'}
+[11.816544] (-) TimerEvent: {}
+[11.888693] (tku_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/camera_save__type_support.cpp.o\x1b[0m\n'}
+[11.916711] (-) TimerEvent: {}
+[11.917607] (tku_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_array__type_support.cpp.o\x1b[0m\n'}
+[11.930671] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/camera__type_support.c.o\x1b[0m\n'}
+[11.971270] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/callback__type_support.cpp.o\x1b[0m\n'}
+[12.016906] (-) TimerEvent: {}
+[12.060815] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/location__type_support.cpp.o\x1b[0m\n'}
+[12.117111] (-) TimerEvent: {}
+[12.212975] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/camera_save__type_support.c.o\x1b[0m\n'}
+[12.217269] (-) TimerEvent: {}
+[12.251758] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/parameter__type_support.cpp.o\x1b[0m\n'}
+[12.320006] (-) TimerEvent: {}
+[12.422186] (-) TimerEvent: {}
+[12.475635] (tku_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/location__type_support.c.o\x1b[0m\n'}
+[12.522386] (-) TimerEvent: {}
+[12.548789] (tku_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/interface__type_support.cpp.o\x1b[0m\n'}
+[12.622625] (-) TimerEvent: {}
+[12.674051] (tku_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/color_array__type_support_c.cpp.o\x1b[0m\n'}
+[12.722763] (-) TimerEvent: {}
+[12.751518] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/parameter__type_support.c.o\x1b[0m\n'}
+[12.774036] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[12.822945] (-) TimerEvent: {}
+[12.923690] (-) TimerEvent: {}
+[13.017547] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/callback__type_support.cpp.o\x1b[0m\n'}
+[13.023933] (-) TimerEvent: {}
+[13.026091] (tku_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/interface__type_support.c.o\x1b[0m\n'}
+[13.124099] (-) TimerEvent: {}
+[13.200262] (tku_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/head_package__type_support.cpp.o\x1b[0m\n'}
+[13.226715] (-) TimerEvent: {}
+[13.227309] (tku_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/parametermessage__type_support.c.o\x1b[0m\n'}
+[13.326929] (-) TimerEvent: {}
+[13.400061] (tku_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[13.427161] (-) TimerEvent: {}
+[13.434367] (tku_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/callback__type_support.c.o\x1b[0m\n'}
+[13.544032] (tku_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[13.544489] (-) TimerEvent: {}
+[13.631091] (tku_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/head_package__type_support.cpp.o\x1b[0m\n'}
+[13.644691] (-) TimerEvent: {}
+[13.739848] (tku_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[13.744898] (-) TimerEvent: {}
+[13.746149] (tku_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/head_package__type_support.c.o\x1b[0m\n'}
+[13.828196] (tku_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera__type_support.cpp.o\x1b[0m\n'}
+[13.845077] (-) TimerEvent: {}
+[13.850549] (tku_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_data__type_support.cpp.o\x1b[0m\n'}
+[13.926990] (tku_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/save_motion__type_support.cpp.o\x1b[0m\n'}
+[13.945262] (-) TimerEvent: {}
+[13.946107] (tku_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/interface_send2_sector__type_support.c.o\x1b[0m\n'}
+[14.026908] (tku_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[14.045431] (-) TimerEvent: {}
+[14.148134] (-) TimerEvent: {}
+[14.249317] (-) TimerEvent: {}
+[14.269515] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/pi_dpackage__type_support.c.o\x1b[0m\n'}
+[14.294711] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[14.349571] (-) TimerEvent: {}
+[14.450936] (-) TimerEvent: {}
+[14.487493] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sand_hand_speed__type_support.c.o\x1b[0m\n'}
+[14.556035] (-) TimerEvent: {}
+[14.564597] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[14.656234] (-) TimerEvent: {}
+[14.716205] (tku_msgs) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/save_motion__type_support.c.o\x1b[0m\n'}
+[14.743365] (tku_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[14.756424] (-) TimerEvent: {}
+[14.857156] (-) TimerEvent: {}
+[14.958154] (-) TimerEvent: {}
+[14.974790] (tku_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[14.998553] (tku_msgs) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/color_data__type_support_c.cpp.o\x1b[0m\n'}
+[15.012145] (tku_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/save_motion_vector__type_support.c.o\x1b[0m\n'}
+[15.060089] (-) TimerEvent: {}
+[15.163996] (-) TimerEvent: {}
+[15.230697] (tku_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/build_model__type_support.cpp.o\x1b[0m\n'}
+[15.264170] (-) TimerEvent: {}
+[15.280530] (tku_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[15.328131] (tku_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sensor_package__type_support.c.o\x1b[0m\n'}
+[15.364332] (-) TimerEvent: {}
+[15.465588] (-) TimerEvent: {}
+[15.503094] (tku_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[15.565776] (-) TimerEvent: {}
+[15.649967] (tku_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sensor_set__type_support.c.o\x1b[0m\n'}
+[15.665994] (-) TimerEvent: {}
+[15.767274] (-) TimerEvent: {}
+[15.794462] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/single_motor_data__type_support.c.o\x1b[0m\n'}
+[15.813859] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[15.867500] (-) TimerEvent: {}
+[15.968570] (-) TimerEvent: {}
+[15.994098] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/add__type_support.cpp.o\x1b[0m\n'}
+[16.016973] (tku_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/walkingmessage__type_support.c.o\x1b[0m\n'}
+[16.068767] (-) TimerEvent: {}
+[16.169773] (-) TimerEvent: {}
+[16.192110] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/camera_info__type_support.cpp.o\x1b[0m\n'}
+[16.246928] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/build_model__type_support.c.o\x1b[0m\n'}
+[16.269982] (-) TimerEvent: {}
+[16.371095] (-) TimerEvent: {}
+[16.417964] (tku_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/read_motion__type_support.cpp.o\x1b[0m\n'}
+[16.472105] (-) TimerEvent: {}
+[16.553028] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/hsv_info__type_support.c.o\x1b[0m\n'}
+[16.572265] (-) TimerEvent: {}
+[16.630665] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/check_sector__type_support.cpp.o\x1b[0m\n'}
+[16.667252] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/draw_image__type_support.cpp.o\x1b[0m\n'}
+[16.672468] (-) TimerEvent: {}
+[16.776216] (-) TimerEvent: {}
+[16.805273] (tku_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/save_hsv__type_support.c.o\x1b[0m\n'}
+[16.843505] (tku_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera_save__type_support.cpp.o\x1b[0m\n'}
+[16.878167] (-) TimerEvent: {}
+[16.899355] (tku_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[16.978359] (-) TimerEvent: {}
+[17.079918] (-) TimerEvent: {}
+[17.121935] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/add__type_support.c.o\x1b[0m\n'}
+[17.180088] (-) TimerEvent: {}
+[17.211073] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/walking_gait_parameter__type_support.cpp.o\x1b[0m\n'}
+[17.280241] (-) TimerEvent: {}
+[17.283030] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[17.380403] (-) TimerEvent: {}
+[17.431668] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/draw_image__type_support_c.cpp.o\x1b[0m\n'}
+[17.463316] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/camera_info__type_support.c.o\x1b[0m\n'}
+[17.480585] (-) TimerEvent: {}
+[17.499439] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[17.580764] (-) TimerEvent: {}
+[17.684029] (-) TimerEvent: {}
+[17.712681] (tku_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/read_motion__type_support.c.o\x1b[0m\n'}
+[17.784208] (-) TimerEvent: {}
+[17.846190] (tku_msgs) StdoutLine: {'line': b'[ 45%] Built target tku_msgs__rosidl_typesupport_c\n'}
+[17.884418] (-) TimerEvent: {}
+[17.985171] (-) TimerEvent: {}
+[18.059315] (tku_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/check_sector__type_support.c.o\x1b[0m\n'}
+[18.085344] (-) TimerEvent: {}
+[18.186534] (-) TimerEvent: {}
+[18.287824] (-) TimerEvent: {}
+[18.340952] (tku_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[18.388010] (-) TimerEvent: {}
+[18.422887] (tku_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/send_hand_speed__type_support.c.o\x1b[0m\n'}
+[18.488212] (-) TimerEvent: {}
+[18.589580] (-) TimerEvent: {}
+[18.690798] (-) TimerEvent: {}
+[18.748365] (tku_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/walking_gait_parameter__type_support.c.o\x1b[0m\n'}
+[18.790984] (-) TimerEvent: {}
+[18.891695] (-) TimerEvent: {}
+[19.028251] (-) TimerEvent: {}
+[19.128940] (-) TimerEvent: {}
+[19.132592] (tku_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32m\x1b[1mLinking C shared library libtku_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.183974] (tku_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/hsv_value__type_support_c.cpp.o\x1b[0m\n'}
+[19.229450] (-) TimerEvent: {}
+[19.330531] (-) TimerEvent: {}
+[19.432081] (-) TimerEvent: {}
+[19.474338] (tku_msgs) StdoutLine: {'line': b'[ 47%] Built target tku_msgs__rosidl_typesupport_introspection_c\n'}
+[19.477055] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[19.532244] (-) TimerEvent: {}
+[19.539281] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/location__type_support.cpp.o\x1b[0m\n'}
+[19.632406] (-) TimerEvent: {}
+[19.733367] (-) TimerEvent: {}
+[19.834421] (-) TimerEvent: {}
+[19.935419] (-) TimerEvent: {}
+[20.036966] (-) TimerEvent: {}
+[20.138005] (-) TimerEvent: {}
+[20.239043] (-) TimerEvent: {}
+[20.287994] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/save_motion__type_support.cpp.o\x1b[0m\n'}
+[20.339252] (-) TimerEvent: {}
+[20.440531] (-) TimerEvent: {}
+[20.541844] (-) TimerEvent: {}
+[20.643113] (-) TimerEvent: {}
+[20.744408] (-) TimerEvent: {}
+[20.760882] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/parameter__type_support.cpp.o\x1b[0m\n'}
+[20.844624] (-) TimerEvent: {}
+[20.955779] (-) TimerEvent: {}
+[21.056544] (-) TimerEvent: {}
+[21.151325] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/object_list__type_support.cpp.o\x1b[0m\n'}
+[21.156715] (-) TimerEvent: {}
+[21.257434] (-) TimerEvent: {}
+[21.360051] (-) TimerEvent: {}
+[21.461417] (-) TimerEvent: {}
+[21.562737] (-) TimerEvent: {}
+[21.664139] (-) TimerEvent: {}
+[21.706898] (tku_msgs) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[21.756191] (tku_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/label_model_object_list__type_support_c.cpp.o\x1b[0m\n'}
+[21.764398] (-) TimerEvent: {}
+[21.865727] (-) TimerEvent: {}
+[21.966410] (-) TimerEvent: {}
+[22.076073] (-) TimerEvent: {}
+[22.176864] (-) TimerEvent: {}
+[22.195719] (tku_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/interface__type_support.cpp.o\x1b[0m\n'}
+[22.277034] (-) TimerEvent: {}
+[22.378307] (-) TimerEvent: {}
+[22.479010] (-) TimerEvent: {}
+[22.579708] (-) TimerEvent: {}
+[22.680439] (-) TimerEvent: {}
+[22.781119] (-) TimerEvent: {}
+[22.881875] (-) TimerEvent: {}
+[22.982634] (-) TimerEvent: {}
+[23.083401] (-) TimerEvent: {}
+[23.188004] (-) TimerEvent: {}
+[23.288701] (-) TimerEvent: {}
+[23.389900] (-) TimerEvent: {}
+[23.424160] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[23.490094] (-) TimerEvent: {}
+[23.507196] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/object_list__type_support_c.cpp.o\x1b[0m\n'}
+[23.612113] (-) TimerEvent: {}
+[23.712783] (-) TimerEvent: {}
+[23.813515] (-) TimerEvent: {}
+[23.914235] (-) TimerEvent: {}
+[23.939055] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera__type_support.cpp.o\x1b[0m\n'}
+[24.014411] (-) TimerEvent: {}
+[24.115051] (-) TimerEvent: {}
+[24.155951] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[24.215273] (-) TimerEvent: {}
+[24.316603] (-) TimerEvent: {}
+[24.417629] (-) TimerEvent: {}
+[24.518886] (-) TimerEvent: {}
+[24.636115] (-) TimerEvent: {}
+[24.703893] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[24.736268] (-) TimerEvent: {}
+[24.836971] (-) TimerEvent: {}
+[24.937692] (-) TimerEvent: {}
+[25.038883] (-) TimerEvent: {}
+[25.140142] (-) TimerEvent: {}
+[25.241147] (-) TimerEvent: {}
+[25.342117] (-) TimerEvent: {}
+[25.442852] (-) TimerEvent: {}
+[25.543562] (-) TimerEvent: {}
+[25.644312] (-) TimerEvent: {}
+[25.699180] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/camera__type_support_c.cpp.o\x1b[0m\n'}
+[25.744490] (-) TimerEvent: {}
+[25.845177] (-) TimerEvent: {}
+[25.945880] (-) TimerEvent: {}
+[26.032935] (tku_msgs) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[26.046048] (-) TimerEvent: {}
+[26.133351] (tku_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera_save__type_support.cpp.o\x1b[0m\n'}
+[26.146203] (-) TimerEvent: {}
+[26.246944] (-) TimerEvent: {}
+[26.347697] (-) TimerEvent: {}
+[26.448467] (-) TimerEvent: {}
+[26.498352] (tku_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/callback__type_support.cpp.o\x1b[0m\n'}
+[26.548651] (-) TimerEvent: {}
+[26.649352] (-) TimerEvent: {}
+[26.750066] (-) TimerEvent: {}
+[26.850790] (-) TimerEvent: {}
+[26.951538] (-) TimerEvent: {}
+[27.052295] (-) TimerEvent: {}
+[27.153005] (-) TimerEvent: {}
+[27.253664] (-) TimerEvent: {}
+[27.266901] (tku_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[27.353855] (-) TimerEvent: {}
+[27.454620] (-) TimerEvent: {}
+[27.459918] (tku_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/camera_save__type_support_c.cpp.o\x1b[0m\n'}
+[27.554786] (-) TimerEvent: {}
+[27.655527] (-) TimerEvent: {}
+[27.663840] (tku_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/location__type_support.cpp.o\x1b[0m\n'}
+[27.755728] (-) TimerEvent: {}
+[27.856547] (-) TimerEvent: {}
+[27.957265] (-) TimerEvent: {}
+[28.057998] (-) TimerEvent: {}
+[28.158676] (-) TimerEvent: {}
+[28.259343] (-) TimerEvent: {}
+[28.360041] (-) TimerEvent: {}
+[28.368520] (tku_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/head_package__type_support.cpp.o\x1b[0m\n'}
+[28.460222] (-) TimerEvent: {}
+[28.558712] (tku_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/build_model__type_support.cpp.o\x1b[0m\n'}
+[28.560331] (-) TimerEvent: {}
+[28.661463] (-) TimerEvent: {}
+[28.762695] (-) TimerEvent: {}
+[28.864059] (-) TimerEvent: {}
+[28.964833] (-) TimerEvent: {}
+[29.065557] (-) TimerEvent: {}
+[29.115060] (tku_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/location__type_support_c.cpp.o\x1b[0m\n'}
+[29.165737] (-) TimerEvent: {}
+[29.243772] (tku_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[29.265947] (-) TimerEvent: {}
+[29.366953] (-) TimerEvent: {}
+[29.467688] (-) TimerEvent: {}
+[29.568439] (-) TimerEvent: {}
+[29.633576] (tku_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[29.668622] (-) TimerEvent: {}
+[29.769316] (-) TimerEvent: {}
+[29.869977] (-) TimerEvent: {}
+[29.923131] (tku_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[29.972043] (-) TimerEvent: {}
+[30.072800] (-) TimerEvent: {}
+[30.173542] (-) TimerEvent: {}
+[30.274276] (-) TimerEvent: {}
+[30.375024] (-) TimerEvent: {}
+[30.475758] (-) TimerEvent: {}
+[30.577062] (-) TimerEvent: {}
+[30.678342] (-) TimerEvent: {}
+[30.765584] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/parameter__type_support_c.cpp.o\x1b[0m\n'}
+[30.778543] (-) TimerEvent: {}
+[30.879805] (-) TimerEvent: {}
+[30.928644] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[30.979983] (-) TimerEvent: {}
+[31.081192] (-) TimerEvent: {}
+[31.182426] (-) TimerEvent: {}
+[31.283638] (-) TimerEvent: {}
+[31.384933] (-) TimerEvent: {}
+[31.486196] (-) TimerEvent: {}
+[31.587522] (-) TimerEvent: {}
+[31.659029] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/parameter__type_support.cpp.o\x1b[0m\n'}
+[31.687685] (-) TimerEvent: {}
+[31.789103] (-) TimerEvent: {}
+[31.845108] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/add__type_support.cpp.o\x1b[0m\n'}
+[31.889278] (-) TimerEvent: {}
+[31.990008] (-) TimerEvent: {}
+[32.090752] (-) TimerEvent: {}
+[32.191476] (-) TimerEvent: {}
+[32.292239] (-) TimerEvent: {}
+[32.392942] (-) TimerEvent: {}
+[32.493644] (-) TimerEvent: {}
+[32.550977] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[32.593834] (-) TimerEvent: {}
+[32.694558] (-) TimerEvent: {}
+[32.795290] (-) TimerEvent: {}
+[32.896410] (-) TimerEvent: {}
+[33.001027] (-) TimerEvent: {}
+[33.102352] (-) TimerEvent: {}
+[33.203184] (-) TimerEvent: {}
+[33.303945] (-) TimerEvent: {}
+[33.405229] (-) TimerEvent: {}
+[33.492031] (tku_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/interface__type_support_c.cpp.o\x1b[0m\n'}
+[33.505425] (-) TimerEvent: {}
+[33.606124] (-) TimerEvent: {}
+[33.712030] (-) TimerEvent: {}
+[33.813018] (-) TimerEvent: {}
+[33.914100] (-) TimerEvent: {}
+[34.015153] (-) TimerEvent: {}
+[34.116212] (-) TimerEvent: {}
+[34.217327] (-) TimerEvent: {}
+[34.239061] (tku_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/camera_info__type_support.cpp.o\x1b[0m\n'}
+[34.317518] (-) TimerEvent: {}
+[34.418831] (-) TimerEvent: {}
+[34.520363] (-) TimerEvent: {}
+[34.621631] (-) TimerEvent: {}
+[34.722914] (-) TimerEvent: {}
+[34.824257] (-) TimerEvent: {}
+[34.878829] (tku_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/interface__type_support.cpp.o\x1b[0m\n'}
+[34.924448] (-) TimerEvent: {}
+[35.025142] (-) TimerEvent: {}
+[35.125846] (-) TimerEvent: {}
+[35.236053] (-) TimerEvent: {}
+[35.336866] (-) TimerEvent: {}
+[35.438360] (-) TimerEvent: {}
+[35.544033] (-) TimerEvent: {}
+[35.563199] (tku_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/parametermessage__type_support_c.cpp.o\x1b[0m\n'}
+[35.644221] (-) TimerEvent: {}
+[35.745353] (-) TimerEvent: {}
+[35.803154] (tku_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/save_motion__type_support.cpp.o\x1b[0m\n'}
+[35.845531] (-) TimerEvent: {}
+[35.946297] (-) TimerEvent: {}
+[36.047106] (-) TimerEvent: {}
+[36.061720] (tku_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/read_motion__type_support.cpp.o\x1b[0m\n'}
+[36.147293] (-) TimerEvent: {}
+[36.249121] (-) TimerEvent: {}
+[36.350681] (-) TimerEvent: {}
+[36.451970] (-) TimerEvent: {}
+[36.553251] (-) TimerEvent: {}
+[36.654535] (-) TimerEvent: {}
+[36.755235] (-) TimerEvent: {}
+[36.855941] (-) TimerEvent: {}
+[36.865420] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/callback__type_support_c.cpp.o\x1b[0m\n'}
+[36.956097] (-) TimerEvent: {}
+[37.056812] (-) TimerEvent: {}
+[37.157533] (-) TimerEvent: {}
+[37.258232] (-) TimerEvent: {}
+[37.358930] (-) TimerEvent: {}
+[37.386060] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/parametermessage__type_support.cpp.o\x1b[0m\n'}
+[37.459095] (-) TimerEvent: {}
+[37.559767] (-) TimerEvent: {}
+[37.660486] (-) TimerEvent: {}
+[37.761212] (-) TimerEvent: {}
+[37.861958] (-) TimerEvent: {}
+[37.962807] (-) TimerEvent: {}
+[38.011762] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/check_sector__type_support.cpp.o\x1b[0m\n'}
+[38.063224] (-) TimerEvent: {}
+[38.164711] (-) TimerEvent: {}
+[38.266927] (-) TimerEvent: {}
+[38.368634] (-) TimerEvent: {}
+[38.454841] (tku_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/head_package__type_support_c.cpp.o\x1b[0m\n'}
+[38.468880] (-) TimerEvent: {}
+[38.476985] (tku_msgs) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[38.569070] (-) TimerEvent: {}
+[38.670601] (-) TimerEvent: {}
+[38.772213] (-) TimerEvent: {}
+[38.872959] (-) TimerEvent: {}
+[38.885579] (tku_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/callback__type_support.cpp.o\x1b[0m\n'}
+[38.973287] (-) TimerEvent: {}
+[39.074056] (-) TimerEvent: {}
+[39.174829] (-) TimerEvent: {}
+[39.276057] (-) TimerEvent: {}
+[39.376831] (-) TimerEvent: {}
+[39.479327] (-) TimerEvent: {}
+[39.580550] (-) TimerEvent: {}
+[39.681417] (-) TimerEvent: {}
+[39.698711] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[39.781617] (-) TimerEvent: {}
+[39.888156] (-) TimerEvent: {}
+[39.988921] (-) TimerEvent: {}
+[40.089937] (-) TimerEvent: {}
+[40.190731] (-) TimerEvent: {}
+[40.291955] (-) TimerEvent: {}
+[40.392712] (-) TimerEvent: {}
+[40.493434] (-) TimerEvent: {}
+[40.513753] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/head_package__type_support.cpp.o\x1b[0m\n'}
+[40.593623] (-) TimerEvent: {}
+[40.694955] (-) TimerEvent: {}
+[40.796220] (-) TimerEvent: {}
+[40.897502] (-) TimerEvent: {}
+[40.943353] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/interface_send2_sector__type_support_c.cpp.o\x1b[0m\n'}
+[40.997718] (-) TimerEvent: {}
+[41.098511] (-) TimerEvent: {}
+[41.199809] (-) TimerEvent: {}
+[41.300713] (-) TimerEvent: {}
+[41.401510] (-) TimerEvent: {}
+[41.502306] (-) TimerEvent: {}
+[41.515089] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[41.602495] (-) TimerEvent: {}
+[41.703241] (-) TimerEvent: {}
+[41.751397] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/walking_gait_parameter__type_support.cpp.o\x1b[0m\n'}
+[41.803430] (-) TimerEvent: {}
+[41.858746] (tku_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/interface_send2_sector__type_support.cpp.o\x1b[0m\n'}
+[41.903617] (-) TimerEvent: {}
+[42.005067] (-) TimerEvent: {}
+[42.106315] (-) TimerEvent: {}
+[42.207682] (-) TimerEvent: {}
+[42.308973] (-) TimerEvent: {}
+[42.410215] (-) TimerEvent: {}
+[42.458992] (tku_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/pi_dpackage__type_support_c.cpp.o\x1b[0m\n'}
+[42.510418] (-) TimerEvent: {}
+[42.611125] (-) TimerEvent: {}
+[42.711885] (-) TimerEvent: {}
+[42.813207] (-) TimerEvent: {}
+[42.914470] (-) TimerEvent: {}
+[43.016091] (-) TimerEvent: {}
+[43.117452] (-) TimerEvent: {}
+[43.168496] (tku_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[43.217647] (-) TimerEvent: {}
+[43.318520] (-) TimerEvent: {}
+[43.420062] (-) TimerEvent: {}
+[43.463195] (tku_msgs) StdoutLine: {'line': b'[ 68%] Built target tku_msgs__rosidl_typesupport_cpp\n'}
+[43.497333] (tku_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/pi_dpackage__type_support.cpp.o\x1b[0m\n'}
+[43.520288] (-) TimerEvent: {}
+[43.550925] (tku_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[43.620484] (-) TimerEvent: {}
+[43.722393] (-) TimerEvent: {}
+[43.824089] (-) TimerEvent: {}
+[43.928590] (-) TimerEvent: {}
+[44.029349] (-) TimerEvent: {}
+[44.130084] (-) TimerEvent: {}
+[44.230776] (-) TimerEvent: {}
+[44.331623] (-) TimerEvent: {}
+[44.367348] (tku_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sand_hand_speed__type_support_c.cpp.o\x1b[0m\n'}
+[44.431852] (-) TimerEvent: {}
+[44.533199] (-) TimerEvent: {}
+[44.634416] (-) TimerEvent: {}
+[44.735665] (-) TimerEvent: {}
+[44.836926] (-) TimerEvent: {}
+[44.938310] (-) TimerEvent: {}
+[45.039599] (-) TimerEvent: {}
+[45.140561] (-) TimerEvent: {}
+[45.241807] (-) TimerEvent: {}
+[45.342535] (-) TimerEvent: {}
+[45.443601] (-) TimerEvent: {}
+[45.544579] (-) TimerEvent: {}
+[45.644335] (tku_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/save_motion__type_support.cpp.o\x1b[0m\n'}
+[45.644835] (-) TimerEvent: {}
+[45.673491] (tku_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[45.745052] (-) TimerEvent: {}
+[45.845841] (-) TimerEvent: {}
+[45.946613] (-) TimerEvent: {}
+[45.956330] (tku_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/save_motion__type_support_c.cpp.o\x1b[0m\n'}
+[46.046790] (-) TimerEvent: {}
+[46.148054] (-) TimerEvent: {}
+[46.250348] (-) TimerEvent: {}
+[46.354020] (-) TimerEvent: {}
+[46.455329] (-) TimerEvent: {}
+[46.556635] (-) TimerEvent: {}
+[46.575304] (web_video_server) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/png_streamers.cpp.o\x1b[0m\n'}
+[46.636882] (tku_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[46.656791] (-) TimerEvent: {}
+[46.757500] (-) TimerEvent: {}
+[46.858278] (-) TimerEvent: {}
+[46.958965] (-) TimerEvent: {}
+[46.993263] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/save_motion_vector__type_support_c.cpp.o\x1b[0m\n'}
+[47.059180] (-) TimerEvent: {}
+[47.160326] (-) TimerEvent: {}
+[47.261053] (-) TimerEvent: {}
+[47.262263] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sensor_package__type_support.cpp.o\x1b[0m\n'}
+[47.361218] (-) TimerEvent: {}
+[47.461911] (-) TimerEvent: {}
+[47.562551] (-) TimerEvent: {}
+[47.661311] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[47.662677] (-) TimerEvent: {}
+[47.763887] (-) TimerEvent: {}
+[47.865112] (-) TimerEvent: {}
+[47.966434] (-) TimerEvent: {}
+[48.067761] (-) TimerEvent: {}
+[48.082986] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sensor_package__type_support_c.cpp.o\x1b[0m\n'}
+[48.167996] (-) TimerEvent: {}
+[48.268697] (-) TimerEvent: {}
+[48.369434] (-) TimerEvent: {}
+[48.470156] (-) TimerEvent: {}
+[48.503960] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sensor_set__type_support.cpp.o\x1b[0m\n'}
+[48.570365] (-) TimerEvent: {}
+[48.663019] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/build_model__type_support.cpp.o\x1b[0m\n'}
+[48.670502] (-) TimerEvent: {}
+[48.771438] (-) TimerEvent: {}
+[48.872470] (-) TimerEvent: {}
+[48.961759] (tku_msgs) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sensor_set__type_support_c.cpp.o\x1b[0m\n'}
+[48.972633] (-) TimerEvent: {}
+[49.073569] (-) TimerEvent: {}
+[49.174546] (-) TimerEvent: {}
+[49.276144] (-) TimerEvent: {}
+[49.376787] (-) TimerEvent: {}
+[49.401519] (tku_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/save_motion_vector__type_support.cpp.o\x1b[0m\n'}
+[49.476946] (-) TimerEvent: {}
+[49.577885] (-) TimerEvent: {}
+[49.678528] (-) TimerEvent: {}
+[49.706557] (tku_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[49.778717] (-) TimerEvent: {}
+[49.834830] (tku_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/single_motor_data__type_support_c.cpp.o\x1b[0m\n'}
+[49.878894] (-) TimerEvent: {}
+[49.979573] (-) TimerEvent: {}
+[50.080231] (-) TimerEvent: {}
+[50.181201] (-) TimerEvent: {}
+[50.282214] (-) TimerEvent: {}
+[50.383152] (-) TimerEvent: {}
+[50.484073] (-) TimerEvent: {}
+[50.584989] (-) TimerEvent: {}
+[50.623668] (tku_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sand_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[50.668419] (tku_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/walkingmessage__type_support_c.cpp.o\x1b[0m\n'}
+[50.685182] (-) TimerEvent: {}
+[50.738287] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/camera_info__type_support.cpp.o\x1b[0m\n'}
+[50.785338] (-) TimerEvent: {}
+[50.886556] (-) TimerEvent: {}
+[50.988524] (-) TimerEvent: {}
+[51.089784] (-) TimerEvent: {}
+[51.191075] (-) TimerEvent: {}
+[51.292331] (-) TimerEvent: {}
+[51.393564] (-) TimerEvent: {}
+[51.442659] (tku_msgs) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/build_model__type_support_c.cpp.o\x1b[0m\n'}
+[51.493724] (-) TimerEvent: {}
+[51.594218] (tku_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/single_motor_data__type_support.cpp.o\x1b[0m\n'}
+[51.594688] (-) TimerEvent: {}
+[51.695193] (-) TimerEvent: {}
+[51.795979] (-) TimerEvent: {}
+[51.804026] (tku_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/read_motion__type_support.cpp.o\x1b[0m\n'}
+[51.896155] (-) TimerEvent: {}
+[51.996839] (-) TimerEvent: {}
+[52.097527] (-) TimerEvent: {}
+[52.200516] (-) TimerEvent: {}
+[52.293650] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/hsv_info__type_support_c.cpp.o\x1b[0m\n'}
+[52.300672] (-) TimerEvent: {}
+[52.401617] (-) TimerEvent: {}
+[52.500662] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/walkingmessage__type_support.cpp.o\x1b[0m\n'}
+[52.501697] (-) TimerEvent: {}
+[52.603148] (-) TimerEvent: {}
+[52.703793] (-) TimerEvent: {}
+[52.804763] (-) TimerEvent: {}
+[52.905739] (-) TimerEvent: {}
+[52.910759] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/check_sector__type_support.cpp.o\x1b[0m\n'}
+[53.005939] (-) TimerEvent: {}
+[53.106961] (-) TimerEvent: {}
+[53.159690] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/save_hsv__type_support_c.cpp.o\x1b[0m\n'}
+[53.207162] (-) TimerEvent: {}
+[53.307969] (-) TimerEvent: {}
+[53.409231] (-) TimerEvent: {}
+[53.434736] (tku_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/build_model__type_support.cpp.o\x1b[0m\n'}
+[53.509428] (-) TimerEvent: {}
+[53.610683] (-) TimerEvent: {}
+[53.711925] (-) TimerEvent: {}
+[53.813191] (-) TimerEvent: {}
+[53.905254] (tku_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[53.913394] (-) TimerEvent: {}
+[54.014751] (-) TimerEvent: {}
+[54.015817] (tku_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/add__type_support_c.cpp.o\x1b[0m\n'}
+[54.114933] (-) TimerEvent: {}
+[54.215650] (-) TimerEvent: {}
+[54.316955] (-) TimerEvent: {}
+[54.319744] (tku_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[54.417155] (-) TimerEvent: {}
+[54.518489] (-) TimerEvent: {}
+[54.620368] (-) TimerEvent: {}
+[54.721578] (-) TimerEvent: {}
+[54.822924] (-) TimerEvent: {}
+[54.830071] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/camera_info__type_support_c.cpp.o\x1b[0m\n'}
+[54.883797] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/walking_gait_parameter__type_support.cpp.o\x1b[0m\n'}
+[54.923227] (-) TimerEvent: {}
+[55.024012] (-) TimerEvent: {}
+[55.124712] (-) TimerEvent: {}
+[55.226018] (-) TimerEvent: {}
+[55.237441] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/save_hsv__type_support.cpp.o\x1b[0m\n'}
+[55.326185] (-) TimerEvent: {}
+[55.426902] (-) TimerEvent: {}
+[55.527604] (-) TimerEvent: {}
+[55.628364] (-) TimerEvent: {}
+[55.729091] (-) TimerEvent: {}
+[55.818675] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/read_motion__type_support_c.cpp.o\x1b[0m\n'}
+[55.829253] (-) TimerEvent: {}
+[55.858636] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/add__type_support.cpp.o\x1b[0m\n'}
+[55.929456] (-) TimerEvent: {}
+[56.030140] (-) TimerEvent: {}
+[56.102753] (tku_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/add__type_support.cpp.o\x1b[0m\n'}
+[56.130322] (-) TimerEvent: {}
+[56.231021] (-) TimerEvent: {}
+[56.340108] (-) TimerEvent: {}
+[56.453070] (-) TimerEvent: {}
+[56.554023] (-) TimerEvent: {}
+[56.654962] (-) TimerEvent: {}
+[56.751118] (tku_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__type_support_c.cpp.o\x1b[0m\n'}
+[56.755112] (-) TimerEvent: {}
+[56.788115] (tku_msgs) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/hsv_info__type_support.cpp.o\x1b[0m\n'}
+[56.855280] (-) TimerEvent: {}
+[56.956647] (-) TimerEvent: {}
+[56.975837] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/camera_info__type_support.cpp.o\x1b[0m\n'}
+[57.056837] (-) TimerEvent: {}
+[57.158120] (-) TimerEvent: {}
+[57.259925] (-) TimerEvent: {}
+[57.360600] (-) TimerEvent: {}
+[57.461899] (-) TimerEvent: {}
+[57.563699] (-) TimerEvent: {}
+[57.621763] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/walking_gait_parameter__type_support_c.cpp.o\x1b[0m\n'}
+[57.664018] (-) TimerEvent: {}
+[57.765381] (-) TimerEvent: {}
+[57.793422] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[57.865625] (-) TimerEvent: {}
+[57.875390] (tku_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/check_sector__type_support.cpp.o\x1b[0m\n'}
+[57.965910] (-) TimerEvent: {}
+[58.028530] (tku_msgs) StdoutLine: {'line': b'[ 84%] Built target tku_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[58.067774] (-) TimerEvent: {}
+[58.168536] (-) TimerEvent: {}
+[58.269574] (-) TimerEvent: {}
+[58.370361] (-) TimerEvent: {}
+[58.471125] (-) TimerEvent: {}
+[58.493838] (tku_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/check_sector__type_support_c.cpp.o\x1b[0m\n'}
+[58.571422] (-) TimerEvent: {}
+[58.672487] (-) TimerEvent: {}
+[58.773465] (-) TimerEvent: {}
+[58.848507] (tku_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/walking_gait_parameter__type_support.cpp.o\x1b[0m\n'}
+[58.873684] (-) TimerEvent: {}
+[58.974731] (-) TimerEvent: {}
+[59.075795] (-) TimerEvent: {}
+[59.176500] (-) TimerEvent: {}
+[59.277201] (-) TimerEvent: {}
+[59.377944] (-) TimerEvent: {}
+[59.422877] (tku_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[59.478178] (-) TimerEvent: {}
+[59.578922] (-) TimerEvent: {}
+[59.631710] (tku_msgs) StdoutLine: {'line': b'[ 85%] Built target tku_msgs__rosidl_typesupport_fastrtps_c\n'}
+[59.679169] (-) TimerEvent: {}
+[59.747672] (tku_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/send_hand_speed__type_support.cpp.o\x1b[0m\n'}
+[59.779435] (-) TimerEvent: {}
+[59.880328] (-) TimerEvent: {}
+[59.980994] (-) TimerEvent: {}
+[60.081697] (-) TimerEvent: {}
+[60.182398] (-) TimerEvent: {}
+[60.283150] (-) TimerEvent: {}
+[60.383921] (-) TimerEvent: {}
+[60.484574] (-) TimerEvent: {}
+[60.585257] (-) TimerEvent: {}
+[60.622368] (tku_msgs) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/read_motion__type_support.cpp.o\x1b[0m\n'}
+[60.685489] (-) TimerEvent: {}
+[60.786262] (-) TimerEvent: {}
+[60.887639] (-) TimerEvent: {}
+[60.989103] (-) TimerEvent: {}
+[61.090410] (-) TimerEvent: {}
+[61.191158] (-) TimerEvent: {}
+[61.291912] (-) TimerEvent: {}
+[61.392649] (-) TimerEvent: {}
+[61.493364] (-) TimerEvent: {}
+[61.594093] (-) TimerEvent: {}
+[61.641094] (tku_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[61.694234] (-) TimerEvent: {}
+[61.794915] (-) TimerEvent: {}
+[61.870798] (tku_msgs) StdoutLine: {'line': b'[ 87%] Built target tku_msgs__rosidl_typesupport_introspection_cpp\n'}
+[61.895132] (-) TimerEvent: {}
+[61.921958] (tku_msgs) StdoutLine: {'line': b'[ 87%] Built target tku_msgs\n'}
+[61.972158] (tku_msgs) StdoutLine: {'line': b'[ 87%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[61.995349] (-) TimerEvent: {}
+[62.096348] (-) TimerEvent: {}
+[62.197327] (-) TimerEvent: {}
+[62.298311] (-) TimerEvent: {}
+[62.399028] (-) TimerEvent: {}
+[62.499745] (-) TimerEvent: {}
+[62.600488] (-) TimerEvent: {}
+[62.701140] (-) TimerEvent: {}
+[62.801797] (-) TimerEvent: {}
+[62.902478] (-) TimerEvent: {}
+[63.003200] (-) TimerEvent: {}
+[63.103931] (-) TimerEvent: {}
+[63.204554] (-) TimerEvent: {}
+[63.305210] (-) TimerEvent: {}
+[63.405887] (-) TimerEvent: {}
+[63.506589] (-) TimerEvent: {}
+[63.607262] (-) TimerEvent: {}
+[63.708014] (-) TimerEvent: {}
+[63.808646] (-) TimerEvent: {}
+[63.909298] (-) TimerEvent: {}
+[64.009983] (-) TimerEvent: {}
+[64.111203] (-) TimerEvent: {}
+[64.211995] (-) TimerEvent: {}
+[64.312633] (-) TimerEvent: {}
+[64.413245] (-) TimerEvent: {}
+[64.513910] (-) TimerEvent: {}
+[64.614634] (-) TimerEvent: {}
+[64.715333] (-) TimerEvent: {}
+[64.816406] (-) TimerEvent: {}
+[64.917309] (-) TimerEvent: {}
+[65.017947] (-) TimerEvent: {}
+[65.118626] (-) TimerEvent: {}
+[65.219290] (-) TimerEvent: {}
+[65.239800] (web_video_server) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/jpeg_streamers.cpp.o\x1b[0m\n'}
+[65.319499] (-) TimerEvent: {}
+[65.420149] (-) TimerEvent: {}
+[65.520772] (-) TimerEvent: {}
+[65.621972] (-) TimerEvent: {}
+[65.722594] (-) TimerEvent: {}
+[65.823258] (-) TimerEvent: {}
+[65.923959] (-) TimerEvent: {}
+[66.024593] (-) TimerEvent: {}
+[66.125249] (-) TimerEvent: {}
+[66.225897] (-) TimerEvent: {}
+[66.326504] (-) TimerEvent: {}
+[66.427213] (-) TimerEvent: {}
+[66.528042] (-) TimerEvent: {}
+[66.628992] (-) TimerEvent: {}
+[66.729970] (-) TimerEvent: {}
+[66.831136] (-) TimerEvent: {}
+[66.932282] (-) TimerEvent: {}
+[67.032895] (-) TimerEvent: {}
+[67.133502] (-) TimerEvent: {}
+[67.234173] (-) TimerEvent: {}
+[67.336281] (-) TimerEvent: {}
+[67.436901] (-) TimerEvent: {}
+[67.537521] (-) TimerEvent: {}
+[67.638146] (-) TimerEvent: {}
+[67.738766] (-) TimerEvent: {}
+[67.839389] (-) TimerEvent: {}
+[67.940038] (-) TimerEvent: {}
+[68.040694] (-) TimerEvent: {}
+[68.141347] (-) TimerEvent: {}
+[68.241976] (-) TimerEvent: {}
+[68.342618] (-) TimerEvent: {}
+[68.443299] (-) TimerEvent: {}
+[68.544160] (-) TimerEvent: {}
+[68.644814] (-) TimerEvent: {}
+[68.745470] (-) TimerEvent: {}
+[68.846128] (-) TimerEvent: {}
+[68.946809] (-) TimerEvent: {}
+[69.047447] (-) TimerEvent: {}
+[69.148134] (-) TimerEvent: {}
+[69.248780] (-) TimerEvent: {}
+[69.349425] (-) TimerEvent: {}
+[69.450089] (-) TimerEvent: {}
+[69.550748] (-) TimerEvent: {}
+[69.651418] (-) TimerEvent: {}
+[69.752042] (-) TimerEvent: {}
+[69.852717] (-) TimerEvent: {}
+[69.953929] (-) TimerEvent: {}
+[70.054904] (-) TimerEvent: {}
+[70.155650] (-) TimerEvent: {}
+[70.256329] (-) TimerEvent: {}
+[70.356959] (-) TimerEvent: {}
+[70.457921] (-) TimerEvent: {}
+[70.559151] (-) TimerEvent: {}
+[70.660461] (-) TimerEvent: {}
+[70.761182] (-) TimerEvent: {}
+[70.861907] (-) TimerEvent: {}
+[70.962723] (-) TimerEvent: {}
+[71.063393] (-) TimerEvent: {}
+[71.070458] (tku_msgs) StdoutLine: {'line': b'[ 87%] Built target tku_msgs__py\n'}
+[71.118715] (tku_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c.o\x1b[0m\n'}
+[71.163569] (-) TimerEvent: {}
+[71.264274] (-) TimerEvent: {}
+[71.364920] (-) TimerEvent: {}
+[71.402087] (tku_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_label_model_object_list_s.c.o\x1b[0m\n'}
+[71.465888] (-) TimerEvent: {}
+[71.567849] (-) TimerEvent: {}
+[71.636523] (tku_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_object_list_s.c.o\x1b[0m\n'}
+[71.668061] (-) TimerEvent: {}
+[71.768696] (-) TimerEvent: {}
+[71.855061] (tku_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_s.c.o\x1b[0m\n'}
+[71.868840] (-) TimerEvent: {}
+[71.969532] (-) TimerEvent: {}
+[72.070238] (-) TimerEvent: {}
+[72.090951] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_save_s.c.o\x1b[0m\n'}
+[72.170398] (-) TimerEvent: {}
+[72.271058] (-) TimerEvent: {}
+[72.306355] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_location_s.c.o\x1b[0m\n'}
+[72.371229] (-) TimerEvent: {}
+[72.471969] (-) TimerEvent: {}
+[72.519789] (tku_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_parameter_s.c.o\x1b[0m\n'}
+[72.572153] (-) TimerEvent: {}
+[72.672826] (-) TimerEvent: {}
+[72.749457] (tku_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_interface_s.c.o\x1b[0m\n'}
+[72.772987] (-) TimerEvent: {}
+[72.874192] (-) TimerEvent: {}
+[72.964832] (tku_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_parametermessage_s.c.o\x1b[0m\n'}
+[72.976198] (-) TimerEvent: {}
+[73.080139] (-) TimerEvent: {}
+[73.180797] (-) TimerEvent: {}
+[73.209643] (tku_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_callback_s.c.o\x1b[0m\n'}
+[73.280974] (-) TimerEvent: {}
+[73.381658] (-) TimerEvent: {}
+[73.420765] (tku_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_head_package_s.c.o\x1b[0m\n'}
+[73.481833] (-) TimerEvent: {}
+[73.582502] (-) TimerEvent: {}
+[73.631637] (tku_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_interface_send2_sector_s.c.o\x1b[0m\n'}
+[73.682676] (-) TimerEvent: {}
+[73.783319] (-) TimerEvent: {}
+[73.838674] (tku_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_pi_dpackage_s.c.o\x1b[0m\n'}
+[73.883503] (-) TimerEvent: {}
+[73.984275] (-) TimerEvent: {}
+[74.064637] (tku_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sand_hand_speed_s.c.o\x1b[0m\n'}
+[74.084461] (-) TimerEvent: {}
+[74.185474] (-) TimerEvent: {}
+[74.276687] (tku_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_save_motion_s.c.o\x1b[0m\n'}
+[74.285677] (-) TimerEvent: {}
+[74.386388] (-) TimerEvent: {}
+[74.487079] (-) TimerEvent: {}
+[74.544252] (tku_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_save_motion_vector_s.c.o\x1b[0m\n'}
+[74.587257] (-) TimerEvent: {}
+[74.687955] (-) TimerEvent: {}
+[74.760141] (tku_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sensor_package_s.c.o\x1b[0m\n'}
+[74.788128] (-) TimerEvent: {}
+[74.888817] (-) TimerEvent: {}
+[74.989426] (-) TimerEvent: {}
+[75.009087] (tku_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sensor_set_s.c.o\x1b[0m\n'}
+[75.089595] (-) TimerEvent: {}
+[75.190268] (-) TimerEvent: {}
+[75.220492] (tku_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_single_motor_data_s.c.o\x1b[0m\n'}
+[75.290440] (-) TimerEvent: {}
+[75.391104] (-) TimerEvent: {}
+[75.434105] (tku_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_walkingmessage_s.c.o\x1b[0m\n'}
+[75.491257] (-) TimerEvent: {}
+[75.591926] (-) TimerEvent: {}
+[75.653155] (tku_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_build_model_s.c.o\x1b[0m\n'}
+[75.692035] (-) TimerEvent: {}
+[75.792708] (-) TimerEvent: {}
+[75.884912] (tku_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_hsv_info_s.c.o\x1b[0m\n'}
+[75.892842] (-) TimerEvent: {}
+[75.993451] (-) TimerEvent: {}
+[76.094113] (-) TimerEvent: {}
+[76.130675] (tku_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c.o\x1b[0m\n'}
+[76.194338] (-) TimerEvent: {}
+[76.295031] (-) TimerEvent: {}
+[76.358165] (tku_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_add_s.c.o\x1b[0m\n'}
+[76.395189] (-) TimerEvent: {}
+[76.496283] (-) TimerEvent: {}
+[76.581965] (tku_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_camera_info_s.c.o\x1b[0m\n'}
+[76.596463] (-) TimerEvent: {}
+[76.697140] (-) TimerEvent: {}
+[76.797786] (-) TimerEvent: {}
+[76.807599] (tku_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_read_motion_s.c.o\x1b[0m\n'}
+[76.897960] (-) TimerEvent: {}
+[76.998588] (-) TimerEvent: {}
+[77.099312] (-) TimerEvent: {}
+[77.107521] (tku_msgs) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_check_sector_s.c.o\x1b[0m\n'}
+[77.199496] (-) TimerEvent: {}
+[77.300207] (-) TimerEvent: {}
+[77.333666] (tku_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c.o\x1b[0m\n'}
+[77.400377] (-) TimerEvent: {}
+[77.501376] (-) TimerEvent: {}
+[77.556887] (tku_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_walking_gait_parameter_s.c.o\x1b[0m\n'}
+[77.601541] (-) TimerEvent: {}
+[77.702676] (-) TimerEvent: {}
+[77.803376] (-) TimerEvent: {}
+[77.815166] (tku_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_hsv_value_s.c.o\x1b[0m\n'}
+[77.903557] (-) TimerEvent: {}
+[78.004812] (-) TimerEvent: {}
+[78.029010] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_draw_image_s.c.o\x1b[0m\n'}
+[78.104977] (-) TimerEvent: {}
+[78.205883] (-) TimerEvent: {}
+[78.246479] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_data_s.c.o\x1b[0m\n'}
+[78.306089] (-) TimerEvent: {}
+[78.407340] (-) TimerEvent: {}
+[78.465333] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_array_s.c.o\x1b[0m\n'}
+[78.507526] (-) TimerEvent: {}
+[78.608826] (-) TimerEvent: {}
+[78.677743] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/libtku_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[78.708994] (-) TimerEvent: {}
+[78.782085] (tku_msgs) StdoutLine: {'line': b'[ 99%] Built target tku_msgs__rosidl_generator_py\n'}
+[78.809194] (-) TimerEvent: {}
+[78.822772] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[78.909372] (-) TimerEvent: {}
+[79.010112] (-) TimerEvent: {}
+[79.110824] (-) TimerEvent: {}
+[79.211564] (-) TimerEvent: {}
+[79.306697] (tku_msgs) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[79.311683] (-) TimerEvent: {}
+[79.389556] (tku_msgs) StdoutLine: {'line': b'[ 99%] Built target tku_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[79.411903] (-) TimerEvent: {}
+[79.429364] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[79.512039] (-) TimerEvent: {}
+[79.612722] (-) TimerEvent: {}
+[79.713414] (-) TimerEvent: {}
+[79.814065] (-) TimerEvent: {}
+[79.914709] (-) TimerEvent: {}
+[79.916829] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[79.995015] (tku_msgs) StdoutLine: {'line': b'[100%] Built target tku_msgs__rosidl_typesupport_c__pyext\n'}
+[80.014888] (-) TimerEvent: {}
+[80.036302] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[80.115051] (-) TimerEvent: {}
+[80.215673] (-) TimerEvent: {}
+[80.316244] (-) TimerEvent: {}
+[80.417169] (-) TimerEvent: {}
+[80.517833] (-) TimerEvent: {}
+[80.526629] (tku_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[80.608036] (tku_msgs) StdoutLine: {'line': b'[100%] Built target tku_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[80.617974] (-) TimerEvent: {}
+[80.635267] (tku_msgs) JobEnded: {'identifier': 'tku_msgs', 'rc': 'SIGINT'}
+[80.718159] (-) TimerEvent: {}
+[80.818844] (-) TimerEvent: {}
+[80.919521] (-) TimerEvent: {}
+[81.020264] (-) TimerEvent: {}
+[81.120920] (-) TimerEvent: {}
+[81.221591] (-) TimerEvent: {}
+[81.322248] (-) TimerEvent: {}
+[81.422918] (-) TimerEvent: {}
+[81.523558] (-) TimerEvent: {}
+[81.624241] (-) TimerEvent: {}
+[81.725250] (-) TimerEvent: {}
+[81.825942] (-) TimerEvent: {}
+[81.850976] (web_video_server) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o\x1b[0m\n'}
+[81.926113] (-) TimerEvent: {}
+[82.026789] (-) TimerEvent: {}
+[82.127466] (-) TimerEvent: {}
+[82.228233] (-) TimerEvent: {}
+[82.328965] (-) TimerEvent: {}
+[82.429653] (-) TimerEvent: {}
+[82.530342] (-) TimerEvent: {}
+[82.631013] (-) TimerEvent: {}
+[82.731694] (-) TimerEvent: {}
+[82.832505] (-) TimerEvent: {}
+[82.933203] (-) TimerEvent: {}
+[83.033862] (-) TimerEvent: {}
+[83.134574] (-) TimerEvent: {}
+[83.235365] (-) TimerEvent: {}
+[83.336095] (-) TimerEvent: {}
+[83.436806] (-) TimerEvent: {}
+[83.537492] (-) TimerEvent: {}
+[83.638167] (-) TimerEvent: {}
+[83.738837] (-) TimerEvent: {}
+[83.839495] (-) TimerEvent: {}
+[83.940174] (-) TimerEvent: {}
+[84.040848] (-) TimerEvent: {}
+[84.141596] (-) TimerEvent: {}
+[84.242422] (-) TimerEvent: {}
+[84.343126] (-) TimerEvent: {}
+[84.443832] (-) TimerEvent: {}
+[84.544581] (-) TimerEvent: {}
+[84.645262] (-) TimerEvent: {}
+[84.745950] (-) TimerEvent: {}
+[84.846717] (-) TimerEvent: {}
+[84.947393] (-) TimerEvent: {}
+[85.048122] (-) TimerEvent: {}
+[85.148805] (-) TimerEvent: {}
+[85.249488] (-) TimerEvent: {}
+[85.350152] (-) TimerEvent: {}
+[85.450825] (-) TimerEvent: {}
+[85.551509] (-) TimerEvent: {}
+[85.652230] (-) TimerEvent: {}
+[85.752910] (-) TimerEvent: {}
+[85.853544] (-) TimerEvent: {}
+[85.954219] (-) TimerEvent: {}
+[86.054910] (-) TimerEvent: {}
+[86.155595] (-) TimerEvent: {}
+[86.256414] (-) TimerEvent: {}
+[86.357088] (-) TimerEvent: {}
+[86.457742] (-) TimerEvent: {}
+[86.558405] (-) TimerEvent: {}
+[86.659076] (-) TimerEvent: {}
+[86.759742] (-) TimerEvent: {}
+[86.860542] (-) TimerEvent: {}
+[86.961224] (-) TimerEvent: {}
+[87.061860] (-) TimerEvent: {}
+[87.162705] (-) TimerEvent: {}
+[87.263369] (-) TimerEvent: {}
+[87.364047] (-) TimerEvent: {}
+[87.465024] (-) TimerEvent: {}
+[87.565682] (-) TimerEvent: {}
+[87.666321] (-) TimerEvent: {}
+[87.766950] (-) TimerEvent: {}
+[87.867660] (-) TimerEvent: {}
+[87.968809] (-) TimerEvent: {}
+[88.069499] (-) TimerEvent: {}
+[88.170172] (-) TimerEvent: {}
+[88.271246] (-) TimerEvent: {}
+[88.372285] (-) TimerEvent: {}
+[88.472994] (-) TimerEvent: {}
+[88.573698] (-) TimerEvent: {}
+[88.674787] (-) TimerEvent: {}
+[88.775911] (-) TimerEvent: {}
+[88.876606] (-) TimerEvent: {}
+[88.977620] (-) TimerEvent: {}
+[89.078332] (-) TimerEvent: {}
+[89.179051] (-) TimerEvent: {}
+[89.279763] (-) TimerEvent: {}
+[89.380482] (-) TimerEvent: {}
+[89.481193] (-) TimerEvent: {}
+[89.581901] (-) TimerEvent: {}
+[89.682617] (-) TimerEvent: {}
+[89.783323] (-) TimerEvent: {}
+[89.884016] (-) TimerEvent: {}
+[89.984746] (-) TimerEvent: {}
+[90.085440] (-) TimerEvent: {}
+[90.186140] (-) TimerEvent: {}
+[90.286838] (-) TimerEvent: {}
+[90.387827] (-) TimerEvent: {}
+[90.489112] (-) TimerEvent: {}
+[90.589832] (-) TimerEvent: {}
+[90.690558] (-) TimerEvent: {}
+[90.791258] (-) TimerEvent: {}
+[90.891990] (-) TimerEvent: {}
+[90.992686] (-) TimerEvent: {}
+[91.093406] (-) TimerEvent: {}
+[91.194115] (-) TimerEvent: {}
+[91.294819] (-) TimerEvent: {}
+[91.395520] (-) TimerEvent: {}
+[91.496625] (-) TimerEvent: {}
+[91.597719] (-) TimerEvent: {}
+[91.698375] (-) TimerEvent: {}
+[91.799044] (-) TimerEvent: {}
+[91.899759] (-) TimerEvent: {}
+[92.000480] (-) TimerEvent: {}
+[92.101146] (-) TimerEvent: {}
+[92.202151] (-) TimerEvent: {}
+[92.302854] (-) TimerEvent: {}
+[92.403548] (-) TimerEvent: {}
+[92.504648] (-) TimerEvent: {}
+[92.605318] (-) TimerEvent: {}
+[92.706350] (-) TimerEvent: {}
+[92.807345] (-) TimerEvent: {}
+[92.908050] (-) TimerEvent: {}
+[93.008821] (-) TimerEvent: {}
+[93.109524] (-) TimerEvent: {}
+[93.210246] (-) TimerEvent: {}
+[93.310987] (-) TimerEvent: {}
+[93.411794] (-) TimerEvent: {}
+[93.512580] (-) TimerEvent: {}
+[93.613297] (-) TimerEvent: {}
+[93.714003] (-) TimerEvent: {}
+[93.814709] (-) TimerEvent: {}
+[93.915411] (-) TimerEvent: {}
+[94.016121] (-) TimerEvent: {}
+[94.116784] (-) TimerEvent: {}
+[94.217475] (-) TimerEvent: {}
+[94.318167] (-) TimerEvent: {}
+[94.418831] (-) TimerEvent: {}
+[94.519557] (-) TimerEvent: {}
+[94.620598] (-) TimerEvent: {}
+[94.721263] (-) TimerEvent: {}
+[94.821944] (-) TimerEvent: {}
+[94.922628] (-) TimerEvent: {}
+[95.023305] (-) TimerEvent: {}
+[95.124390] (-) TimerEvent: {}
+[95.225201] (-) TimerEvent: {}
+[95.325869] (-) TimerEvent: {}
+[95.426553] (-) TimerEvent: {}
+[95.527227] (-) TimerEvent: {}
+[95.627933] (-) TimerEvent: {}
+[95.728573] (-) TimerEvent: {}
+[95.829254] (-) TimerEvent: {}
+[95.929910] (-) TimerEvent: {}
+[96.030555] (-) TimerEvent: {}
+[96.131237] (-) TimerEvent: {}
+[96.232110] (-) TimerEvent: {}
+[96.332795] (-) TimerEvent: {}
+[96.433905] (-) TimerEvent: {}
+[96.534833] (-) TimerEvent: {}
+[96.635531] (-) TimerEvent: {}
+[96.736206] (-) TimerEvent: {}
+[96.836844] (-) TimerEvent: {}
+[96.937491] (-) TimerEvent: {}
+[97.038159] (-) TimerEvent: {}
+[97.139211] (-) TimerEvent: {}
+[97.239927] (-) TimerEvent: {}
+[97.340583] (-) TimerEvent: {}
+[97.441235] (-) TimerEvent: {}
+[97.541911] (-) TimerEvent: {}
+[97.642587] (-) TimerEvent: {}
+[97.743232] (-) TimerEvent: {}
+[97.843886] (-) TimerEvent: {}
+[97.944548] (-) TimerEvent: {}
+[98.045238] (-) TimerEvent: {}
+[98.145928] (-) TimerEvent: {}
+[98.246612] (-) TimerEvent: {}
+[98.347273] (-) TimerEvent: {}
+[98.447960] (-) TimerEvent: {}
+[98.548618] (-) TimerEvent: {}
+[98.649270] (-) TimerEvent: {}
+[98.749956] (-) TimerEvent: {}
+[98.850748] (-) TimerEvent: {}
+[98.951440] (-) TimerEvent: {}
+[99.052205] (-) TimerEvent: {}
+[99.152899] (-) TimerEvent: {}
+[99.253942] (-) TimerEvent: {}
+[99.354646] (-) TimerEvent: {}
+[99.455361] (-) TimerEvent: {}
+[99.556066] (-) TimerEvent: {}
+[99.656769] (-) TimerEvent: {}
+[99.757570] (-) TimerEvent: {}
+[99.858388] (-) TimerEvent: {}
+[99.959129] (-) TimerEvent: {}
+[100.059823] (-) TimerEvent: {}
+[100.160684] (-) TimerEvent: {}
+[100.261383] (-) TimerEvent: {}
+[100.362163] (-) TimerEvent: {}
+[100.463018] (-) TimerEvent: {}
+[100.563706] (-) TimerEvent: {}
+[100.664461] (-) TimerEvent: {}
+[100.765141] (-) TimerEvent: {}
+[100.865805] (-) TimerEvent: {}
+[100.966508] (-) TimerEvent: {}
+[101.067212] (-) TimerEvent: {}
+[101.167942] (-) TimerEvent: {}
+[101.268631] (-) TimerEvent: {}
+[101.369316] (-) TimerEvent: {}
+[101.470003] (-) TimerEvent: {}
+[101.570672] (-) TimerEvent: {}
+[101.671374] (-) TimerEvent: {}
+[101.772060] (-) TimerEvent: {}
+[101.872802] (-) TimerEvent: {}
+[101.973460] (-) TimerEvent: {}
+[102.074117] (-) TimerEvent: {}
+[102.174849] (-) TimerEvent: {}
+[102.275623] (-) TimerEvent: {}
+[102.376327] (-) TimerEvent: {}
+[102.477051] (-) TimerEvent: {}
+[102.577724] (-) TimerEvent: {}
+[102.678391] (-) TimerEvent: {}
+[102.779051] (-) TimerEvent: {}
+[102.879708] (-) TimerEvent: {}
+[102.980406] (-) TimerEvent: {}
+[103.081058] (-) TimerEvent: {}
+[103.181710] (-) TimerEvent: {}
+[103.282381] (-) TimerEvent: {}
+[103.383037] (-) TimerEvent: {}
+[103.483700] (-) TimerEvent: {}
+[103.584399] (-) TimerEvent: {}
+[103.685067] (-) TimerEvent: {}
+[103.785745] (-) TimerEvent: {}
+[103.886404] (-) TimerEvent: {}
+[103.987054] (-) TimerEvent: {}
+[104.087722] (-) TimerEvent: {}
+[104.188498] (-) TimerEvent: {}
+[104.289214] (-) TimerEvent: {}
+[104.390004] (-) TimerEvent: {}
+[104.490665] (-) TimerEvent: {}
+[104.591354] (-) TimerEvent: {}
+[104.691980] (-) TimerEvent: {}
+[104.792638] (-) TimerEvent: {}
+[104.893474] (-) TimerEvent: {}
+[104.994149] (-) TimerEvent: {}
+[105.094846] (-) TimerEvent: {}
+[105.195820] (-) TimerEvent: {}
+[105.296800] (-) TimerEvent: {}
+[105.397438] (-) TimerEvent: {}
+[105.498105] (-) TimerEvent: {}
+[105.598807] (-) TimerEvent: {}
+[105.699484] (-) TimerEvent: {}
+[105.800155] (-) TimerEvent: {}
+[105.900826] (-) TimerEvent: {}
+[106.001479] (-) TimerEvent: {}
+[106.102172] (-) TimerEvent: {}
+[106.202860] (-) TimerEvent: {}
+[106.304266] (-) TimerEvent: {}
+[106.405117] (-) TimerEvent: {}
+[106.506179] (-) TimerEvent: {}
+[106.606867] (-) TimerEvent: {}
+[106.707502] (-) TimerEvent: {}
+[106.808339] (-) TimerEvent: {}
+[106.909116] (-) TimerEvent: {}
+[107.009786] (-) TimerEvent: {}
+[107.110469] (-) TimerEvent: {}
+[107.211156] (-) TimerEvent: {}
+[107.311838] (-) TimerEvent: {}
+[107.412545] (-) TimerEvent: {}
+[107.513704] (-) TimerEvent: {}
+[107.614626] (-) TimerEvent: {}
+[107.715594] (-) TimerEvent: {}
+[107.816577] (-) TimerEvent: {}
+[107.917527] (-) TimerEvent: {}
+[108.018214] (-) TimerEvent: {}
+[108.118884] (-) TimerEvent: {}
+[108.219539] (-) TimerEvent: {}
+[108.320269] (-) TimerEvent: {}
+[108.420955] (-) TimerEvent: {}
+[108.521673] (-) TimerEvent: {}
+[108.622364] (-) TimerEvent: {}
+[108.678039] (web_video_server) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o\x1b[0m\n'}
+[108.722550] (-) TimerEvent: {}
+[108.823256] (-) TimerEvent: {}
+[108.924030] (-) TimerEvent: {}
+[109.024739] (-) TimerEvent: {}
+[109.125437] (-) TimerEvent: {}
+[109.226126] (-) TimerEvent: {}
+[109.326805] (-) TimerEvent: {}
+[109.427479] (-) TimerEvent: {}
+[109.528168] (-) TimerEvent: {}
+[109.628834] (-) TimerEvent: {}
+[109.729496] (-) TimerEvent: {}
+[109.830188] (-) TimerEvent: {}
+[109.931009] (-) TimerEvent: {}
+[110.031994] (-) TimerEvent: {}
+[110.132803] (-) TimerEvent: {}
+[110.233593] (-) TimerEvent: {}
+[110.334275] (-) TimerEvent: {}
+[110.434957] (-) TimerEvent: {}
+[110.535661] (-) TimerEvent: {}
+[110.636479] (-) TimerEvent: {}
+[110.737182] (-) TimerEvent: {}
+[110.837898] (-) TimerEvent: {}
+[110.938681] (-) TimerEvent: {}
+[111.039308] (-) TimerEvent: {}
+[111.140045] (-) TimerEvent: {}
+[111.240856] (-) TimerEvent: {}
+[111.341505] (-) TimerEvent: {}
+[111.442173] (-) TimerEvent: {}
+[111.542858] (-) TimerEvent: {}
+[111.643565] (-) TimerEvent: {}
+[111.744641] (-) TimerEvent: {}
+[111.845343] (-) TimerEvent: {}
+[111.946055] (-) TimerEvent: {}
+[112.046786] (-) TimerEvent: {}
+[112.147541] (-) TimerEvent: {}
+[112.248269] (-) TimerEvent: {}
+[112.349060] (-) TimerEvent: {}
+[112.449775] (-) TimerEvent: {}
+[112.550578] (-) TimerEvent: {}
+[112.651281] (-) TimerEvent: {}
+[112.752009] (-) TimerEvent: {}
+[112.852783] (-) TimerEvent: {}
+[112.953446] (-) TimerEvent: {}
+[113.054117] (-) TimerEvent: {}
+[113.154795] (-) TimerEvent: {}
+[113.255595] (-) TimerEvent: {}
+[113.356309] (-) TimerEvent: {}
+[113.457003] (-) TimerEvent: {}
+[113.557803] (-) TimerEvent: {}
+[113.658477] (-) TimerEvent: {}
+[113.759183] (-) TimerEvent: {}
+[113.859905] (-) TimerEvent: {}
+[113.960578] (-) TimerEvent: {}
+[114.061240] (-) TimerEvent: {}
+[114.161896] (-) TimerEvent: {}
+[114.262592] (-) TimerEvent: {}
+[114.363233] (-) TimerEvent: {}
+[114.463947] (-) TimerEvent: {}
+[114.564632] (-) TimerEvent: {}
+[114.665329] (-) TimerEvent: {}
+[114.766015] (-) TimerEvent: {}
+[114.866707] (-) TimerEvent: {}
+[114.967388] (-) TimerEvent: {}
+[115.068504] (-) TimerEvent: {}
+[115.169601] (-) TimerEvent: {}
+[115.270311] (-) TimerEvent: {}
+[115.370987] (-) TimerEvent: {}
+[115.471695] (-) TimerEvent: {}
+[115.572391] (-) TimerEvent: {}
+[115.673085] (-) TimerEvent: {}
+[115.773741] (-) TimerEvent: {}
+[115.874441] (-) TimerEvent: {}
+[115.975122] (-) TimerEvent: {}
+[116.075787] (-) TimerEvent: {}
+[116.176585] (-) TimerEvent: {}
+[116.277241] (-) TimerEvent: {}
+[116.377909] (-) TimerEvent: {}
+[116.478587] (-) TimerEvent: {}
+[116.579268] (-) TimerEvent: {}
+[116.679975] (-) TimerEvent: {}
+[116.780643] (-) TimerEvent: {}
+[116.881305] (-) TimerEvent: {}
+[116.981971] (-) TimerEvent: {}
+[117.082700] (-) TimerEvent: {}
+[117.183475] (-) TimerEvent: {}
+[117.284335] (-) TimerEvent: {}
+[117.385015] (-) TimerEvent: {}
+[117.485691] (-) TimerEvent: {}
+[117.586374] (-) TimerEvent: {}
+[117.687094] (-) TimerEvent: {}
+[117.787760] (-) TimerEvent: {}
+[117.888499] (-) TimerEvent: {}
+[117.989159] (-) TimerEvent: {}
+[118.089829] (-) TimerEvent: {}
+[118.190520] (-) TimerEvent: {}
+[118.291197] (-) TimerEvent: {}
+[118.391912] (-) TimerEvent: {}
+[118.492749] (-) TimerEvent: {}
+[118.593445] (-) TimerEvent: {}
+[118.694129] (-) TimerEvent: {}
+[118.794813] (-) TimerEvent: {}
+[118.895510] (-) TimerEvent: {}
+[118.996243] (-) TimerEvent: {}
+[119.096951] (-) TimerEvent: {}
+[119.197656] (-) TimerEvent: {}
+[119.298564] (-) TimerEvent: {}
+[119.399559] (-) TimerEvent: {}
+[119.500323] (-) TimerEvent: {}
+[119.601286] (-) TimerEvent: {}
+[119.701984] (-) TimerEvent: {}
+[119.802708] (-) TimerEvent: {}
+[119.903475] (-) TimerEvent: {}
+[120.004159] (-) TimerEvent: {}
+[120.104813] (-) TimerEvent: {}
+[120.205481] (-) TimerEvent: {}
+[120.306160] (-) TimerEvent: {}
+[120.404961] (web_video_server) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable web_video_server\x1b[0m\n'}
+[120.406233] (-) TimerEvent: {}
+[120.506762] (-) TimerEvent: {}
+[120.607463] (-) TimerEvent: {}
+[120.708205] (-) TimerEvent: {}
+[120.808898] (-) TimerEvent: {}
+[120.909605] (-) TimerEvent: {}
+[121.010370] (-) TimerEvent: {}
+[121.111094] (-) TimerEvent: {}
+[121.196839] (web_video_server) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408\n'}
+[121.199527] (web_video_server) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408\n'}
+[121.203011] (web_video_server) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408\n'}
+[121.211180] (-) TimerEvent: {}
+[121.311751] (-) TimerEvent: {}
+[121.412456] (-) TimerEvent: {}
+[121.513138] (-) TimerEvent: {}
+[121.613931] (-) TimerEvent: {}
+[121.714598] (-) TimerEvent: {}
+[121.815286] (-) TimerEvent: {}
+[121.916034] (-) TimerEvent: {}
+[122.016709] (-) TimerEvent: {}
+[122.117499] (-) TimerEvent: {}
+[122.218371] (-) TimerEvent: {}
+[122.319088] (-) TimerEvent: {}
+[122.419878] (-) TimerEvent: {}
+[122.520612] (-) TimerEvent: {}
+[122.621404] (-) TimerEvent: {}
+[122.722071] (-) TimerEvent: {}
+[122.822771] (-) TimerEvent: {}
+[122.843713] (web_video_server) StdoutLine: {'line': b'[100%] Built target web_video_server\n'}
+[122.871007] (web_video_server) JobEnded: {'identifier': 'web_video_server', 'rc': 'SIGINT'}
+[122.883540] (usb_cam) JobSkipped: {'identifier': 'usb_cam'}
+[122.883800] (-) EventReactorShutdown: {}

@@ -1,0 +1,18 @@
+[0.016s] Invoking command in '/home/iclab/Desktop/humanoid/build/usb_cam': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/home/iclab/Desktop/humanoid/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/usb_cam -- -j6 -l6
+[0.331s] [ 14%] Built target gtest_main
+[0.365s] [ 28%] Built target gtest
+[0.376s] [ 42%] Built target usb_cam
+[0.429s] [ 57%] Built target usb_cam_node_exe
+[0.464s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[0.568s] [ 71%] Built target test_pixel_formats
+[0.605s] [ 85%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[0.612s] [ 92%] Built target test_usb_cam_utils
+[12.564s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’:
+[12.565s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:542:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass usb_cam::UsbCam[m[K’ has no member named ‘[01m[Kget_v4l_parameter[m[K’; did you mean ‘[01m[Kset_v4l_parameter[m[K’?
+[12.565s]   542 |       cached_wb_temp_ = m_camera->[01;31m[Kget_v4l_parameter[m[K("white_balance_temperature");
+[12.565s]       |                                   [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.565s]       |                                   [32m[Kset_v4l_parameter[m[K
+[25.740s] gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+[25.740s] gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+[25.744s] gmake: *** [Makefile:146: all] Error 2
+[25.747s] Invoked command in '/home/iclab/Desktop/humanoid/build/usb_cam' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/home/iclab/Desktop/humanoid/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/usb_cam -- -j6 -l6

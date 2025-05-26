@@ -1,0 +1,5 @@
+gmake[2]: Warning: File '/home/iclab/Desktop/humanoid/src/web_video_server/src/web_video_server.cpp' has modification time 1737344202 s in the future
+/usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+/usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+/usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.

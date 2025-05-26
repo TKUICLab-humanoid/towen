@@ -1,0 +1,15 @@
+[submodule "src/web_video_server"]
+	path = src/web_video_server
+	url = https://github.com/RobotWebTools/web_video_server.git
+[submodule "src/usb_cam"]
+	path = src/usb_cam
+	url = https://github.com/ros-drivers/usb_cam.git
+[submodule "src/motionpackage_submodule"]
+	path = src/motionpackage_submodule
+	url = https://github.com/TKUICLab-humanoid/motionpackage_submodule.git
+[submodule "src/tku_msgs_submodule"]
+	path = src/tku_msgs_submodule
+	url = https://github.com/TKUICLab-humanoid/tku_msgs_submodule.git
+[submodule "src/imageprocess_submodule"]
+	path = src/imageprocess_submodule
+	url = https://github.com/TKUICLab-humanoid/imageprocess_submodule.git

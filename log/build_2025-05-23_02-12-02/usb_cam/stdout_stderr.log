@@ -1,0 +1,25 @@
+[ 14%] Built target usb_cam
+[ 28%] Built target usb_cam_node_exe
+[ 42%] Built target gtest_main
+[ 57%] Built target gtest
+[35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[ 71%] Built target test_usb_cam_utils
+[ 85%] Built target test_pixel_formats
+[ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’:
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:542:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kusb_cam::UsbCam::set_v4l_parameter(const char [26])[m[K’
+  542 |       cached_auto_wb_temp_ = [01;31m[Km_camera->set_v4l_parameter("white_balance_temperature")[m[K;
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam_node.hpp:18[m[K,
+                 from [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:6[m[K:
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:225:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool usb_cam::UsbCam::set_v4l_parameter(const string&, int)[m[K’
+  225 |   bool [01;36m[Kset_v4l_parameter[m[K(const std::string & param, int value);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:225:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:226:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool usb_cam::UsbCam::set_v4l_parameter(const string&, const string&)[m[K’
+  226 |   bool [01;36m[Kset_v4l_parameter[m[K(const std::string & param, const std::string & value);
+      |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:226:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

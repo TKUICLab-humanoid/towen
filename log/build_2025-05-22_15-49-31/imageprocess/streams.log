@@ -1,0 +1,61 @@
+[3.054s] Invoking command in '/home/iclab/Desktop/humanoid/src/imageprocess': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /home/iclab/Desktop/humanoid/build/imageprocess/build install --record /home/iclab/Desktop/humanoid/build/imageprocess/install.log --single-version-externally-managed install_data
+[3.740s] running egg_info
+[3.741s] creating ../../build/imageprocess/imageprocess.egg-info
+[3.742s] writing ../../build/imageprocess/imageprocess.egg-info/PKG-INFO
+[3.743s] writing dependency_links to ../../build/imageprocess/imageprocess.egg-info/dependency_links.txt
+[3.743s] writing entry points to ../../build/imageprocess/imageprocess.egg-info/entry_points.txt
+[3.743s] writing requirements to ../../build/imageprocess/imageprocess.egg-info/requires.txt
+[3.743s] writing top-level names to ../../build/imageprocess/imageprocess.egg-info/top_level.txt
+[3.744s] writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[3.748s] reading manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[3.748s] adding license file 'LICENSE'
+[3.749s] writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[3.751s] running build
+[3.751s] running build_py
+[3.751s] creating /home/iclab/Desktop/humanoid/build/imageprocess/build
+[3.752s] creating /home/iclab/Desktop/humanoid/build/imageprocess/build/lib
+[3.752s] creating /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.752s] copying imageprocess/__init__.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.752s] copying imageprocess/image_test.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.752s] copying imageprocess/123123.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.753s] copying imageprocess/camera_segment_headless.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.753s] copying imageprocess/dataunit.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.757s] copying imageprocess/image_0417.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.757s] copying imageprocess/imageprocess.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.758s] copying imageprocess/image.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.758s] copying imageprocess/modelparameter.py -> /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess
+[3.758s] running install
+[3.759s] running install_lib
+[3.764s] creating /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.765s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/__init__.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.765s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/image_test.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.765s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/123123.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.766s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/camera_segment_headless.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.766s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/dataunit.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.767s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/image_0417.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.767s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/imageprocess.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.767s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/image.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.767s] copying /home/iclab/Desktop/humanoid/build/imageprocess/build/lib/imageprocess/modelparameter.py -> /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess
+[3.768s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/__init__.py to __init__.cpython-310.pyc
+[3.769s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/image_test.py to image_test.cpython-310.pyc
+[3.774s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/123123.py to 123123.cpython-310.pyc
+[3.776s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/camera_segment_headless.py to camera_segment_headless.cpython-310.pyc
+[3.777s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/dataunit.py to dataunit.cpython-310.pyc
+[3.778s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/image_0417.py to image_0417.cpython-310.pyc
+[3.781s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/imageprocess.py to imageprocess.cpython-310.pyc
+[3.785s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/image.py to image.cpython-310.pyc
+[3.788s] byte-compiling /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess/modelparameter.py to modelparameter.cpython-310.pyc
+[3.788s] running install_data
+[3.789s] creating /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index
+[3.789s] creating /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index/resource_index
+[3.789s] creating /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index/resource_index/packages
+[3.789s] copying resource/imageprocess -> /home/iclab/Desktop/humanoid/install/imageprocess/share/ament_index/resource_index/packages
+[3.790s] copying package.xml -> /home/iclab/Desktop/humanoid/install/imageprocess/share/imageprocess
+[3.790s] running install_egg_info
+[3.797s] Copying ../../build/imageprocess/imageprocess.egg-info to /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info
+[3.800s] running install_scripts
+[3.846s] Installing image script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+[3.847s] Installing image_test script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+[3.848s] Installing imageprocess script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+[3.851s] writing list of installed files to '/home/iclab/Desktop/humanoid/build/imageprocess/install.log'
+[3.932s] Invoked command in '/home/iclab/Desktop/humanoid/src/imageprocess' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /home/iclab/Desktop/humanoid/build/imageprocess/build install --record /home/iclab/Desktop/humanoid/build/imageprocess/install.log --single-version-externally-managed install_data

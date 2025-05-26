@@ -1,0 +1,44 @@
+[1.954s] Invoking command in '/home/iclab/Desktop/humanoid/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble /usr/bin/cmake /home/iclab/Desktop/humanoid/src/web_video_server -DCMAKE_INSTALL_PREFIX=/home/iclab/Desktop/humanoid/install/web_video_server
+[2.089s] -- The C compiler identification is GNU 11.4.0
+[2.347s] -- The CXX compiler identification is GNU 11.4.0
+[2.361s] -- Detecting C compiler ABI info
+[2.535s] -- Detecting C compiler ABI info - done
+[2.551s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.552s] -- Detecting C compile features
+[2.554s] -- Detecting C compile features - done
+[2.560s] -- Detecting CXX compiler ABI info
+[2.768s] -- Detecting CXX compiler ABI info - done
+[2.813s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.816s] -- Detecting CXX compile features
+[2.823s] -- Detecting CXX compile features - done
+[2.845s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[3.677s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.996s] -- Found async_web_server_cpp: 2.0.0 (/opt/ros/humble/share/async_web_server_cpp/cmake)
+[4.498s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.74.0") found components: filesystem regex thread 
+[4.507s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[4.591s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.600s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.616s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.639s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.671s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.812s] -- Found image_transport: 3.1.10 (/opt/ros/humble/share/image_transport/cmake)
+[4.943s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.951s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.202s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[5.264s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.352s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.375s] -- Found Threads: TRUE  
+[5.564s] -- Found OpenCV: /usr/local (found version "4.8.0") 
+[5.573s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread 
+[5.590s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[5.592s] -- Checking for module 'libavcodec'
+[5.638s] --   Found libavcodec, version 58.134.100
+[5.741s] -- Checking for module 'libavformat'
+[5.895s] --   Found libavformat, version 58.76.100
+[6.060s] -- Checking for module 'libavutil'
+[6.121s] --   Found libavutil, version 56.70.100
+[6.272s] -- Checking for module 'libswscale'
+[6.307s] --   Found libswscale, version 5.9.100
+[6.614s] -- Configuring done
+[6.659s] -- Generating done
+[6.676s] -- Build files have been written to: /home/iclab/Desktop/humanoid/build/web_video_server

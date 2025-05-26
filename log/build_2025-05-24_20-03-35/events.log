@@ -1,0 +1,458 @@
+[0.000000] (-) TimerEvent: {}
+[0.000754] (imageprocess) JobQueued: {'identifier': 'imageprocess', 'dependencies': OrderedDict()}
+[0.001490] (motionpackage) JobQueued: {'identifier': 'motionpackage', 'dependencies': OrderedDict()}
+[0.001799] (tku_msgs) JobQueued: {'identifier': 'tku_msgs', 'dependencies': OrderedDict()}
+[0.002127] (web_video_server) JobQueued: {'identifier': 'web_video_server', 'dependencies': OrderedDict()}
+[0.002255] (wula) JobQueued: {'identifier': 'wula', 'dependencies': OrderedDict()}
+[0.002352] (usb_cam) JobQueued: {'identifier': 'usb_cam', 'dependencies': OrderedDict([('tku_msgs', '/home/iclab/Desktop/humanoid/install/tku_msgs')])}
+[0.002456] (tku_msgs) JobStarted: {'identifier': 'tku_msgs'}
+[0.014359] (imageprocess) JobStarted: {'identifier': 'imageprocess'}
+[0.033466] (motionpackage) JobStarted: {'identifier': 'motionpackage'}
+[0.040656] (web_video_server) JobStarted: {'identifier': 'web_video_server'}
+[0.050705] (wula) JobStarted: {'identifier': 'wula'}
+[0.073985] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'cmake'}
+[0.075423] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'build'}
+[0.076710] (tku_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/humanoid/build/tku_msgs', '--', '-j6', '-l6'], 'cwd': '/home/iclab/Desktop/humanoid/build/tku_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,4968,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'iclab'), ('SSH_CLIENT', '172.17.121.11 49072 22'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/humanoid/install/usb_cam/lib:/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iclab'), ('BYOBU_TIME', '%H:%M:%S'), ('TERM_PROGRAM_VERSION', '3.2a'), ('NVM_BIN', '/home/iclab/.nvm/versions/node/v22.13.0/bin'), ('SSH_TTY', '/dev/pts/0'), ('NVM_INC', '/home/iclab/.nvm/versions/node/v22.13.0/include/node'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('BYOBU_PREFIX', '/usr'), ('LC_MONETARY', 'lzh_TW'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/iclab/.nvm'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('BYOBU_ACCENT', '#75507B'), ('JETSON_SERIAL_NUMBER', '1422023035152'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'lzh_TW'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'lzh_TW'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('BYOBU_DATE', '%Y-%m-%d'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/iclab/.byobu'), ('LC_MEASUREMENT', 'lzh_TW'), ('BYOBU_PAGER', 'sensible-pager'), ('LC_IDENTIFICATION', 'lzh_TW'), ('BYOBU_DARK', '#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-iclab-ifoHOs09'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/iclab/Desktop/humanoid/build/tku_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.17.121.11 38570 172.17.121.10 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005'), ('BYOBU_TTY', '/dev/pts/0')]), 'shell': False}
+[0.099165] (-) TimerEvent: {}
+[0.199845] (-) TimerEvent: {}
+[0.300746] (-) TimerEvent: {}
+[0.401451] (-) TimerEvent: {}
+[0.502123] (-) TimerEvent: {}
+[0.602743] (-) TimerEvent: {}
+[0.703415] (-) TimerEvent: {}
+[0.804117] (-) TimerEvent: {}
+[0.904802] (-) TimerEvent: {}
+[1.005461] (-) TimerEvent: {}
+[1.106110] (-) TimerEvent: {}
+[1.206808] (-) TimerEvent: {}
+[1.307480] (-) TimerEvent: {}
+[1.401533] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'cmake'}
+[1.403912] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'build'}
+[1.404812] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/iclab/Desktop/humanoid/build/web_video_server', '--', '-j6', '-l6'], 'cwd': '/home/iclab/Desktop/humanoid/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,4968,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'iclab'), ('SSH_CLIENT', '172.17.121.11 49072 22'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/humanoid/install/usb_cam/lib:/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iclab'), ('BYOBU_TIME', '%H:%M:%S'), ('TERM_PROGRAM_VERSION', '3.2a'), ('NVM_BIN', '/home/iclab/.nvm/versions/node/v22.13.0/bin'), ('SSH_TTY', '/dev/pts/0'), ('NVM_INC', '/home/iclab/.nvm/versions/node/v22.13.0/include/node'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('BYOBU_PREFIX', '/usr'), ('LC_MONETARY', 'lzh_TW'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/iclab/.nvm'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('BYOBU_ACCENT', '#75507B'), ('JETSON_SERIAL_NUMBER', '1422023035152'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'lzh_TW'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'lzh_TW'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('BYOBU_DATE', '%Y-%m-%d'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/iclab/.byobu'), ('LC_MEASUREMENT', 'lzh_TW'), ('BYOBU_PAGER', 'sensible-pager'), ('LC_IDENTIFICATION', 'lzh_TW'), ('BYOBU_DARK', '#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-iclab-ifoHOs09'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/iclab/Desktop/humanoid/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.17.121.11 38570 172.17.121.10 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005'), ('BYOBU_TTY', '/dev/pts/0')]), 'shell': False}
+[1.408568] (-) TimerEvent: {}
+[1.412002] (tku_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.412894] (tku_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[1.413404] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.413578] (tku_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.413720] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.413856] (tku_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[1.508767] (-) TimerEvent: {}
+[1.609505] (-) TimerEvent: {}
+[1.669530] (web_video_server) StdoutLine: {'line': b'[100%] Built target web_video_server\n'}
+[1.709652] (-) TimerEvent: {}
+[1.810884] (-) TimerEvent: {}
+[1.897685] (tku_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.910963] (-) TimerEvent: {}
+[2.011541] (-) TimerEvent: {}
+[2.112343] (-) TimerEvent: {}
+[2.116672] (web_video_server) CommandEnded: {'returncode': 0}
+[2.118084] (web_video_server) JobProgress: {'identifier': 'web_video_server', 'progress': 'install'}
+[2.153444] (web_video_server) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/iclab/Desktop/humanoid/build/web_video_server'], 'cwd': '/home/iclab/Desktop/humanoid/build/web_video_server', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('TMUX', '/tmp/tmux-1000/default,4968,1'), ('BYOBU_SED', 'sed'), ('BYOBU_LIGHT', '#EEEEEE'), ('BYOBU_EDITOR', 'sensible-editor'), ('USER', 'iclab'), ('SSH_CLIENT', '172.17.121.11 49072 22'), ('LC_TIME', 'lzh_TW'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/iclab/Desktop/humanoid/install/usb_cam/lib:/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/iclab'), ('BYOBU_TIME', '%H:%M:%S'), ('TERM_PROGRAM_VERSION', '3.2a'), ('NVM_BIN', '/home/iclab/.nvm/versions/node/v22.13.0/bin'), ('SSH_TTY', '/dev/pts/0'), ('NVM_INC', '/home/iclab/.nvm/versions/node/v22.13.0/include/node'), ('JETSON_L4T', '36.4.3'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super'), ('BYOBU_PREFIX', '/usr'), ('LC_MONETARY', 'lzh_TW'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('NVM_DIR', '/home/iclab/.nvm'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'iclab'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '#DD4814'), ('JETSON_MODULE', 'NVIDIA Jetson Orin Nano (Developer kit)'), ('BYOBU_ACCENT', '#75507B'), ('JETSON_SERIAL_NUMBER', '1422023035152'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'screen-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'lzh_TW'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'lzh_TW'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra234'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'lzh_TW'), ('BYOBU_DATE', '%Y-%m-%d'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/iclab/.byobu'), ('LC_MEASUREMENT', 'lzh_TW'), ('BYOBU_PAGER', 'sensible-pager'), ('LC_IDENTIFICATION', 'lzh_TW'), ('BYOBU_DARK', '#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu-iclab-ifoHOs09'), ('JETSON_CUDA_ARCH_BIN', '8.7'), ('PWD', '/home/iclab/Desktop/humanoid/build/web_video_server'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.17.121.11 38570 172.17.121.10 22'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'lzh_TW'), ('LC_PAPER', 'lzh_TW'), ('COLCON', '1'), ('TMUX_PANE', '%4'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3767-0005'), ('BYOBU_TTY', '/dev/pts/0')]), 'shell': False}
+[2.178563] (web_video_server) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.179113] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/lib/web_video_server/web_video_server\n'}
+[2.179384] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server\n'}
+[2.179679] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/multipart_stream.h\n'}
+[2.179858] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/h264_streamer.h\n'}
+[2.180010] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/libav_streamer.h\n'}
+[2.180154] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/web_video_server.h\n'}
+[2.180394] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/ros_compressed_streamer.h\n'}
+[2.180565] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/png_streamers.h\n'}
+[2.180706] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/vp8_streamer.h\n'}
+[2.180845] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/vp9_streamer.h\n'}
+[2.180980] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/jpeg_streamers.h\n'}
+[2.181135] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/include/web_video_server/image_streamer.h\n'}
+[2.181290] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server\n'}
+[2.181425] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server\n'}
+[2.181553] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh\n'}
+[2.181791] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv\n'}
+[2.181949] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/environment/path.sh\n'}
+[2.182082] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/environment/path.dsv\n'}
+[2.182206] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/local_setup.bash\n'}
+[2.182331] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/local_setup.sh\n'}
+[2.182456] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/local_setup.zsh\n'}
+[2.182581] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/local_setup.dsv\n'}
+[2.191022] (web_video_server) StdoutLine: {'line': b'-- Installing: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/package.dsv\n'}
+[2.191681] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/ament_index/resource_index/packages/web_video_server\n'}
+[2.193047] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake\n'}
+[2.193440] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake\n'}
+[2.193623] (web_video_server) StdoutLine: {'line': b'-- Up-to-date: /home/iclab/Desktop/humanoid/install/web_video_server/share/web_video_server/package.xml\n'}
+[2.201339] (web_video_server) CommandEnded: {'returncode': 0}
+[2.212711] (-) TimerEvent: {}
+[2.241222] (web_video_server) JobEnded: {'identifier': 'web_video_server', 'rc': 0}
+[2.312886] (-) TimerEvent: {}
+[2.413599] (-) TimerEvent: {}
+[2.511456] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.513684] (-) TimerEvent: {}
+[2.614199] (-) TimerEvent: {}
+[2.714949] (-) TimerEvent: {}
+[2.816053] (-) TimerEvent: {}
+[2.917480] (-) TimerEvent: {}
+[3.018307] (-) TimerEvent: {}
+[3.097430] (imageprocess) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/imageprocess', 'build', '--build-base', '/home/iclab/Desktop/humanoid/build/imageprocess/build', 'install', '--record', '/home/iclab/Desktop/humanoid/build/imageprocess/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/iclab/Desktop/humanoid/src/imageprocess', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,4968,1', 'BYOBU_SED': 'sed', 'BYOBU_LIGHT': '#EEEEEE', 'BYOBU_EDITOR': 'sensible-editor', 'USER': 'iclab', 'SSH_CLIENT': '172.17.121.11 49072 22', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/iclab/Desktop/humanoid/install/usb_cam/lib:/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/iclab', 'BYOBU_TIME': '%H:%M:%S', 'TERM_PROGRAM_VERSION': '3.2a', 'NVM_BIN': '/home/iclab/.nvm/versions/node/v22.13.0/bin', 'SSH_TTY': '/dev/pts/0', 'NVM_INC': '/home/iclab/.nvm/versions/node/v22.13.0/include/node', 'JETSON_L4T': '36.4.3', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'BYOBU_PREFIX': '/usr', 'LC_MONETARY': 'lzh_TW', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'NVM_DIR': '/home/iclab/.nvm', 'BYOBU_WINDOW_NAME': '-', 'COLCON_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'iclab', 'BYOBU_TERM': 'screen-256color', 'BYOBU_ULIMIT': 'ulimit', 'BYOBU_HIGHLIGHT': '#DD4814', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (Developer kit)', 'BYOBU_ACCENT': '#75507B', 'JETSON_SERIAL_NUMBER': '1422023035152', 'BYOBU_CHARMAP': 'UTF-8', 'BYOBU_READLINK': 'readlink', 'BYOBU_DISTRO': 'Ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'lzh_TW', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'lzh_TW', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'BYOBU_DATE': '%Y-%m-%d', 'BYOBU_PYTHON': 'python3', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'BYOBU_CONFIG_DIR': '/home/iclab/.byobu', 'LC_MEASUREMENT': 'lzh_TW', 'BYOBU_PAGER': 'sensible-pager', 'LC_IDENTIFICATION': 'lzh_TW', 'BYOBU_DARK': '#333333', 'BYOBU_RUN_DIR': '/dev/shm/byobu-iclab-ifoHOs09', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/iclab/Desktop/humanoid/build/imageprocess', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.17.121.11 38570 172.17.121.10 22', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'BYOBU_BACKEND': 'tmux', 'PYTHONPATH': '/home/iclab/Desktop/humanoid/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'TMUX_PANE': '%4', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs', 'JETSON_P_NUMBER': 'p3767-0005', 'BYOBU_TTY': '/dev/pts/0'}, 'shell': False}
+[3.118436] (-) TimerEvent: {}
+[3.219173] (-) TimerEvent: {}
+[3.228793] (wula) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/wula', 'build', '--build-base', '/home/iclab/Desktop/humanoid/build/wula/build', 'install', '--record', '/home/iclab/Desktop/humanoid/build/wula/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/iclab/Desktop/humanoid/src/wula', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,4968,1', 'BYOBU_SED': 'sed', 'BYOBU_LIGHT': '#EEEEEE', 'BYOBU_EDITOR': 'sensible-editor', 'USER': 'iclab', 'SSH_CLIENT': '172.17.121.11 49072 22', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/iclab/Desktop/humanoid/install/usb_cam/lib:/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/iclab', 'BYOBU_TIME': '%H:%M:%S', 'TERM_PROGRAM_VERSION': '3.2a', 'NVM_BIN': '/home/iclab/.nvm/versions/node/v22.13.0/bin', 'SSH_TTY': '/dev/pts/0', 'NVM_INC': '/home/iclab/.nvm/versions/node/v22.13.0/include/node', 'JETSON_L4T': '36.4.3', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'BYOBU_PREFIX': '/usr', 'LC_MONETARY': 'lzh_TW', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'NVM_DIR': '/home/iclab/.nvm', 'BYOBU_WINDOW_NAME': '-', 'COLCON_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'iclab', 'BYOBU_TERM': 'screen-256color', 'BYOBU_ULIMIT': 'ulimit', 'BYOBU_HIGHLIGHT': '#DD4814', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (Developer kit)', 'BYOBU_ACCENT': '#75507B', 'JETSON_SERIAL_NUMBER': '1422023035152', 'BYOBU_CHARMAP': 'UTF-8', 'BYOBU_READLINK': 'readlink', 'BYOBU_DISTRO': 'Ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'lzh_TW', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'lzh_TW', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'BYOBU_DATE': '%Y-%m-%d', 'BYOBU_PYTHON': 'python3', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'BYOBU_CONFIG_DIR': '/home/iclab/.byobu', 'LC_MEASUREMENT': 'lzh_TW', 'BYOBU_PAGER': 'sensible-pager', 'LC_IDENTIFICATION': 'lzh_TW', 'BYOBU_DARK': '#333333', 'BYOBU_RUN_DIR': '/dev/shm/byobu-iclab-ifoHOs09', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/iclab/Desktop/humanoid/build/wula', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.17.121.11 38570 172.17.121.10 22', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'BYOBU_BACKEND': 'tmux', 'PYTHONPATH': '/home/iclab/Desktop/humanoid/build/wula/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'TMUX_PANE': '%4', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs', 'JETSON_P_NUMBER': 'p3767-0005', 'BYOBU_TTY': '/dev/pts/0'}, 'shell': False}
+[3.240456] (motionpackage) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/motionpackage', 'build', '--build-base', '/home/iclab/Desktop/humanoid/build/motionpackage/build', 'install', '--record', '/home/iclab/Desktop/humanoid/build/motionpackage/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/iclab/Desktop/humanoid/src/motionpackage', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,4968,1', 'BYOBU_SED': 'sed', 'BYOBU_LIGHT': '#EEEEEE', 'BYOBU_EDITOR': 'sensible-editor', 'USER': 'iclab', 'SSH_CLIENT': '172.17.121.11 49072 22', 'LC_TIME': 'lzh_TW', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/iclab/Desktop/humanoid/install/usb_cam/lib:/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64:', 'MOTD_SHOWN': 'pam', 'HOME': '/home/iclab', 'BYOBU_TIME': '%H:%M:%S', 'TERM_PROGRAM_VERSION': '3.2a', 'NVM_BIN': '/home/iclab/.nvm/versions/node/v22.13.0/bin', 'SSH_TTY': '/dev/pts/0', 'NVM_INC': '/home/iclab/.nvm/versions/node/v22.13.0/include/node', 'JETSON_L4T': '36.4.3', 'ROS_PYTHON_VERSION': '3', 'JETSON_MODEL': 'NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super', 'BYOBU_PREFIX': '/usr', 'LC_MONETARY': 'lzh_TW', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'NVM_DIR': '/home/iclab/.nvm', 'BYOBU_WINDOW_NAME': '-', 'COLCON_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'iclab', 'BYOBU_TERM': 'screen-256color', 'BYOBU_ULIMIT': 'ulimit', 'BYOBU_HIGHLIGHT': '#DD4814', 'JETSON_MODULE': 'NVIDIA Jetson Orin Nano (Developer kit)', 'BYOBU_ACCENT': '#75507B', 'JETSON_SERIAL_NUMBER': '1422023035152', 'BYOBU_CHARMAP': 'UTF-8', 'BYOBU_READLINK': 'readlink', 'BYOBU_DISTRO': 'Ubuntu', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/local/cuda-12.6/bin:/home/iclab/.local/bin:/home/iclab/.nvm/versions/node/v22.13.0/bin:/opt/ros/humble/bin:/usr/local/cuda-12.6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'LC_ADDRESS': 'lzh_TW', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LC_TELEPHONE': 'lzh_TW', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JETSON_SOC': 'tegra234', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'lzh_TW', 'BYOBU_DATE': '%Y-%m-%d', 'BYOBU_PYTHON': 'python3', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'BYOBU_CONFIG_DIR': '/home/iclab/.byobu', 'LC_MEASUREMENT': 'lzh_TW', 'BYOBU_PAGER': 'sensible-pager', 'LC_IDENTIFICATION': 'lzh_TW', 'BYOBU_DARK': '#333333', 'BYOBU_RUN_DIR': '/dev/shm/byobu-iclab-ifoHOs09', 'JETSON_CUDA_ARCH_BIN': '8.7', 'PWD': '/home/iclab/Desktop/humanoid/build/motionpackage', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.17.121.11 38570 172.17.121.10 22', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'BYOBU_BACKEND': 'tmux', 'PYTHONPATH': '/home/iclab/Desktop/humanoid/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'lzh_TW', 'LC_PAPER': 'lzh_TW', 'COLCON': '1', 'TMUX_PANE': '%4', 'JETSON_JETPACK': '', 'CMAKE_PREFIX_PATH': '/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/tku_msgs', 'JETSON_P_NUMBER': 'p3767-0005', 'BYOBU_TTY': '/dev/pts/0'}, 'shell': False}
+[3.319334] (-) TimerEvent: {}
+[3.327100] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.399706] (tku_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[3.419512] (-) TimerEvent: {}
+[3.460741] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[3.461277] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[3.461464] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[3.519670] (-) TimerEvent: {}
+[3.540792] (tku_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[3.595362] (tku_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.599582] (tku_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.604871] (tku_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.619826] (-) TimerEvent: {}
+[3.720638] (-) TimerEvent: {}
+[3.761185] (imageprocess) StdoutLine: {'line': b'running egg_info\n'}
+[3.762933] (imageprocess) StdoutLine: {'line': b'writing ../../build/imageprocess/imageprocess.egg-info/PKG-INFO\n'}
+[3.763576] (imageprocess) StdoutLine: {'line': b'writing dependency_links to ../../build/imageprocess/imageprocess.egg-info/dependency_links.txt\n'}
+[3.764289] (imageprocess) StdoutLine: {'line': b'writing entry points to ../../build/imageprocess/imageprocess.egg-info/entry_points.txt\n'}
+[3.764607] (imageprocess) StdoutLine: {'line': b'writing requirements to ../../build/imageprocess/imageprocess.egg-info/requires.txt\n'}
+[3.764771] (imageprocess) StdoutLine: {'line': b'writing top-level names to ../../build/imageprocess/imageprocess.egg-info/top_level.txt\n'}
+[3.768628] (imageprocess) StdoutLine: {'line': b"reading manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'\n"}
+[3.769215] (imageprocess) StdoutLine: {'line': b"adding license file 'LICENSE'\n"}
+[3.770537] (imageprocess) StdoutLine: {'line': b"writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'\n"}
+[3.770996] (imageprocess) StdoutLine: {'line': b'running build\n'}
+[3.771274] (imageprocess) StdoutLine: {'line': b'running build_py\n'}
+[3.772328] (imageprocess) StdoutLine: {'line': b'running install\n'}
+[3.772966] (imageprocess) StdoutLine: {'line': b'running install_lib\n'}
+[3.776876] (imageprocess) StdoutLine: {'line': b'running install_data\n'}
+[3.780366] (imageprocess) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.782122] (imageprocess) StdoutLine: {'line': b"removing '/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.782391] (imageprocess) StdoutLine: {'line': b'Copying ../../build/imageprocess/imageprocess.egg-info to /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info\n'}
+[3.785543] (imageprocess) StdoutLine: {'line': b'running install_scripts\n'}
+[3.820780] (-) TimerEvent: {}
+[3.832036] (imageprocess) StdoutLine: {'line': b'Installing image script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess\n'}
+[3.833072] (imageprocess) StdoutLine: {'line': b'Installing image_test script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess\n'}
+[3.833354] (imageprocess) StdoutLine: {'line': b'Installing imageprocess script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess\n'}
+[3.833850] (imageprocess) StdoutLine: {'line': b"writing list of installed files to '/home/iclab/Desktop/humanoid/build/imageprocess/install.log'\n"}
+[3.848886] (tku_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[3.886365] (motionpackage) StdoutLine: {'line': b'running egg_info\n'}
+[3.888269] (motionpackage) StdoutLine: {'line': b'writing ../../build/motionpackage/motionpackage.egg-info/PKG-INFO\n'}
+[3.889241] (motionpackage) StdoutLine: {'line': b'writing dependency_links to ../../build/motionpackage/motionpackage.egg-info/dependency_links.txt\n'}
+[3.889665] (motionpackage) StdoutLine: {'line': b'writing entry points to ../../build/motionpackage/motionpackage.egg-info/entry_points.txt\n'}
+[3.889986] (motionpackage) StdoutLine: {'line': b'writing requirements to ../../build/motionpackage/motionpackage.egg-info/requires.txt\n'}
+[3.890156] (motionpackage) StdoutLine: {'line': b'writing top-level names to ../../build/motionpackage/motionpackage.egg-info/top_level.txt\n'}
+[3.893582] (tku_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/iclab/Desktop/humanoid/build/tku_msgs\n'}
+[3.897088] (motionpackage) StdoutLine: {'line': b"reading manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'\n"}
+[3.899469] (motionpackage) StdoutLine: {'line': b"writing manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'\n"}
+[3.900058] (motionpackage) StdoutLine: {'line': b'running build\n'}
+[3.900231] (motionpackage) StdoutLine: {'line': b'running build_py\n'}
+[3.900545] (motionpackage) StdoutLine: {'line': b'copying motionpackage/motionpackage.py -> /home/iclab/Desktop/humanoid/build/motionpackage/build/lib/motionpackage\n'}
+[3.901617] (motionpackage) StdoutLine: {'line': b'running install\n'}
+[3.902441] (motionpackage) StdoutLine: {'line': b'running install_lib\n'}
+[3.906849] (motionpackage) StdoutLine: {'line': b'copying /home/iclab/Desktop/humanoid/build/motionpackage/build/lib/motionpackage/motionpackage.py -> /home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages/motionpackage\n'}
+[3.908954] (motionpackage) StdoutLine: {'line': b'byte-compiling /home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages/motionpackage/motionpackage.py to motionpackage.cpython-310.pyc\n'}
+[3.919481] (imageprocess) CommandEnded: {'returncode': 0}
+[3.921281] (-) TimerEvent: {}
+[3.923549] (motionpackage) StdoutLine: {'line': b'running install_data\n'}
+[3.923829] (motionpackage) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.929068] (motionpackage) StdoutLine: {'line': b"removing '/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[3.929538] (wula) StdoutLine: {'line': b'running egg_info\n'}
+[3.931661] (wula) StdoutLine: {'line': b'writing ../../build/wula/wula.egg-info/PKG-INFO\n'}
+[3.932463] (wula) StdoutLine: {'line': b'writing dependency_links to ../../build/wula/wula.egg-info/dependency_links.txt\n'}
+[3.937447] (motionpackage) StdoutLine: {'line': b'Copying ../../build/motionpackage/motionpackage.egg-info to /home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info\n'}
+[3.937677] (wula) StdoutLine: {'line': b'writing entry points to ../../build/wula/wula.egg-info/entry_points.txt\n'}
+[3.937831] (wula) StdoutLine: {'line': b'writing requirements to ../../build/wula/wula.egg-info/requires.txt\n'}
+[3.937969] (motionpackage) StdoutLine: {'line': b'running install_scripts\n'}
+[3.938103] (wula) StdoutLine: {'line': b'writing top-level names to ../../build/wula/wula.egg-info/top_level.txt\n'}
+[3.938814] (wula) StdoutLine: {'line': b"reading manifest file '../../build/wula/wula.egg-info/SOURCES.txt'\n"}
+[3.940248] (imageprocess) JobEnded: {'identifier': 'imageprocess', 'rc': 0}
+[3.941037] (wula) StdoutLine: {'line': b"writing manifest file '../../build/wula/wula.egg-info/SOURCES.txt'\n"}
+[3.941443] (wula) StdoutLine: {'line': b'running build\n'}
+[3.941608] (wula) StdoutLine: {'line': b'running build_py\n'}
+[3.942368] (wula) StdoutLine: {'line': b'copying wula/sp/API.py -> /home/iclab/Desktop/humanoid/build/wula/build/lib/wula/sp\n'}
+[3.945011] (wula) StdoutLine: {'line': b'running install\n'}
+[3.946868] (wula) StdoutLine: {'line': b'running install_lib\n'}
+[3.956780] (wula) StdoutLine: {'line': b'copying /home/iclab/Desktop/humanoid/build/wula/build/lib/wula/sp/API.py -> /home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula/sp\n'}
+[3.959404] (wula) StdoutLine: {'line': b'byte-compiling /home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula/sp/API.py to API.cpython-310.pyc\n'}
+[3.962386] (wula) StdoutLine: {'line': b'running install_data\n'}
+[3.962848] (wula) StdoutLine: {'line': b'running install_egg_info\n'}
+[3.967427] (wula) StdoutLine: {'line': b"removing '/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula-0.1.0-py3.10.egg-info' (and everything under it)\n"}
+[3.968097] (wula) StdoutLine: {'line': b'Copying ../../build/wula/wula.egg-info to /home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula-0.1.0-py3.10.egg-info\n'}
+[3.970273] (wula) StdoutLine: {'line': b'running install_scripts\n'}
+[3.983107] (motionpackage) StdoutLine: {'line': b'Installing motionpackage script to /home/iclab/Desktop/humanoid/install/motionpackage/lib/motionpackage\n'}
+[3.984312] (motionpackage) StdoutLine: {'line': b"writing list of installed files to '/home/iclab/Desktop/humanoid/build/motionpackage/install.log'\n"}
+[3.993851] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[4.021460] (-) TimerEvent: {}
+[4.036056] (wula) StdoutLine: {'line': b'Installing sp_boson script to /home/iclab/Desktop/humanoid/install/wula/lib/wula\n'}
+[4.038185] (wula) StdoutLine: {'line': b"writing list of installed files to '/home/iclab/Desktop/humanoid/build/wula/install.log'\n"}
+[4.091663] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.105407] (motionpackage) CommandEnded: {'returncode': 0}
+[4.106605] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_tku_msgs\n'}
+[4.121671] (-) TimerEvent: {}
+[4.130341] (motionpackage) JobEnded: {'identifier': 'motionpackage', 'rc': 0}
+[4.170338] (wula) CommandEnded: {'returncode': 0}
+[4.195784] (wula) JobEnded: {'identifier': 'wula', 'rc': 0}
+[4.221829] (-) TimerEvent: {}
+[4.322657] (-) TimerEvent: {}
+[4.423270] (-) TimerEvent: {}
+[4.523924] (-) TimerEvent: {}
+[4.624573] (-) TimerEvent: {}
+[4.725186] (-) TimerEvent: {}
+[4.742619] (tku_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[4.745644] (tku_msgs) StdoutLine: {'line': b'writing tku_msgs.egg-info/PKG-INFO\n'}
+[4.746006] (tku_msgs) StdoutLine: {'line': b'writing dependency_links to tku_msgs.egg-info/dependency_links.txt\n'}
+[4.746164] (tku_msgs) StdoutLine: {'line': b'writing top-level names to tku_msgs.egg-info/top_level.txt\n'}
+[4.756834] (tku_msgs) StdoutLine: {'line': b"reading manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[4.758942] (tku_msgs) StdoutLine: {'line': b"writing manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[4.825333] (-) TimerEvent: {}
+[4.851733] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_tku_msgs_egg\n'}
+[4.925512] (-) TimerEvent: {}
+[5.026101] (-) TimerEvent: {}
+[5.126762] (-) TimerEvent: {}
+[5.227369] (-) TimerEvent: {}
+[5.328019] (-) TimerEvent: {}
+[5.428699] (-) TimerEvent: {}
+[5.529332] (-) TimerEvent: {}
+[5.629913] (-) TimerEvent: {}
+[5.730575] (-) TimerEvent: {}
+[5.831214] (-) TimerEvent: {}
+[5.931827] (-) TimerEvent: {}
+[6.032380] (-) TimerEvent: {}
+[6.133076] (-) TimerEvent: {}
+[6.233726] (-) TimerEvent: {}
+[6.334364] (-) TimerEvent: {}
+[6.435016] (-) TimerEvent: {}
+[6.535675] (-) TimerEvent: {}
+[6.636382] (-) TimerEvent: {}
+[6.737563] (-) TimerEvent: {}
+[6.838839] (-) TimerEvent: {}
+[6.941389] (-) TimerEvent: {}
+[7.042311] (-) TimerEvent: {}
+[7.161274] (-) TimerEvent: {}
+[7.262053] (-) TimerEvent: {}
+[7.362698] (-) TimerEvent: {}
+[7.463269] (-) TimerEvent: {}
+[7.563897] (-) TimerEvent: {}
+[7.664504] (-) TimerEvent: {}
+[7.765275] (-) TimerEvent: {}
+[7.866476] (-) TimerEvent: {}
+[7.967099] (-) TimerEvent: {}
+[8.069808] (-) TimerEvent: {}
+[8.170641] (-) TimerEvent: {}
+[8.275019] (-) TimerEvent: {}
+[8.375656] (-) TimerEvent: {}
+[8.476723] (-) TimerEvent: {}
+[8.577411] (-) TimerEvent: {}
+[8.678120] (-) TimerEvent: {}
+[8.779003] (-) TimerEvent: {}
+[8.879651] (-) TimerEvent: {}
+[8.980304] (-) TimerEvent: {}
+[9.080962] (-) TimerEvent: {}
+[9.182208] (-) TimerEvent: {}
+[9.282915] (-) TimerEvent: {}
+[9.384066] (-) TimerEvent: {}
+[9.484766] (-) TimerEvent: {}
+[9.585677] (-) TimerEvent: {}
+[9.686336] (-) TimerEvent: {}
+[9.786999] (-) TimerEvent: {}
+[9.887683] (-) TimerEvent: {}
+[9.956866] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_generator_c\x1b[0m\n'}
+[9.987842] (-) TimerEvent: {}
+[10.026102] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/button_color_form__functions.c.o\x1b[0m\n'}
+[10.078165] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_array__functions.c.o\x1b[0m\n'}
+[10.088005] (-) TimerEvent: {}
+[10.096068] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_data__functions.c.o\x1b[0m\n'}
+[10.134425] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/draw_image__functions.c.o\x1b[0m\n'}
+[10.156795] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/hsv_value__functions.c.o\x1b[0m\n'}
+[10.188201] (-) TimerEvent: {}
+[10.282782] (tku_msgs) StdoutLine: {'line': b'[  2%] Built target tku_msgs__cpp\n'}
+[10.288366] (-) TimerEvent: {}
+[10.316970] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.383659] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/object_list__functions.c.o\x1b[0m\n'}
+[10.386819] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__functions.c.o\x1b[0m\n'}
+[10.387287] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.388452] (-) TimerEvent: {}
+[10.390015] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera__functions.c.o\x1b[0m\n'}
+[10.408478] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera_save__functions.c.o\x1b[0m\n'}
+[10.488647] (-) TimerEvent: {}
+[10.535179] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/location__functions.c.o\x1b[0m\n'}
+[10.578249] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.c.o\x1b[0m\n'}
+[10.578896] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parameter__functions.c.o\x1b[0m\n'}
+[10.588796] (-) TimerEvent: {}
+[10.590562] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface__functions.c.o\x1b[0m\n'}
+[10.633215] (tku_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.h:19\x1b[m\x1b[K,\n'}
+[10.633986] (tku_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.c:4\x1b[m\x1b[K:\n'}
+[10.634300] (tku_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_generator_c/tku_msgs/msg/detail/dio__struct.h:22:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktku_msgs/msg/detail/int16__struct.h: No such file or directory\n'}
+[10.634596] (tku_msgs) StderrLine: {'line': b'   22 | #include \x1b[01;31m\x1b[K"tku_msgs/msg/detail/int16__struct.h"\x1b[m\x1b[K\n'}
+[10.634890] (tku_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[10.635182] (tku_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[10.638385] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tku_msgs__rosidl_generator_c.dir/build.make:805: CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.c.o] Error 1\n'}
+[10.639343] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[10.688996] (-) TimerEvent: {}
+[10.706922] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.726082] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:213: CMakeFiles/tku_msgs__rosidl_generator_c.dir/all] Error 2\n'}
+[10.726602] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[10.789166] (-) TimerEvent: {}
+[10.889773] (-) TimerEvent: {}
+[10.990395] (-) TimerEvent: {}
+[11.091019] (-) TimerEvent: {}
+[11.191663] (-) TimerEvent: {}
+[11.292642] (-) TimerEvent: {}
+[11.393303] (-) TimerEvent: {}
+[11.493967] (-) TimerEvent: {}
+[11.594695] (-) TimerEvent: {}
+[11.695679] (-) TimerEvent: {}
+[11.796353] (-) TimerEvent: {}
+[11.896988] (-) TimerEvent: {}
+[11.997683] (-) TimerEvent: {}
+[12.098312] (-) TimerEvent: {}
+[12.198976] (-) TimerEvent: {}
+[12.299600] (-) TimerEvent: {}
+[12.400262] (-) TimerEvent: {}
+[12.500919] (-) TimerEvent: {}
+[12.601585] (-) TimerEvent: {}
+[12.703323] (-) TimerEvent: {}
+[12.803928] (-) TimerEvent: {}
+[12.904885] (-) TimerEvent: {}
+[13.005518] (-) TimerEvent: {}
+[13.027159] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[13.105679] (-) TimerEvent: {}
+[13.106459] (tku_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[13.113009] (tku_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/color_array__type_support.cpp.o\x1b[0m\n'}
+[13.115856] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/draw_image__type_support.cpp.o\x1b[0m\n'}
+[13.124538] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/color_data__type_support.cpp.o\x1b[0m\n'}
+[13.206228] (-) TimerEvent: {}
+[13.306855] (-) TimerEvent: {}
+[13.407489] (-) TimerEvent: {}
+[13.508122] (-) TimerEvent: {}
+[13.608882] (-) TimerEvent: {}
+[13.709561] (-) TimerEvent: {}
+[13.810265] (-) TimerEvent: {}
+[13.910946] (-) TimerEvent: {}
+[14.012033] (-) TimerEvent: {}
+[14.055993] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[14.078797] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[14.112188] (-) TimerEvent: {}
+[14.140914] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/object_list__type_support.cpp.o\x1b[0m\n'}
+[14.169379] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera__type_support.cpp.o\x1b[0m\n'}
+[14.212351] (-) TimerEvent: {}
+[14.313153] (-) TimerEvent: {}
+[14.413843] (-) TimerEvent: {}
+[14.514548] (-) TimerEvent: {}
+[14.615204] (-) TimerEvent: {}
+[14.715899] (-) TimerEvent: {}
+[14.816587] (-) TimerEvent: {}
+[14.897593] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera_save__type_support.cpp.o\x1b[0m\n'}
+[14.912092] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/location__type_support.cpp.o\x1b[0m\n'}
+[14.916750] (-) TimerEvent: {}
+[15.017886] (-) TimerEvent: {}
+[15.039339] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/dio__type_support.cpp.o\x1b[0m\n'}
+[15.118054] (-) TimerEvent: {}
+[15.127629] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/parameter__type_support.cpp.o\x1b[0m\n'}
+[15.165292] (tku_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_typesupport_cpp/tku_msgs/msg/dio__type_support.cpp:7\x1b[m\x1b[K:\n'}
+[15.165843] (tku_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/detail/dio__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktku_msgs/msg/detail/int16__struct.hpp: No such file or directory\n'}
+[15.166030] (tku_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"tku_msgs/msg/detail/int16__struct.hpp"\x1b[m\x1b[K\n'}
+[15.166184] (tku_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.166441] (tku_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[15.170906] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/build.make:390: CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/dio__type_support.cpp.o] Error 1\n'}
+[15.171997] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[15.218206] (-) TimerEvent: {}
+[15.318881] (-) TimerEvent: {}
+[15.419587] (-) TimerEvent: {}
+[15.520332] (-) TimerEvent: {}
+[15.621011] (-) TimerEvent: {}
+[15.721860] (-) TimerEvent: {}
+[15.822898] (-) TimerEvent: {}
+[15.830650] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[15.902757] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:395: CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/all] Error 2\n'}
+[15.920437] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[15.922601] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/draw_image__type_support.cpp.o\x1b[0m\n'}
+[15.923020] (-) TimerEvent: {}
+[15.927602] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_array__type_support.cpp.o\x1b[0m\n'}
+[15.936172] (tku_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_data__type_support.cpp.o\x1b[0m\n'}
+[15.936684] (tku_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[15.989247] (tku_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tku_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[16.023208] (-) TimerEvent: {}
+[16.123846] (-) TimerEvent: {}
+[16.128590] (tku_msgs) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/button_color_form__type_support.cpp.o\x1b[0m\n'}
+[16.224007] (-) TimerEvent: {}
+[16.324677] (-) TimerEvent: {}
+[16.433262] (-) TimerEvent: {}
+[16.533973] (-) TimerEvent: {}
+[16.634680] (-) TimerEvent: {}
+[16.735592] (-) TimerEvent: {}
+[16.837100] (-) TimerEvent: {}
+[16.937983] (-) TimerEvent: {}
+[16.965150] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[17.038172] (-) TimerEvent: {}
+[17.138915] (-) TimerEvent: {}
+[17.171891] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/object_list__type_support.cpp.o\x1b[0m\n'}
+[17.191728] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera__type_support.cpp.o\x1b[0m\n'}
+[17.239130] (-) TimerEvent: {}
+[17.283897] (tku_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_array__type_support.cpp.o\x1b[0m\n'}
+[17.339306] (-) TimerEvent: {}
+[17.341996] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera_save__type_support.cpp.o\x1b[0m\n'}
+[17.385753] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/location__type_support.cpp.o\x1b[0m\n'}
+[17.439499] (-) TimerEvent: {}
+[17.540230] (-) TimerEvent: {}
+[17.657256] (-) TimerEvent: {}
+[17.761705] (-) TimerEvent: {}
+[17.862421] (-) TimerEvent: {}
+[17.963157] (-) TimerEvent: {}
+[18.063935] (-) TimerEvent: {}
+[18.164742] (-) TimerEvent: {}
+[18.265490] (-) TimerEvent: {}
+[18.275586] (tku_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/dio__type_support.cpp.o\x1b[0m\n'}
+[18.365641] (-) TimerEvent: {}
+[18.401500] (tku_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/parameter__type_support.cpp.o\x1b[0m\n'}
+[18.437168] (tku_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/dio__type_support.cpp:12\x1b[m\x1b[K:\n'}
+[18.437686] (tku_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/detail/dio__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktku_msgs/msg/detail/int16__struct.hpp: No such file or directory\n'}
+[18.437908] (tku_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"tku_msgs/msg/detail/int16__struct.hpp"\x1b[m\x1b[K\n'}
+[18.438090] (tku_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[18.438238] (tku_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[18.440772] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/build.make:494: CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/dio__type_support.cpp.o] Error 1\n'}
+[18.441345] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[18.465811] (-) TimerEvent: {}
+[18.488788] (tku_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/draw_image__type_support.cpp.o\x1b[0m\n'}
+[18.499711] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_data__type_support.cpp.o\x1b[0m\n'}
+[18.515618] (tku_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/hsv_value__type_support.cpp.o\x1b[0m\n'}
+[18.566003] (-) TimerEvent: {}
+[18.667548] (-) TimerEvent: {}
+[18.752636] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/label_model_object_list__type_support.cpp.o\x1b[0m\n'}
+[18.767742] (-) TimerEvent: {}
+[18.821704] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/object_list__type_support.cpp.o\x1b[0m\n'}
+[18.867944] (-) TimerEvent: {}
+[18.968734] (-) TimerEvent: {}
+[19.069493] (-) TimerEvent: {}
+[19.170251] (-) TimerEvent: {}
+[19.270947] (-) TimerEvent: {}
+[19.371741] (-) TimerEvent: {}
+[19.472386] (-) TimerEvent: {}
+[19.573142] (-) TimerEvent: {}
+[19.673829] (-) TimerEvent: {}
+[19.690814] (tku_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera__type_support.cpp.o\x1b[0m\n'}
+[19.696436] (tku_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera_save__type_support.cpp.o\x1b[0m\n'}
+[19.719012] (tku_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/location__type_support.cpp.o\x1b[0m\n'}
+[19.750297] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:369: CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/all] Error 2\n'}
+[19.774009] (-) TimerEvent: {}
+[19.777807] (tku_msgs) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/dio__type_support.cpp.o\x1b[0m\n'}
+[19.874192] (-) TimerEvent: {}
+[19.975494] (-) TimerEvent: {}
+[19.990809] (tku_msgs) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dio__rosidl_typesupport_fastrtps_cpp.hpp:11\x1b[m\x1b[K,\n'}
+[19.991388] (tku_msgs) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/dio__type_support.cpp:4\x1b[m\x1b[K:\n'}
+[19.991595] (tku_msgs) StderrLine: {'line': b'\x1b[01m\x1b[K/home/iclab/Desktop/humanoid/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/detail/dio__struct.hpp:20:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ktku_msgs/msg/detail/int16__struct.hpp: No such file or directory\n'}
+[19.991752] (tku_msgs) StderrLine: {'line': b'   20 | #include \x1b[01;31m\x1b[K"tku_msgs/msg/detail/int16__struct.hpp"\x1b[m\x1b[K\n'}
+[19.991889] (tku_msgs) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[19.992029] (tku_msgs) StderrLine: {'line': b'compilation terminated.\n'}
+[19.995217] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make:494: CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/dio__type_support.cpp.o] Error 1\n'}
+[19.995669] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[20.075669] (-) TimerEvent: {}
+[20.176993] (-) TimerEvent: {}
+[20.277728] (-) TimerEvent: {}
+[20.378571] (-) TimerEvent: {}
+[20.479323] (-) TimerEvent: {}
+[20.580050] (-) TimerEvent: {}
+[20.680735] (-) TimerEvent: {}
+[20.781481] (-) TimerEvent: {}
+[20.789261] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:343: CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2\n'}
+[20.790054] (tku_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[20.796096] (tku_msgs) CommandEnded: {'returncode': 2}
+[20.832913] (tku_msgs) JobEnded: {'identifier': 'tku_msgs', 'rc': 2}
+[20.844549] (usb_cam) JobSkipped: {'identifier': 'usb_cam'}
+[20.845038] (-) EventReactorShutdown: {}

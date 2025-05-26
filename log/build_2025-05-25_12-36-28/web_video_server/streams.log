@@ -1,0 +1,24 @@
+[1.258s] Invoking command in '/home/iclab/Desktop/humanoid/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/web_video_server -- -j6 -l6
+[1.303s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.577s] -- Found async_web_server_cpp: 2.0.0 (/opt/ros/humble/share/async_web_server_cpp/cmake)
+[1.623s] [31mCMake Error at CMakeLists.txt:7 (find_package):
+[1.623s]   By not providing "Findcv_bridge.cmake" in CMAKE_MODULE_PATH this project
+[1.623s]   has asked CMake to find a package configuration file provided by
+[1.623s]   "cv_bridge", but CMake did not find one.
+[1.624s] 
+[1.624s]   Could not find a package configuration file provided by "cv_bridge" with
+[1.624s]   any of the following names:
+[1.624s] 
+[1.624s]     cv_bridgeConfig.cmake
+[1.624s]     cv_bridge-config.cmake
+[1.624s] 
+[1.625s]   Add the installation prefix of "cv_bridge" to CMAKE_PREFIX_PATH or set
+[1.625s]   "cv_bridge_DIR" to a directory containing one of the above files.  If
+[1.625s]   "cv_bridge" provides a separate development package or SDK, be sure it has
+[1.625s]   been installed.
+[1.625s] 
+[1.625s] [0m
+[1.625s] -- Configuring incomplete, errors occurred!
+[1.626s] See also "/home/iclab/Desktop/humanoid/build/web_video_server/CMakeFiles/CMakeOutput.log".
+[1.630s] gmake: *** [Makefile:510: cmake_check_build_system] Error 1
+[1.900s] Invoked command in '/home/iclab/Desktop/humanoid/build/web_video_server' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/web_video_server -- -j6 -l6

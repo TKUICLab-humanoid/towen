@@ -1,0 +1,24 @@
+[2.945s] Invoking command in '/home/iclab/Desktop/humanoid/src/imageprocess': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /home/iclab/Desktop/humanoid/build/imageprocess/build install --record /home/iclab/Desktop/humanoid/build/imageprocess/install.log --single-version-externally-managed install_data
+[3.522s] running egg_info
+[3.523s] writing ../../build/imageprocess/imageprocess.egg-info/PKG-INFO
+[3.523s] writing dependency_links to ../../build/imageprocess/imageprocess.egg-info/dependency_links.txt
+[3.523s] writing entry points to ../../build/imageprocess/imageprocess.egg-info/entry_points.txt
+[3.524s] writing requirements to ../../build/imageprocess/imageprocess.egg-info/requires.txt
+[3.524s] writing top-level names to ../../build/imageprocess/imageprocess.egg-info/top_level.txt
+[3.528s] reading manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[3.529s] adding license file 'LICENSE'
+[3.530s] writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[3.531s] running build
+[3.532s] running build_py
+[3.533s] running install
+[3.534s] running install_lib
+[3.536s] running install_data
+[3.537s] running install_egg_info
+[3.542s] removing '/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info' (and everything under it)
+[3.542s] Copying ../../build/imageprocess/imageprocess.egg-info to /home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info
+[3.544s] running install_scripts
+[3.589s] Installing image script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+[3.589s] Installing image_test script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+[3.589s] Installing imageprocess script to /home/iclab/Desktop/humanoid/install/imageprocess/lib/imageprocess
+[3.590s] writing list of installed files to '/home/iclab/Desktop/humanoid/build/imageprocess/install.log'
+[3.682s] Invoked command in '/home/iclab/Desktop/humanoid/src/imageprocess' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /home/iclab/Desktop/humanoid/build/imageprocess/build install --record /home/iclab/Desktop/humanoid/build/imageprocess/install.log --single-version-externally-managed install_data

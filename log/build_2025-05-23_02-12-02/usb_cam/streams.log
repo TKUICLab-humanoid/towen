@@ -1,0 +1,27 @@
+[0.102s] Invoking command in '/home/iclab/Desktop/humanoid/build/usb_cam': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/home/iclab/Desktop/humanoid/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/usb_cam -- -j6 -l6
+[0.519s] [ 14%] Built target usb_cam
+[0.576s] [ 28%] Built target usb_cam_node_exe
+[0.604s] [ 42%] Built target gtest_main
+[0.643s] [ 57%] Built target gtest
+[0.715s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[0.795s] [ 71%] Built target test_usb_cam_utils
+[0.801s] [ 85%] Built target test_pixel_formats
+[1.097s] [ 92%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[12.874s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:[m[K In member function ‘[01m[Kvoid usb_cam::UsbCamNode::camera_param_callback(const Camera&)[m[K’:
+[12.874s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:542:57:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kusb_cam::UsbCam::set_v4l_parameter(const char [26])[m[K’
+[12.875s]   542 |       cached_auto_wb_temp_ = [01;31m[Km_camera->set_v4l_parameter("white_balance_temperature")[m[K;
+[12.875s]       |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[12.875s] In file included from [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam_node.hpp:18[m[K,
+[12.875s]                  from [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/src/usb_cam_node.cpp:6[m[K:
+[12.875s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:225:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool usb_cam::UsbCam::set_v4l_parameter(const string&, int)[m[K’
+[12.875s]   225 |   bool [01;36m[Kset_v4l_parameter[m[K(const std::string & param, int value);
+[12.876s]       |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.876s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:225:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[12.876s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:226:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kbool usb_cam::UsbCam::set_v4l_parameter(const string&, const string&)[m[K’
+[12.876s]   226 |   bool [01;36m[Kset_v4l_parameter[m[K(const std::string & param, const std::string & value);
+[12.876s]       |        [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[12.876s] [01m[K/home/iclab/Desktop/humanoid/src/usb_cam/include/usb_cam/usb_cam.hpp:226:8:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[25.828s] gmake[2]: *** [CMakeFiles/usb_cam_node.dir/build.make:76: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o] Error 1
+[25.829s] gmake[1]: *** [CMakeFiles/Makefile2:189: CMakeFiles/usb_cam_node.dir/all] Error 2
+[25.830s] gmake: *** [Makefile:146: all] Error 2
+[25.848s] Invoked command in '/home/iclab/Desktop/humanoid/build/usb_cam' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/home/iclab/Desktop/humanoid/install/web_video_server:/home/iclab/Desktop/humanoid/install/usb_cam:/home/iclab/Desktop/humanoid/install/wula:/home/iclab/Desktop/humanoid/install/motionpackage:/home/iclab/Desktop/humanoid/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/home/iclab/Desktop/humanoid/install/usb_cam/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/usb_cam -- -j6 -l6

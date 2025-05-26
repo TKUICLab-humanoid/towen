@@ -1,0 +1,6 @@
+[  9%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[ 18%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o[0m
+[ 45%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o[0m
+[ 54%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o[0m

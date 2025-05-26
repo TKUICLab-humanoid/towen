@@ -1,0 +1,21 @@
+[4.964s] Invoking command in '/home/iclab/Desktop/humanoid/src/motionpackage': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motionpackage build --build-base /home/iclab/Desktop/humanoid/build/motionpackage/build install --record /home/iclab/Desktop/humanoid/build/motionpackage/install.log --single-version-externally-managed install_data
+[5.668s] running egg_info
+[5.671s] writing ../../build/motionpackage/motionpackage.egg-info/PKG-INFO
+[5.672s] writing dependency_links to ../../build/motionpackage/motionpackage.egg-info/dependency_links.txt
+[5.673s] writing entry points to ../../build/motionpackage/motionpackage.egg-info/entry_points.txt
+[5.673s] writing requirements to ../../build/motionpackage/motionpackage.egg-info/requires.txt
+[5.674s] writing top-level names to ../../build/motionpackage/motionpackage.egg-info/top_level.txt
+[5.679s] reading manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'
+[5.692s] writing manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'
+[5.692s] running build
+[5.692s] running build_py
+[5.692s] running install
+[5.692s] running install_lib
+[5.693s] running install_data
+[5.693s] running install_egg_info
+[5.698s] removing '/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info' (and everything under it)
+[5.700s] Copying ../../build/motionpackage/motionpackage.egg-info to /home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info
+[5.702s] running install_scripts
+[5.771s] Installing motionpackage script to /home/iclab/Desktop/humanoid/install/motionpackage/lib/motionpackage
+[5.772s] writing list of installed files to '/home/iclab/Desktop/humanoid/build/motionpackage/install.log'
+[5.877s] Invoked command in '/home/iclab/Desktop/humanoid/src/motionpackage' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/motionpackage build --build-base /home/iclab/Desktop/humanoid/build/motionpackage/build install --record /home/iclab/Desktop/humanoid/build/motionpackage/install.log --single-version-externally-managed install_data

@@ -1,0 +1,16 @@
+[2.860s] Invoking command in '/home/iclab/Desktop/humanoid/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/web_video_server -- -j6 -l6
+[3.307s] [  9%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/libav_streamer.cpp.o[0m
+[3.311s] [ 18%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/web_video_server.cpp.o[0m
+[3.339s] [ 27%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/h264_streamer.cpp.o[0m
+[3.350s] [ 36%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp8_streamer.cpp.o[0m
+[3.374s] [ 45%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/image_streamer.cpp.o[0m
+[3.384s] [ 54%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/vp9_streamer.cpp.o[0m
+[46.517s] [ 63%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/png_streamers.cpp.o[0m
+[65.180s] [ 72%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/jpeg_streamers.cpp.o[0m
+[81.791s] [ 81%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/ros_compressed_streamer.cpp.o[0m
+[108.618s] [ 90%] [32mBuilding CXX object CMakeFiles/web_video_server.dir/src/multipart_stream.cpp.o[0m
+[120.345s] [100%] [32m[1mLinking CXX executable web_video_server[0m
+[121.137s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.408
+[121.140s] /usr/bin/ld: warning: libopencv_imgproc.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.408
+[121.143s] /usr/bin/ld: warning: libopencv_core.so.4.5d, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.408
+[122.784s] [100%] Built target web_video_server

@@ -1,0 +1,14 @@
+[5.427s] Invoking command in '/home/iclab/Desktop/humanoid/src/strategy/strategy/sp': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/strategy build --build-base /home/iclab/Desktop/humanoid/build/strategy/build install --record /home/iclab/Desktop/humanoid/build/strategy/install.log --single-version-externally-managed install_data
+[8.102s] running egg_info
+[8.126s] writing ../../../../build/strategy/strategy.egg-info/PKG-INFO
+[8.127s] writing dependency_links to ../../../../build/strategy/strategy.egg-info/dependency_links.txt
+[8.133s] writing entry points to ../../../../build/strategy/strategy.egg-info/entry_points.txt
+[8.133s] writing requirements to ../../../../build/strategy/strategy.egg-info/requires.txt
+[8.133s] writing top-level names to ../../../../build/strategy/strategy.egg-info/top_level.txt
+[8.136s] reading manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+[8.158s] writing manifest file '../../../../build/strategy/strategy.egg-info/SOURCES.txt'
+[8.159s] running build
+[8.159s] running install
+[8.159s] running install_data
+[8.160s] error: can't copy 'resource/strategy': doesn't exist or not a regular file
+[8.463s] Invoked command in '/home/iclab/Desktop/humanoid/src/strategy/strategy/sp' returned '1': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../../build/strategy build --build-base /home/iclab/Desktop/humanoid/build/strategy/build install --record /home/iclab/Desktop/humanoid/build/strategy/install.log --single-version-externally-managed install_data

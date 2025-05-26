@@ -1,0 +1,2 @@
+Invoking command in '/home/iclab/Desktop/humanoid/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/web_video_server -- -j6 -l6
+Invoked command in '/home/iclab/Desktop/humanoid/build/web_video_server' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/web_video_server -- -j6 -l6

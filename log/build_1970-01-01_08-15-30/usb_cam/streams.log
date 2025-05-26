@@ -1,0 +1,95 @@
+[0.047s] Invoking command in '/home/iclab/Desktop/humanoid/build/usb_cam': AMENT_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/usb_cam -- -j6 -l6
+[0.065s] gmake: Warning: File 'Makefile' has modification time 1748087416 s in the future
+[0.135s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1748087416 s in the future
+[0.140s] gmake[2]: Warning: File 'CMakeFiles/usb_cam.dir/flags.make' has modification time 1747899126 s in the future
+[0.146s] gmake[2]: Warning: File 'CMakeFiles/usb_cam_node_exe.dir/flags.make' has modification time 1747899126 s in the future
+[0.165s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 1747899126 s in the future
+[0.169s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.173s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 1747899126 s in the future
+[0.174s] gmake[2]: Warning: File 'CMakeFiles/usb_cam.dir/flags.make' has modification time 1747899126 s in the future
+[0.176s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.195s] [ 14%] Built target usb_cam
+[0.195s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.195s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.204s] gmake[2]: Warning: File 'CMakeFiles/usb_cam_node.dir/flags.make' has modification time 1747899126 s in the future
+[0.207s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.211s] gmake[2]: Warning: File 'CMakeFiles/usb_cam_node_exe.dir/flags.make' has modification time 1747899126 s in the future
+[0.214s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.218s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 1747899126 s in the future
+[0.220s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.225s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 1747899126 s in the future
+[0.226s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.235s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.257s] gmake[2]: Warning: File 'CMakeFiles/usb_cam_node.dir/flags.make' has modification time 1747899126 s in the future
+[0.270s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.273s] [ 28%] Built target gtest_main
+[0.277s] [ 42%] Built target usb_cam_node_exe
+[0.304s] [ 57%] Built target usb_cam_node
+[0.307s] [ 71%] Built target gtest
+[0.316s] gmake[2]: Warning: File 'CMakeFiles/test_usb_cam_utils.dir/flags.make' has modification time 1747899126 s in the future
+[0.318s] gmake[2]: Warning: File 'CMakeFiles/test_pixel_formats.dir/flags.make' has modification time 1747899126 s in the future
+[0.341s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.346s] gmake[2]: Warning: File 'CMakeFiles/test_pixel_formats.dir/flags.make' has modification time 1747899126 s in the future
+[0.348s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.378s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.393s] gmake[2]: Warning: File 'CMakeFiles/test_usb_cam_utils.dir/flags.make' has modification time 1747899125 s in the future
+[0.395s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.396s] [ 85%] Built target test_pixel_formats
+[0.413s] [100%] Built target test_usb_cam_utils
+[0.415s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.434s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[0.442s] Invoked command in '/home/iclab/Desktop/humanoid/build/usb_cam' returned '0': AMENT_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/iclab/Desktop/humanoid/build/usb_cam -- -j6 -l6
+[0.443s] Invoking command in '/home/iclab/Desktop/humanoid/build/usb_cam': AMENT_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/iclab/Desktop/humanoid/build/usb_cam
+[0.459s] -- Install configuration: ""
+[0.459s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/environment/library_path.sh
+[0.459s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[0.460s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[0.460s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/lib/usb_cam/show_image.py
+[0.460s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/lib/libusb_cam.so
+[0.461s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/lib/libusb_cam_node.so
+[0.462s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include
+[0.463s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam
+[0.463s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats
+[0.463s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/m420.hpp
+[0.464s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/mono.hpp
+[0.464s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[0.464s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[0.464s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[0.464s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/utils.hpp
+[0.465s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[0.465s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[0.465s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[0.465s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/constants.hpp
+[0.465s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/utils.hpp
+[0.466s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/conversions.hpp
+[0.466s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[0.466s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/include/usb_cam/usb_cam.hpp
+[0.466s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/lib/libusb_cam_node.so
+[0.467s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/launch
+[0.467s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[0.467s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/launch/__init__.py
+[0.467s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/launch/camera_config.py
+[0.468s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/config
+[0.468s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[0.468s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/config/params_1.yaml
+[0.468s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/config/params_2.yaml
+[0.469s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[0.469s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[0.469s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[0.469s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[0.469s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/environment/path.sh
+[0.470s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/environment/path.dsv
+[0.470s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/local_setup.bash
+[0.470s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/local_setup.sh
+[0.470s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/local_setup.zsh
+[0.470s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/local_setup.dsv
+[0.471s] -- Installing: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/package.dsv
+[0.471s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[0.471s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[0.471s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[0.471s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.471s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.472s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[0.472s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[0.473s] -- Up-to-date: /home/iclab/Desktop/humanoid/install/usb_cam/share/usb_cam/package.xml
+[0.478s] Invoked command in '/home/iclab/Desktop/humanoid/build/usb_cam' returned '0': AMENT_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/iclab/Desktop/humanoid/install/tku_msgs/lib:/usr/local/cuda-12.6/lib64:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda-12.6/lib64 PYTHONPATH=/home/iclab/Desktop/humanoid/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/iclab/Desktop/humanoid/build/usb_cam

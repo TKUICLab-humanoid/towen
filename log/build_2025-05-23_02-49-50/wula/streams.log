@@ -1,0 +1,21 @@
+[5.095s] Invoking command in '/home/iclab/Desktop/humanoid/src/wula': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/wula/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/wula build --build-base /home/iclab/Desktop/humanoid/build/wula/build install --record /home/iclab/Desktop/humanoid/build/wula/install.log --single-version-externally-managed install_data
+[5.995s] running egg_info
+[5.997s] writing ../../build/wula/wula.egg-info/PKG-INFO
+[5.997s] writing dependency_links to ../../build/wula/wula.egg-info/dependency_links.txt
+[5.998s] writing entry points to ../../build/wula/wula.egg-info/entry_points.txt
+[5.998s] writing requirements to ../../build/wula/wula.egg-info/requires.txt
+[5.999s] writing top-level names to ../../build/wula/wula.egg-info/top_level.txt
+[6.005s] reading manifest file '../../build/wula/wula.egg-info/SOURCES.txt'
+[6.008s] writing manifest file '../../build/wula/wula.egg-info/SOURCES.txt'
+[6.009s] running build
+[6.009s] running build_py
+[6.020s] running install
+[6.021s] running install_lib
+[6.061s] running install_data
+[6.061s] running install_egg_info
+[6.082s] removing '/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula-0.1.0-py3.10.egg-info' (and everything under it)
+[6.083s] Copying ../../build/wula/wula.egg-info to /home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages/wula-0.1.0-py3.10.egg-info
+[6.086s] running install_scripts
+[6.312s] Installing sp_boson script to /home/iclab/Desktop/humanoid/install/wula/lib/wula
+[6.357s] writing list of installed files to '/home/iclab/Desktop/humanoid/build/wula/install.log'
+[6.642s] Invoked command in '/home/iclab/Desktop/humanoid/src/wula' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/home/iclab/Desktop/humanoid/build/wula/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/iclab/Desktop/humanoid/install/wula/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/wula build --build-base /home/iclab/Desktop/humanoid/build/wula/build install --record /home/iclab/Desktop/humanoid/build/wula/install.log --single-version-externally-managed install_data
