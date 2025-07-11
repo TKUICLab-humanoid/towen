@@ -1,0 +1,21 @@
+[submodule "src/imageprocess"]
+	path = src/imageprocess
+	url = https://github.com/TKUICLab-humanoid/imageprocess_submodule.git
+[submodule "src/web_video_sever"]
+	path = src/web_video_sever
+	url = https://github.com/TKUICLab-humanoid/web_video_server.git
+[submodule "src/usb_cam"]
+	path = src/usb_cam
+	url = https://github.com/TKUICLab-humanoid/usb_cam_submodule.git
+[submodule "src/tku_msgs"]
+	path = src/tku_msgs
+	url = https://github.com/TKUICLab-humanoid/tku_msgs_submodule.git
+[submodule "src/zed-ros2-wrapper"]
+	path = src/zed-ros2-wrapper
+	url = https://github.com/stereolabs/zed-ros2-wrapper.git
+[submodule "src/motionpackage"]
+	path = src/motionpackage
+	url = https://github.com/TKUICLab-humanoid/motionpackage_submodule.git
+[submodule "hurocup_interface"]
+	path = hurocup_interface
+	url = https://github.com/TKUICLab-humanoid/hurocup_interface_submodule.git
