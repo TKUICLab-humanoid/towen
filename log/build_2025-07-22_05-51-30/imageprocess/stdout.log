@@ -1,0 +1,22 @@
+running develop
+running egg_info
+creating imageprocess.egg-info
+writing imageprocess.egg-info/PKG-INFO
+writing dependency_links to imageprocess.egg-info/dependency_links.txt
+writing entry points to imageprocess.egg-info/entry_points.txt
+writing requirements to imageprocess.egg-info/requires.txt
+writing top-level names to imageprocess.egg-info/top_level.txt
+writing manifest file 'imageprocess.egg-info/SOURCES.txt'
+reading manifest file 'imageprocess.egg-info/SOURCES.txt'
+writing manifest file 'imageprocess.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/towen/install/imageprocess/lib/python3.10/site-packages/imageprocess.egg-link (link to .)
+Installing image script to /workspace/towen/install/imageprocess/lib/imageprocess
+Installing image_test script to /workspace/towen/install/imageprocess/lib/imageprocess
+Installing imageprocess script to /workspace/towen/install/imageprocess/lib/imageprocess
+
+Installed /workspace/towen/build/imageprocess
+running symlink_data
+creating /workspace/towen/install/imageprocess/share/ament_index/resource_index/packages
+symbolically linking /workspace/towen/build/imageprocess/resource/imageprocess -> /workspace/towen/install/imageprocess/share/ament_index/resource_index/packages
+symbolically linking /workspace/towen/build/imageprocess/package.xml -> /workspace/towen/install/imageprocess/share/imageprocess

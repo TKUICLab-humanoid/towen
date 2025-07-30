@@ -1,0 +1,1129 @@
+[0.284s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.285s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffafe509a0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffaff6d060>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffaff6d060>>)
+[0.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.384s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.385s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.385s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/towen'
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.385s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.386s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'ignore'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'ignore_ament_install'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['colcon_pkg']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'colcon_pkg'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['colcon_meta']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'colcon_meta'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['ros']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'ros'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['cmake', 'python']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'cmake'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'python'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['python_setup_py']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'python_setup_py'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'ignore'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'ignore_ament_install'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['colcon_pkg']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'colcon_pkg'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['colcon_meta']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'colcon_meta'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['ros']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'ros'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['cmake', 'python']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'cmake'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'python'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['python_setup_py']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'python_setup_py'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['ignore', 'ignore_ament_install']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'ignore_ament_install'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['colcon_pkg']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'colcon_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['colcon_meta']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'colcon_meta'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['ros']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'ros'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['cmake', 'python']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'cmake'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'python'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['python_setup_py']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'python_setup_py'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'ignore_ament_install'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['colcon_pkg']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'colcon_pkg'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'ros'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['cmake', 'python']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'cmake'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'python'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['python_setup_py']
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'python_setup_py'
+[0.430s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['ignore', 'ignore_ament_install']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'ignore'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'ignore_ament_install'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['colcon_pkg']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'colcon_pkg'
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['colcon_meta']
+[0.431s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'colcon_meta'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['ros']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'ros'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['cmake', 'python']
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'cmake'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'python'
+[0.432s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['python_setup_py']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'python_setup_py'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['ignore', 'ignore_ament_install']
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'ignore'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'ignore_ament_install'
+[0.433s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['colcon_pkg']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'colcon_pkg'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['colcon_meta']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'colcon_meta'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['ros']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'ros'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['cmake', 'python']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'cmake'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'python'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['python_setup_py']
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'python_setup_py'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['ignore', 'ignore_ament_install']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'colcon_meta'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['ros']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'ros'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['cmake', 'python']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'cmake'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'python'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['python_setup_py']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'python_setup_py'
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'ignore'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'ignore_ament_install'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['colcon_pkg']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'colcon_pkg'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['colcon_meta']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'colcon_meta'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['ros']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'ros'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['cmake', 'python']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'cmake'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'python'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['python_setup_py']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'python_setup_py'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['ignore', 'ignore_ament_install']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'ignore_ament_install'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['colcon_pkg']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'colcon_pkg'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['colcon_meta']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'colcon_meta'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['ros']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'ros'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['cmake', 'python']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'cmake'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'python'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['python_setup_py']
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'python_setup_py'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'ros'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['cmake', 'python']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'cmake'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'python'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['python_setup_py']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'python_setup_py'
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['ignore', 'ignore_ament_install']
+[0.441s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'ignore'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'ignore_ament_install'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['colcon_pkg']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'colcon_pkg'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['colcon_meta']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'colcon_meta'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['ros']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'ros'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['cmake', 'python']
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'cmake'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'python'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['python_setup_py']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'python_setup_py'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['colcon_pkg']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'colcon_pkg'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['colcon_meta']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'colcon_meta'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['ros']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'ros'
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['cmake', 'python']
+[0.444s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'cmake'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'python'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['python_setup_py']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'python_setup_py'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.445s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.446s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['ignore', 'ignore_ament_install']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'colcon_meta'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['ros']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imageprocess' with type 'ros.ament_python' and name 'imageprocess'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['ignore', 'ignore_ament_install']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ignore_ament_install'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['colcon_pkg']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'colcon_pkg'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['colcon_meta']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'colcon_meta'
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['ros']
+[0.457s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ros'
+[0.459s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motionpackage' with type 'ros.ament_python' and name 'motionpackage'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extensions ['ignore', 'ignore_ament_install']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'ignore'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'ignore_ament_install'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extensions ['colcon_pkg']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'colcon_pkg'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extensions ['colcon_meta']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'colcon_meta'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extensions ['ros']
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'ros'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extensions ['cmake', 'python']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'cmake'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'python'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extensions ['python_setup_py']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl) by extension 'python_setup_py'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extension 'ignore'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extension 'ignore_ament_install'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extensions ['colcon_pkg']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extension 'colcon_pkg'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extensions ['colcon_meta']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_adapter) by extension 'ros'
+[0.464s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_adapter' with type 'ros.ament_cmake' and name 'rosidl_adapter'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extension 'ignore'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extension 'ignore_ament_install'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extensions ['colcon_pkg']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extension 'colcon_pkg'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extensions ['colcon_meta']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extension 'colcon_meta'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extensions ['ros']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cli) by extension 'ros'
+[0.467s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_cli' with type 'ros.ament_python' and name 'rosidl_cli'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extensions ['ignore', 'ignore_ament_install']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extension 'ignore'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extension 'ignore_ament_install'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extensions ['colcon_pkg']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extension 'colcon_pkg'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extensions ['colcon_meta']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extension 'colcon_meta'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extensions ['ros']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_cmake) by extension 'ros'
+[0.469s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_cmake' with type 'ros.ament_cmake' and name 'rosidl_cmake'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extensions ['ignore', 'ignore_ament_install']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extension 'ignore'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extension 'ignore_ament_install'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extensions ['colcon_pkg']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extension 'colcon_pkg'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extensions ['colcon_meta']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extension 'colcon_meta'
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extensions ['ros']
+[0.471s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_c) by extension 'ros'
+[0.473s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_generator_c' with type 'ros.ament_cmake' and name 'rosidl_generator_c'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extension 'ignore'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extensions ['colcon_pkg']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extension 'colcon_pkg'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extensions ['colcon_meta']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extension 'colcon_meta'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extensions ['ros']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_generator_cpp) by extension 'ros'
+[0.476s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_generator_cpp' with type 'ros.ament_cmake' and name 'rosidl_generator_cpp'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extension 'ignore_ament_install'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extensions ['colcon_pkg']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extension 'colcon_pkg'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extensions ['colcon_meta']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extension 'colcon_meta'
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extensions ['ros']
+[0.477s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_parser) by extension 'ros'
+[0.479s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_parser' with type 'ros.ament_cmake' and name 'rosidl_parser'
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extensions ['ignore', 'ignore_ament_install']
+[0.479s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extension 'ignore'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extension 'ignore_ament_install'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extensions ['colcon_pkg']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extension 'colcon_pkg'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extensions ['colcon_meta']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extension 'colcon_meta'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extensions ['ros']
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_c) by extension 'ros'
+[0.482s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_runtime_c' with type 'ros.ament_cmake' and name 'rosidl_runtime_c'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extension 'ignore'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extension 'ignore_ament_install'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extensions ['colcon_pkg']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extension 'colcon_pkg'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extensions ['colcon_meta']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extension 'colcon_meta'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extensions ['ros']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_runtime_cpp) by extension 'ros'
+[0.485s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_runtime_cpp' with type 'ros.ament_cmake' and name 'rosidl_runtime_cpp'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extension 'ignore'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extension 'ignore_ament_install'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extension 'colcon_meta'
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_interface) by extension 'ros'
+[0.488s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_typesupport_interface' with type 'ros.ament_cmake' and name 'rosidl_typesupport_interface'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extensions ['ignore', 'ignore_ament_install']
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extension 'ignore'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extension 'ignore_ament_install'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extensions ['colcon_pkg']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extension 'colcon_pkg'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extensions ['colcon_meta']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extension 'colcon_meta'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extensions ['ros']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_c) by extension 'ros'
+[0.491s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_typesupport_introspection_c' with type 'ros.ament_cmake' and name 'rosidl_typesupport_introspection_c'
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.491s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extension 'ignore'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extension 'ignore_ament_install'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extensions ['colcon_pkg']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extension 'colcon_pkg'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extensions ['colcon_meta']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extension 'colcon_meta'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extensions ['ros']
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_cpp) by extension 'ros'
+[0.494s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_typesupport_introspection_cpp' with type 'ros.ament_cmake' and name 'rosidl_typesupport_introspection_cpp'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extension 'ignore_ament_install'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extensions ['colcon_pkg']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extension 'colcon_pkg'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/rosidl/rosidl_typesupport_introspection_tests) by extension 'ros'
+[0.497s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rosidl/rosidl_typesupport_introspection_tests' with type 'ros.ament_cmake' and name 'rosidl_typesupport_introspection_tests'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'ignore'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['colcon_meta']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'colcon_meta'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['ros']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'ros'
+[0.500s] DEBUG:colcon.colcon_core.package_identification:Package 'src/strategy' with type 'ros.ament_python' and name 'strategy'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ignore'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ignore_ament_install'
+[0.500s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['colcon_pkg']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'colcon_pkg'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['colcon_meta']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'colcon_meta'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['ros']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ros'
+[0.502s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tku_msgs' with type 'ros.ament_cmake' and name 'tku_msgs'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.507s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore_ament_install'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_pkg']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_pkg'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_meta']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_meta'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ros']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ros'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['cmake', 'python']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'cmake'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['python_setup_py']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python_setup_py'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore_ament_install'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_pkg']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ros'
+[0.512s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.513s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore_ament_install'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_pkg']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_pkg'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_meta']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_meta'
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ros']
+[0.514s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ros'
+[0.516s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore_ament_install'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_pkg']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_pkg'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_meta']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_meta'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ros']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ros'
+[0.521s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore_ament_install'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_pkg']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_pkg'
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_meta']
+[0.523s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_meta'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ros']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ros'
+[0.526s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'ignore'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['colcon_pkg']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['ros']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'ros'
+[0.530s] DEBUG:colcon.colcon_core.package_identification:Package 'src/web_video_sever' with type 'ros.ament_cmake' and name 'web_video_server'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_pkg'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_meta']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_meta'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ros']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ros'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['cmake', 'python']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'cmake'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['python_setup_py']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python_setup_py'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore_ament_install'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_pkg']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_pkg'
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_meta']
+[0.532s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_meta'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ros']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ros'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['cmake', 'python']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'cmake'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['python_setup_py']
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python_setup_py'
+[0.533s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ignore', 'ignore_ament_install']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore_ament_install'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_pkg']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_pkg'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_meta']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_meta'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ros']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ros'
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['cmake', 'python']
+[0.534s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'cmake'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['python_setup_py']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python_setup_py'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ignore', 'ignore_ament_install']
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore_ament_install'
+[0.535s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_pkg']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_pkg'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_meta']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_meta'
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ros']
+[0.536s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ros'
+[0.539s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_components' with type 'ros.ament_cmake' and name 'zed_components'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore_ament_install'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_pkg']
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_pkg'
+[0.540s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_meta']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_meta'
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ros']
+[0.541s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ros'
+[0.542s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_ros2' with type 'ros.ament_cmake' and name 'zed_ros2'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore_ament_install'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_pkg']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_pkg'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_meta']
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_meta'
+[0.543s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ros']
+[0.544s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ros'
+[0.546s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_wrapper' with type 'ros.ament_cmake' and name 'zed_wrapper'
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.546s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.547s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.547s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_args' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.620s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.621s] DEBUG:colcon.colcon_core.verb:Building package 'cv_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/cv_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/cv_bridge', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/cv_bridge', 'symlink_install': True, 'test_result_base': None}
+[0.621s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_args' from command line to 'None'
+[0.621s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target' from command line to 'None'
+[0.621s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.621s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.622s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.622s] DEBUG:colcon.colcon_core.verb:Building package 'image_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/image_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/image_geometry', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/image_geometry', 'symlink_install': True, 'test_result_base': None}
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_args' from command line to 'None'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_target' from command line to 'None'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_clean_cache' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_clean_first' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_force_configure' from command line to 'False'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'ament_cmake_args' from command line to 'None'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'catkin_cmake_args' from command line to 'None'
+[0.623s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.623s] DEBUG:colcon.colcon_core.verb:Building package 'imageprocess' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/imageprocess', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/imageprocess', 'merge_install': False, 'path': '/workspace/towen/src/imageprocess', 'symlink_install': True, 'test_result_base': None}
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_args' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_target' from command line to 'None'
+[0.624s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_clean_first' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_force_configure' from command line to 'False'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'ament_cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.625s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.625s] DEBUG:colcon.colcon_core.verb:Building package 'motionpackage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/motionpackage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/motionpackage', 'merge_install': False, 'path': '/workspace/towen/src/motionpackage', 'symlink_install': True, 'test_result_base': None}
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'cmake_args' from command line to 'None'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'cmake_target' from command line to 'None'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'cmake_clean_cache' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'cmake_clean_first' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'cmake_force_configure' from command line to 'False'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'ament_cmake_args' from command line to 'None'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'catkin_cmake_args' from command line to 'None'
+[0.626s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cli' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.626s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_cli' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_cli', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_cli', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_cli', 'symlink_install': True, 'test_result_base': None}
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'cmake_args' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'cmake_target' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.627s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.627s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_typesupport_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_typesupport_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_typesupport_interface', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_typesupport_interface', 'symlink_install': True, 'test_result_base': None}
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_args' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_target' from command line to 'None'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_clean_first' from command line to 'False'
+[0.628s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_force_configure' from command line to 'False'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'ament_cmake_args' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.629s] DEBUG:colcon.colcon_core.verb:Building package 'strategy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/strategy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/strategy', 'merge_install': False, 'path': '/workspace/towen/src/strategy', 'symlink_install': True, 'test_result_base': None}
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_args' from command line to 'None'
+[0.629s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_target' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.630s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.630s] DEBUG:colcon.colcon_core.verb:Building package 'tku_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/tku_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/tku_msgs', 'merge_install': False, 'path': '/workspace/towen/src/tku_msgs', 'symlink_install': True, 'test_result_base': None}
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_cache' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_first' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_force_configure' from command line to 'False'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'ament_cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_cmake_args' from command line to 'None'
+[0.631s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.631s] DEBUG:colcon.colcon_core.verb:Building package 'zed_components' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/zed_components', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/zed_components', 'merge_install': False, 'path': '/workspace/towen/src/zed-ros2-wrapper/zed_components', 'symlink_install': True, 'test_result_base': None}
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_args' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.632s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.632s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/opencv_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/opencv_tests', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/opencv_tests', 'symlink_install': True, 'test_result_base': None}
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'cmake_target' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'cmake_clean_first' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'cmake_force_configure' from command line to 'False'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'ament_cmake_args' from command line to 'None'
+[0.633s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'rosidl_adapter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.634s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_adapter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_adapter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_adapter', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_adapter', 'symlink_install': True, 'test_result_base': None}
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'cmake_args' from command line to 'None'
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'cmake_target' from command line to 'None'
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.634s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'cmake_clean_cache' from command line to 'False'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'cmake_clean_first' from command line to 'False'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'cmake_force_configure' from command line to 'False'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'ament_cmake_args' from command line to 'None'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'catkin_cmake_args' from command line to 'None'
+[0.635s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_c' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.635s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_runtime_c' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_runtime_c', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_runtime_c', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_runtime_c', 'symlink_install': True, 'test_result_base': None}
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.636s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.636s] DEBUG:colcon.colcon_core.verb:Building package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/usb_cam', 'merge_install': False, 'path': '/workspace/towen/src/usb_cam', 'symlink_install': True, 'test_result_base': None}
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_args' from command line to 'None'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target' from command line to 'None'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.637s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.637s] DEBUG:colcon.colcon_core.verb:Building package 'vision_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/vision_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/vision_opencv', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/vision_opencv', 'symlink_install': True, 'test_result_base': None}
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_args' from command line to 'None'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_target' from command line to 'None'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.638s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.639s] DEBUG:colcon.colcon_core.verb:Building package 'web_video_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/web_video_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/web_video_server', 'merge_install': False, 'path': '/workspace/towen/src/web_video_sever', 'symlink_install': True, 'test_result_base': None}
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_args' from command line to 'None'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target' from command line to 'None'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.639s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.640s] DEBUG:colcon.colcon_core.verb:Building package 'zed_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/zed_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/zed_wrapper', 'merge_install': False, 'path': '/workspace/towen/src/zed-ros2-wrapper/zed_wrapper', 'symlink_install': True, 'test_result_base': None}
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'cmake_args' from command line to 'None'
+[0.640s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'cmake_target' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'cmake_clean_cache' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'cmake_clean_first' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'cmake_force_configure' from command line to 'False'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'ament_cmake_args' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'catkin_cmake_args' from command line to 'None'
+[0.641s] Level 5:colcon.colcon_core.verb:set package 'rosidl_parser' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.641s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_parser' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_parser', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_parser', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_parser', 'symlink_install': True, 'test_result_base': None}
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'cmake_target' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.642s] Level 5:colcon.colcon_core.verb:set package 'rosidl_runtime_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.642s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_runtime_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_runtime_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_runtime_cpp', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_runtime_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_args' from command line to 'None'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target' from command line to 'None'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.643s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.643s] DEBUG:colcon.colcon_core.verb:Building package 'zed_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/zed_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/zed_ros2', 'merge_install': False, 'path': '/workspace/towen/src/zed-ros2-wrapper/zed_ros2', 'symlink_install': True, 'test_result_base': None}
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'cmake_args' from command line to 'None'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'cmake_target' from command line to 'None'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'cmake_clean_cache' from command line to 'False'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'cmake_clean_first' from command line to 'False'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'cmake_force_configure' from command line to 'False'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'ament_cmake_args' from command line to 'None'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'catkin_cmake_args' from command line to 'None'
+[0.644s] Level 5:colcon.colcon_core.verb:set package 'rosidl_cmake' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.644s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_cmake' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_cmake', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_cmake', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_cmake', 'symlink_install': True, 'test_result_base': None}
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'cmake_args' from command line to 'None'
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'cmake_target' from command line to 'None'
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'cmake_clean_cache' from command line to 'False'
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'cmake_clean_first' from command line to 'False'
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'cmake_force_configure' from command line to 'False'
+[0.645s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'ament_cmake_args' from command line to 'None'
+[0.646s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'catkin_cmake_args' from command line to 'None'
+[0.646s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_c' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.646s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_generator_c' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_generator_c', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_generator_c', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_generator_c', 'symlink_install': True, 'test_result_base': None}
+[0.646s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'cmake_args' from command line to 'None'
+[0.646s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'cmake_target' from command line to 'None'
+[0.646s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.647s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'cmake_clean_cache' from command line to 'False'
+[0.647s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'cmake_clean_first' from command line to 'False'
+[0.647s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'cmake_force_configure' from command line to 'False'
+[0.647s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'ament_cmake_args' from command line to 'None'
+[0.647s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'catkin_cmake_args' from command line to 'None'
+[0.647s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_c' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.647s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_typesupport_introspection_c' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_typesupport_introspection_c', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_typesupport_introspection_c', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_typesupport_introspection_c', 'symlink_install': True, 'test_result_base': None}
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'cmake_args' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'cmake_target' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.648s] Level 5:colcon.colcon_core.verb:set package 'rosidl_generator_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.648s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_generator_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_generator_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_generator_cpp', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_generator_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'cmake_args' from command line to 'None'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'cmake_target' from command line to 'None'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.649s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.649s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_typesupport_introspection_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_typesupport_introspection_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_typesupport_introspection_cpp', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_typesupport_introspection_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'cmake_args' from command line to 'None'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'cmake_target' from command line to 'None'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.650s] Level 5:colcon.colcon_core.verb:set package 'rosidl_typesupport_introspection_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.651s] DEBUG:colcon.colcon_core.verb:Building package 'rosidl_typesupport_introspection_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/rosidl_typesupport_introspection_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/rosidl_typesupport_introspection_tests', 'merge_install': False, 'path': '/workspace/towen/src/rosidl/rosidl_typesupport_introspection_tests', 'symlink_install': True, 'test_result_base': None}
+[0.651s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.653s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.654s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/towen/src/rosidl/rosidl_cli' with build type 'ament_python'
+[0.655s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_cli', 'ament_prefix_path')
+[0.662s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.662s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/ament_prefix_path.ps1'
+[0.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/ament_prefix_path.dsv'
+[0.665s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/ament_prefix_path.sh'
+[0.668s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.668s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.695s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/rosidl/rosidl_typesupport_interface' with build type 'ament_cmake'
+[0.696s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/rosidl/rosidl_typesupport_interface'
+[0.696s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.696s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.721s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/vision_opencv/cv_bridge' with build type 'ament_cmake'
+[0.722s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/vision_opencv/cv_bridge'
+[0.722s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.722s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.745s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/zed-ros2-wrapper/zed_components' with build type 'ament_cmake'
+[0.746s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/zed-ros2-wrapper/zed_components'
+[0.746s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.746s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.770s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/vision_opencv/image_geometry' with build type 'ament_cmake'
+[0.770s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/vision_opencv/image_geometry'
+[0.771s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.771s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.794s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/tku_msgs' with build type 'ament_cmake'
+[0.794s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/tku_msgs'
+[0.795s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.795s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.382s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/towen/src/rosidl/rosidl_cli'
+[1.384s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.417s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_typesupport_interface': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_typesupport_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_typesupport_interface
+[1.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/vision_opencv/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/cv_bridge
+[1.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_components': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_components -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_components
+[1.455s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/image_geometry': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/image_geometry -- -j6 -l6
+[1.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[2.461s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_typesupport_interface' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_typesupport_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_typesupport_interface
+[2.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_typesupport_interface': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/rosidl_typesupport_interface -- -j6 -l6
+[2.946s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_typesupport_interface' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/rosidl_typesupport_interface -- -j6 -l6
+[3.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/image_geometry' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/image_geometry -- -j6 -l6
+[3.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_typesupport_interface': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/rosidl_typesupport_interface
+[3.573s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_cli': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/rosidl_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/rosidl_cli/build --no-deps symlink_data
+[3.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/image_geometry': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/image_geometry
+[3.851s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosidl_typesupport_interface)
+[3.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_typesupport_interface' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/rosidl_typesupport_interface
+[3.859s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface' for CMake module files
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface' for CMake config files
+[3.862s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_typesupport_interface', 'cmake_prefix_path')
+[3.863s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/hook/cmake_prefix_path.ps1'
+[3.866s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/hook/cmake_prefix_path.dsv'
+[3.869s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/hook/cmake_prefix_path.sh'
+[3.872s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/bin'
+[3.873s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/lib/pkgconfig/rosidl_typesupport_interface.pc'
+[3.874s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/lib/python3.10/site-packages'
+[3.875s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/bin'
+[3.876s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.ps1'
+[3.880s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.dsv'
+[3.900s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.sh'
+[3.918s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.bash'
+[3.920s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.zsh'
+[3.921s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/rosidl_typesupport_interface/share/colcon-core/packages/rosidl_typesupport_interface)
+[4.115s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[4.117s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake module files
+[4.120s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake config files
+[4.121s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[4.118s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/image_geometry' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/image_geometry
+[4.122s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[4.124s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[4.126s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[4.128s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib'
+[4.129s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[4.130s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[4.131s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[4.133s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[4.135s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[4.135s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[4.136s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/python3.10/site-packages'
+[4.136s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[4.137s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.ps1'
+[4.139s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/image_geometry/share/image_geometry/package.dsv'
+[4.141s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.sh'
+[4.143s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.bash'
+[4.145s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.zsh'
+[4.146s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/image_geometry/share/colcon-core/packages/image_geometry)
+[4.252s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosidl_typesupport_interface)
+[4.252s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface' for CMake module files
+[4.254s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface' for CMake config files
+[4.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_typesupport_interface', 'cmake_prefix_path')
+[4.256s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/hook/cmake_prefix_path.ps1'
+[4.257s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/hook/cmake_prefix_path.dsv'
+[4.258s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/hook/cmake_prefix_path.sh'
+[4.260s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/bin'
+[4.260s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/lib/pkgconfig/rosidl_typesupport_interface.pc'
+[4.261s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/lib/python3.10/site-packages'
+[4.263s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_typesupport_interface/bin'
+[4.265s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.ps1'
+[4.268s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.dsv'
+[4.271s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.sh'
+[4.276s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.bash'
+[4.277s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/package.zsh'
+[4.278s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/rosidl_typesupport_interface/share/colcon-core/packages/rosidl_typesupport_interface)
+[4.292s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/rosidl/rosidl_runtime_c' with build type 'ament_cmake'
+[4.294s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/rosidl/rosidl_runtime_c'
+[4.295s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.295s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.383s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_runtime_c': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_runtime_c -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_runtime_c
+[4.556s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[4.556s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake module files
+[4.557s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake config files
+[4.558s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[4.559s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[4.560s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[4.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[4.563s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib'
+[4.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[4.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[4.564s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[4.565s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[4.566s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[4.566s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[4.567s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/python3.10/site-packages'
+[4.567s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[4.568s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.ps1'
+[4.570s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/image_geometry/share/image_geometry/package.dsv'
+[4.589s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.sh'
+[4.594s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.bash'
+[4.596s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.zsh'
+[4.598s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/image_geometry/share/colcon-core/packages/image_geometry)
+[4.599s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/towen/src/imageprocess' with build type 'ament_python'
+[4.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('imageprocess', 'ament_prefix_path')
+[4.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/imageprocess/share/imageprocess/hook/ament_prefix_path.ps1'
+[4.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/imageprocess/share/imageprocess/hook/ament_prefix_path.dsv'
+[4.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/imageprocess/share/imageprocess/hook/ament_prefix_path.sh'
+[4.606s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.610s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.369s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/towen/src/imageprocess'
+[5.370s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.370s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_components' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_components -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_components
+[5.442s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_components': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/zed_components -- -j6 -l6
+[5.905s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_runtime_c' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_runtime_c -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_runtime_c
+[5.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_runtime_c': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/rosidl_runtime_c -- -j6 -l6
+[5.913s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_cli', 'pythonpath_develop')
+[5.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/build/rosidl_cli/share/rosidl_cli/hook/pythonpath_develop.ps1'
+[5.916s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_cli' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/rosidl_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/rosidl_cli/build --no-deps symlink_data
+[5.917s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/build/rosidl_cli/share/rosidl_cli/hook/pythonpath_develop.dsv'
+[5.920s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/build/rosidl_cli/share/rosidl_cli/hook/pythonpath_develop.sh'
+[5.922s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli' for CMake module files
+[5.923s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli' for CMake config files
+[5.925s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli/lib'
+[5.925s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli/bin'
+[5.925s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_cli', 'path')
+[5.926s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/path.ps1'
+[5.927s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/path.dsv'
+[5.928s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/path.sh'
+[5.929s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli/lib/pkgconfig/rosidl_cli.pc'
+[5.930s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages'
+[5.930s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_cli', 'pythonpath')
+[5.930s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/pythonpath.ps1'
+[5.932s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/pythonpath.dsv'
+[5.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/pythonpath.sh'
+[5.942s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_cli/bin'
+[5.943s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_cli', 'pythonscriptspath')
+[5.944s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/pythonscriptspath.ps1'
+[5.946s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/pythonscriptspath.dsv'
+[5.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_cli/share/rosidl_cli/hook/pythonscriptspath.sh'
+[5.952s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosidl_cli)
+[5.954s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_cli/share/rosidl_cli/package.ps1'
+[5.956s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/rosidl_cli/share/rosidl_cli/package.dsv'
+[5.957s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_cli/share/rosidl_cli/package.sh'
+[5.959s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_cli/share/rosidl_cli/package.bash'
+[5.960s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_cli/share/rosidl_cli/package.zsh'
+[5.967s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/rosidl_cli/share/colcon-core/packages/rosidl_cli)
+[5.971s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/rosidl/rosidl_adapter' with build type 'ament_cmake'
+[5.971s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/rosidl/rosidl_adapter'
+[5.972s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.972s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.034s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_components' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/zed_components -- -j6 -l6
+[6.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_adapter': AMENT_PREFIX_PATH=/workspace/towen/install/rosidl_cli:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble PYTHONPATH=/workspace/towen/build/rosidl_cli:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/webrtc_ros_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/rosidl_typesupport_introspection_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_typesupport_introspection_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_adapter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_adapter
+[6.566s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_runtime_c' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/rosidl_runtime_c -- -j6 -l6
+[6.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_components': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/zed_components
+[6.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[6.911s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake module files
+[6.914s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake config files
+[6.918s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[6.919s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[6.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_components' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/zed_components
+[6.924s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[6.927s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[6.933s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib'
+[6.933s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[6.934s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[6.937s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[6.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[6.942s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[6.943s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/pkgconfig/zed_components.pc'
+[6.944s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/python3.10/site-packages'
+[6.945s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[6.946s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.ps1'
+[6.949s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_components/share/zed_components/package.dsv'
+[6.952s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.sh'
+[6.954s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.bash'
+[6.956s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.zsh'
+[6.958s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_components/share/colcon-core/packages/zed_components)
+[7.203s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_runtime_c': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/rosidl_runtime_c
+[7.365s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[7.365s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake module files
+[7.367s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake config files
+[7.367s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[7.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[7.369s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[7.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[7.372s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib'
+[7.372s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[7.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[7.374s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[7.375s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[7.376s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[7.376s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/pkgconfig/zed_components.pc'
+[7.376s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/python3.10/site-packages'
+[7.377s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[7.378s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.ps1'
+[7.379s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_components/share/zed_components/package.dsv'
+[7.380s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.sh'
+[7.381s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.bash'
+[7.382s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.zsh'
+[7.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_components/share/colcon-core/packages/zed_components)
+[7.385s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/zed-ros2-wrapper/zed_wrapper' with build type 'ament_cmake'
+[7.386s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/zed-ros2-wrapper/zed_wrapper'
+[7.386s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.386s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.441s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_wrapper': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/webrtc_ros_msgs/lib:/workspace/towen/install/usb_cam/lib:/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/rosidl_typesupport_introspection_cpp/lib:/workspace/towen/install/rosidl_typesupport_introspection_c/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_wrapper -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_wrapper
+[7.619s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /workspace/towen/install/imageprocess/share/ament_index/resource_index/packages/imageprocess
+[7.619s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /workspace/towen/install/imageprocess/share/imageprocess/package.xml
+[7.620s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /workspace/towen/install/imageprocess/lib/imageprocess/image
+[7.620s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /workspace/towen/install/imageprocess/lib/imageprocess/image_test
+[7.620s] DEBUG:colcon.colcon_core.task.python.build:While undoing a previous installation files outside the Python library path are being ignored: /workspace/towen/install/imageprocess/lib/imageprocess/imageprocess
+[7.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/imageprocess': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/imageprocess/build --no-deps symlink_data --force
+[7.917s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/vision_opencv/cv_bridge -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/cv_bridge
+[7.918s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[7.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosidl_runtime_c)
+[7.940s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c' for CMake module files
+[7.942s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_runtime_c' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/rosidl_runtime_c
+[7.943s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c' for CMake config files
+[7.944s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_runtime_c', 'cmake_prefix_path')
+[7.945s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/cmake_prefix_path.ps1'
+[7.951s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/cmake_prefix_path.dsv'
+[7.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/cmake_prefix_path.sh'
+[7.955s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/lib'
+[7.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_runtime_c', 'ld_library_path_lib')
+[7.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/ld_library_path_lib.ps1'
+[7.957s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/ld_library_path_lib.dsv'
+[7.958s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/ld_library_path_lib.sh'
+[7.959s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/bin'
+[7.959s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/lib/pkgconfig/rosidl_runtime_c.pc'
+[7.959s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/lib/python3.10/site-packages'
+[7.960s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/bin'
+[7.961s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.ps1'
+[7.962s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.dsv'
+[7.963s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.sh'
+[7.974s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.bash'
+[7.975s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.zsh'
+[7.976s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/rosidl_runtime_c/share/colcon-core/packages/rosidl_runtime_c)
+[8.576s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/cv_bridge' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[8.605s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_adapter' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/rosidl_cli:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble PYTHONPATH=/workspace/towen/build/rosidl_cli:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/webrtc_ros_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/rosidl_typesupport_introspection_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_typesupport_introspection_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_adapter -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_adapter
+[8.606s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_adapter': AMENT_PREFIX_PATH=/workspace/towen/install/rosidl_cli:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble PYTHONPATH=/workspace/towen/build/rosidl_cli:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/webrtc_ros_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/rosidl_typesupport_introspection_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_typesupport_introspection_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages /usr/local/bin/cmake --build /workspace/towen/build/rosidl_adapter -- -j6 -l6
+[8.743s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rosidl_runtime_c)
+[8.743s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c' for CMake module files
+[8.745s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c' for CMake config files
+[8.747s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_runtime_c', 'cmake_prefix_path')
+[8.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/cmake_prefix_path.ps1'
+[8.750s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/cmake_prefix_path.dsv'
+[8.750s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/cmake_prefix_path.sh'
+[8.762s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/lib'
+[8.762s] Level 1:colcon.colcon_core.shell:create_environment_hook('rosidl_runtime_c', 'ld_library_path_lib')
+[8.763s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/ld_library_path_lib.ps1'
+[8.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/ld_library_path_lib.dsv'
+[8.765s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/hook/ld_library_path_lib.sh'
+[8.766s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/bin'
+[8.766s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/lib/pkgconfig/rosidl_runtime_c.pc'
+[8.766s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/lib/python3.10/site-packages'
+[8.767s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/rosidl_runtime_c/bin'
+[8.768s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.ps1'
+[8.769s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.dsv'
+[8.770s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.sh'
+[8.771s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.bash'
+[8.778s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/package.zsh'
+[8.779s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/rosidl_runtime_c/share/colcon-core/packages/rosidl_runtime_c)
+[8.784s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/rosidl/rosidl_runtime_cpp' with build type 'ament_cmake'
+[8.786s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/rosidl/rosidl_runtime_cpp'
+[8.786s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.787s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.819s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/tku_msgs' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[8.824s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/tku_msgs -- -j6 -l6
+[8.857s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/rosidl_runtime_cpp': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/webrtc_ros_msgs/lib:/workspace/towen/install/usb_cam/lib:/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/rosidl_typesupport_introspection_cpp/lib:/workspace/towen/install/rosidl_typesupport_introspection_c/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/rosidl/rosidl_runtime_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_runtime_cpp
+[9.105s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/rosidl_adapter' returned '2': AMENT_PREFIX_PATH=/workspace/towen/install/rosidl_cli:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble PYTHONPATH=/workspace/towen/build/rosidl_cli:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/webrtc_ros_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/rosidl_typesupport_introspection_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_typesupport_introspection_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages /usr/local/bin/cmake --build /workspace/towen/build/rosidl_adapter -- -j6 -l6
+[9.330s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[9.331s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge' for CMake module files
+[9.333s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge' for CMake config files
+[9.334s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[9.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[9.336s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[9.337s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[9.339s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib'
+[9.342s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[9.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[9.344s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[9.345s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[9.346s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/bin'
+[9.346s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[9.347s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib/python3.10/site-packages'
+[9.347s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/bin'
+[9.349s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.ps1'
+[9.354s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/package.dsv'
+[9.357s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.sh'
+[9.360s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.bash'
+[9.362s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.zsh'
+[9.365s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[10.732s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.733s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.733s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[10.734s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.753s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[10.754s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.754s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.754s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.761s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[10.762s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.764s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.ps1'
+[10.767s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/towen/install/_local_setup_util_ps1.py'
+[10.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.ps1'
+[10.782s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.sh'
+[10.785s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/towen/install/_local_setup_util_sh.py'
+[10.787s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.sh'
+[10.797s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.bash'
+[10.799s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.bash'
+[10.806s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.zsh'
+[10.808s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.zsh'

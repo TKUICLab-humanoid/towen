@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/LabelModelObjectList.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct LabelModelObjectList {
+      sequence<uint8> labelmodel;
+    };
+  };
+};

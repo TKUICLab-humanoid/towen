@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_generator_c/tku_msgs/msg/detail/camera_save__struct.h

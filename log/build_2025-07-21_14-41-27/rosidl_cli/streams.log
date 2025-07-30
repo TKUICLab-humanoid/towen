@@ -1,0 +1,38 @@
+[2.868s] Invoking command in '/workspace/towen/src/rosidl/rosidl_cli': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/rosidl_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/rosidl_cli build --build-base /workspace/towen/build/rosidl_cli/build install --record /workspace/towen/build/rosidl_cli/install.log --single-version-externally-managed install_data
+[3.735s] running egg_info
+[3.782s] writing ../../../build/rosidl_cli/rosidl_cli.egg-info/PKG-INFO
+[3.784s] writing dependency_links to ../../../build/rosidl_cli/rosidl_cli.egg-info/dependency_links.txt
+[3.785s] writing entry points to ../../../build/rosidl_cli/rosidl_cli.egg-info/entry_points.txt
+[3.786s] writing requirements to ../../../build/rosidl_cli/rosidl_cli.egg-info/requires.txt
+[3.787s] writing top-level names to ../../../build/rosidl_cli/rosidl_cli.egg-info/top_level.txt
+[3.884s] reading manifest file '../../../build/rosidl_cli/rosidl_cli.egg-info/SOURCES.txt'
+[3.888s] writing manifest file '../../../build/rosidl_cli/rosidl_cli.egg-info/SOURCES.txt'
+[3.889s] running build
+[3.889s] running build_py
+[3.890s] copying rosidl_cli/entry_points.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli
+[3.890s] copying rosidl_cli/extensions.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli
+[3.891s] copying rosidl_cli/__init__.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli
+[3.892s] copying rosidl_cli/cli.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli
+[3.893s] copying rosidl_cli/common.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli
+[3.894s] copying rosidl_cli/command/__init__.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command
+[3.894s] copying rosidl_cli/command/helpers.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command
+[3.895s] copying rosidl_cli/command/translate/extensions.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+[3.895s] copying rosidl_cli/command/translate/__init__.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+[3.896s] copying rosidl_cli/command/translate/api.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command/translate
+[3.897s] copying rosidl_cli/command/generate/extensions.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+[3.900s] copying rosidl_cli/command/generate/__init__.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+[3.900s] copying rosidl_cli/command/generate/api.py -> /workspace/towen/build/rosidl_cli/build/lib/rosidl_cli/command/generate
+[3.900s] running install
+[3.910s] running install_lib
+[3.959s] running install_data
+[3.961s] copying resource/rosidl_cli -> /workspace/towen/install/rosidl_cli/share/ament_index/resource_index/packages
+[3.961s] copying package.xml -> /workspace/towen/install/rosidl_cli/share/rosidl_cli
+[3.962s] copying completion/rosidl-argcomplete.bash -> /workspace/towen/install/rosidl_cli/share/rosidl_cli/environment
+[3.962s] copying completion/rosidl-argcomplete.zsh -> /workspace/towen/install/rosidl_cli/share/rosidl_cli/environment
+[3.963s] running install_egg_info
+[4.012s] removing '/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages/rosidl_cli-3.1.7-py3.10.egg-info' (and everything under it)
+[4.013s] Copying ../../../build/rosidl_cli/rosidl_cli.egg-info to /workspace/towen/install/rosidl_cli/lib/python3.10/site-packages/rosidl_cli-3.1.7-py3.10.egg-info
+[4.015s] running install_scripts
+[4.118s] Installing rosidl script to /workspace/towen/install/rosidl_cli/bin
+[4.121s] writing list of installed files to '/workspace/towen/build/rosidl_cli/install.log'
+[4.460s] Invoked command in '/workspace/towen/src/rosidl/rosidl_cli' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/rosidl_cli/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/rosidl_cli build --build-base /workspace/towen/build/rosidl_cli/build install --record /workspace/towen/build/rosidl_cli/install.log --single-version-externally-managed install_data

@@ -1,0 +1,38 @@
+[2.800s] Invoking command in '/workspace/towen/build/strategy': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/strategy/build --no-deps symlink_data --force
+[3.892s] running develop
+[3.893s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[3.893s] !!
+[3.893s] 
+[3.893s]         ********************************************************************************
+[3.893s]         Please avoid running ``setup.py`` and ``easy_install``.
+[3.893s]         Instead, use pypa/build, pypa/installer or other
+[3.894s]         standards-based tools.
+[3.894s] 
+[3.894s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[3.894s]         ********************************************************************************
+[3.894s] 
+[3.894s] !!
+[3.894s]   easy_install.initialize_options(self)
+[4.689s] running egg_info
+[4.733s] writing strategy.egg-info/PKG-INFO
+[4.735s] writing dependency_links to strategy.egg-info/dependency_links.txt
+[4.735s] writing entry points to strategy.egg-info/entry_points.txt
+[4.737s] writing requirements to strategy.egg-info/requires.txt
+[4.738s] writing top-level names to strategy.egg-info/top_level.txt
+[4.832s] reading manifest file 'strategy.egg-info/SOURCES.txt'
+[4.839s] writing manifest file 'strategy.egg-info/SOURCES.txt'
+[5.006s] running build_ext
+[5.006s] Creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy.egg-link (link to .)
+[5.009s] Installing ar script to /workspace/towen/install/strategy/lib/strategy
+[5.009s] Installing bb script to /workspace/towen/install/strategy/lib/strategy
+[5.013s] Installing mar script to /workspace/towen/install/strategy/lib/strategy
+[5.014s] Installing obs script to /workspace/towen/install/strategy/lib/strategy
+[5.014s] Installing sp script to /workspace/towen/install/strategy/lib/strategy
+[5.014s] Installing sr script to /workspace/towen/install/strategy/lib/strategy
+[5.014s] Installing wl script to /workspace/towen/install/strategy/lib/strategy
+[5.014s] 
+[5.014s] Installed /workspace/towen/build/strategy
+[5.015s] running symlink_data
+[5.015s] symbolically linking /workspace/towen/build/strategy/resource/strategy -> /workspace/towen/install/strategy/share/ament_index/resource_index/packages
+[5.015s] symbolically linking /workspace/towen/build/strategy/package.xml -> /workspace/towen/install/strategy/share/strategy
+[5.140s] Invoked command in '/workspace/towen/build/strategy' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/strategy/build --no-deps symlink_data --force

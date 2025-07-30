@@ -1,0 +1,40 @@
+[0.157s] Invoking command in '/workspace/towen/build/zed_wrapper': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/zed_wrapper -- -j6 -l6
+[0.688s] Invoked command in '/workspace/towen/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/zed_wrapper -- -j6 -l6
+[2.302s] Invoking command in '/workspace/towen/build/zed_wrapper': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/zed_wrapper
+[2.788s] -- Install configuration: ""
+[2.789s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config
+[2.789s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zedm.yaml
+[2.790s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zedxone4k.yaml
+[2.790s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/common_mono.yaml
+[2.791s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zedx.yaml
+[2.791s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zedxonegs.yaml
+[2.791s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/ffmpeg.yaml
+[2.791s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/virtual.yaml
+[2.791s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zedxm.yaml
+[2.794s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zed2i.yaml
+[2.794s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/common_stereo.yaml
+[2.794s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zed.yaml
+[2.794s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/config/zed2.yaml
+[2.796s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/urdf
+[2.796s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/urdf/include
+[2.797s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/urdf/include/materials.urdf.xacro
+[2.797s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/urdf/zed_descr.urdf.xacro
+[2.798s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/urdf/zed_macro.urdf.xacro
+[2.799s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/launch
+[2.799s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/launch/zed_camera.launch.py
+[2.800s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/ament_index/resource_index/package_run_dependencies/zed_wrapper
+[2.801s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/ament_index/resource_index/parent_prefix_path/zed_wrapper
+[2.802s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.sh
+[2.802s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/environment/ament_prefix_path.dsv
+[2.803s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/environment/path.sh
+[2.803s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/environment/path.dsv
+[2.811s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/local_setup.bash
+[2.811s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/local_setup.sh
+[2.812s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/local_setup.zsh
+[2.812s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/local_setup.dsv
+[2.812s] -- Installing: /workspace/towen/install/zed_wrapper/share/zed_wrapper/package.dsv
+[2.812s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/ament_index/resource_index/packages/zed_wrapper
+[2.822s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig.cmake
+[2.823s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/cmake/zed_wrapperConfig-version.cmake
+[2.823s] -- Up-to-date: /workspace/towen/install/zed_wrapper/share/zed_wrapper/package.xml
+[3.715s] Invoked command in '/workspace/towen/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/zed_wrapper

@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/read_motion__rosidl_typesupport_introspection_c.h

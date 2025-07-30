@@ -1,0 +1,35 @@
+[2.749s] Invoking command in '/workspace/towen/src/imageprocess': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /workspace/towen/build/imageprocess/build install --record /workspace/towen/build/imageprocess/install.log --single-version-externally-managed install_data
+[3.872s] running egg_info
+[3.944s] writing ../../build/imageprocess/imageprocess.egg-info/PKG-INFO
+[3.952s] writing dependency_links to ../../build/imageprocess/imageprocess.egg-info/dependency_links.txt
+[3.955s] writing entry points to ../../build/imageprocess/imageprocess.egg-info/entry_points.txt
+[3.964s] writing requirements to ../../build/imageprocess/imageprocess.egg-info/requires.txt
+[3.964s] writing top-level names to ../../build/imageprocess/imageprocess.egg-info/top_level.txt
+[4.073s] reading manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[4.075s] adding license file 'LICENSE'
+[4.077s] writing manifest file '../../build/imageprocess/imageprocess.egg-info/SOURCES.txt'
+[4.077s] running build
+[4.078s] running build_py
+[4.078s] copying imageprocess/modelparameter.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.079s] copying imageprocess/image_0417.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.079s] copying imageprocess/dataunit.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.080s] copying imageprocess/123123.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.080s] copying imageprocess/image_test.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.081s] copying imageprocess/image.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.081s] copying imageprocess/__init__.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.082s] copying imageprocess/imageprocess.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.082s] copying imageprocess/camera_segment_headless.py -> /workspace/towen/build/imageprocess/build/lib/imageprocess
+[4.083s] running install
+[4.095s] running install_lib
+[4.165s] running install_data
+[4.166s] copying resource/imageprocess -> /workspace/towen/install/imageprocess/share/ament_index/resource_index/packages
+[4.166s] copying package.xml -> /workspace/towen/install/imageprocess/share/imageprocess
+[4.166s] running install_egg_info
+[4.219s] removing '/workspace/towen/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info' (and everything under it)
+[4.219s] Copying ../../build/imageprocess/imageprocess.egg-info to /workspace/towen/install/imageprocess/lib/python3.10/site-packages/imageprocess-0.0.0-py3.10.egg-info
+[4.224s] running install_scripts
+[4.824s] Installing image script to /workspace/towen/install/imageprocess/lib/imageprocess
+[4.825s] Installing image_test script to /workspace/towen/install/imageprocess/lib/imageprocess
+[4.825s] Installing imageprocess script to /workspace/towen/install/imageprocess/lib/imageprocess
+[4.825s] writing list of installed files to '/workspace/towen/build/imageprocess/install.log'
+[5.518s] Invoked command in '/workspace/towen/src/imageprocess' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /workspace/towen/build/imageprocess/build install --record /workspace/towen/build/imageprocess/install.log --single-version-externally-managed install_data

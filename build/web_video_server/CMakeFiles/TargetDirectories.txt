@@ -1,0 +1,10 @@
+/workspace/towen/build/web_video_server/CMakeFiles/uninstall.dir
+/workspace/towen/build/web_video_server/CMakeFiles/web_video_server_uninstall.dir
+/workspace/towen/build/web_video_server/CMakeFiles/web_video_server.dir
+/workspace/towen/build/web_video_server/CMakeFiles/test.dir
+/workspace/towen/build/web_video_server/CMakeFiles/edit_cache.dir
+/workspace/towen/build/web_video_server/CMakeFiles/rebuild_cache.dir
+/workspace/towen/build/web_video_server/CMakeFiles/list_install_components.dir
+/workspace/towen/build/web_video_server/CMakeFiles/install.dir
+/workspace/towen/build/web_video_server/CMakeFiles/install/local.dir
+/workspace/towen/build/web_video_server/CMakeFiles/install/strip.dir

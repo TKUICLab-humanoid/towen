@@ -1,0 +1,36 @@
+[0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.5 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+Cloning into 'third_party/gn'...
+Note: switching to '501b49a3ab4f0d099457b6e5b62c709a1d2311be'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 501b49a3 clang: Add support for C++ modules in deps
+/workspace/towen/src/webrtc_ros/webrtc/build/webrtc/.gclient_entries missing, .gclient file in parent directory /workspace/towen/src/webrtc_ros/webrtc/build/webrtc might not be the file you want to use.
+depot_tools/ninja.py: Could not find Ninja in the third_party of the current project, nor in your PATH.
+Please take one of the following actions to install Ninja:
+- If your project has DEPS, add a CIPD Ninja dependency to DEPS.
+- Otherwise, add Ninja to your PATH *after* depot_tools.
+[31mCMake Error at CMakeLists.txt:41 (message):
+  cannot fetch GN build tool
+
+[0m

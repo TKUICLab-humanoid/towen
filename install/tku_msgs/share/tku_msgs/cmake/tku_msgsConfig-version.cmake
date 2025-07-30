@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/ament_cmake_core/tku_msgsConfig-version.cmake

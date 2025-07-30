@@ -1,0 +1,17 @@
+{
+  "package_name": "rosidl_generator_c",
+  "non_idl_tuples": [
+    "/opt/ros/humble/install/share/test_interface_files:msg/Arrays.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/BasicTypes.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/BoundedPlainSequences.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/BoundedSequences.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/Constants.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/Defaults.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/Empty.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/MultiNested.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/Nested.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/Strings.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/UnboundedSequences.msg",
+    "/opt/ros/humble/install/share/test_interface_files:msg/WStrings.msg"
+  ]
+}

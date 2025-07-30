@@ -1,0 +1,86 @@
+[0.610s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[0.818s] gmake: Warning: File 'Makefile' has modification time 1753163007 s in the future
+[0.892s] gmake[1]: Warning: File 'CMakeFiles/Makefile2' has modification time 1753163007 s in the future
+[0.896s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_cv_bridge.dir/progress.make' has modification time 1753163007 s in the future
+[0.906s] gmake[2]: Warning: File 'src/CMakeFiles/cv_bridge.dir/flags.make' has modification time 1753162803 s in the future
+[0.912s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 1753162803 s in the future
+[0.915s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 1753162803 s in the future
+[0.917s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.922s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_symlink_cv_bridge.dir/progress.make' has modification time 1753163007 s in the future
+[0.928s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.933s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.938s] gmake[2]: Warning: File 'src/CMakeFiles/cv_bridge.dir/flags.make' has modification time 1753162803 s in the future
+[0.945s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.955s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.960s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest_main.dir/flags.make' has modification time 1753162803 s in the future
+[0.962s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.967s] gmake[2]: Warning: File 'gtest/CMakeFiles/gtest.dir/flags.make' has modification time 1753162803 s in the future
+[0.974s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.978s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[0.982s] [  0%] Built target ament_cmake_python_symlink_cv_bridge
+[0.992s] [ 12%] Built target gtest_main
+[0.998s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_build_cv_bridge_egg.dir/progress.make' has modification time 1753163007 s in the future
+[1.001s] [ 25%] Built target gtest
+[1.009s] [ 43%] Built target cv_bridge
+[1.034s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.045s] gmake[2]: Warning: File 'src/CMakeFiles/cv_bridge_boost.dir/flags.make' has modification time 1753162803 s in the future
+[1.046s] gmake[2]: Warning: File 'test/CMakeFiles/cv_bridge-utest.dir/flags.make' has modification time 1753162803 s in the future
+[1.047s] gmake[2]: Warning: File 'CMakeFiles/ament_cmake_python_build_cv_bridge_egg.dir/progress.make' has modification time 1753163007 s in the future
+[1.084s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.085s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.111s] gmake[2]: Warning: File 'test/CMakeFiles/cv_bridge-utest.dir/flags.make' has modification time 1753162803 s in the future
+[1.129s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.129s] gmake[2]: Warning: File 'src/CMakeFiles/cv_bridge_boost.dir/flags.make' has modification time 1753162803 s in the future
+[1.155s] [ 81%] Built target cv_bridge-utest
+[1.224s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[1.255s] [100%] Built target cv_bridge_boost
+[1.904s] running egg_info
+[1.951s] writing cv_bridge.egg-info/PKG-INFO
+[1.953s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[1.956s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[2.116s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[2.119s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[2.218s] gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.262s] [100%] Built target ament_cmake_python_build_cv_bridge_egg
+[2.266s] gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+[2.274s] gmake: warning:  Clock skew detected.  Your build may be incomplete.
+[2.360s] Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[2.681s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/cv_bridge
+[2.867s] -- Install configuration: ""
+[2.868s] -- Execute custom install script
+[2.869s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[2.870s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[2.872s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/PKG-INFO
+[2.872s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/SOURCES.txt
+[2.873s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/dependency_links.txt
+[2.873s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/top_level.txt
+[2.875s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[2.877s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[2.878s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[2.880s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost//cv_bridge_boost.so
+[2.882s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h
+[2.883s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.h
+[2.885s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/lib/libcv_bridge.so
+[2.887s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[2.888s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[2.889s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[2.890s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[2.891s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/path.sh
+[2.892s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[2.893s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.bash
+[2.895s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.sh
+[2.896s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[2.897s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[2.898s] -- Symlinking: /workspace/towen/install/cv_bridge/share/cv_bridge/package.dsv
+[2.919s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[2.920s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[2.920s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.921s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[2.922s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[2.924s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[2.925s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/package.xml
+[3.052s] Listing '/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[3.053s] Listing '/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost'...
+[3.074s] -- Up-to-date: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[3.074s] -- Up-to-date: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[3.128s] Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/cv_bridge

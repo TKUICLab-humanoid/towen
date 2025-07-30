@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tku_msgs/srv/CameraInfo.srv
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module srv {
+    struct CameraInfo_Request {
+      boolean load;
+    };
+    struct CameraInfo_Response {
+      int32 brightness;
+
+      int32 contrast;
+
+      int32 saturation;
+
+      int32 white_balance;
+
+      boolean auto_white_balance;
+
+      boolean auto_exposure;
+
+      boolean auto_backlight_compensation;
+    };
+  };
+};

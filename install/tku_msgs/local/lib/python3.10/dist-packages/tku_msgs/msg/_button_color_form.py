@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_button_color_form.py

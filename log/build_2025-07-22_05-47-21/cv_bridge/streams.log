@@ -1,0 +1,31 @@
+[0.681s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/cv_bridge
+[0.944s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/install/share/ament_cmake_ros/cmake)
+[1.021s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.222s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.090s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed
+[2.096s] [33mCMake Warning (dev) at CMakeLists.txt:20 (find_package):
+[2.096s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[2.096s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[2.097s]   set the policy and suppress this warning.
+[2.097s] 
+[2.097s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.097s] [0m
+[2.110s] [33mCMake Warning (dev) at CMakeLists.txt:31 (find_package):
+[2.110s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[2.110s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[2.111s]   set the policy and suppress this warning.
+[2.111s] 
+[2.111s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[2.111s] [0m
+[2.135s] -- Found rcpputils: 2.4.3 (/opt/ros/humble/install/share/rcpputils/cmake)
+[2.181s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/install/share/sensor_msgs/cmake)
+[2.241s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)
+[2.251s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)
+[2.277s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_cpp/cmake)
+[2.311s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[2.381s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[2.812s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+[3.014s] -- Found gtest sources under '/opt/ros/humble/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.151s] -- Configuring done (5.3s)
+[6.230s] -- Generating done (0.1s)
+[6.231s] -- Build files have been written to: /workspace/towen/build/cv_bridge

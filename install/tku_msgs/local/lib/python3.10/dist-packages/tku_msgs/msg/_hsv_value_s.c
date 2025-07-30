@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_hsv_value_s.c

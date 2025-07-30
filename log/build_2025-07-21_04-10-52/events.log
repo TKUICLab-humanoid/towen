@@ -1,0 +1,420 @@
+[0.000000] (-) TimerEvent: {}
+[0.001582] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.001944] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.002027] (-) JobUnselected: {'identifier': 'imageprocess'}
+[0.002133] (-) JobUnselected: {'identifier': 'motionpackage'}
+[0.002303] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.002393] (-) JobUnselected: {'identifier': 'rosidl_adapter'}
+[0.002443] (-) JobUnselected: {'identifier': 'rosidl_cli'}
+[0.002488] (-) JobUnselected: {'identifier': 'rosidl_cmake'}
+[0.002535] (-) JobUnselected: {'identifier': 'rosidl_generator_c'}
+[0.002601] (-) JobUnselected: {'identifier': 'rosidl_parser'}
+[0.003023] (-) JobUnselected: {'identifier': 'rosidl_runtime_c'}
+[0.003109] (-) JobUnselected: {'identifier': 'rosidl_runtime_cpp'}
+[0.003240] (-) JobUnselected: {'identifier': 'rosidl_typesupport_interface'}
+[0.003314] (-) JobUnselected: {'identifier': 'rosidl_typesupport_introspection_c'}
+[0.003361] (-) JobUnselected: {'identifier': 'rosidl_typesupport_introspection_cpp'}
+[0.003406] (-) JobUnselected: {'identifier': 'rosidl_typesupport_introspection_tests'}
+[0.003448] (-) JobUnselected: {'identifier': 'strategy'}
+[0.003494] (-) JobUnselected: {'identifier': 'tku_msgs'}
+[0.003535] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.003799] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.003880] (-) JobUnselected: {'identifier': 'web_video_server'}
+[0.004006] (-) JobUnselected: {'identifier': 'zed_components'}
+[0.004080] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.004126] (-) JobUnselected: {'identifier': 'zed_wrapper'}
+[0.004197] (rosidl_generator_cpp) JobQueued: {'identifier': 'rosidl_generator_cpp', 'dependencies': OrderedDict([('rosidl_cli', '/workspace/towen/install/rosidl_cli'), ('rosidl_typesupport_interface', '/workspace/towen/install/rosidl_typesupport_interface'), ('rosidl_adapter', '/workspace/towen/install/rosidl_adapter'), ('rosidl_runtime_c', '/workspace/towen/install/rosidl_runtime_c'), ('rosidl_parser', '/workspace/towen/install/rosidl_parser'), ('rosidl_runtime_cpp', '/workspace/towen/install/rosidl_runtime_cpp'), ('rosidl_cmake', '/workspace/towen/install/rosidl_cmake'), ('rosidl_generator_c', '/workspace/towen/install/rosidl_generator_c')])}
+[0.004293] (rosidl_generator_cpp) JobStarted: {'identifier': 'rosidl_generator_cpp'}
+[0.057085] (rosidl_generator_cpp) JobProgress: {'identifier': 'rosidl_generator_cpp', 'progress': 'cmake'}
+[0.057613] (rosidl_generator_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '/workspace/towen/src/rosidl/rosidl_generator_cpp', '-DCMAKE_INSTALL_PREFIX=/workspace/towen/install/rosidl_generator_cpp'], 'cwd': '/workspace/towen/build/rosidl_generator_cpp', 'env': OrderedDict([('TWINE_PASSWORD', 'NvidiaJetson24'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONFAULTHANDLER', '1'), ('TMUX', '/tmp/tmux-1000/default,84,1'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('BYOBU_SED', 'sed'), ('PYTHONIOENCODING', 'utf-8'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('PIP_ROOT_USER_ACTION', 'ignore'), ('LANGUAGE', 'en_US:en'), ('BYOBU_EDITOR', 'sensible-editor'), ('PIP_TRUSTED_HOST', 'jetson.webredirect.org'), ('PIP_DEFAULT_TIMEOUT', '100'), ('PYTHONHASHSEED', 'random'), ('HOSTNAME', 'ubuntu'), ('TWINE_REPOSITORY_URL', 'http://jao-51/jp6/cu126'), ('TAR_INDEX_URL', 'http://jetson.webredirect.org:8000/jp6/cu126'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64'), ('HOME', '/home/work'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/workspace/towen/src/rosidl'), ('CMAKE_CUDA_COMPILER', '/usr/local/cuda/bin/nvcc'), ('TERM_PROGRAM_VERSION', '3.2a'), ('TORCH_NVCC_FLAGS', '-Xfatbin -compress-all'), ('PYTHONUNBUFFERED', '1'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('BYOBU_PREFIX', '/usr'), ('CUDA_NVCC_EXECUTABLE', '/usr/local/cuda/bin/nvcc'), ('CUDNN_LIB_PATH', '/usr/lib/aarch64-linux-gnu'), ('CUDAARCHS', '87'), ('PIP_CACHE_PURGE', 'true'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/workspace/towen/install:/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('SCP_UPLOAD_PASS', 'nvidia'), ('BYOBU_ACCENT', '\\#75507B'), ('PIP_DISABLE_PIP_VERSION_CHECK', 'on'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('CUDA_ARCHITECTURES', '87'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('TWINE_USERNAME', 'jp6'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/workspace/towen/install/rosidl_cli/bin:/opt/ros/humble/bin:/opt/ros/humble/install/bin:/usr/local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('PIP_INDEX_URL', 'https://pypi.jetson-ai-lab.io/jp6/cu126'), ('PIP_NO_CACHE_DIR', 'off'), ('DISPLAY', ':0'), ('SCP_UPLOAD_USER', 'nvidia'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/home/iclab/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cli:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install'), ('SCP_UPLOAD_URL', 'jao-51:/dist/jp6/cu126'), ('TWINE_NON_INTERACTIVE', '1'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PYTHON_VERSION', '3.10'), ('BYOBU_DATE', '%Y-%m-%d'), ('OPENCV_VERSION', '4.10.0'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/work/.byobu'), ('BYOBU_PAGER', 'sensible-pager'), ('NVCC_PATH', '/usr/local/cuda/bin/nvcc'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu--7SFVQ5cz'), ('OPENCV_URL', ''), ('PWD', '/workspace/towen/build/rosidl_generator_cpp'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('CUDNN_LIB_INCLUDE_PATH', '/usr/include'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('CUDA_BIN_PATH', '/usr/local/cuda/bin'), ('TMUX_PANE', '%1'), ('CMAKE_PREFIX_PATH', '/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble'), ('BYOBU_TTY', '/dev/pts/2')]), 'shell': False}
+[0.099245] (-) TimerEvent: {}
+[0.199850] (-) TimerEvent: {}
+[0.300519] (-) TimerEvent: {}
+[0.361038] (rosidl_generator_cpp) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400707] (-) TimerEvent: {}
+[0.497836] (rosidl_generator_cpp) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.500767] (-) TimerEvent: {}
+[0.528171] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.600990] (-) TimerEvent: {}
+[0.663887] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.701124] (-) TimerEvent: {}
+[0.717112] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.718333] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.720008] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.738222] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.801333] (-) TimerEvent: {}
+[0.899402] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.901420] (-) TimerEvent: {}
+[0.952635] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.953489] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.954973] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.965976] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/install/share/ament_cmake/cmake)\n'}
+[1.001571] (-) TimerEvent: {}
+[1.102207] (-) TimerEvent: {}
+[1.203235] (-) TimerEvent: {}
+[1.292185] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[1.303375] (-) TimerEvent: {}
+[1.403947] (-) TimerEvent: {}
+[1.504642] (-) TimerEvent: {}
+[1.605418] (-) TimerEvent: {}
+[1.706057] (-) TimerEvent: {}
+[1.781236] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)\n'}
+[1.785862] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found rosidl_runtime_c: 3.1.7 (/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/cmake)\n'}
+[1.806167] (-) TimerEvent: {}
+[1.850603] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found rosidl_runtime_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_runtime_cpp/cmake)\n'}
+[1.861673] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found test_interface_files: 0.9.1 (/opt/ros/humble/install/share/test_interface_files/cmake)\n'}
+[1.906330] (-) TimerEvent: {}
+[2.006965] (-) TimerEvent: {}
+[2.092035] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/workspace/towen/install/rosidl_adapter/share/rosidl_adapter/cmake)\n'}
+[2.107099] (-) TimerEvent: {}
+[2.207699] (-) TimerEvent: {}
+[2.308382] (-) TimerEvent: {}
+[2.408988] (-) TimerEvent: {}
+[2.509591] (-) TimerEvent: {}
+[2.610220] (-) TimerEvent: {}
+[2.710812] (-) TimerEvent: {}
+[2.811370] (-) TimerEvent: {}
+[2.912007] (-) TimerEvent: {}
+[3.012819] (-) TimerEvent: {}
+[3.113649] (-) TimerEvent: {}
+[3.214554] (-) TimerEvent: {}
+[3.294273] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Found gtest sources under '/opt/ros/humble/install/src/gtest_vendor': C++ tests using 'Google Test' will be built\n"}
+[3.303253] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[3.314608] (-) TimerEvent: {}
+[3.415177] (-) TimerEvent: {}
+[3.469878] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[3.474252] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Found Threads: TRUE\n'}
+[3.515381] (-) TimerEvent: {}
+[3.549502] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[3.555389] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[3.556932] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[3.557310] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[3.560314] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[3.560773] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[3.561502] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[3.563851] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[3.565656] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[3.570219] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[3.570627] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[3.571352] (rosidl_generator_cpp) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[3.578294] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Configuring done (3.3s)\n'}
+[3.615449] (-) TimerEvent: {}
+[3.635395] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[3.636348] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Build files have been written to: /workspace/towen/build/rosidl_generator_cpp\n'}
+[3.684135] (rosidl_generator_cpp) CommandEnded: {'returncode': 0}
+[3.686632] (rosidl_generator_cpp) JobProgress: {'identifier': 'rosidl_generator_cpp', 'progress': 'build'}
+[3.688564] (rosidl_generator_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/workspace/towen/build/rosidl_generator_cpp', '--', '-j6', '-l6'], 'cwd': '/workspace/towen/build/rosidl_generator_cpp', 'env': OrderedDict([('TWINE_PASSWORD', 'NvidiaJetson24'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONFAULTHANDLER', '1'), ('TMUX', '/tmp/tmux-1000/default,84,1'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('BYOBU_SED', 'sed'), ('PYTHONIOENCODING', 'utf-8'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('PIP_ROOT_USER_ACTION', 'ignore'), ('LANGUAGE', 'en_US:en'), ('BYOBU_EDITOR', 'sensible-editor'), ('PIP_TRUSTED_HOST', 'jetson.webredirect.org'), ('PIP_DEFAULT_TIMEOUT', '100'), ('PYTHONHASHSEED', 'random'), ('HOSTNAME', 'ubuntu'), ('TWINE_REPOSITORY_URL', 'http://jao-51/jp6/cu126'), ('TAR_INDEX_URL', 'http://jetson.webredirect.org:8000/jp6/cu126'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64'), ('HOME', '/home/work'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/workspace/towen/src/rosidl'), ('CMAKE_CUDA_COMPILER', '/usr/local/cuda/bin/nvcc'), ('TERM_PROGRAM_VERSION', '3.2a'), ('TORCH_NVCC_FLAGS', '-Xfatbin -compress-all'), ('PYTHONUNBUFFERED', '1'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('BYOBU_PREFIX', '/usr'), ('CUDA_NVCC_EXECUTABLE', '/usr/local/cuda/bin/nvcc'), ('CUDNN_LIB_PATH', '/usr/lib/aarch64-linux-gnu'), ('CUDAARCHS', '87'), ('PIP_CACHE_PURGE', 'true'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/workspace/towen/install:/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('SCP_UPLOAD_PASS', 'nvidia'), ('BYOBU_ACCENT', '\\#75507B'), ('PIP_DISABLE_PIP_VERSION_CHECK', 'on'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('CUDA_ARCHITECTURES', '87'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('TWINE_USERNAME', 'jp6'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/workspace/towen/install/rosidl_cli/bin:/opt/ros/humble/bin:/opt/ros/humble/install/bin:/usr/local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('PIP_INDEX_URL', 'https://pypi.jetson-ai-lab.io/jp6/cu126'), ('PIP_NO_CACHE_DIR', 'off'), ('DISPLAY', ':0'), ('SCP_UPLOAD_USER', 'nvidia'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/home/iclab/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cli:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install'), ('SCP_UPLOAD_URL', 'jao-51:/dist/jp6/cu126'), ('TWINE_NON_INTERACTIVE', '1'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PYTHON_VERSION', '3.10'), ('BYOBU_DATE', '%Y-%m-%d'), ('OPENCV_VERSION', '4.10.0'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/work/.byobu'), ('BYOBU_PAGER', 'sensible-pager'), ('NVCC_PATH', '/usr/local/cuda/bin/nvcc'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu--7SFVQ5cz'), ('OPENCV_URL', ''), ('PWD', '/workspace/towen/build/rosidl_generator_cpp'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('CUDNN_LIB_INCLUDE_PATH', '/usr/include'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('CUDA_BIN_PATH', '/usr/local/cuda/bin'), ('TMUX_PANE', '%1'), ('CMAKE_PREFIX_PATH', '/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble'), ('BYOBU_TTY', '/dev/pts/2')]), 'shell': False}
+[3.715572] (-) TimerEvent: {}
+[3.816138] (-) TimerEvent: {}
+[3.916914] (-) TimerEvent: {}
+[3.938169] (rosidl_generator_cpp) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o\x1b[0m\n'}
+[3.938818] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o\x1b[0m\n'}
+[3.944710] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_rosidl_generator_cpp_setup\n'}
+[3.945402] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_rosidl_generator_cpp\n'}
+[3.946761] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[4.017077] (-) TimerEvent: {}
+[4.117771] (-) TimerEvent: {}
+[4.218453] (-) TimerEvent: {}
+[4.319140] (-) TimerEvent: {}
+[4.419931] (-) TimerEvent: {}
+[4.520713] (-) TimerEvent: {}
+[4.533682] (rosidl_generator_cpp) StdoutLine: {'line': b'running egg_info\n'}
+[4.581818] (rosidl_generator_cpp) StdoutLine: {'line': b'creating rosidl_generator_cpp.egg-info\n'}
+[4.594387] (rosidl_generator_cpp) StdoutLine: {'line': b'writing rosidl_generator_cpp.egg-info/PKG-INFO\n'}
+[4.594709] (rosidl_generator_cpp) StdoutLine: {'line': b'writing dependency_links to rosidl_generator_cpp.egg-info/dependency_links.txt\n'}
+[4.594912] (rosidl_generator_cpp) StdoutLine: {'line': b'writing entry points to rosidl_generator_cpp.egg-info/entry_points.txt\n'}
+[4.595137] (rosidl_generator_cpp) StdoutLine: {'line': b'writing top-level names to rosidl_generator_cpp.egg-info/top_level.txt\n'}
+[4.595307] (rosidl_generator_cpp) StdoutLine: {'line': b"writing manifest file 'rosidl_generator_cpp.egg-info/SOURCES.txt'\n"}
+[4.620886] (-) TimerEvent: {}
+[4.724698] (-) TimerEvent: {}
+[4.728294] (rosidl_generator_cpp) StdoutLine: {'line': b"reading manifest file 'rosidl_generator_cpp.egg-info/SOURCES.txt'\n"}
+[4.730308] (rosidl_generator_cpp) StdoutLine: {'line': b"writing manifest file 'rosidl_generator_cpp.egg-info/SOURCES.txt'\n"}
+[4.811519] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_build_rosidl_generator_cpp_egg\n'}
+[4.824851] (-) TimerEvent: {}
+[4.925550] (-) TimerEvent: {}
+[5.026306] (-) TimerEvent: {}
+[5.127007] (-) TimerEvent: {}
+[5.227745] (-) TimerEvent: {}
+[5.328488] (-) TimerEvent: {}
+[5.429276] (-) TimerEvent: {}
+[5.530114] (-) TimerEvent: {}
+[5.630959] (-) TimerEvent: {}
+[5.731744] (-) TimerEvent: {}
+[5.832637] (-) TimerEvent: {}
+[5.933429] (-) TimerEvent: {}
+[6.034226] (-) TimerEvent: {}
+[6.135009] (-) TimerEvent: {}
+[6.235735] (-) TimerEvent: {}
+[6.270886] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 21%] \x1b[32m\x1b[1mLinking CXX static library libgtest_main.a\x1b[0m\n'}
+[6.314114] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 21%] Built target gtest_main\n'}
+[6.335884] (-) TimerEvent: {}
+[6.436975] (-) TimerEvent: {}
+[6.538026] (-) TimerEvent: {}
+[6.639126] (-) TimerEvent: {}
+[6.739752] (-) TimerEvent: {}
+[6.840415] (-) TimerEvent: {}
+[6.941102] (-) TimerEvent: {}
+[7.043063] (-) TimerEvent: {}
+[7.143713] (-) TimerEvent: {}
+[7.244378] (-) TimerEvent: {}
+[7.345099] (-) TimerEvent: {}
+[7.445748] (-) TimerEvent: {}
+[7.546451] (-) TimerEvent: {}
+[7.647151] (-) TimerEvent: {}
+[7.747858] (-) TimerEvent: {}
+[7.848521] (-) TimerEvent: {}
+[7.949217] (-) TimerEvent: {}
+[8.049969] (-) TimerEvent: {}
+[8.150726] (-) TimerEvent: {}
+[8.251469] (-) TimerEvent: {}
+[8.352121] (-) TimerEvent: {}
+[8.452774] (-) TimerEvent: {}
+[8.553434] (-) TimerEvent: {}
+[8.654139] (-) TimerEvent: {}
+[8.754811] (-) TimerEvent: {}
+[8.855508] (-) TimerEvent: {}
+[8.956227] (-) TimerEvent: {}
+[9.056930] (-) TimerEvent: {}
+[9.157610] (-) TimerEvent: {}
+[9.258359] (-) TimerEvent: {}
+[9.359031] (-) TimerEvent: {}
+[9.459693] (-) TimerEvent: {}
+[9.560343] (-) TimerEvent: {}
+[9.660991] (-) TimerEvent: {}
+[9.761643] (-) TimerEvent: {}
+[9.862366] (-) TimerEvent: {}
+[9.963036] (-) TimerEvent: {}
+[10.063696] (-) TimerEvent: {}
+[10.165019] (-) TimerEvent: {}
+[10.266067] (-) TimerEvent: {}
+[10.332614] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 21%] Built target rosidl_generator_cpp__cpp\n'}
+[10.356785] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 21%] Built target rosidl_generator_cpp\n'}
+[10.366186] (-) TimerEvent: {}
+[10.466793] (-) TimerEvent: {}
+[10.567507] (-) TimerEvent: {}
+[10.668220] (-) TimerEvent: {}
+[10.768915] (-) TimerEvent: {}
+[10.869599] (-) TimerEvent: {}
+[10.970328] (-) TimerEvent: {}
+[11.071034] (-) TimerEvent: {}
+[11.171753] (-) TimerEvent: {}
+[11.272450] (-) TimerEvent: {}
+[11.373144] (-) TimerEvent: {}
+[11.473853] (-) TimerEvent: {}
+[11.574570] (-) TimerEvent: {}
+[11.675274] (-) TimerEvent: {}
+[11.737742] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 26%] \x1b[32m\x1b[1mLinking CXX static library libgtest.a\x1b[0m\n'}
+[11.775448] (-) TimerEvent: {}
+[11.838032] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 26%] Built target gtest\n'}
+[11.867194] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/test_msg_builder.dir/test/test_msg_builder.cpp.o\x1b[0m\n'}
+[11.868078] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/test_msg_datatype.dir/test/test_msg_datatype.cpp.o\x1b[0m\n'}
+[11.868857] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/test_msg_initialization.dir/test/test_msg_initialization.cpp.o\x1b[0m\n'}
+[11.871098] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/test_srv_initialization.dir/test/test_srv_initialization.cpp.o\x1b[0m\n'}
+[11.871579] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/test_interfaces_cpp.dir/test/test_interfaces.cpp.o\x1b[0m\n'}
+[11.875580] (-) TimerEvent: {}
+[11.878322] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/test_name.dir/test/test_name.cpp.o\x1b[0m\n'}
+[11.975789] (-) TimerEvent: {}
+[12.076814] (-) TimerEvent: {}
+[12.178144] (-) TimerEvent: {}
+[12.280014] (-) TimerEvent: {}
+[12.382155] (-) TimerEvent: {}
+[12.482944] (-) TimerEvent: {}
+[12.583732] (-) TimerEvent: {}
+[12.684554] (-) TimerEvent: {}
+[12.785359] (-) TimerEvent: {}
+[12.886112] (-) TimerEvent: {}
+[12.986835] (-) TimerEvent: {}
+[13.087619] (-) TimerEvent: {}
+[13.188457] (-) TimerEvent: {}
+[13.289244] (-) TimerEvent: {}
+[13.390033] (-) TimerEvent: {}
+[13.490838] (-) TimerEvent: {}
+[13.593326] (-) TimerEvent: {}
+[13.695351] (-) TimerEvent: {}
+[13.796230] (-) TimerEvent: {}
+[13.897154] (-) TimerEvent: {}
+[13.998130] (-) TimerEvent: {}
+[14.099074] (-) TimerEvent: {}
+[14.201020] (-) TimerEvent: {}
+[14.303028] (-) TimerEvent: {}
+[14.403908] (-) TimerEvent: {}
+[14.504815] (-) TimerEvent: {}
+[14.605648] (-) TimerEvent: {}
+[14.706505] (-) TimerEvent: {}
+[14.792919] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX executable test_name\x1b[0m\n'}
+[14.806718] (-) TimerEvent: {}
+[14.907522] (-) TimerEvent: {}
+[15.008335] (-) TimerEvent: {}
+[15.084141] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable test_msg_datatype\x1b[0m\n'}
+[15.085201] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 68%] Built target test_name\n'}
+[15.108543] (-) TimerEvent: {}
+[15.116141] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/test_traits.dir/test/test_traits.cpp.o\x1b[0m\n'}
+[15.208759] (-) TimerEvent: {}
+[15.314117] (-) TimerEvent: {}
+[15.414878] (-) TimerEvent: {}
+[15.467068] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 73%] Built target test_msg_datatype\n'}
+[15.515080] (-) TimerEvent: {}
+[15.616138] (-) TimerEvent: {}
+[15.652647] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX executable test_srv_initialization\x1b[0m\n'}
+[15.716322] (-) TimerEvent: {}
+[15.819421] (-) TimerEvent: {}
+[15.923118] (-) TimerEvent: {}
+[15.996893] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 78%] Built target test_srv_initialization\n'}
+[16.023318] (-) TimerEvent: {}
+[16.124074] (-) TimerEvent: {}
+[16.224849] (-) TimerEvent: {}
+[16.325635] (-) TimerEvent: {}
+[16.428190] (-) TimerEvent: {}
+[16.530388] (-) TimerEvent: {}
+[16.631125] (-) TimerEvent: {}
+[16.731891] (-) TimerEvent: {}
+[16.832651] (-) TimerEvent: {}
+[16.933427] (-) TimerEvent: {}
+[17.034209] (-) TimerEvent: {}
+[17.135005] (-) TimerEvent: {}
+[17.235749] (-) TimerEvent: {}
+[17.336460] (-) TimerEvent: {}
+[17.437257] (-) TimerEvent: {}
+[17.539629] (-) TimerEvent: {}
+[17.640382] (-) TimerEvent: {}
+[17.741984] (-) TimerEvent: {}
+[17.844751] (-) TimerEvent: {}
+[17.946252] (-) TimerEvent: {}
+[18.047046] (-) TimerEvent: {}
+[18.147810] (-) TimerEvent: {}
+[18.249262] (-) TimerEvent: {}
+[18.257929] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking CXX executable test_msg_initialization\x1b[0m\n'}
+[18.358086] (-) TimerEvent: {}
+[18.459608] (-) TimerEvent: {}
+[18.561001] (-) TimerEvent: {}
+[18.615880] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 84%] Built target test_msg_initialization\n'}
+[18.661174] (-) TimerEvent: {}
+[18.761882] (-) TimerEvent: {}
+[18.862642] (-) TimerEvent: {}
+[18.963355] (-) TimerEvent: {}
+[19.064138] (-) TimerEvent: {}
+[19.164894] (-) TimerEvent: {}
+[19.265605] (-) TimerEvent: {}
+[19.366363] (-) TimerEvent: {}
+[19.467094] (-) TimerEvent: {}
+[19.568241] (-) TimerEvent: {}
+[19.669066] (-) TimerEvent: {}
+[19.769822] (-) TimerEvent: {}
+[19.870569] (-) TimerEvent: {}
+[19.881750] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking CXX executable test_msg_builder\x1b[0m\n'}
+[19.970765] (-) TimerEvent: {}
+[20.071564] (-) TimerEvent: {}
+[20.172302] (-) TimerEvent: {}
+[20.275090] (-) TimerEvent: {}
+[20.345497] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 89%] Built target test_msg_builder\n'}
+[20.375262] (-) TimerEvent: {}
+[20.475957] (-) TimerEvent: {}
+[20.576655] (-) TimerEvent: {}
+[20.677365] (-) TimerEvent: {}
+[20.778085] (-) TimerEvent: {}
+[20.878790] (-) TimerEvent: {}
+[20.979508] (-) TimerEvent: {}
+[21.032595] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable test_traits\x1b[0m\n'}
+[21.079697] (-) TimerEvent: {}
+[21.180434] (-) TimerEvent: {}
+[21.281441] (-) TimerEvent: {}
+[21.377208] (rosidl_generator_cpp) StdoutLine: {'line': b'[ 94%] Built target test_traits\n'}
+[21.381532] (-) TimerEvent: {}
+[21.482102] (-) TimerEvent: {}
+[21.582799] (-) TimerEvent: {}
+[21.683494] (-) TimerEvent: {}
+[21.784179] (-) TimerEvent: {}
+[21.884888] (-) TimerEvent: {}
+[21.985601] (-) TimerEvent: {}
+[22.086338] (-) TimerEvent: {}
+[22.187056] (-) TimerEvent: {}
+[22.287759] (-) TimerEvent: {}
+[22.388471] (-) TimerEvent: {}
+[22.489181] (-) TimerEvent: {}
+[22.589937] (-) TimerEvent: {}
+[22.690656] (-) TimerEvent: {}
+[22.791393] (-) TimerEvent: {}
+[22.892122] (-) TimerEvent: {}
+[22.979195] (rosidl_generator_cpp) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_interfaces_cpp\x1b[0m\n'}
+[22.992439] (-) TimerEvent: {}
+[23.095005] (-) TimerEvent: {}
+[23.195753] (-) TimerEvent: {}
+[23.296532] (-) TimerEvent: {}
+[23.397307] (-) TimerEvent: {}
+[23.424906] (rosidl_generator_cpp) StdoutLine: {'line': b'[100%] Built target test_interfaces_cpp\n'}
+[23.470559] (rosidl_generator_cpp) CommandEnded: {'returncode': 0}
+[23.497414] (-) TimerEvent: {}
+[23.597990] (-) TimerEvent: {}
+[23.698821] (-) TimerEvent: {}
+[23.788870] (rosidl_generator_cpp) JobProgress: {'identifier': 'rosidl_generator_cpp', 'progress': 'install'}
+[23.798949] (-) TimerEvent: {}
+[23.899541] (-) TimerEvent: {}
+[24.000231] (-) TimerEvent: {}
+[24.011791] (rosidl_generator_cpp) Command: {'cmd': ['/usr/local/bin/cmake', '--install', '/workspace/towen/build/rosidl_generator_cpp'], 'cwd': '/workspace/towen/build/rosidl_generator_cpp', 'env': OrderedDict([('TWINE_PASSWORD', 'NvidiaJetson24'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONFAULTHANDLER', '1'), ('TMUX', '/tmp/tmux-1000/default,84,1'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('BYOBU_SED', 'sed'), ('PYTHONIOENCODING', 'utf-8'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('PIP_ROOT_USER_ACTION', 'ignore'), ('LANGUAGE', 'en_US:en'), ('BYOBU_EDITOR', 'sensible-editor'), ('PIP_TRUSTED_HOST', 'jetson.webredirect.org'), ('PIP_DEFAULT_TIMEOUT', '100'), ('PYTHONHASHSEED', 'random'), ('HOSTNAME', 'ubuntu'), ('TWINE_REPOSITORY_URL', 'http://jao-51/jp6/cu126'), ('TAR_INDEX_URL', 'http://jetson.webredirect.org:8000/jp6/cu126'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64'), ('HOME', '/home/work'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/workspace/towen/src/rosidl'), ('CMAKE_CUDA_COMPILER', '/usr/local/cuda/bin/nvcc'), ('TERM_PROGRAM_VERSION', '3.2a'), ('TORCH_NVCC_FLAGS', '-Xfatbin -compress-all'), ('PYTHONUNBUFFERED', '1'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('BYOBU_PREFIX', '/usr'), ('CUDA_NVCC_EXECUTABLE', '/usr/local/cuda/bin/nvcc'), ('CUDNN_LIB_PATH', '/usr/lib/aarch64-linux-gnu'), ('CUDAARCHS', '87'), ('PIP_CACHE_PURGE', 'true'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/workspace/towen/install:/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('SCP_UPLOAD_PASS', 'nvidia'), ('BYOBU_ACCENT', '\\#75507B'), ('PIP_DISABLE_PIP_VERSION_CHECK', 'on'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('CUDA_ARCHITECTURES', '87'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('TWINE_USERNAME', 'jp6'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/workspace/towen/install/rosidl_cli/bin:/opt/ros/humble/bin:/opt/ros/humble/install/bin:/usr/local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('PIP_INDEX_URL', 'https://pypi.jetson-ai-lab.io/jp6/cu126'), ('PIP_NO_CACHE_DIR', 'off'), ('DISPLAY', ':0'), ('SCP_UPLOAD_USER', 'nvidia'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/home/iclab/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cli:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install'), ('SCP_UPLOAD_URL', 'jao-51:/dist/jp6/cu126'), ('TWINE_NON_INTERACTIVE', '1'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PYTHON_VERSION', '3.10'), ('BYOBU_DATE', '%Y-%m-%d'), ('OPENCV_VERSION', '4.10.0'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/work/.byobu'), ('BYOBU_PAGER', 'sensible-pager'), ('NVCC_PATH', '/usr/local/cuda/bin/nvcc'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu--7SFVQ5cz'), ('OPENCV_URL', ''), ('PWD', '/workspace/towen/build/rosidl_generator_cpp'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('CUDNN_LIB_INCLUDE_PATH', '/usr/include'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('CUDA_BIN_PATH', '/usr/local/cuda/bin'), ('TMUX_PANE', '%1'), ('CMAKE_PREFIX_PATH', '/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble'), ('BYOBU_TTY', '/dev/pts/2')]), 'shell': False}
+[24.100368] (-) TimerEvent: {}
+[24.201069] (-) TimerEvent: {}
+[24.218878] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[24.219508] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/ament_index/resource_index/rosidl_generator_packages/rosidl_generator_cpp\n'}
+[24.219937] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/environment/pythonpath.sh\n'}
+[24.220278] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/environment/pythonpath.dsv\n'}
+[24.220530] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp-3.1.7-py3.10.egg-info\n'}
+[24.220929] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp-3.1.7-py3.10.egg-info/PKG-INFO\n'}
+[24.221193] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp-3.1.7-py3.10.egg-info/entry_points.txt\n'}
+[24.221423] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp-3.1.7-py3.10.egg-info/top_level.txt\n'}
+[24.221670] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp-3.1.7-py3.10.egg-info/SOURCES.txt\n'}
+[24.221887] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp-3.1.7-py3.10.egg-info/dependency_links.txt\n'}
+[24.222269] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp\n'}
+[24.222487] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py\n'}
+[24.222741] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp/cli.py\n'}
+[24.301218] (-) TimerEvent: {}
+[24.306851] (rosidl_generator_cpp) StdoutLine: {'line': b"Listing '/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp'...\n"}
+[24.307300] (rosidl_generator_cpp) StdoutLine: {'line': b"Compiling '/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py'...\n"}
+[24.312408] (rosidl_generator_cpp) StdoutLine: {'line': b"Compiling '/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages/rosidl_generator_cpp/cli.py'...\n"}
+[24.326081] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/ament_index/resource_index/package_run_dependencies/rosidl_generator_cpp\n'}
+[24.326613] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/ament_index/resource_index/parent_prefix_path/rosidl_generator_cpp\n'}
+[24.326888] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/environment/ament_prefix_path.sh\n'}
+[24.327216] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/environment/ament_prefix_path.dsv\n'}
+[24.327909] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/environment/path.sh\n'}
+[24.328236] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/environment/path.dsv\n'}
+[24.328546] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/local_setup.bash\n'}
+[24.328874] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/local_setup.sh\n'}
+[24.329315] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/local_setup.zsh\n'}
+[24.329750] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/local_setup.dsv\n'}
+[24.330229] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/package.dsv\n'}
+[24.330841] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/ament_index/resource_index/packages/rosidl_generator_cpp\n'}
+[24.331409] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp-extras.cmake\n'}
+[24.331843] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[24.332333] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/rosidl_cmake-extras.cmake\n'}
+[24.332748] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/rosidl_generator_cppConfig.cmake\n'}
+[24.333110] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/rosidl_generator_cppConfig-version.cmake\n'}
+[24.333536] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/package.xml\n'}
+[24.334499] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/lib/rosidl_generator_cpp/rosidl_generator_cpp\n'}
+[24.335445] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Up-to-date: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake\n'}
+[24.337150] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/rosidl_generator_cpp_generate_interfaces.cmake\n'}
+[24.337526] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake/register_cpp.cmake\n'}
+[24.337885] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource\n'}
+[24.338375] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/idl.hpp.em\n'}
+[24.338701] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/msg__type_support.hpp.em\n'}
+[24.339015] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/action__struct.hpp.em\n'}
+[24.339321] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/action__traits.hpp.em\n'}
+[24.339624] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/idl__struct.hpp.em\n'}
+[24.339930] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/rosidl_generator_cpp__visibility_control.hpp.in\n'}
+[24.340202] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/msg__builder.hpp.em\n'}
+[24.340420] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/action__builder.hpp.em\n'}
+[24.340622] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/idl__traits.hpp.em\n'}
+[24.340832] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/action__type_support.hpp.em\n'}
+[24.341045] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em\n'}
+[24.341255] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/idl__type_support.hpp.em\n'}
+[24.341415] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/msg__traits.hpp.em\n'}
+[24.341642] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/srv__struct.hpp.em\n'}
+[24.341793] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/idl__builder.hpp.em\n'}
+[24.341970] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/srv__builder.hpp.em\n'}
+[24.342129] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/msg__struct.hpp.em\n'}
+[24.342276] (rosidl_generator_cpp) StdoutLine: {'line': b'-- Installing: /workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/resource/srv__traits.hpp.em\n'}
+[24.379933] (rosidl_generator_cpp) CommandEnded: {'returncode': 0}
+[24.401346] (-) TimerEvent: {}
+[24.502031] (-) TimerEvent: {}
+[24.602672] (-) TimerEvent: {}
+[24.703296] (-) TimerEvent: {}
+[24.768445] (rosidl_generator_cpp) JobEnded: {'identifier': 'rosidl_generator_cpp', 'rc': 0}
+[24.770916] (-) EventReactorShutdown: {}

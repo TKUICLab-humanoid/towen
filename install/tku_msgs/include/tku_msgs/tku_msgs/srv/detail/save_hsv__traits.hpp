@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_generator_cpp/tku_msgs/srv/detail/save_hsv__traits.hpp

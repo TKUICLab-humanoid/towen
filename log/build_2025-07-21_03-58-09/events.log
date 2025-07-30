@@ -1,0 +1,305 @@
+[0.000000] (-) TimerEvent: {}
+[0.001137] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.001265] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.001933] (-) JobUnselected: {'identifier': 'imageprocess'}
+[0.002034] (-) JobUnselected: {'identifier': 'motionpackage'}
+[0.002181] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.002262] (-) JobUnselected: {'identifier': 'strategy'}
+[0.002312] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.002384] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.002431] (-) JobUnselected: {'identifier': 'web_video_server'}
+[0.002707] (-) JobUnselected: {'identifier': 'zed_components'}
+[0.002791] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.002918] (-) JobUnselected: {'identifier': 'zed_wrapper'}
+[0.002998] (tku_msgs) JobQueued: {'identifier': 'tku_msgs', 'dependencies': OrderedDict()}
+[0.003057] (tku_msgs) JobStarted: {'identifier': 'tku_msgs'}
+[0.040386] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'cmake'}
+[0.040876] (tku_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '/workspace/towen/src/tku_msgs', '-DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs'], 'cwd': '/workspace/towen/build/tku_msgs', 'env': OrderedDict([('TWINE_PASSWORD', 'NvidiaJetson24'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONFAULTHANDLER', '1'), ('TMUX', '/tmp/tmux-1000/default,84,1'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('BYOBU_SED', 'sed'), ('PYTHONIOENCODING', 'utf-8'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('PIP_ROOT_USER_ACTION', 'ignore'), ('LANGUAGE', 'en_US:en'), ('BYOBU_EDITOR', 'sensible-editor'), ('PIP_TRUSTED_HOST', 'jetson.webredirect.org'), ('PIP_DEFAULT_TIMEOUT', '100'), ('PYTHONHASHSEED', 'random'), ('HOSTNAME', 'ubuntu'), ('TWINE_REPOSITORY_URL', 'http://jao-51/jp6/cu126'), ('TAR_INDEX_URL', 'http://jetson.webredirect.org:8000/jp6/cu126'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64:'), ('HOME', '/home/work'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/workspace/towen/src/tku_msgs'), ('CMAKE_CUDA_COMPILER', '/usr/local/cuda/bin/nvcc'), ('TERM_PROGRAM_VERSION', '3.2a'), ('TORCH_NVCC_FLAGS', '-Xfatbin -compress-all'), ('PYTHONUNBUFFERED', '1'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('BYOBU_PREFIX', '/usr'), ('CUDA_NVCC_EXECUTABLE', '/usr/local/cuda/bin/nvcc'), ('CUDNN_LIB_PATH', '/usr/lib/aarch64-linux-gnu'), ('CUDAARCHS', '87'), ('PIP_CACHE_PURGE', 'true'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/workspace/towen/install:/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('SCP_UPLOAD_PASS', 'nvidia'), ('BYOBU_ACCENT', '\\#75507B'), ('PIP_DISABLE_PIP_VERSION_CHECK', 'on'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('CUDA_ARCHITECTURES', '87'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('TWINE_USERNAME', 'jp6'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/install/bin:/usr/local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('PIP_INDEX_URL', 'https://pypi.jetson-ai-lab.io/jp6/cu126'), ('PIP_NO_CACHE_DIR', 'off'), ('DISPLAY', ':0'), ('SCP_UPLOAD_USER', 'nvidia'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/home/iclab/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install'), ('SCP_UPLOAD_URL', 'jao-51:/dist/jp6/cu126'), ('TWINE_NON_INTERACTIVE', '1'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PYTHON_VERSION', '3.10'), ('BYOBU_DATE', '%Y-%m-%d'), ('OPENCV_VERSION', '4.10.0'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/work/.byobu'), ('BYOBU_PAGER', 'sensible-pager'), ('NVCC_PATH', '/usr/local/cuda/bin/nvcc'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu--7SFVQ5cz'), ('OPENCV_URL', ''), ('PWD', '/workspace/towen/build/tku_msgs'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('CUDNN_LIB_INCLUDE_PATH', '/usr/include'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('CUDA_BIN_PATH', '/usr/local/cuda/bin'), ('TMUX_PANE', '%1'), ('CMAKE_PREFIX_PATH', '/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble'), ('BYOBU_TTY', '/dev/pts/2')]), 'shell': False}
+[0.099072] (-) TimerEvent: {}
+[0.199718] (-) TimerEvent: {}
+[0.300393] (-) TimerEvent: {}
+[0.359200] (tku_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400576] (-) TimerEvent: {}
+[0.501282] (-) TimerEvent: {}
+[0.513954] (tku_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.561569] (tku_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601497] (-) TimerEvent: {}
+[0.702188] (-) TimerEvent: {}
+[0.717423] (tku_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.771653] (tku_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.773506] (tku_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.777057] (tku_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.793944] (tku_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.802299] (-) TimerEvent: {}
+[0.902876] (-) TimerEvent: {}
+[0.971860] (tku_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.002979] (-) TimerEvent: {}
+[1.028194] (tku_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.029684] (tku_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.031956] (tku_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.045694] (tku_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/install/share/ament_cmake/cmake)\n'}
+[1.103138] (-) TimerEvent: {}
+[1.203806] (-) TimerEvent: {}
+[1.304566] (-) TimerEvent: {}
+[1.366969] (tku_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter\n'}
+[1.404693] (-) TimerEvent: {}
+[1.505288] (-) TimerEvent: {}
+[1.605963] (-) TimerEvent: {}
+[1.627904] (tku_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/install/share/rosidl_default_generators/cmake)\n'}
+[1.643040] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.662485] (tku_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)\n'}
+[1.706106] (-) TimerEvent: {}
+[1.785131] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.806246] (-) TimerEvent: {}
+[1.891737] (tku_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.4 (/opt/ros/humble/install/share/std_msgs/cmake)\n'}
+[1.906445] (-) TimerEvent: {}
+[2.007176] (-) TimerEvent: {}
+[2.107983] (-) TimerEvent: {}
+[2.208663] (-) TimerEvent: {}
+[2.309285] (-) TimerEvent: {}
+[2.409914] (-) TimerEvent: {}
+[2.510581] (-) TimerEvent: {}
+[2.611168] (-) TimerEvent: {}
+[2.711769] (-) TimerEvent: {}
+[2.812367] (-) TimerEvent: {}
+[2.912971] (-) TimerEvent: {}
+[3.013617] (-) TimerEvent: {}
+[3.114364] (-) TimerEvent: {}
+[3.215126] (-) TimerEvent: {}
+[3.315797] (-) TimerEvent: {}
+[3.416432] (-) TimerEvent: {}
+[3.484866] (tku_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/install/share/ament_cmake_ros/cmake)\n'}
+[3.516566] (-) TimerEvent: {}
+[3.617195] (-) TimerEvent: {}
+[3.717834] (-) TimerEvent: {}
+[3.818502] (-) TimerEvent: {}
+[3.919164] (-) TimerEvent: {}
+[4.019824] (-) TimerEvent: {}
+[4.120456] (-) TimerEvent: {}
+[4.221122] (-) TimerEvent: {}
+[4.321912] (-) TimerEvent: {}
+[4.422738] (-) TimerEvent: {}
+[4.523447] (-) TimerEvent: {}
+[4.600105] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.623558] (-) TimerEvent: {}
+[4.724278] (-) TimerEvent: {}
+[4.825809] (-) TimerEvent: {}
+[4.926472] (-) TimerEvent: {}
+[5.027153] (-) TimerEvent: {}
+[5.127902] (-) TimerEvent: {}
+[5.228522] (-) TimerEvent: {}
+[5.329177] (-) TimerEvent: {}
+[5.430097] (-) TimerEvent: {}
+[5.530759] (-) TimerEvent: {}
+[5.631385] (-) TimerEvent: {}
+[5.732484] (-) TimerEvent: {}
+[5.833233] (-) TimerEvent: {}
+[5.933883] (-) TimerEvent: {}
+[6.034548] (-) TimerEvent: {}
+[6.078571] (tku_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.089590] (tku_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):\n'}
+[6.090153] (tku_msgs) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[6.090464] (tku_msgs) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[6.090776] (tku_msgs) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[6.091040] (tku_msgs) StderrLine: {'line': b'\n'}
+[6.091290] (tku_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.091534] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[6.091836] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[6.092092] (tku_msgs) StderrLine: {'line': b'  CMakeLists.txt:19 (rosidl_generate_interfaces)\n'}
+[6.092331] (tku_msgs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[6.092571] (tku_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[6.134686] (-) TimerEvent: {}
+[6.137976] (tku_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/local/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")\n'}
+[6.145394] (tku_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/install/share/python_cmake_module/cmake)\n'}
+[6.147715] (tku_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/install/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):\n'}
+[6.148152] (tku_msgs) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[6.148423] (tku_msgs) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[6.149708] (tku_msgs) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[6.150005] (tku_msgs) StderrLine: {'line': b'\n'}
+[6.150257] (tku_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.150500] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[6.150742] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[6.150977] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[6.151209] (tku_msgs) StderrLine: {'line': b'  CMakeLists.txt:19 (rosidl_generate_interfaces)\n'}
+[6.151442] (tku_msgs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[6.151705] (tku_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[6.194719] (tku_msgs) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/humble/install/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):\n'}
+[6.195198] (tku_msgs) StderrLine: {'line': b'  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules\n'}
+[6.195468] (tku_msgs) StderrLine: {'line': b'  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use\n'}
+[6.195747] (tku_msgs) StderrLine: {'line': b'  the cmake_policy command to set the policy and suppress this warning.\n'}
+[6.196011] (tku_msgs) StderrLine: {'line': b'\n'}
+[6.196255] (tku_msgs) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[6.196495] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)\n'}
+[6.196732] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)\n'}
+[6.196970] (tku_msgs) StderrLine: {'line': b'  /opt/ros/humble/install/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)\n'}
+[6.197209] (tku_msgs) StderrLine: {'line': b'  CMakeLists.txt:19 (rosidl_generate_interfaces)\n'}
+[6.197442] (tku_msgs) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[6.197719] (tku_msgs) StderrLine: {'line': b'\x1b[0m\n'}
+[6.218144] (tku_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")\n'}
+[6.218652] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/local/bin/python3\n'}
+[6.218884] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[6.219081] (tku_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[6.234780] (-) TimerEvent: {}
+[6.265602] (tku_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so\n'}
+[6.334949] (-) TimerEvent: {}
+[6.435624] (-) TimerEvent: {}
+[6.461023] (tku_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)\n'}
+[6.523420] (tku_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.528965] (tku_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.535772] (-) TimerEvent: {}
+[6.537521] (tku_msgs) StdoutLine: {'line': b'-- Configuring done (6.3s)\n'}
+[6.635966] (-) TimerEvent: {}
+[6.736655] (-) TimerEvent: {}
+[6.768055] (tku_msgs) StdoutLine: {'line': b'-- Generating done (0.2s)\n'}
+[6.769185] (tku_msgs) StdoutLine: {'line': b'-- Build files have been written to: /workspace/towen/build/tku_msgs\n'}
+[6.823855] (tku_msgs) CommandEnded: {'returncode': 0}
+[6.826271] (tku_msgs) JobProgress: {'identifier': 'tku_msgs', 'progress': 'build'}
+[6.828054] (tku_msgs) Command: {'cmd': ['/usr/local/bin/cmake', '--build', '/workspace/towen/build/tku_msgs', '--', '-j6', '-l6'], 'cwd': '/workspace/towen/build/tku_msgs', 'env': OrderedDict([('TWINE_PASSWORD', 'NvidiaJetson24'), ('OPENBLAS_CORETYPE', 'ARMV8'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('PYTHONFAULTHANDLER', '1'), ('TMUX', '/tmp/tmux-1000/default,84,1'), ('CUDACXX', '/usr/local/cuda/bin/nvcc'), ('BYOBU_SED', 'sed'), ('PYTHONIOENCODING', 'utf-8'), ('BYOBU_LIGHT', '\\#EEEEEE'), ('PIP_ROOT_USER_ACTION', 'ignore'), ('LANGUAGE', 'en_US:en'), ('BYOBU_EDITOR', 'sensible-editor'), ('PIP_TRUSTED_HOST', 'jetson.webredirect.org'), ('PIP_DEFAULT_TIMEOUT', '100'), ('PYTHONHASHSEED', 'random'), ('HOSTNAME', 'ubuntu'), ('TWINE_REPOSITORY_URL', 'http://jao-51/jp6/cu126'), ('TAR_INDEX_URL', 'http://jetson.webredirect.org:8000/jp6/cu126'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64:'), ('HOME', '/home/work'), ('BYOBU_TIME', '%H:%M:%S'), ('OLDPWD', '/workspace/towen/src/tku_msgs'), ('CMAKE_CUDA_COMPILER', '/usr/local/cuda/bin/nvcc'), ('TERM_PROGRAM_VERSION', '3.2a'), ('TORCH_NVCC_FLAGS', '-Xfatbin -compress-all'), ('PYTHONUNBUFFERED', '1'), ('ROS_PYTHON_VERSION', '3'), ('CUDA_TOOLKIT_ROOT_DIR', '/usr/local/cuda'), ('BYOBU_PREFIX', '/usr'), ('CUDA_NVCC_EXECUTABLE', '/usr/local/cuda/bin/nvcc'), ('CUDNN_LIB_PATH', '/usr/lib/aarch64-linux-gnu'), ('CUDAARCHS', '87'), ('PIP_CACHE_PURGE', 'true'), ('BYOBU_WINDOW_NAME', '-'), ('COLCON_PREFIX_PATH', '/workspace/towen/install:/opt/ros/humble/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('BYOBU_TERM', 'screen-256color'), ('BYOBU_ULIMIT', 'ulimit'), ('BYOBU_HIGHLIGHT', '\\#DD4814'), ('SCP_UPLOAD_PASS', 'nvidia'), ('BYOBU_ACCENT', '\\#75507B'), ('PIP_DISABLE_PIP_VERSION_CHECK', 'on'), ('BYOBU_CHARMAP', 'UTF-8'), ('BYOBU_READLINK', 'readlink'), ('BYOBU_DISTRO', 'Ubuntu'), ('CUDA_ARCHITECTURES', '87'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/opt/ros/humble/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/humble/install/lib/pkgconfig'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('TERM', 'screen-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('TWINE_USERNAME', 'jp6'), ('QT_X11_NO_MITSHM', '1'), ('PATH', '/opt/ros/humble/bin:/opt/ros/humble/install/bin:/usr/local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('PIP_INDEX_URL', 'https://pypi.jetson-ai-lab.io/jp6/cu126'), ('PIP_NO_CACHE_DIR', 'off'), ('DISPLAY', ':0'), ('SCP_UPLOAD_USER', 'nvidia'), ('LANG', 'C.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_fastrtps_cpp'), ('XAUTHORITY', '/home/iclab/.Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/humble'), ('TERM_PROGRAM', 'tmux'), ('AMENT_PREFIX_PATH', '/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble:/opt/ros/humble/install:/opt/ros/humble/install'), ('SCP_UPLOAD_URL', 'jao-51:/dist/jp6/cu126'), ('TWINE_NON_INTERACTIVE', '1'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PYTHON_VERSION', '3.10'), ('BYOBU_DATE', '%Y-%m-%d'), ('OPENCV_VERSION', '4.10.0'), ('BYOBU_PYTHON', 'python3'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('BYOBU_CONFIG_DIR', '/home/work/.byobu'), ('BYOBU_PAGER', 'sensible-pager'), ('NVCC_PATH', '/usr/local/cuda/bin/nvcc'), ('BYOBU_DARK', '\\#333333'), ('BYOBU_RUN_DIR', '/dev/shm/byobu--7SFVQ5cz'), ('OPENCV_URL', ''), ('PWD', '/workspace/towen/build/tku_msgs'), ('LC_ALL', 'C.UTF-8'), ('CUDA_HOME', '/usr/local/cuda'), ('CUDNN_LIB_INCLUDE_PATH', '/usr/include'), ('BYOBU_BACKEND', 'tmux'), ('PYTHONPATH', '/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/install/local/lib/python3.10/dist-packages:/opt/ros/humble/install/lib/python3.10/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'void'), ('COLCON', '1'), ('CUDA_BIN_PATH', '/usr/local/cuda/bin'), ('TMUX_PANE', '%1'), ('CMAKE_PREFIX_PATH', '/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble'), ('BYOBU_TTY', '/dev/pts/2')]), 'shell': False}
+[6.836754] (-) TimerEvent: {}
+[6.937296] (-) TimerEvent: {}
+[7.038158] (-) TimerEvent: {}
+[7.102060] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[7.113136] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[7.117192] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_tku_msgs\n'}
+[7.138327] (-) TimerEvent: {}
+[7.238973] (-) TimerEvent: {}
+[7.292325] (tku_msgs) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[7.293053] (tku_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/install/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>\n'}
+[7.293272] (tku_msgs) StderrLine: {'line': b'    sys.exit(main())\n'}
+[7.293438] (tku_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/install/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main\n'}
+[7.293594] (tku_msgs) StderrLine: {'line': b'    generate_cpp(args.generator_arguments_file)\n'}
+[7.293741] (tku_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 39, in generate_cpp\n'}
+[7.293887] (tku_msgs) StderrLine: {'line': b'    return generate_files(\n'}
+[7.294027] (tku_msgs) StderrLine: {'line': b'  File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 59, in generate_files\n'}
+[7.294190] (tku_msgs) StderrLine: {'line': b'    assert (template_basepath / template_filename).exists(), \\\n'}
+[7.294333] (tku_msgs) StderrLine: {'line': b'AssertionError: Could not find template: idl__type_support.hpp.em\n'}
+[7.321914] (tku_msgs) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/tku_msgs__cpp.dir/build.make:288: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp] Error 1\n'}
+[7.322543] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:317: CMakeFiles/tku_msgs__cpp.dir/all] Error 2\n'}
+[7.322789] (tku_msgs) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[7.339041] (-) TimerEvent: {}
+[7.439521] (-) TimerEvent: {}
+[7.540150] (-) TimerEvent: {}
+[7.640773] (-) TimerEvent: {}
+[7.672805] (tku_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[7.719147] (tku_msgs) StdoutLine: {'line': b'creating tku_msgs.egg-info\n'}
+[7.719727] (tku_msgs) StdoutLine: {'line': b'writing tku_msgs.egg-info/PKG-INFO\n'}
+[7.720465] (tku_msgs) StdoutLine: {'line': b'writing dependency_links to tku_msgs.egg-info/dependency_links.txt\n'}
+[7.721127] (tku_msgs) StdoutLine: {'line': b'writing top-level names to tku_msgs.egg-info/top_level.txt\n'}
+[7.721435] (tku_msgs) StdoutLine: {'line': b"writing manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[7.740892] (-) TimerEvent: {}
+[7.841444] (-) TimerEvent: {}
+[7.857279] (tku_msgs) StdoutLine: {'line': b"reading manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[7.859308] (tku_msgs) StdoutLine: {'line': b"writing manifest file 'tku_msgs.egg-info/SOURCES.txt'\n"}
+[7.932422] (tku_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_tku_msgs_egg\n'}
+[7.941607] (-) TimerEvent: {}
+[8.042385] (-) TimerEvent: {}
+[8.143166] (-) TimerEvent: {}
+[8.243970] (-) TimerEvent: {}
+[8.344622] (-) TimerEvent: {}
+[8.445311] (-) TimerEvent: {}
+[8.546068] (-) TimerEvent: {}
+[8.646979] (-) TimerEvent: {}
+[8.747766] (-) TimerEvent: {}
+[8.848504] (-) TimerEvent: {}
+[8.949515] (-) TimerEvent: {}
+[9.050263] (-) TimerEvent: {}
+[9.151022] (-) TimerEvent: {}
+[9.251825] (-) TimerEvent: {}
+[9.352576] (-) TimerEvent: {}
+[9.453355] (-) TimerEvent: {}
+[9.554110] (-) TimerEvent: {}
+[9.654887] (-) TimerEvent: {}
+[9.755734] (-) TimerEvent: {}
+[9.856486] (-) TimerEvent: {}
+[9.957229] (-) TimerEvent: {}
+[10.057971] (-) TimerEvent: {}
+[10.158696] (-) TimerEvent: {}
+[10.259396] (-) TimerEvent: {}
+[10.360222] (-) TimerEvent: {}
+[10.460993] (-) TimerEvent: {}
+[10.561728] (-) TimerEvent: {}
+[10.662385] (-) TimerEvent: {}
+[10.763138] (-) TimerEvent: {}
+[10.863924] (-) TimerEvent: {}
+[10.964678] (-) TimerEvent: {}
+[11.065450] (-) TimerEvent: {}
+[11.166202] (-) TimerEvent: {}
+[11.266871] (-) TimerEvent: {}
+[11.367733] (-) TimerEvent: {}
+[11.468490] (-) TimerEvent: {}
+[11.569233] (-) TimerEvent: {}
+[11.669982] (-) TimerEvent: {}
+[11.770766] (-) TimerEvent: {}
+[11.871601] (-) TimerEvent: {}
+[11.972565] (-) TimerEvent: {}
+[12.073305] (-) TimerEvent: {}
+[12.075286] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/button_color_form__functions.c.o\x1b[0m\n'}
+[12.076811] (tku_msgs) StdoutLine: {'line': b'[  1%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_array__functions.c.o\x1b[0m\n'}
+[12.078107] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/hsv_value__functions.c.o\x1b[0m\n'}
+[12.078388] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/draw_image__functions.c.o\x1b[0m\n'}
+[12.079308] (tku_msgs) StdoutLine: {'line': b'[  2%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_data__functions.c.o\x1b[0m\n'}
+[12.082908] (tku_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__functions.c.o\x1b[0m\n'}
+[12.173503] (-) TimerEvent: {}
+[12.195907] (tku_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/object_list__functions.c.o\x1b[0m\n'}
+[12.205347] (tku_msgs) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera__functions.c.o\x1b[0m\n'}
+[12.209235] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera_save__functions.c.o\x1b[0m\n'}
+[12.210958] (tku_msgs) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/location__functions.c.o\x1b[0m\n'}
+[12.212132] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parameter__functions.c.o\x1b[0m\n'}
+[12.220827] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.c.o\x1b[0m\n'}
+[12.273708] (-) TimerEvent: {}
+[12.336917] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface__functions.c.o\x1b[0m\n'}
+[12.345004] (tku_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parametermessage__functions.c.o\x1b[0m\n'}
+[12.352163] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/callback__functions.c.o\x1b[0m\n'}
+[12.354295] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/head_package__functions.c.o\x1b[0m\n'}
+[12.360039] (tku_msgs) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface_send2_sector__functions.c.o\x1b[0m\n'}
+[12.366177] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/pi_dpackage__functions.c.o\x1b[0m\n'}
+[12.373932] (-) TimerEvent: {}
+[12.474676] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sand_hand_speed__functions.c.o\x1b[0m\n'}
+[12.475268] (-) TimerEvent: {}
+[12.475573] (tku_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion__functions.c.o\x1b[0m\n'}
+[12.476375] (tku_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion_vector__functions.c.o\x1b[0m\n'}
+[12.489486] (tku_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_set__functions.c.o\x1b[0m\n'}
+[12.490065] (tku_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_package__functions.c.o\x1b[0m\n'}
+[12.490904] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/single_motor_data__functions.c.o\x1b[0m\n'}
+[12.575494] (-) TimerEvent: {}
+[12.601280] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/walkingmessage__functions.c.o\x1b[0m\n'}
+[12.604821] (tku_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/build_model__functions.c.o\x1b[0m\n'}
+[12.612127] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/hsv_info__functions.c.o\x1b[0m\n'}
+[12.616501] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/save_hsv__functions.c.o\x1b[0m\n'}
+[12.633074] (tku_msgs) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/add__functions.c.o\x1b[0m\n'}
+[12.638716] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/camera_info__functions.c.o\x1b[0m\n'}
+[12.675740] (-) TimerEvent: {}
+[12.726478] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/read_motion__functions.c.o\x1b[0m\n'}
+[12.759840] (tku_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/check_sector__functions.c.o\x1b[0m\n'}
+[12.763748] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.c.o\x1b[0m\n'}
+[12.776101] (-) TimerEvent: {}
+[12.781071] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/walking_gait_parameter__functions.c.o\x1b[0m\n'}
+[12.876297] (-) TimerEvent: {}
+[12.928038] (tku_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library libtku_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[12.976501] (-) TimerEvent: {}
+[13.005898] (tku_msgs) StdoutLine: {'line': b'[ 12%] Built target tku_msgs__rosidl_generator_c\n'}
+[13.008198] (tku_msgs) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.044535] (tku_msgs) CommandEnded: {'returncode': 2}
+[13.076615] (-) TimerEvent: {}
+[13.177205] (-) TimerEvent: {}
+[13.277835] (-) TimerEvent: {}
+[13.378428] (-) TimerEvent: {}
+[13.479029] (-) TimerEvent: {}
+[13.580006] (-) TimerEvent: {}
+[13.680620] (-) TimerEvent: {}
+[13.781264] (-) TimerEvent: {}
+[13.882020] (-) TimerEvent: {}
+[13.982646] (-) TimerEvent: {}
+[14.083544] (-) TimerEvent: {}
+[14.184346] (-) TimerEvent: {}
+[14.285072] (-) TimerEvent: {}
+[14.386014] (-) TimerEvent: {}
+[14.486751] (-) TimerEvent: {}
+[14.587493] (-) TimerEvent: {}
+[14.688250] (-) TimerEvent: {}
+[14.788982] (-) TimerEvent: {}
+[14.889742] (-) TimerEvent: {}
+[14.990499] (-) TimerEvent: {}
+[15.091501] (-) TimerEvent: {}
+[15.095864] (tku_msgs) JobEnded: {'identifier': 'tku_msgs', 'rc': 2}
+[15.107210] (-) EventReactorShutdown: {}

@@ -46,11 +46,12 @@ class Strategy(API):
                     self.get_logger().info(f"starting")
 
                 else:
-                    if self.color_counts[1] > 0:
-
-                        self.drawImageFunction(1,0,self.object_x_min[1][0],self.object_x_max[1][0],self.object_y_min[1][0],self.object_y_max[1][0],125,70,60)
-                    if self.color_counts[5] > 0:
-                        self.drawImageFunction(1,0,self.object_x_min[5][0],self.object_x_max[5][0],self.object_y_min[5][0],self.object_y_max[5][0],255,255,255)
+                    self.sendSingleMotor(15,10,40)
+                    time.sleep(2)
+                    # if self.color_counts[1] > 0:
+                    #     self.drawImageFunction(1,0,self.object_x_min[1][0],self.object_x_max[1][0],self.object_y_min[1][0],self.object_y_max[1][0],125,70,60)
+                    # if self.color_counts[5] > 0:
+                    #     self.drawImageFunction(1,0,self.object_x_min[5][0],self.object_x_max[5][0],self.object_y_min[5][0],self.object_y_max[5][0],255,255,255)
 
                     # self.get_logger().info(f"Finish")
                     # self.get_logger().info(f"red = {self.object_x_min[5]}")

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/DrawImage.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct DrawImage {
+      int16 cnt;
+
+      int16 mode;
+
+      int16 xmin;
+
+      int16 xmax;
+
+      int16 ymin;
+
+      int16 ymax;
+
+      int32 rvalue;
+
+      int32 gvalue;
+
+      int32 bvalue;
+    };
+  };
+};

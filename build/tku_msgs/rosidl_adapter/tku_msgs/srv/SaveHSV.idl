@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tku_msgs/srv/SaveHSV.srv
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module srv {
+    struct SaveHSV_Request {
+      boolean save;
+
+      string location;
+    };
+    struct SaveHSV_Response {
+      boolean already;
+    };
+  };
+};

@@ -1,0 +1,62 @@
+[3.768s] Invoking command in '/workspace/towen/build/motionpackage': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /workspace/towen/build/motionpackage/build
+[5.084s] running develop
+[5.085s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[5.086s] !!
+[5.087s] 
+[5.088s]         ********************************************************************************
+[5.089s]         Please avoid running ``setup.py`` and ``easy_install``.
+[5.090s]         Instead, use pypa/build, pypa/installer or other
+[5.091s]         standards-based tools.
+[5.092s] 
+[5.093s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[5.094s]         ********************************************************************************
+[5.094s] 
+[5.095s] !!
+[5.097s]   easy_install.initialize_options(self)
+[5.799s] Removing /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage.egg-link (link to .)
+[5.941s] Invoked command in '/workspace/towen/build/motionpackage' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /workspace/towen/build/motionpackage/build
+[5.943s] Invoking command in '/workspace/towen/src/motionpackage': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motionpackage build --build-base /workspace/towen/build/motionpackage/build install --record /workspace/towen/build/motionpackage/install.log --single-version-externally-managed install_data --force
+[6.761s] running egg_info
+[6.822s] writing ../../build/motionpackage/motionpackage.egg-info/PKG-INFO
+[6.824s] writing dependency_links to ../../build/motionpackage/motionpackage.egg-info/dependency_links.txt
+[6.836s] writing entry points to ../../build/motionpackage/motionpackage.egg-info/entry_points.txt
+[6.837s] writing requirements to ../../build/motionpackage/motionpackage.egg-info/requires.txt
+[6.837s] writing top-level names to ../../build/motionpackage/motionpackage.egg-info/top_level.txt
+[6.957s] reading manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'
+[6.958s] adding license file 'LICENSE'
+[6.959s] writing manifest file '../../build/motionpackage/motionpackage.egg-info/SOURCES.txt'
+[6.962s] running build
+[6.964s] running build_py
+[6.968s] copying motionpackage/opencr_imu.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[6.970s] copying motionpackage/test.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[6.971s] copying motionpackage/__init__.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[6.976s] copying motionpackage/motion_0725.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[6.977s] copying motionpackage/import struct.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[6.978s] copying motionpackage/walking.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[6.980s] copying motionpackage/motionpackage.py -> /workspace/towen/build/motionpackage/build/lib/motionpackage
+[7.009s] running install
+[7.010s] running install_lib
+[7.070s] creating /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/opencr_imu.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/test.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/__init__.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/motion_0725.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/import struct.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/walking.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.071s] copying /workspace/towen/build/motionpackage/build/lib/motionpackage/motionpackage.py -> /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage
+[7.072s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/opencr_imu.py to opencr_imu.cpython-310.pyc
+[7.075s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/test.py to test.cpython-310.pyc
+[7.075s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/__init__.py to __init__.cpython-310.pyc
+[7.076s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/motion_0725.py to motion_0725.cpython-310.pyc
+[7.094s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/import struct.py to import struct.cpython-310.pyc
+[7.094s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/walking.py to walking.cpython-310.pyc
+[7.105s] byte-compiling /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage/motionpackage.py to motionpackage.cpython-310.pyc
+[7.128s] running install_data
+[7.129s] copying resource/motionpackage -> /workspace/towen/install/motionpackage/share/ament_index/resource_index/packages
+[7.129s] copying package.xml -> /workspace/towen/install/motionpackage/share/motionpackage
+[7.131s] running install_egg_info
+[7.193s] Copying ../../build/motionpackage/motionpackage.egg-info to /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage-0.0.0-py3.10.egg-info
+[7.212s] running install_scripts
+[7.827s] Installing motionpackage script to /workspace/towen/install/motionpackage/lib/motionpackage
+[7.832s] writing list of installed files to '/workspace/towen/build/motionpackage/install.log'
+[8.018s] Invoked command in '/workspace/towen/src/motionpackage' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motionpackage build --build-base /workspace/towen/build/motionpackage/build install --record /workspace/towen/build/motionpackage/install.log --single-version-externally-managed install_data --force

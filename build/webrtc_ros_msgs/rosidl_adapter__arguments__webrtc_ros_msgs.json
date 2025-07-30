@@ -1,0 +1,7 @@
+{
+  "package_name": "webrtc_ros_msgs",
+  "non_idl_tuples": [
+    "/workspace/towen/src/webrtc_ros/webrtc_msgs:msg/IceServer.msg",
+    "/workspace/towen/src/webrtc_ros/webrtc_msgs:srv/GetIceServers.srv"
+  ]
+}

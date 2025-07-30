@@ -1,0 +1,1 @@
+/workspace/towen/build/rosidl_typesupport_interface/ament_cmake_core/rosidl_typesupport_interfaceConfig-version.cmake

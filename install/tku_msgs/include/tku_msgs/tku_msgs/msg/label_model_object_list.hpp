@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/label_model_object_list.hpp

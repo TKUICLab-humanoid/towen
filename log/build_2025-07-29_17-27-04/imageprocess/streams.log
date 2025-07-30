@@ -1,0 +1,34 @@
+[2.288s] Invoking command in '/workspace/towen/build/imageprocess': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/imageprocess/build --no-deps symlink_data --force
+[3.144s] running develop
+[3.145s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[3.145s] !!
+[3.145s] 
+[3.145s]         ********************************************************************************
+[3.145s]         Please avoid running ``setup.py`` and ``easy_install``.
+[3.146s]         Instead, use pypa/build, pypa/installer or other
+[3.146s]         standards-based tools.
+[3.146s] 
+[3.146s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[3.146s]         ********************************************************************************
+[3.146s] 
+[3.146s] !!
+[3.147s]   easy_install.initialize_options(self)
+[3.773s] running egg_info
+[3.815s] writing imageprocess.egg-info/PKG-INFO
+[3.817s] writing dependency_links to imageprocess.egg-info/dependency_links.txt
+[3.819s] writing entry points to imageprocess.egg-info/entry_points.txt
+[3.819s] writing requirements to imageprocess.egg-info/requires.txt
+[3.819s] writing top-level names to imageprocess.egg-info/top_level.txt
+[3.904s] reading manifest file 'imageprocess.egg-info/SOURCES.txt'
+[3.907s] writing manifest file 'imageprocess.egg-info/SOURCES.txt'
+[4.055s] running build_ext
+[4.059s] Creating /workspace/towen/install/imageprocess/lib/python3.10/site-packages/imageprocess.egg-link (link to .)
+[4.062s] Installing image script to /workspace/towen/install/imageprocess/lib/imageprocess
+[4.063s] Installing image_test script to /workspace/towen/install/imageprocess/lib/imageprocess
+[4.063s] Installing imageprocess script to /workspace/towen/install/imageprocess/lib/imageprocess
+[4.063s] 
+[4.064s] Installed /workspace/towen/build/imageprocess
+[4.064s] running symlink_data
+[4.065s] symbolically linking /workspace/towen/build/imageprocess/resource/imageprocess -> /workspace/towen/install/imageprocess/share/ament_index/resource_index/packages
+[4.065s] symbolically linking /workspace/towen/build/imageprocess/package.xml -> /workspace/towen/install/imageprocess/share/imageprocess
+[4.194s] Invoked command in '/workspace/towen/build/imageprocess' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/imageprocess/build --no-deps symlink_data --force

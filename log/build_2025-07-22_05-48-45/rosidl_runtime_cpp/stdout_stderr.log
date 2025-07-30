@@ -1,0 +1,20 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/install/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rosidl_runtime_c: 3.1.7 (/workspace/towen/install/rosidl_runtime_c/share/rosidl_runtime_c/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+-- Found performance_test_fixture: 0.0.9 (/opt/ros/humble/install/share/performance_test_fixture/cmake)
+-- Found gtest sources under '/opt/ros/humble/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /opt/ros/humble/install/include;$<BUILD_INTERFACE:/workspace/towen/src/rosidl/rosidl_runtime_cpp/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (0.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/towen/build/rosidl_runtime_cpp

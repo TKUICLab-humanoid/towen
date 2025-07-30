@@ -1,0 +1,998 @@
+[0.266s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.266s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=6, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffb8d075b0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffffb8e5c400>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffffb8e5c400>>)
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.367s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/workspace/towen'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.367s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.368s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.403s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.404s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'ignore'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'ignore_ament_install'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['colcon_pkg']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'colcon_pkg'
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['colcon_meta']
+[0.405s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'colcon_meta'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['ros']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'ros'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['cmake', 'python']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'cmake'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'python'
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extensions ['python_setup_py']
+[0.406s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface) by extension 'python_setup_py'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['ignore', 'ignore_ament_install']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'ignore'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'ignore_ament_install'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['colcon_pkg']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'colcon_pkg'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['colcon_meta']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'colcon_meta'
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['ros']
+[0.407s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'ros'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['cmake', 'python']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'cmake'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'python'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extensions ['python_setup_py']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/css) by extension 'python_setup_py'
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['ignore', 'ignore_ament_install']
+[0.408s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'ignore'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'ignore_ament_install'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['colcon_pkg']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'colcon_pkg'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['colcon_meta']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'colcon_meta'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['ros']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'ros'
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['cmake', 'python']
+[0.409s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'cmake'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'python'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extensions ['python_setup_py']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4) by extension 'python_setup_py'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['ignore', 'ignore_ament_install']
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'ignore'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'ignore_ament_install'
+[0.410s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['colcon_pkg']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'colcon_pkg'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['colcon_meta']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'colcon_meta'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['ros']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'ros'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['cmake', 'python']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'cmake'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'python'
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extensions ['python_setup_py']
+[0.411s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external) by extension 'python_setup_py'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['ignore', 'ignore_ament_install']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'ignore'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'ignore_ament_install'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['colcon_pkg']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'colcon_pkg'
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['colcon_meta']
+[0.412s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'colcon_meta'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['ros']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'ros'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['cmake', 'python']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'cmake'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'python'
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extensions ['python_setup_py']
+[0.413s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/external/jquery) by extension 'python_setup_py'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['ignore', 'ignore_ament_install']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'ignore'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'ignore_ament_install'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['colcon_pkg']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'colcon_pkg'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['colcon_meta']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'colcon_meta'
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['ros']
+[0.414s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'ros'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['cmake', 'python']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'cmake'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'python'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extensions ['python_setup_py']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/jquery-ui-1.11.4/images) by extension 'python_setup_py'
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['ignore', 'ignore_ament_install']
+[0.415s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'ignore'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'ignore_ament_install'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['colcon_pkg']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'colcon_pkg'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['colcon_meta']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'colcon_meta'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['ros']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'ros'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['cmake', 'python']
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'cmake'
+[0.416s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'python'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extensions ['python_setup_py']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js) by extension 'python_setup_py'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['ignore', 'ignore_ament_install']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'ignore'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'ignore_ament_install'
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['colcon_pkg']
+[0.417s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'colcon_pkg'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['colcon_meta']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'colcon_meta'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['ros']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'ros'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['cmake', 'python']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'cmake'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'python'
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extensions ['python_setup_py']
+[0.418s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/js/roslib) by extension 'python_setup_py'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['ignore', 'ignore_ament_install']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'ignore'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'ignore_ament_install'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['colcon_pkg']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'colcon_pkg'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['colcon_meta']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'colcon_meta'
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['ros']
+[0.419s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'ros'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['cmake', 'python']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'cmake'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'python'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extensions ['python_setup_py']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/picture) by extension 'python_setup_py'
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['ignore', 'ignore_ament_install']
+[0.420s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'ignore'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'ignore_ament_install'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['colcon_pkg']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'colcon_pkg'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['colcon_meta']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'colcon_meta'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['ros']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'ros'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['cmake', 'python']
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'cmake'
+[0.421s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'python'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extensions ['python_setup_py']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources) by extension 'python_setup_py'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['ignore', 'ignore_ament_install']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'ignore'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'ignore_ament_install'
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['colcon_pkg']
+[0.422s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'colcon_pkg'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['colcon_meta']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'colcon_meta'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['ros']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'ros'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['cmake', 'python']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'cmake'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'python'
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extensions ['python_setup_py']
+[0.423s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/resources/TKU_ICLab) by extension 'python_setup_py'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['ignore', 'ignore_ament_install']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'ignore'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'ignore_ament_install'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['colcon_pkg']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'colcon_pkg'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['colcon_meta']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'colcon_meta'
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['ros']
+[0.424s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'ros'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['cmake', 'python']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'cmake'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'python'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extensions ['python_setup_py']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(hurocup_interface/roslibjs) by extension 'python_setup_py'
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.425s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.426s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.427s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['ignore', 'ignore_ament_install']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ignore'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ignore_ament_install'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['colcon_pkg']
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'colcon_pkg'
+[0.428s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['colcon_meta']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'colcon_meta'
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extensions ['ros']
+[0.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/imageprocess) by extension 'ros'
+[0.434s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imageprocess' with type 'ros.ament_python' and name 'imageprocess'
+[0.434s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['ignore', 'ignore_ament_install']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ignore'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ignore_ament_install'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['colcon_pkg']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'colcon_pkg'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['colcon_meta']
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'colcon_meta'
+[0.435s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extensions ['ros']
+[0.436s] Level 1:colcon.colcon_core.package_identification:_identify(src/motionpackage) by extension 'ros'
+[0.437s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motionpackage' with type 'ros.ament_python' and name 'motionpackage'
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['ignore', 'ignore_ament_install']
+[0.437s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'ignore'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'ignore_ament_install'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['colcon_pkg']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'colcon_pkg'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['colcon_meta']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'colcon_meta'
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extensions ['ros']
+[0.438s] Level 1:colcon.colcon_core.package_identification:_identify(src/strategy) by extension 'ros'
+[0.439s] DEBUG:colcon.colcon_core.package_identification:Package 'src/strategy' with type 'ros.ament_python' and name 'strategy'
+[0.439s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ignore'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ignore_ament_install'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['colcon_pkg']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'colcon_pkg'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['colcon_meta']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'colcon_meta'
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extensions ['ros']
+[0.440s] Level 1:colcon.colcon_core.package_identification:_identify(src/tku_msgs) by extension 'ros'
+[0.442s] DEBUG:colcon.colcon_core.package_identification:Package 'src/tku_msgs' with type 'ros.ament_cmake' and name 'tku_msgs'
+[0.442s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ignore', 'ignore_ament_install']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ignore_ament_install'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_pkg']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_pkg'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['colcon_meta']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'colcon_meta'
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extensions ['ros']
+[0.443s] Level 1:colcon.colcon_core.package_identification:_identify(src/usb_cam) by extension 'ros'
+[0.447s] DEBUG:colcon.colcon_core.package_identification:Package 'src/usb_cam' with type 'ros.ament_cmake' and name 'usb_cam'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore_ament_install'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ros'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['cmake', 'python']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'cmake'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['python_setup_py']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python_setup_py'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore_ament_install'
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_pkg']
+[0.449s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_pkg'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_meta']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_meta'
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ros']
+[0.450s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ros'
+[0.452s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[0.452s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore_ament_install'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_pkg']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_pkg'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_meta']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_meta'
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ros']
+[0.453s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ros'
+[0.455s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[0.455s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore_ament_install'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_pkg']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_pkg'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_meta']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_meta'
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ros']
+[0.456s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ros'
+[0.457s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore_ament_install'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_pkg']
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_pkg'
+[0.458s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_meta']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_meta'
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ros']
+[0.459s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ros'
+[0.460s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[0.460s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['ignore', 'ignore_ament_install']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'ignore'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'ignore_ament_install'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['colcon_pkg']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'colcon_pkg'
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['colcon_meta']
+[0.461s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'colcon_meta'
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extensions ['ros']
+[0.462s] Level 1:colcon.colcon_core.package_identification:_identify(src/web_video_sever) by extension 'ros'
+[0.463s] DEBUG:colcon.colcon_core.package_identification:Package 'src/web_video_sever' with type 'ros.ament_cmake' and name 'web_video_server'
+[0.463s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ignore_ament_install'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_pkg']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_pkg'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['colcon_meta']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'colcon_meta'
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['ros']
+[0.464s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'ros'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['cmake', 'python']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'cmake'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extensions ['python_setup_py']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper) by extension 'python_setup_py'
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ignore', 'ignore_ament_install']
+[0.465s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ignore_ament_install'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_pkg']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_pkg'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['colcon_meta']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'colcon_meta'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['ros']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'ros'
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['cmake', 'python']
+[0.466s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'cmake'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extensions ['python_setup_py']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/docker) by extension 'python_setup_py'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ignore', 'ignore_ament_install']
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore'
+[0.467s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ignore_ament_install'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_pkg']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_pkg'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['colcon_meta']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'colcon_meta'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['ros']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'ros'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['cmake', 'python']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'cmake'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python'
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extensions ['python_setup_py']
+[0.468s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/images) by extension 'python_setup_py'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ignore', 'ignore_ament_install']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ignore_ament_install'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_pkg']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_pkg'
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['colcon_meta']
+[0.469s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'colcon_meta'
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extensions ['ros']
+[0.470s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_components) by extension 'ros'
+[0.472s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_components' with type 'ros.ament_cmake' and name 'zed_components'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ignore_ament_install'
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_pkg']
+[0.473s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_pkg'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['colcon_meta']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'colcon_meta'
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extensions ['ros']
+[0.474s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_ros2) by extension 'ros'
+[0.475s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_ros2' with type 'ros.ament_cmake' and name 'zed_ros2'
+[0.475s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ignore', 'ignore_ament_install']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ignore_ament_install'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_pkg']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_pkg'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['colcon_meta']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'colcon_meta'
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extensions ['ros']
+[0.476s] Level 1:colcon.colcon_core.package_identification:_identify(src/zed-ros2-wrapper/zed_wrapper) by extension 'ros'
+[0.478s] DEBUG:colcon.colcon_core.package_identification:Package 'src/zed-ros2-wrapper/zed_wrapper' with type 'ros.ament_cmake' and name 'zed_wrapper'
+[0.478s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.479s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[0.535s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.535s] DEBUG:colcon.colcon_core.verb:Building package 'cv_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/cv_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/cv_bridge', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/cv_bridge', 'symlink_install': False, 'test_result_base': None}
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_args' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target' from command line to 'None'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[0.536s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[0.537s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.537s] DEBUG:colcon.colcon_core.verb:Building package 'image_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/image_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/image_geometry', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/image_geometry', 'symlink_install': False, 'test_result_base': None}
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_target' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_clean_cache' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_clean_first' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'cmake_force_configure' from command line to 'False'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'ament_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'catkin_cmake_args' from command line to 'None'
+[0.538s] Level 5:colcon.colcon_core.verb:set package 'imageprocess' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.538s] DEBUG:colcon.colcon_core.verb:Building package 'imageprocess' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/imageprocess', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/imageprocess', 'merge_install': False, 'path': '/workspace/towen/src/imageprocess', 'symlink_install': False, 'test_result_base': None}
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_args' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_target' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_clean_cache' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_clean_first' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'cmake_force_configure' from command line to 'False'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'ament_cmake_args' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'catkin_cmake_args' from command line to 'None'
+[0.539s] Level 5:colcon.colcon_core.verb:set package 'motionpackage' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.540s] DEBUG:colcon.colcon_core.verb:Building package 'motionpackage' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/motionpackage', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/motionpackage', 'merge_install': False, 'path': '/workspace/towen/src/motionpackage', 'symlink_install': False, 'test_result_base': None}
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_args' from command line to 'None'
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_target' from command line to 'None'
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.540s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_clean_cache' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_clean_first' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'cmake_force_configure' from command line to 'False'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'ament_cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'catkin_cmake_args' from command line to 'None'
+[0.541s] Level 5:colcon.colcon_core.verb:set package 'strategy' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.541s] DEBUG:colcon.colcon_core.verb:Building package 'strategy' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/strategy', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/strategy', 'merge_install': False, 'path': '/workspace/towen/src/strategy', 'symlink_install': False, 'test_result_base': None}
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_target' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.542s] Level 5:colcon.colcon_core.verb:set package 'tku_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.542s] DEBUG:colcon.colcon_core.verb:Building package 'tku_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/tku_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/tku_msgs', 'merge_install': False, 'path': '/workspace/towen/src/tku_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_cache' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_clean_first' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'cmake_force_configure' from command line to 'False'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'ament_cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_cmake_args' from command line to 'None'
+[0.543s] Level 5:colcon.colcon_core.verb:set package 'zed_components' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.544s] DEBUG:colcon.colcon_core.verb:Building package 'zed_components' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/zed_components', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/zed_components', 'merge_install': False, 'path': '/workspace/towen/src/zed-ros2-wrapper/zed_components', 'symlink_install': False, 'test_result_base': None}
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_args' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target' from command line to 'None'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.544s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_first' from command line to 'False'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_force_configure' from command line to 'False'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'ament_cmake_args' from command line to 'None'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[0.545s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.545s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/opencv_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/opencv_tests', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/opencv_tests', 'symlink_install': False, 'test_result_base': None}
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_args' from command line to 'None'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target' from command line to 'None'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_cache' from command line to 'False'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_clean_first' from command line to 'False'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'cmake_force_configure' from command line to 'False'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'ament_cmake_args' from command line to 'None'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_cmake_args' from command line to 'None'
+[0.546s] Level 5:colcon.colcon_core.verb:set package 'usb_cam' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.546s] DEBUG:colcon.colcon_core.verb:Building package 'usb_cam' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/usb_cam', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/usb_cam', 'merge_install': False, 'path': '/workspace/towen/src/usb_cam', 'symlink_install': False, 'test_result_base': None}
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_args' from command line to 'None'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target' from command line to 'None'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[0.547s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.547s] DEBUG:colcon.colcon_core.verb:Building package 'vision_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/vision_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/vision_opencv', 'merge_install': False, 'path': '/workspace/towen/src/vision_opencv/vision_opencv', 'symlink_install': False, 'test_result_base': None}
+[0.548s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_args' from command line to 'None'
+[0.548s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_target' from command line to 'None'
+[0.548s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.548s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_clean_cache' from command line to 'False'
+[0.548s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_clean_first' from command line to 'False'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'cmake_force_configure' from command line to 'False'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'ament_cmake_args' from command line to 'None'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'catkin_cmake_args' from command line to 'None'
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'web_video_server' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.549s] DEBUG:colcon.colcon_core.verb:Building package 'web_video_server' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/web_video_server', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/web_video_server', 'merge_install': False, 'path': '/workspace/towen/src/web_video_sever', 'symlink_install': False, 'test_result_base': None}
+[0.549s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_args' from command line to 'None'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target' from command line to 'None'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_cache' from command line to 'False'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_clean_first' from command line to 'False'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'cmake_force_configure' from command line to 'False'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'ament_cmake_args' from command line to 'None'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_cmake_args' from command line to 'None'
+[0.550s] Level 5:colcon.colcon_core.verb:set package 'zed_wrapper' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.550s] DEBUG:colcon.colcon_core.verb:Building package 'zed_wrapper' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/zed_wrapper', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/zed_wrapper', 'merge_install': False, 'path': '/workspace/towen/src/zed-ros2-wrapper/zed_wrapper', 'symlink_install': False, 'test_result_base': None}
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_args' from command line to 'None'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target' from command line to 'None'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.551s] Level 5:colcon.colcon_core.verb:set package 'zed_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.551s] DEBUG:colcon.colcon_core.verb:Building package 'zed_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/workspace/towen/build/zed_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/workspace/towen/install/zed_ros2', 'merge_install': False, 'path': '/workspace/towen/src/zed-ros2-wrapper/zed_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.552s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.554s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.555s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/vision_opencv/cv_bridge' with build type 'ament_cmake'
+[0.555s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/vision_opencv/cv_bridge'
+[0.561s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.562s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.562s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.565s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspace/towen/install/web_video_server' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.565s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/workspace/towen/install/cv_bridge' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.566s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspace/towen/install/web_video_server' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.566s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/workspace/towen/install/cv_bridge' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.589s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/zed-ros2-wrapper/zed_components' with build type 'ament_cmake'
+[0.590s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/zed-ros2-wrapper/zed_components'
+[0.591s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.592s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.614s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/vision_opencv/image_geometry' with build type 'ament_cmake'
+[0.614s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/vision_opencv/image_geometry'
+[0.615s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.615s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.637s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/tku_msgs' with build type 'ament_cmake'
+[0.637s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/tku_msgs'
+[0.638s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.638s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.660s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/towen/src/imageprocess' with build type 'ament_python'
+[0.661s] Level 1:colcon.colcon_core.shell:create_environment_hook('imageprocess', 'ament_prefix_path')
+[0.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/imageprocess/share/imageprocess/hook/ament_prefix_path.ps1'
+[0.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/imageprocess/share/imageprocess/hook/ament_prefix_path.dsv'
+[0.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/imageprocess/share/imageprocess/hook/ament_prefix_path.sh'
+[0.666s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.666s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.687s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/towen/src/motionpackage' with build type 'ament_python'
+[0.688s] Level 1:colcon.colcon_core.shell:create_environment_hook('motionpackage', 'ament_prefix_path')
+[0.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/motionpackage/share/motionpackage/hook/ament_prefix_path.ps1'
+[0.689s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/motionpackage/share/motionpackage/hook/ament_prefix_path.dsv'
+[0.690s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/motionpackage/share/motionpackage/hook/ament_prefix_path.sh'
+[0.692s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.692s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.727s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[0.734s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_components': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/zed_components -- -j6 -l6
+[0.745s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/image_geometry': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/image_geometry -- -j6 -l6
+[0.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[1.521s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/towen/src/imageprocess'
+[1.522s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.522s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.185s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/towen/src/motionpackage'
+[2.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.187s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_components' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/zed_components -- -j6 -l6
+[2.230s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/image_geometry' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/image_geometry -- -j6 -l6
+[2.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[2.877s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/image_geometry': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/image_geometry
+[2.883s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_components': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/zed_components
+[2.889s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/cv_bridge
+[3.205s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[3.210s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_components' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/zed_components
+[3.213s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake module files
+[3.214s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake config files
+[3.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[3.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[3.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[3.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[3.220s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib'
+[3.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[3.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[3.223s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[3.225s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[3.230s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[3.234s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/pkgconfig/zed_components.pc'
+[3.235s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/python3.10/site-packages'
+[3.236s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[3.237s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.ps1'
+[3.239s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_components/share/zed_components/package.dsv'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.sh'
+[3.243s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.bash'
+[3.244s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.zsh'
+[3.246s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_components/share/colcon-core/packages/zed_components)
+[3.276s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[3.277s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge' for CMake module files
+[3.279s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/cv_bridge
+[3.282s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge' for CMake config files
+[3.283s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[3.284s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[3.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib'
+[3.290s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[3.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[3.293s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[3.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[3.296s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/bin'
+[3.297s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[3.297s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib/python3.10/site-packages'
+[3.298s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/bin'
+[3.299s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.ps1'
+[3.303s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/package.dsv'
+[3.306s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.sh'
+[3.307s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.bash'
+[3.308s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.zsh'
+[3.309s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[3.360s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[3.361s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake module files
+[3.363s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake config files
+[3.364s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/image_geometry' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/image_geometry
+[3.365s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[3.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[3.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[3.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[3.370s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib'
+[3.370s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[3.371s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[3.372s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[3.373s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[3.374s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[3.374s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[3.375s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/python3.10/site-packages'
+[3.375s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[3.376s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.ps1'
+[3.378s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/image_geometry/share/image_geometry/package.dsv'
+[3.380s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.sh'
+[3.381s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.bash'
+[3.382s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.zsh'
+[3.383s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/image_geometry/share/colcon-core/packages/image_geometry)
+[3.635s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[3.636s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge' for CMake module files
+[3.637s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge' for CMake config files
+[3.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[3.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[3.640s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[3.641s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[3.643s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib'
+[3.643s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[3.643s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[3.644s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[3.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[3.648s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/bin'
+[3.648s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[3.658s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/lib/python3.10/site-packages'
+[3.658s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/cv_bridge/bin'
+[3.659s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.ps1'
+[3.673s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/cv_bridge/share/cv_bridge/package.dsv'
+[3.675s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.sh'
+[3.677s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.bash'
+[3.679s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/cv_bridge/share/cv_bridge/package.zsh'
+[3.681s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[3.684s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/towen/src/strategy' with build type 'ament_python'
+[3.685s] Level 1:colcon.colcon_core.shell:create_environment_hook('strategy', 'ament_prefix_path')
+[3.686s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/strategy/share/strategy/hook/ament_prefix_path.ps1'
+[3.701s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/strategy/share/strategy/hook/ament_prefix_path.dsv'
+[3.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/strategy/share/strategy/hook/ament_prefix_path.sh'
+[3.727s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.727s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.771s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_components)
+[3.772s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake module files
+[3.774s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components' for CMake config files
+[3.774s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'cmake_prefix_path')
+[3.775s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.ps1'
+[3.776s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.dsv'
+[3.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/cmake_prefix_path.sh'
+[3.779s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib'
+[3.779s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_components', 'ld_library_path_lib')
+[3.780s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.ps1'
+[3.781s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.dsv'
+[3.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_components/share/zed_components/hook/ld_library_path_lib.sh'
+[3.783s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[3.784s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/pkgconfig/zed_components.pc'
+[3.784s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/lib/python3.10/site-packages'
+[3.785s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_components/bin'
+[3.786s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.ps1'
+[3.790s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_components/share/zed_components/package.dsv'
+[3.792s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.sh'
+[3.794s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.bash'
+[3.795s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_components/share/zed_components/package.zsh'
+[3.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_components/share/colcon-core/packages/zed_components)
+[3.800s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/zed-ros2-wrapper/zed_wrapper' with build type 'ament_cmake'
+[3.801s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/zed-ros2-wrapper/zed_wrapper'
+[3.802s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.802s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.830s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake module files
+[3.831s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry' for CMake config files
+[3.832s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[3.833s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[3.834s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[3.835s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[3.838s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib'
+[3.838s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[3.840s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[3.842s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[3.843s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[3.844s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[3.844s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/lib/python3.10/site-packages'
+[3.845s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/image_geometry/bin'
+[3.846s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.ps1'
+[3.848s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/image_geometry/share/image_geometry/package.dsv'
+[3.849s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.sh'
+[3.850s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.bash'
+[3.851s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/image_geometry/share/image_geometry/package.zsh'
+[3.853s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/image_geometry/share/colcon-core/packages/image_geometry)
+[3.856s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/workspace/towen/src/vision_opencv/opencv_tests' with build type 'ament_python'
+[3.857s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'ament_prefix_path')
+[3.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.ps1'
+[3.859s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.dsv'
+[3.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.sh'
+[3.861s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.861s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.468s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/towen/src/strategy'
+[4.470s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.470s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_wrapper': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_wrapper -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_wrapper
+[5.093s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/workspace/towen/src/vision_opencv/opencv_tests'
+[5.094s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.095s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.128s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/src/motionpackage': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motionpackage build --build-base /workspace/towen/build/motionpackage/build install --record /workspace/towen/build/motionpackage/install.log --single-version-externally-managed install_data
+[5.130s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/src/imageprocess': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /workspace/towen/build/imageprocess/build install --record /workspace/towen/build/imageprocess/install.log --single-version-externally-managed install_data
+[6.354s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess' for CMake module files
+[6.355s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess' for CMake config files
+[6.357s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess/lib'
+[6.358s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/src/imageprocess' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/imageprocess/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/imageprocess build --build-base /workspace/towen/build/imageprocess/build install --record /workspace/towen/build/imageprocess/install.log --single-version-externally-managed install_data
+[6.358s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess/bin'
+[6.363s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess/lib/pkgconfig/imageprocess.pc'
+[6.363s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess/lib/python3.10/site-packages'
+[6.364s] Level 1:colcon.colcon_core.shell:create_environment_hook('imageprocess', 'pythonpath')
+[6.365s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/imageprocess/share/imageprocess/hook/pythonpath.ps1'
+[6.367s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/imageprocess/share/imageprocess/hook/pythonpath.dsv'
+[6.368s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/imageprocess/share/imageprocess/hook/pythonpath.sh'
+[6.370s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/imageprocess/bin'
+[6.370s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imageprocess)
+[6.371s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/imageprocess/share/imageprocess/package.ps1'
+[6.373s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/imageprocess/share/imageprocess/package.dsv'
+[6.374s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/imageprocess/share/imageprocess/package.sh'
+[6.376s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/imageprocess/share/imageprocess/package.bash'
+[6.377s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/imageprocess/share/imageprocess/package.zsh'
+[6.378s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/imageprocess/share/colcon-core/packages/imageprocess)
+[6.381s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/vision_opencv/vision_opencv' with build type 'ament_cmake'
+[6.382s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/vision_opencv/vision_opencv'
+[6.383s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.384s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.487s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/vision_opencv': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/vision_opencv/vision_opencv -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/vision_opencv
+[6.571s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage' for CMake module files
+[6.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/src/motionpackage' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motionpackage build --build-base /workspace/towen/build/motionpackage/build install --record /workspace/towen/build/motionpackage/install.log --single-version-externally-managed install_data
+[6.574s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage' for CMake config files
+[6.576s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage/lib'
+[6.576s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage/bin'
+[6.576s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage/lib/pkgconfig/motionpackage.pc'
+[6.577s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage/lib/python3.10/site-packages'
+[6.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('motionpackage', 'pythonpath')
+[6.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/motionpackage/share/motionpackage/hook/pythonpath.ps1'
+[6.579s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/motionpackage/share/motionpackage/hook/pythonpath.dsv'
+[6.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/motionpackage/share/motionpackage/hook/pythonpath.sh'
+[6.581s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/motionpackage/bin'
+[6.582s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motionpackage)
+[6.582s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/motionpackage/share/motionpackage/package.ps1'
+[6.585s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/motionpackage/share/motionpackage/package.dsv'
+[6.587s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/motionpackage/share/motionpackage/package.sh'
+[6.589s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/motionpackage/share/motionpackage/package.bash'
+[6.590s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/motionpackage/share/motionpackage/package.zsh'
+[6.591s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/motionpackage/share/colcon-core/packages/motionpackage)
+[6.595s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/web_video_sever' with build type 'ament_cmake'
+[6.596s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/web_video_sever'
+[6.598s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.598s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/web_video_sever -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/web_video_server
+[7.104s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/src/vision_opencv/opencv_tests': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /workspace/towen/build/opencv_tests/build install --record /workspace/towen/build/opencv_tests/install.log --single-version-externally-managed install_data
+[7.168s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/src/strategy': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/strategy build --build-base /workspace/towen/build/strategy/build install --record /workspace/towen/build/strategy/install.log --single-version-externally-managed install_data
+[8.578s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests' for CMake module files
+[8.579s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests' for CMake config files
+[8.581s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests/lib'
+[8.581s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests/bin'
+[8.581s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests/lib/pkgconfig/opencv_tests.pc'
+[8.582s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests/lib/python3.10/site-packages'
+[8.582s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'pythonpath')
+[8.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/opencv_tests/share/opencv_tests/hook/pythonpath.ps1'
+[8.584s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/opencv_tests/share/opencv_tests/hook/pythonpath.dsv'
+[8.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/opencv_tests/share/opencv_tests/hook/pythonpath.sh'
+[8.587s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/opencv_tests/bin'
+[8.587s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opencv_tests)
+[8.588s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/opencv_tests/share/opencv_tests/package.ps1'
+[8.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/opencv_tests/share/opencv_tests/package.dsv'
+[8.591s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/opencv_tests/share/opencv_tests/package.sh'
+[8.592s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/opencv_tests/share/opencv_tests/package.bash'
+[8.593s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/opencv_tests/share/opencv_tests/package.zsh'
+[8.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/src/vision_opencv/opencv_tests' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /workspace/towen/build/opencv_tests/build install --record /workspace/towen/build/opencv_tests/install.log --single-version-externally-managed install_data
+[8.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/opencv_tests/share/colcon-core/packages/opencv_tests)
+[8.664s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy' for CMake module files
+[8.666s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy' for CMake config files
+[8.668s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy/lib'
+[8.668s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy/bin'
+[8.668s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy/lib/pkgconfig/strategy.pc'
+[8.669s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy/lib/python3.10/site-packages'
+[8.670s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/src/strategy' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/strategy build --build-base /workspace/towen/build/strategy/build install --record /workspace/towen/build/strategy/install.log --single-version-externally-managed install_data
+[8.670s] Level 1:colcon.colcon_core.shell:create_environment_hook('strategy', 'pythonpath')
+[8.671s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/strategy/share/strategy/hook/pythonpath.ps1'
+[8.672s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/strategy/share/strategy/hook/pythonpath.dsv'
+[8.673s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/strategy/share/strategy/hook/pythonpath.sh'
+[8.675s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/strategy/bin'
+[8.675s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(strategy)
+[8.676s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/strategy/share/strategy/package.ps1'
+[8.677s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/strategy/share/strategy/package.dsv'
+[8.679s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/strategy/share/strategy/package.sh'
+[8.680s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/strategy/share/strategy/package.bash'
+[8.681s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/strategy/share/strategy/package.zsh'
+[8.682s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/strategy/share/colcon-core/packages/strategy)
+[8.891s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/vision_opencv' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/vision_opencv/vision_opencv -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/vision_opencv
+[8.892s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/vision_opencv': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/vision_opencv -- -j6 -l6
+[8.894s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/tku_msgs' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[8.898s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/tku_msgs -- -j6 -l6
+[9.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/vision_opencv' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/vision_opencv -- -j6 -l6
+[9.497s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/vision_opencv': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/vision_opencv
+[9.691s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_wrapper -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_wrapper
+[9.692s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_wrapper': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/zed_wrapper -- -j6 -l6
+[9.741s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[9.742s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv' for CMake module files
+[9.743s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv' for CMake config files
+[9.743s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[9.744s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[9.746s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/vision_opencv' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/vision_opencv
+[9.747s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[9.748s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[9.749s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/bin'
+[9.749s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[9.750s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/lib/python3.10/site-packages'
+[9.750s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/bin'
+[9.751s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.ps1'
+[9.752s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/vision_opencv/share/vision_opencv/package.dsv'
+[9.753s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.sh'
+[9.758s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.bash'
+[9.759s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.zsh'
+[9.760s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[10.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/zed_wrapper -- -j6 -l6
+[10.035s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[10.036s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv' for CMake module files
+[10.038s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv' for CMake config files
+[10.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[10.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[10.042s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[10.043s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[10.045s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/bin'
+[10.046s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[10.047s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/lib/python3.10/site-packages'
+[10.047s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/vision_opencv/bin'
+[10.048s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.ps1'
+[10.050s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/vision_opencv/share/vision_opencv/package.dsv'
+[10.052s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.sh'
+[10.055s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.bash'
+[10.060s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/vision_opencv/share/vision_opencv/package.zsh'
+[10.062s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[10.286s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_wrapper': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/zed_wrapper
+[10.541s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_wrapper)
+[10.543s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper' for CMake module files
+[10.544s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_wrapper' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/zed_wrapper
+[10.545s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper' for CMake config files
+[10.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_wrapper', 'cmake_prefix_path')
+[10.546s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.ps1'
+[10.547s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.dsv'
+[10.548s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.sh'
+[10.549s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/bin'
+[10.550s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/lib/pkgconfig/zed_wrapper.pc'
+[10.550s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/lib/python3.10/site-packages'
+[10.551s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/bin'
+[10.551s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.ps1'
+[10.553s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.dsv'
+[10.554s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.sh'
+[10.555s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.bash'
+[10.556s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.zsh'
+[10.557s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_wrapper/share/colcon-core/packages/zed_wrapper)
+[10.818s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_wrapper)
+[10.819s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper' for CMake module files
+[10.820s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper' for CMake config files
+[10.821s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_wrapper', 'cmake_prefix_path')
+[10.821s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.ps1'
+[10.822s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.dsv'
+[10.823s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_wrapper/share/zed_wrapper/hook/cmake_prefix_path.sh'
+[10.825s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/bin'
+[10.825s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/lib/pkgconfig/zed_wrapper.pc'
+[10.826s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/lib/python3.10/site-packages'
+[10.827s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_wrapper/bin'
+[10.827s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.ps1'
+[10.829s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.dsv'
+[10.831s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.sh'
+[10.832s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.bash'
+[10.834s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_wrapper/share/zed_wrapper/package.zsh'
+[10.837s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_wrapper/share/colcon-core/packages/zed_wrapper)
+[10.838s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/workspace/towen/src/zed-ros2-wrapper/zed_ros2' with build type 'ament_cmake'
+[10.839s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/workspace/towen/src/zed-ros2-wrapper/zed_ros2'
+[10.839s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.840s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.893s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_ros2': AMENT_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_ros2
+[11.297s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/web_video_server' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/web_video_sever -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/web_video_server
+[11.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/web_video_server -- -j6 -l6
+[12.422s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake /workspace/towen/src/zed-ros2-wrapper/zed_ros2 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/zed_ros2
+[12.425s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_ros2': AMENT_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/zed_ros2 -- -j6 -l6
+[13.051s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/zed_ros2 -- -j6 -l6
+[13.779s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/workspace/towen/build/zed_ros2': AMENT_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/zed_ros2
+[14.140s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_ros2)
+[14.141s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2' for CMake module files
+[14.144s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2' for CMake config files
+[14.143s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/zed_ros2' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/workspace/towen/install/cv_bridge:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/zed_components/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/zed_ros2
+[14.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_ros2', 'cmake_prefix_path')
+[14.146s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.ps1'
+[14.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.dsv'
+[14.149s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.sh'
+[14.151s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/bin'
+[14.151s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/lib/pkgconfig/zed_ros2.pc'
+[14.152s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/lib/python3.10/site-packages'
+[14.152s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/bin'
+[14.154s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.ps1'
+[14.160s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_ros2/share/zed_ros2/package.dsv'
+[14.162s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.sh'
+[14.165s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.bash'
+[14.166s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.zsh'
+[14.178s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_ros2/share/colcon-core/packages/zed_ros2)
+[14.998s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(zed_ros2)
+[14.998s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2' for CMake module files
+[15.000s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2' for CMake config files
+[15.000s] Level 1:colcon.colcon_core.shell:create_environment_hook('zed_ros2', 'cmake_prefix_path')
+[15.001s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.ps1'
+[15.002s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/workspace/towen/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.dsv'
+[15.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/workspace/towen/install/zed_ros2/share/zed_ros2/hook/cmake_prefix_path.sh'
+[15.005s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/bin'
+[15.006s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/lib/pkgconfig/zed_ros2.pc'
+[15.006s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/lib/python3.10/site-packages'
+[15.007s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/zed_ros2/bin'
+[15.007s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.ps1'
+[15.009s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/zed_ros2/share/zed_ros2/package.dsv'
+[15.015s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.sh'
+[15.016s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.bash'
+[15.022s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/zed_ros2/share/zed_ros2/package.zsh'
+[15.023s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/zed_ros2/share/colcon-core/packages/zed_ros2)
+[20.930s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/workspace/towen/build/tku_msgs' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/tku_msgs -- -j6 -l6
+[29.888s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tku_msgs)
+[29.889s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/tku_msgs' for CMake module files
+[29.890s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/tku_msgs' for CMake config files
+[29.891s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/tku_msgs/bin'
+[29.892s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/tku_msgs/lib/pkgconfig/tku_msgs.pc'
+[29.893s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/tku_msgs/lib/python3.10/site-packages'
+[29.897s] Level 1:colcon.colcon_core.environment:checking '/workspace/towen/install/tku_msgs/bin'
+[29.899s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/tku_msgs/share/tku_msgs/package.ps1'
+[29.915s] INFO:colcon.colcon_core.shell:Creating package descriptor '/workspace/towen/install/tku_msgs/share/tku_msgs/package.dsv'
+[29.917s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/tku_msgs/share/tku_msgs/package.sh'
+[29.919s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/tku_msgs/share/tku_msgs/package.bash'
+[29.922s] INFO:colcon.colcon_core.shell:Creating package script '/workspace/towen/install/tku_msgs/share/tku_msgs/package.zsh'
+[29.924s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/workspace/towen/install/tku_msgs/share/colcon-core/packages/tku_msgs)
+[74.506s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[74.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[74.509s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[74.510s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[74.569s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[74.570s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[74.570s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[74.570s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[74.577s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.Spawn.ExecFailed: /usr/bin/dbus-launch terminated abnormally without any error message
+[74.578s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[74.580s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.ps1'
+[74.586s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/towen/install/_local_setup_util_ps1.py'
+[74.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.ps1'
+[74.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.sh'
+[74.600s] INFO:colcon.colcon_core.shell:Creating prefix util module '/workspace/towen/install/_local_setup_util_sh.py'
+[74.603s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.sh'
+[74.608s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.bash'
+[74.611s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.bash'
+[74.615s] INFO:colcon.colcon_core.shell:Creating prefix script '/workspace/towen/install/local_setup.zsh'
+[74.617s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/workspace/towen/install/setup.zsh'

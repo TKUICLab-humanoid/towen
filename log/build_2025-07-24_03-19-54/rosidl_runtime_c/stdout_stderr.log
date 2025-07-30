@@ -1,0 +1,56 @@
+-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/install/share/ament_cmake_ros/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rcutils: 5.1.6 (/opt/ros/humble/install/share/rcutils/cmake)
+-- Found rosidl_typesupport_interface: 3.1.7 (/workspace/towen/install/rosidl_typesupport_interface/share/rosidl_typesupport_interface/cmake)
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+-- Found performance_test_fixture: 0.0.9 (/opt/ros/humble/install/share/performance_test_fixture/cmake)
+-- Found gtest sources under '/opt/ros/humble/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+-- Performance tests are disabled by default, so Google Benchmark tests will be skipped. To enable these tests, set the CMake variable 'AMENT_RUN_PERFORMANCE_TESTS'.
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /opt/ros/humble/install/include;$<BUILD_INTERFACE:/workspace/towen/src/rosidl/rosidl_runtime_c/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (4.5s)
+-- Generating done (0.2s)
+-- Build files have been written to: /workspace/towen/build/rosidl_runtime_c
+[  4%] [32mBuilding C object CMakeFiles/rosidl_runtime_c.dir/src/message_type_support.c.o[0m
+[  8%] [32mBuilding C object CMakeFiles/rosidl_runtime_c.dir/src/service_type_support.c.o[0m
+[ 12%] [32mBuilding C object CMakeFiles/rosidl_runtime_c.dir/src/string_functions.c.o[0m
+[ 16%] [32mBuilding C object CMakeFiles/rosidl_runtime_c.dir/src/u16string_functions.c.o[0m
+[ 20%] [32mBuilding C object CMakeFiles/rosidl_runtime_c.dir/src/sequence_bound.c.o[0m
+[ 24%] [32mBuilding C object CMakeFiles/rosidl_runtime_c.dir/src/primitives_sequence_functions.c.o[0m
+[ 28%] [32m[1mLinking C shared library librosidl_runtime_c.so[0m
+[ 28%] Built target rosidl_runtime_c
+[ 32%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[ 36%] [32m[1mLinking CXX static library libgtest.a[0m
+[ 36%] Built target gtest
+[ 40%] [32mBuilding CXX object CMakeFiles/benchmark_string_conversion.dir/test/benchmark/benchmark_string_conversion.cpp.o[0m
+[ 44%] [32m[1mLinking CXX executable benchmark_string_conversion[0m
+[ 44%] Built target benchmark_string_conversion
+[ 48%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[ 52%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[ 52%] Built target gtest_main
+[ 56%] [32mBuilding CXX object CMakeFiles/test_message_type_support.dir/test/test_message_type_support.cpp.o[0m
+[ 60%] [32m[1mLinking CXX executable test_message_type_support[0m
+[ 60%] Built target test_message_type_support
+[ 64%] [32mBuilding CXX object CMakeFiles/test_u16string_functions.dir/test/test_u16string_functions.cpp.o[0m
+[ 68%] [32m[1mLinking CXX executable test_u16string_functions[0m
+[ 68%] Built target test_u16string_functions
+[ 72%] [32mBuilding CXX object CMakeFiles/test_string_functions.dir/test/test_string_functions.cpp.o[0m
+[ 76%] [32m[1mLinking CXX executable test_string_functions[0m
+[ 76%] Built target test_string_functions
+[ 80%] [32mBuilding CXX object CMakeFiles/test_service_type_support.dir/test/test_service_type_support.cpp.o[0m
+[ 84%] [32m[1mLinking CXX executable test_service_type_support[0m
+[ 84%] Built target test_service_type_support
+[ 88%] [32mBuilding CXX object CMakeFiles/test_sequence_bound.dir/test/test_sequence_bound.cpp.o[0m
+[ 92%] [32m[1mLinking CXX executable test_sequence_bound[0m
+[ 92%] Built target test_sequence_bound
+[ 96%] [32mBuilding CXX object CMakeFiles/test_primitives_sequence_functions.dir/test/test_primitives_sequence_functions.cpp.o[0m
+[100%] [32m[1mLinking CXX executable test_primitives_sequence_functions[0m
+[100%] Built target test_primitives_sequence_functions

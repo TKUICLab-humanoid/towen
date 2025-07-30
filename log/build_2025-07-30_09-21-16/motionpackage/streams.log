@@ -1,0 +1,30 @@
+[3.012s] Invoking command in '/workspace/towen/build/motionpackage': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/motionpackage/build --no-deps symlink_data
+[3.997s] running develop
+[3.997s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[3.998s] !!
+[3.998s] 
+[3.999s]         ********************************************************************************
+[3.999s]         Please avoid running ``setup.py`` and ``easy_install``.
+[3.999s]         Instead, use pypa/build, pypa/installer or other
+[4.000s]         standards-based tools.
+[4.000s] 
+[4.000s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[4.000s]         ********************************************************************************
+[4.000s] 
+[4.000s] !!
+[4.000s]   easy_install.initialize_options(self)
+[4.763s] running egg_info
+[4.822s] writing motionpackage.egg-info/PKG-INFO
+[4.825s] writing dependency_links to motionpackage.egg-info/dependency_links.txt
+[4.826s] writing entry points to motionpackage.egg-info/entry_points.txt
+[4.827s] writing requirements to motionpackage.egg-info/requires.txt
+[4.828s] writing top-level names to motionpackage.egg-info/top_level.txt
+[4.935s] reading manifest file 'motionpackage.egg-info/SOURCES.txt'
+[4.938s] writing manifest file 'motionpackage.egg-info/SOURCES.txt'
+[5.117s] running build_ext
+[5.117s] Creating /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage.egg-link (link to .)
+[5.119s] Installing motionpackage script to /workspace/towen/install/motionpackage/lib/motionpackage
+[5.121s] 
+[5.121s] Installed /workspace/towen/build/motionpackage
+[5.121s] running symlink_data
+[5.266s] Invoked command in '/workspace/towen/build/motionpackage' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/motionpackage/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /workspace/towen/build/motionpackage/build --no-deps symlink_data

@@ -11,13 +11,15 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools','common_api'],
+    install_requires=['setuptools', 'common_api'],
     zip_safe=True,
     maintainer='iclab',
     maintainer_email='iclab@todo.todo',
     description='TODO: Package description',
     license='Apache-2.0',
-    tests_require=['pytest'],
+    extras_require={
+        'test': ['pytest'],
+    },
     entry_points={
         'console_scripts': [
             'ar = strategy.ar.ar:main',

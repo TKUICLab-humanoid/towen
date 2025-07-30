@@ -1,0 +1,46 @@
+[3.402s] Invoking command in '/workspace/towen/src/strategy': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/strategy build --build-base /workspace/towen/build/strategy/build install --record /workspace/towen/build/strategy/install.log --single-version-externally-managed install_data
+[4.239s] running egg_info
+[4.294s] writing ../../build/strategy/strategy.egg-info/PKG-INFO
+[4.294s] writing dependency_links to ../../build/strategy/strategy.egg-info/dependency_links.txt
+[4.294s] writing entry points to ../../build/strategy/strategy.egg-info/entry_points.txt
+[4.295s] writing requirements to ../../build/strategy/strategy.egg-info/requires.txt
+[4.295s] writing top-level names to ../../build/strategy/strategy.egg-info/top_level.txt
+[4.389s] reading manifest file '../../build/strategy/strategy.egg-info/SOURCES.txt'
+[4.390s] adding license file 'LICENSE'
+[4.394s] writing manifest file '../../build/strategy/strategy.egg-info/SOURCES.txt'
+[4.394s] running build
+[4.394s] running build_py
+[4.394s] copying strategy/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy
+[4.394s] copying strategy/API.py -> /workspace/towen/build/strategy/build/lib/strategy
+[4.395s] copying strategy/mar/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/mar
+[4.396s] copying strategy/mar/mar.py -> /workspace/towen/build/strategy/build/lib/strategy/mar
+[4.397s] copying strategy/wl/wl.py -> /workspace/towen/build/strategy/build/lib/strategy/wl
+[4.397s] copying strategy/wl/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/wl
+[4.398s] copying strategy/sp/sp.py -> /workspace/towen/build/strategy/build/lib/strategy/sp
+[4.398s] copying strategy/sp/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/sp
+[4.399s] copying strategy/obs/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/obs
+[4.400s] copying strategy/obs/obs.py -> /workspace/towen/build/strategy/build/lib/strategy/obs
+[4.401s] copying strategy/sr/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/sr
+[4.401s] copying strategy/sr/sr.py -> /workspace/towen/build/strategy/build/lib/strategy/sr
+[4.402s] copying strategy/bb/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/bb
+[4.402s] copying strategy/bb/bb.py -> /workspace/towen/build/strategy/build/lib/strategy/bb
+[4.403s] copying strategy/ar/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/ar
+[4.403s] copying strategy/ar/ar.py -> /workspace/towen/build/strategy/build/lib/strategy/ar
+[4.406s] running install
+[4.418s] running install_lib
+[4.471s] running install_data
+[4.472s] copying resource/strategy -> /workspace/towen/install/strategy/share/ament_index/resource_index/packages
+[4.472s] copying package.xml -> /workspace/towen/install/strategy/share/strategy
+[4.473s] running install_egg_info
+[4.524s] removing '/workspace/towen/install/strategy/lib/python3.10/site-packages/strategy-0.0.0-py3.10.egg-info' (and everything under it)
+[4.532s] Copying ../../build/strategy/strategy.egg-info to /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy-0.0.0-py3.10.egg-info
+[4.540s] running install_scripts
+[5.222s] Installing ar script to /workspace/towen/install/strategy/lib/strategy
+[5.222s] Installing bb script to /workspace/towen/install/strategy/lib/strategy
+[5.223s] Installing mar script to /workspace/towen/install/strategy/lib/strategy
+[5.223s] Installing obs script to /workspace/towen/install/strategy/lib/strategy
+[5.223s] Installing sp script to /workspace/towen/install/strategy/lib/strategy
+[5.223s] Installing sr script to /workspace/towen/install/strategy/lib/strategy
+[5.224s] Installing wl script to /workspace/towen/install/strategy/lib/strategy
+[5.232s] writing list of installed files to '/workspace/towen/build/strategy/install.log'
+[5.409s] Invoked command in '/workspace/towen/src/strategy' returned '0': BYOBU_DATE=%Y-%m-%d PYTHONPATH=/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/strategy build --build-base /workspace/towen/build/strategy/build install --record /workspace/towen/build/strategy/install.log --single-version-externally-managed install_data

@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/Callback.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct Callback {
+      boolean data;
+
+      int16 sector;
+    };
+  };
+};

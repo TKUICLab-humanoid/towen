@@ -1,0 +1,54 @@
+[0.827s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[1.526s] [  0%] Built target ament_cmake_python_symlink_cv_bridge
+[1.640s] [ 12%] Built target gtest
+[2.812s] running egg_info
+[2.897s] writing cv_bridge.egg-info/PKG-INFO
+[2.899s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[2.901s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[3.222s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[3.229s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[3.511s] [ 12%] Built target ament_cmake_python_build_cv_bridge_egg
+[3.663s] [ 25%] Built target gtest_main
+[3.747s] [ 43%] Built target cv_bridge
+[3.956s] [ 62%] Built target cv_bridge_boost
+[4.061s] [100%] Built target cv_bridge-utest
+[4.132s] Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[4.817s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/cv_bridge
+[5.302s] -- Install configuration: ""
+[5.303s] -- Execute custom install script
+[5.303s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/pythonpath.sh
+[5.304s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/pythonpath.dsv
+[5.306s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/PKG-INFO
+[5.306s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/SOURCES.txt
+[5.307s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/dependency_links.txt
+[5.307s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge-3.2.1-py3.10.egg-info/top_level.txt
+[5.307s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/__init__.py
+[5.307s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/core.py
+[5.307s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge_export.h
+[5.310s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost//cv_bridge_boost.so
+[5.311s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/include/cv_bridge/cv_bridge/cv_bridge.h
+[5.311s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/include/cv_bridge/cv_bridge/rgb_colors.h
+[5.314s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/lib/libcv_bridge.so
+[5.317s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/ament_index/resource_index/package_run_dependencies/cv_bridge
+[5.318s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/ament_index/resource_index/parent_prefix_path/cv_bridge
+[5.318s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.sh
+[5.319s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/ament_prefix_path.dsv
+[5.319s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/path.sh
+[5.319s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/environment/path.dsv
+[5.320s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.bash
+[5.320s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.sh
+[5.320s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.zsh
+[5.321s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/local_setup.dsv
+[5.325s] -- Symlinking: /workspace/towen/install/cv_bridge/share/cv_bridge/package.dsv
+[5.340s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/ament_index/resource_index/packages/cv_bridge
+[5.340s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/cv_bridge-extras.cmake
+[5.341s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.341s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/ament_cmake_export_targets-extras.cmake
+[5.341s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig.cmake
+[5.342s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake
+[5.342s] -- Up-to-date symlink: /workspace/towen/install/cv_bridge/share/cv_bridge/package.xml
+[5.507s] Listing '/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge'...
+[5.509s] Listing '/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages/cv_bridge/boost'...
+[5.530s] -- Up-to-date: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport.cmake
+[5.530s] -- Up-to-date: /workspace/towen/install/cv_bridge/share/cv_bridge/cmake/export_cv_bridgeExport-noconfig.cmake
+[5.602s] Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/cv_bridge

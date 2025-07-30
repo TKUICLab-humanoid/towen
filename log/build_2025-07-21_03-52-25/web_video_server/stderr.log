@@ -1,0 +1,32 @@
+[33mCMake Warning (dev) at /usr/local/lib/python3.10/dist-packages/cmake/data/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+Call Stack (most recent call first):
+  /opt/ros/humble/share/async_web_server_cpp/cmake/find_dependencies.cmake:2 (find_dependency)
+  /opt/ros/humble/share/async_web_server_cpp/cmake/async_web_server_cppConfig.cmake:41 (include)
+  CMakeLists.txt:6 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at CMakeLists.txt:13 (find_package):
+  Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+  --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+  set the policy and suppress this warning.
+
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning at CMakeLists.txt:43 (add_executable):
+  Cannot generate a safe runtime search path for target web_video_server
+  because there is a cycle in the constraint graph:
+
+    dir 0 is [/opt/ros/humble/lib]
+      dir 1 must precede it due to runtime library [libcv_bridge.so]
+      dir 2 must precede it due to runtime library [libimage_transport.so]
+    dir 1 is [/workspace/towen/install/cv_bridge/lib]
+    dir 2 is [/opt/ros/humble/install/lib]
+      dir 1 must precede it due to runtime library [libcv_bridge.so]
+
+  Some of these libraries may not be found correctly.
+
+[0m

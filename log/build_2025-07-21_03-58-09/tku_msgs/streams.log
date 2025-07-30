@@ -1,0 +1,136 @@
+[0.040s] Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[0.357s] -- The C compiler identification is GNU 11.4.0
+[0.511s] -- The CXX compiler identification is GNU 11.4.0
+[0.559s] -- Detecting C compiler ABI info
+[0.715s] -- Detecting C compiler ABI info - done
+[0.769s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.771s] -- Detecting C compile features
+[0.774s] -- Detecting C compile features - done
+[0.791s] -- Detecting CXX compiler ABI info
+[0.969s] -- Detecting CXX compiler ABI info - done
+[1.025s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.027s] -- Detecting CXX compile features
+[1.029s] -- Detecting CXX compile features - done
+[1.043s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/install/share/ament_cmake/cmake)
+[1.364s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter
+[1.625s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/install/share/rosidl_default_generators/cmake)
+[1.640s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.660s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)
+[1.783s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.889s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/install/share/std_msgs/cmake)
+[3.482s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/install/share/ament_cmake_ros/cmake)
+[4.598s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.076s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.087s] [33mCMake Warning (dev) at /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[6.087s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[6.088s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[6.088s]   the cmake_policy command to set the policy and suppress this warning.
+[6.088s] 
+[6.088s] Call Stack (most recent call first):
+[6.089s]   /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[6.089s]   /opt/ros/humble/install/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[6.089s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[6.089s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.090s] [0m
+[6.135s] -- Found PythonInterp: /usr/local/bin/python3 (found suitable version "3.10.12", minimum required is "3.6")
+[6.143s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/install/share/python_cmake_module/cmake)
+[6.145s] [33mCMake Warning (dev) at /opt/ros/humble/install/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[6.145s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[6.146s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[6.147s]   the cmake_policy command to set the policy and suppress this warning.
+[6.147s] 
+[6.147s] Call Stack (most recent call first):
+[6.148s]   /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[6.148s]   /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[6.148s]   /opt/ros/humble/install/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[6.148s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[6.149s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.149s] [0m
+[6.192s] [33mCMake Warning (dev) at /opt/ros/humble/install/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[6.192s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[6.193s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[6.193s]   the cmake_policy command to set the policy and suppress this warning.
+[6.193s] 
+[6.193s] Call Stack (most recent call first):
+[6.194s]   /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[6.194s]   /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[6.194s]   /opt/ros/humble/install/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[6.194s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[6.195s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[6.195s] [0m
+[6.215s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5")
+[6.216s] -- Using PYTHON_EXECUTABLE: /usr/local/bin/python3
+[6.216s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[6.216s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[6.263s] -- Found PythonExtra: .so
+[6.458s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+[6.521s] -- Added test 'lint_cmake' to check CMake code style
+[6.526s] -- Added test 'xmllint' to check XML markup files
+[6.535s] -- Configuring done (6.3s)
+[6.765s] -- Generating done (0.2s)
+[6.766s] -- Build files have been written to: /workspace/towen/build/tku_msgs
+[6.822s] Invoked command in '/workspace/towen/build/tku_msgs' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[6.828s] Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/tku_msgs -- -j6 -l6
+[7.099s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[7.111s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[7.114s] [  1%] Built target ament_cmake_python_copy_tku_msgs
+[7.290s] Traceback (most recent call last):
+[7.290s]   File "/opt/ros/humble/install/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 38, in <module>
+[7.290s]     sys.exit(main())
+[7.290s]   File "/opt/ros/humble/install/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 34, in main
+[7.291s]     generate_cpp(args.generator_arguments_file)
+[7.291s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py", line 39, in generate_cpp
+[7.291s]     return generate_files(
+[7.291s]   File "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_cmake/__init__.py", line 59, in generate_files
+[7.291s]     assert (template_basepath / template_filename).exists(), \
+[7.291s] AssertionError: Could not find template: idl__type_support.hpp.em
+[7.319s] gmake[2]: *** [CMakeFiles/tku_msgs__cpp.dir/build.make:288: rosidl_generator_cpp/tku_msgs/msg/button_color_form.hpp] Error 1
+[7.320s] gmake[1]: *** [CMakeFiles/Makefile2:317: CMakeFiles/tku_msgs__cpp.dir/all] Error 2
+[7.320s] gmake[1]: *** Waiting for unfinished jobs....
+[7.670s] running egg_info
+[7.716s] creating tku_msgs.egg-info
+[7.717s] writing tku_msgs.egg-info/PKG-INFO
+[7.718s] writing dependency_links to tku_msgs.egg-info/dependency_links.txt
+[7.718s] writing top-level names to tku_msgs.egg-info/top_level.txt
+[7.718s] writing manifest file 'tku_msgs.egg-info/SOURCES.txt'
+[7.855s] reading manifest file 'tku_msgs.egg-info/SOURCES.txt'
+[7.856s] writing manifest file 'tku_msgs.egg-info/SOURCES.txt'
+[7.930s] [  1%] Built target ament_cmake_python_build_tku_msgs_egg
+[12.073s] [  1%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/button_color_form__functions.c.o[0m
+[12.074s] [  1%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_array__functions.c.o[0m
+[12.075s] [  2%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/hsv_value__functions.c.o[0m
+[12.075s] [  2%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/draw_image__functions.c.o[0m
+[12.078s] [  2%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_data__functions.c.o[0m
+[12.081s] [  3%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__functions.c.o[0m
+[12.194s] [  3%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/object_list__functions.c.o[0m
+[12.203s] [  3%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera__functions.c.o[0m
+[12.208s] [  4%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera_save__functions.c.o[0m
+[12.208s] [  4%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/location__functions.c.o[0m
+[12.209s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parameter__functions.c.o[0m
+[12.219s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.c.o[0m
+[12.335s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface__functions.c.o[0m
+[12.343s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parametermessage__functions.c.o[0m
+[12.349s] [  6%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/callback__functions.c.o[0m
+[12.352s] [  6%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/head_package__functions.c.o[0m
+[12.357s] [  6%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface_send2_sector__functions.c.o[0m
+[12.363s] [  7%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/pi_dpackage__functions.c.o[0m
+[12.472s] [  7%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sand_hand_speed__functions.c.o[0m
+[12.473s] [  7%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion__functions.c.o[0m
+[12.473s] [  8%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion_vector__functions.c.o[0m
+[12.487s] [  8%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_set__functions.c.o[0m
+[12.487s] [  8%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_package__functions.c.o[0m
+[12.488s] [  9%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/single_motor_data__functions.c.o[0m
+[12.599s] [  9%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/walkingmessage__functions.c.o[0m
+[12.602s] [  9%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/build_model__functions.c.o[0m
+[12.611s] [ 10%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/hsv_info__functions.c.o[0m
+[12.620s] [ 10%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/save_hsv__functions.c.o[0m
+[12.631s] [ 10%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/add__functions.c.o[0m
+[12.637s] [ 11%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/camera_info__functions.c.o[0m
+[12.725s] [ 11%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/read_motion__functions.c.o[0m
+[12.758s] [ 11%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/check_sector__functions.c.o[0m
+[12.762s] [ 12%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.c.o[0m
+[12.779s] [ 12%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/walking_gait_parameter__functions.c.o[0m
+[12.926s] [ 12%] [32m[1mLinking C shared library libtku_msgs__rosidl_generator_c.so[0m
+[13.003s] [ 12%] Built target tku_msgs__rosidl_generator_c
+[13.005s] gmake: *** [Makefile:146: all] Error 2
+[13.042s] Invoked command in '/workspace/towen/build/tku_msgs' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/tku_msgs -- -j6 -l6

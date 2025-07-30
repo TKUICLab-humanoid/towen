@@ -1,0 +1,15 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tku_msgs/srv/SendHandSpeed.srv
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module srv {
+    struct SendHandSpeed_Request {
+      int16 data;
+    };
+    struct SendHandSpeed_Response {
+      boolean already;
+    };
+  };
+};

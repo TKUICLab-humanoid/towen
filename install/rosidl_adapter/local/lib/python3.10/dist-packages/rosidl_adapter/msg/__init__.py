@@ -1,0 +1,1 @@
+/workspace/towen/src/rosidl/rosidl_adapter/rosidl_adapter/msg/__init__.py

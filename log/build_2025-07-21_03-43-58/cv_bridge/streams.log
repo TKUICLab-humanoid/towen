@@ -1,0 +1,85 @@
+[0.178s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/cv_bridge
+[0.948s] -- The C compiler identification is GNU 11.4.0
+[0.948s] -- The CXX compiler identification is GNU 11.4.0
+[0.948s] -- Detecting C compiler ABI info
+[1.080s] -- Detecting C compiler ABI info - done
+[1.137s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.138s] -- Detecting C compile features
+[1.143s] -- Detecting C compile features - done
+[1.155s] -- Detecting CXX compiler ABI info
+[1.368s] -- Detecting CXX compiler ABI info - done
+[1.404s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.404s] -- Detecting CXX compile features
+[1.407s] -- Detecting CXX compile features - done
+[1.415s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/install/share/ament_cmake_ros/cmake)
+[1.831s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter
+[3.614s] -- Found Python3: /usr/include/python3.10 (found version "3.10.12") found components: Development NumPy Interpreter Development.Module Development.Embed
+[3.617s] [33mCMake Warning (dev) at CMakeLists.txt:20 (find_package):
+[3.617s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[3.617s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[3.618s]   set the policy and suppress this warning.
+[3.618s] 
+[3.618s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.618s] [0m
+[3.652s] [33mCMake Warning (dev) at CMakeLists.txt:31 (find_package):
+[3.652s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[3.652s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[3.652s]   set the policy and suppress this warning.
+[3.652s] 
+[3.653s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[3.653s] [0m
+[3.674s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: python310
+[3.680s] -- Found rcpputils: 2.4.3 (/opt/ros/humble/install/share/rcpputils/cmake)
+[3.709s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/install/share/sensor_msgs/cmake)
+[3.781s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)
+[3.790s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)
+[3.815s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_cpp/cmake)
+[3.853s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.916s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.743s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[5.093s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[5.095s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[5.611s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[5.612s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[6.220s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[6.258s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+[6.806s] -- Found gtest sources under '/opt/ros/humble/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[6.821s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[7.341s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[7.343s] -- Found Threads: TRUE
+[13.569s] -- Configuring done (13.2s)
+[13.762s] -- Generating done (0.2s)
+[13.763s] -- Build files have been written to: /workspace/towen/build/cv_bridge
+[13.875s] Invoked command in '/workspace/towen/build/cv_bridge' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/vision_opencv/cv_bridge -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/cv_bridge
+[13.889s] Invoking command in '/workspace/towen/build/cv_bridge': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/cv_bridge -- -j6 -l6
+[14.451s] [  6%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[14.472s] [ 18%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o[0m
+[14.472s] [ 18%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[14.475s] [ 25%] [32mBuilding CXX object src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o[0m
+[14.480s] [ 25%] Built target ament_cmake_python_copy_cv_bridge
+[16.332s] running egg_info
+[16.522s] creating cv_bridge.egg-info
+[16.533s] writing cv_bridge.egg-info/PKG-INFO
+[16.535s] writing dependency_links to cv_bridge.egg-info/dependency_links.txt
+[16.536s] writing top-level names to cv_bridge.egg-info/top_level.txt
+[16.544s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[17.122s] reading manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[17.142s] writing manifest file 'cv_bridge.egg-info/SOURCES.txt'
+[17.526s] [ 25%] Built target ament_cmake_python_build_cv_bridge_egg
+[18.478s] [ 31%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[18.556s] [ 31%] Built target gtest_main
+[28.741s] [ 37%] [32m[1mLinking CXX static library libgtest.a[0m
+[29.010s] [ 37%] Built target gtest
+[34.067s] [ 43%] [32m[1mLinking CXX shared library libcv_bridge.so[0m
+[34.458s] [ 43%] Built target cv_bridge
+[34.487s] [ 56%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module_opencv3.cpp.o[0m
+[34.487s] [ 56%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_compression.cpp.o[0m
+[34.495s] [ 62%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest.cpp.o[0m
+[34.502s] [ 75%] [32mBuilding CXX object src/CMakeFiles/cv_bridge_boost.dir/module.cpp.o[0m
+[34.504s] [ 81%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/utest2.cpp.o[0m
+[34.504s] [ 81%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_endian.cpp.o[0m
+[39.734s] [ 87%] [32mBuilding CXX object test/CMakeFiles/cv_bridge-utest.dir/test_rgb_colors.cpp.o[0m
+[45.430s] [ 93%] [32m[1mLinking CXX shared module boost/cv_bridge_boost.so[0m
+[45.735s] [ 93%] Built target cv_bridge_boost
+[45.756s] [100%] [32m[1mLinking CXX executable cv_bridge-utest[0m
+[46.796s] [100%] Built target cv_bridge-utest

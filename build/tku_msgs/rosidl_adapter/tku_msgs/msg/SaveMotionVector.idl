@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/SaveMotionVector.msg
+// generated code does not contain a copyright notice
+
+#include "tku_msgs/msg/SaveMotion.idl"
+
+module tku_msgs {
+  module msg {
+    struct SaveMotionVector {
+      sequence<tku_msgs::msg::SaveMotion> savemotionvector;
+    };
+  };
+};

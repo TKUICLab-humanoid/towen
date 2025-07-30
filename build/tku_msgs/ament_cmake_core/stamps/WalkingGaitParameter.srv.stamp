@@ -1,0 +1,18 @@
+int32 mode
+---
+float32 x_swing_range
+float32 y_swing_range
+float32 z_swing_range
+int32 period_t
+int32 period_t2
+int32 sample_time
+float32 osc_lockrange
+float32 base_default_z
+float32 y_swing_shift
+float32 x_swing_com
+float32 base_lift_z
+float32 rightfoot_shift_z
+float32 com_y_swing
+float32 now_stand_height
+float32 now_com_height
+bool stand_balance

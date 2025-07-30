@@ -1,0 +1,54 @@
+-- Found ament_cmake: 1.3.10 (/opt/ros/humble/install/share/ament_cmake/cmake)
+-- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (2.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/towen/build/rosidl_parser
+Built target ament_cmake_python_copy_rosidl_parser
+running egg_info
+creating rosidl_parser.egg-info
+writing rosidl_parser.egg-info/PKG-INFO
+writing dependency_links to rosidl_parser.egg-info/dependency_links.txt
+writing top-level names to rosidl_parser.egg-info/top_level.txt
+writing manifest file 'rosidl_parser.egg-info/SOURCES.txt'
+reading manifest file 'rosidl_parser.egg-info/SOURCES.txt'
+writing manifest file 'rosidl_parser.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_rosidl_parser_egg
+-- Install configuration: ""
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/environment/pythonpath.sh
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/environment/pythonpath.dsv
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser-3.1.7-py3.10.egg-info
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser-3.1.7-py3.10.egg-info/PKG-INFO
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser-3.1.7-py3.10.egg-info/top_level.txt
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser-3.1.7-py3.10.egg-info/SOURCES.txt
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser-3.1.7-py3.10.egg-info/dependency_links.txt
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/parser.py
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/__init__.py
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/definition.py
+-- Installing: /workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/grammar.lark
+Listing '/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser'...
+Compiling '/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/__init__.py'...
+Compiling '/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/definition.py'...
+Compiling '/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages/rosidl_parser/parser.py'...
+-- Installing: /workspace/towen/install/rosidl_parser/share/ament_index/resource_index/package_run_dependencies/rosidl_parser
+-- Installing: /workspace/towen/install/rosidl_parser/share/ament_index/resource_index/parent_prefix_path/rosidl_parser
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/environment/ament_prefix_path.sh
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/environment/ament_prefix_path.dsv
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/environment/path.sh
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/environment/path.dsv
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/local_setup.bash
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/local_setup.sh
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/local_setup.zsh
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/local_setup.dsv
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/package.dsv
+-- Installing: /workspace/towen/install/rosidl_parser/share/ament_index/resource_index/packages/rosidl_parser
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/cmake/rosidl_parserConfig.cmake
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/cmake/rosidl_parserConfig-version.cmake
+-- Installing: /workspace/towen/install/rosidl_parser/share/rosidl_parser/package.xml
+-- Installing: /workspace/towen/install/rosidl_parser/lib/rosidl_parser/idl2png

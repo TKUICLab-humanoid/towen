@@ -1,0 +1,98 @@
+running develop
+/usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.
+!!
+
+        ********************************************************************************
+        Please avoid running ``setup.py`` and ``easy_install``.
+        Instead, use pypa/build, pypa/installer or other
+        standards-based tools.
+
+        See https://github.com/pypa/setuptools/issues/917 for details.
+        ********************************************************************************
+
+!!
+  easy_install.initialize_options(self)
+Removing /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy.egg-link (link to .)
+running egg_info
+writing ../../build/strategy/strategy.egg-info/PKG-INFO
+writing dependency_links to ../../build/strategy/strategy.egg-info/dependency_links.txt
+writing entry points to ../../build/strategy/strategy.egg-info/entry_points.txt
+writing requirements to ../../build/strategy/strategy.egg-info/requires.txt
+writing top-level names to ../../build/strategy/strategy.egg-info/top_level.txt
+reading manifest file '../../build/strategy/strategy.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/strategy/strategy.egg-info/SOURCES.txt'
+running build
+running build_py
+copying strategy/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy
+copying strategy/API.py -> /workspace/towen/build/strategy/build/lib/strategy
+copying strategy/mar/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/mar
+copying strategy/mar/mar.py -> /workspace/towen/build/strategy/build/lib/strategy/mar
+copying strategy/wl/wl.py -> /workspace/towen/build/strategy/build/lib/strategy/wl
+copying strategy/wl/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/wl
+copying strategy/sp/sp.py -> /workspace/towen/build/strategy/build/lib/strategy/sp
+copying strategy/sp/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/sp
+copying strategy/obs/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/obs
+copying strategy/obs/obs.py -> /workspace/towen/build/strategy/build/lib/strategy/obs
+copying strategy/sr/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/sr
+copying strategy/sr/sr.py -> /workspace/towen/build/strategy/build/lib/strategy/sr
+copying strategy/bb/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/bb
+copying strategy/bb/bb.py -> /workspace/towen/build/strategy/build/lib/strategy/bb
+copying strategy/ar/__init__.py -> /workspace/towen/build/strategy/build/lib/strategy/ar
+copying strategy/ar/ar.py -> /workspace/towen/build/strategy/build/lib/strategy/ar
+running install
+running install_lib
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/mar
+copying /workspace/towen/build/strategy/build/lib/strategy/mar/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/mar
+copying /workspace/towen/build/strategy/build/lib/strategy/mar/mar.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/mar
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/wl
+copying /workspace/towen/build/strategy/build/lib/strategy/wl/wl.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/wl
+copying /workspace/towen/build/strategy/build/lib/strategy/wl/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/wl
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sp
+copying /workspace/towen/build/strategy/build/lib/strategy/sp/sp.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sp
+copying /workspace/towen/build/strategy/build/lib/strategy/sp/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sp
+copying /workspace/towen/build/strategy/build/lib/strategy/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy
+copying /workspace/towen/build/strategy/build/lib/strategy/API.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/obs
+copying /workspace/towen/build/strategy/build/lib/strategy/obs/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/obs
+copying /workspace/towen/build/strategy/build/lib/strategy/obs/obs.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/obs
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sr
+copying /workspace/towen/build/strategy/build/lib/strategy/sr/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sr
+copying /workspace/towen/build/strategy/build/lib/strategy/sr/sr.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sr
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/bb
+copying /workspace/towen/build/strategy/build/lib/strategy/bb/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/bb
+copying /workspace/towen/build/strategy/build/lib/strategy/bb/bb.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/bb
+creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/ar
+copying /workspace/towen/build/strategy/build/lib/strategy/ar/__init__.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/ar
+copying /workspace/towen/build/strategy/build/lib/strategy/ar/ar.py -> /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/ar
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/mar/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/mar/mar.py to mar.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/wl/wl.py to wl.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/wl/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sp/sp.py to sp.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sp/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/API.py to API.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/obs/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/obs/obs.py to obs.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sr/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/sr/sr.py to sr.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/bb/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/bb/bb.py to bb.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/ar/__init__.py to __init__.cpython-310.pyc
+byte-compiling /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/ar/ar.py to ar.cpython-310.pyc
+running install_data
+copying resource/strategy -> /workspace/towen/install/strategy/share/ament_index/resource_index/packages
+copying package.xml -> /workspace/towen/install/strategy/share/strategy
+running install_egg_info
+Copying ../../build/strategy/strategy.egg-info to /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ar script to /workspace/towen/install/strategy/lib/strategy
+Installing bb script to /workspace/towen/install/strategy/lib/strategy
+Installing mar script to /workspace/towen/install/strategy/lib/strategy
+Installing obs script to /workspace/towen/install/strategy/lib/strategy
+Installing sp script to /workspace/towen/install/strategy/lib/strategy
+Installing sr script to /workspace/towen/install/strategy/lib/strategy
+Installing wl script to /workspace/towen/install/strategy/lib/strategy
+writing list of installed files to '/workspace/towen/build/strategy/install.log'

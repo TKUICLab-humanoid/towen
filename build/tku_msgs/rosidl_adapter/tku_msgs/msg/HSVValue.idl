@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/HSVValue.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct HSVValue {
+      int16 hmin;
+
+      int16 hmax;
+
+      int16 smin;
+
+      int16 smax;
+
+      int16 vmin;
+
+      int16 vmax;
+    };
+  };
+};

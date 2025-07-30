@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing motionpackage.egg-info/PKG-INFO
+writing dependency_links to motionpackage.egg-info/dependency_links.txt
+writing entry points to motionpackage.egg-info/entry_points.txt
+writing requirements to motionpackage.egg-info/requires.txt
+writing top-level names to motionpackage.egg-info/top_level.txt
+reading manifest file 'motionpackage.egg-info/SOURCES.txt'
+writing manifest file 'motionpackage.egg-info/SOURCES.txt'
+running build_ext
+Creating /workspace/towen/install/motionpackage/lib/python3.10/site-packages/motionpackage.egg-link (link to .)
+Installing motionpackage script to /workspace/towen/install/motionpackage/lib/motionpackage
+
+Installed /workspace/towen/build/motionpackage
+running symlink_data
+symbolically linking /workspace/towen/build/motionpackage/resource/motionpackage -> /workspace/towen/install/motionpackage/share/ament_index/resource_index/packages
+symbolically linking /workspace/towen/build/motionpackage/package.xml -> /workspace/towen/install/motionpackage/share/motionpackage

@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/PIDpackage.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct PIDpackage {
+      int16 motor_p;
+
+      int16 motor_i;
+
+      int16 motor_d;
+
+      boolean pflag;
+
+      boolean iflag;
+
+      boolean dflag;
+
+      int16 motorid;
+    };
+  };
+};

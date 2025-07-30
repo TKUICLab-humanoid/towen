@@ -1,0 +1,27 @@
+{
+  "package_name": "webrtc_ros_msgs",
+  "output_dir": "/workspace/towen/build/webrtc_ros_msgs/rosidl_typesupport_fastrtps_cpp/webrtc_ros_msgs",
+  "template_dir": "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource",
+  "idl_tuples": [
+    "/workspace/towen/build/webrtc_ros_msgs/rosidl_adapter/webrtc_ros_msgs:msg/IceServer.idl",
+    "/workspace/towen/build/webrtc_ros_msgs/rosidl_adapter/webrtc_ros_msgs:srv/GetIceServers.idl"
+  ],
+  "ros_interface_dependencies": [
+    "builtin_interfaces:/opt/ros/humble/install/share/builtin_interfaces/msg/Duration.idl",
+    "builtin_interfaces:/opt/ros/humble/install/share/builtin_interfaces/msg/Time.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/install/lib/rosidl_typesupport_fastrtps_cpp/rosidl_typesupport_fastrtps_cpp",
+    "/opt/ros/humble/install/local/lib/python3.10/dist-packages/rosidl_typesupport_fastrtps_cpp/__init__.py",
+    "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource/idl__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource/msg__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource/srv__rosidl_typesupport_fastrtps_cpp.hpp.em",
+    "/opt/ros/humble/install/share/rosidl_typesupport_fastrtps_cpp/resource/srv__type_support.cpp.em",
+    "/workspace/towen/build/webrtc_ros_msgs/rosidl_adapter/webrtc_ros_msgs/msg/IceServer.idl",
+    "/workspace/towen/build/webrtc_ros_msgs/rosidl_adapter/webrtc_ros_msgs/srv/GetIceServers.idl",
+    "/opt/ros/humble/install/share/builtin_interfaces/msg/Duration.idl",
+    "/opt/ros/humble/install/share/builtin_interfaces/msg/Time.idl"
+  ]
+}

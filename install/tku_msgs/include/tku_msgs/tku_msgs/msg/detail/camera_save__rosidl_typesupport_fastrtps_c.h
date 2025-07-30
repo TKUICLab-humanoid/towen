@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/camera_save__rosidl_typesupport_fastrtps_c.h

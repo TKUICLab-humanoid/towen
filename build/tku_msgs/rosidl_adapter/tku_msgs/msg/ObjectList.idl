@@ -1,0 +1,13 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/ObjectList.msg
+// generated code does not contain a copyright notice
+
+#include "tku_msgs/msg/ColorArray.idl"
+
+module tku_msgs {
+  module msg {
+    struct ObjectList {
+      sequence<tku_msgs::msg::ColorArray> objectlist;
+    };
+  };
+};

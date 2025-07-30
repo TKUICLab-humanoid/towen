@@ -4,7 +4,7 @@ import json
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String,UInt8MultiArray,Int16
-from tku_msgs.msg import Interface,SensorPackage,SensorSet,Dio,DrawImage
+from tku_msgs.msg import Interface,SensorPackage,SensorSet,Dio,DrawImage,HeadPackage,SingleMotorData
 
 import numpy as np
 
@@ -31,6 +31,12 @@ class API(Node):
             10
         )
 
+        self.singlemotor_pub = self.create_publisher(
+            SingleMotorData,
+            '/package/SingleMotorData',
+            10
+        )
+
         self.mask_sub = self.create_subscription(
             UInt8MultiArray,
             'label_matrix',
@@ -48,6 +54,13 @@ class API(Node):
             '/ChangeContinuousValue_Topic',
             10
         )
+
+        self.head_motor_pub = self.create_publisher(
+            HeadPackage,
+            '/package/HeadMotor',
+            10
+        )
+
         self.sector_pub = self.create_publisher(
             Int16,
             '/package/Sector',
@@ -105,7 +118,7 @@ class API(Node):
             arr = np.array(msg.data, dtype=np.uint8)
             self.label_matrix = arr.reshape((rows, cols))
             self.label_matrix_flatten = self.label_matrix.flatten()
-            # self.get_logger().info(f"mask:\n{label_matrix_flatten}")
+            # self.get_logger().info(f"mask:\n{self.label_matrix}")
 
         except Exception as e:
             self.get_logger().error(f"無法還原 mask_matrix：{e}")
@@ -204,6 +217,20 @@ class API(Node):
         msg.data = sector
         self.sector_pub.publish(msg)
         # self.get_logger().info(f'Sent message to /package/Sector: {sector}')
+
+    def sendSingleMotor(self,ID,Position,Speed):
+        SingleData = SingleMotorData()
+        SingleData.id = ID
+        SingleData.position = Position
+        SingleData.speed = Speed
+        self.singlemotor_pub.publish(SingleData)
+
+    def sendHeadMotor(self,ID,Position,Speed):	#頭部馬達
+        HeadData = HeadPackage()
+        HeadData.id = ID
+        HeadData.position = Position
+        HeadData.speed = Speed
+        self.head_motor_pub.publish(HeadData)
 
     def dio_callback(self,msg):
         # print("aaaaaa")

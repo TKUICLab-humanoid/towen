@@ -1,0 +1,115 @@
+[0.671s] Invoking command in '/workspace/towen/build/zed_components': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/zed_components -- -j6 -l6
+[1.246s] [33mCMake Warning (dev) at /usr/local/zed/zed-config.cmake:73 (find_package):
+[1.246s]   Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+[1.246s]   --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+[1.246s]   set the policy and suppress this warning.
+[1.247s] 
+[1.247s] Call Stack (most recent call first):
+[1.247s]   CMakeLists.txt:84 (find_package)
+[1.247s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.247s] [0m
+[1.272s] -- Found CUDA: /usr/local/cuda (found suitable version "12.6", minimum required is "12.6")
+[1.281s] [33mCMake Warning (dev) at /usr/local/zed/zed-config.cmake:78 (exec_program):
+[1.282s]   Policy CMP0153 is not set: The exec_program command should not be called.
+[1.282s]   Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+[1.282s]   command to set the policy and suppress this warning.
+[1.282s] 
+[1.282s]   Use execute_process() instead.
+[1.282s] Call Stack (most recent call first):
+[1.283s]   CMakeLists.txt:84 (find_package)
+[1.283s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.283s] [0m
+[1.334s] [33mCMake Warning (dev) at /usr/local/zed/zed-config.cmake:79 (exec_program):
+[1.334s]   Policy CMP0153 is not set: The exec_program command should not be called.
+[1.334s]   Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+[1.334s]   command to set the policy and suppress this warning.
+[1.334s] 
+[1.335s]   Use execute_process() instead.
+[1.335s] Call Stack (most recent call first):
+[1.335s]   CMakeLists.txt:84 (find_package)
+[1.335s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.335s] [0m
+[1.364s] [33mCMake Warning (dev) at /usr/local/zed/zed-config.cmake:95 (exec_program):
+[1.364s]   Policy CMP0153 is not set: The exec_program command should not be called.
+[1.364s]   Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+[1.364s]   command to set the policy and suppress this warning.
+[1.365s] 
+[1.365s]   Use execute_process() instead.
+[1.365s] Call Stack (most recent call first):
+[1.377s]   CMakeLists.txt:84 (find_package)
+[1.378s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.378s] [0m
+[1.424s] [33mCMake Warning (dev) at /usr/local/zed/zed-config.cmake:123 (exec_program):
+[1.424s]   Policy CMP0153 is not set: The exec_program command should not be called.
+[1.424s]   Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+[1.424s]   command to set the policy and suppress this warning.
+[1.424s] 
+[1.424s]   Use execute_process() instead.
+[1.425s] Call Stack (most recent call first):
+[1.425s]   CMakeLists.txt:84 (find_package)
+[1.425s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.425s] [0m
+[1.461s] [33mCMake Warning (dev) at CMakeLists.txt:86 (exec_program):
+[1.461s]   Policy CMP0153 is not set: The exec_program command should not be called.
+[1.462s]   Run "cmake --help-policy CMP0153" for policy details.  Use the cmake_policy
+[1.462s]   command to set the policy and suppress this warning.
+[1.462s] 
+[1.462s]   Use execute_process() instead.
+[1.462s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.462s] [0m
+[1.484s] [33mCMake Warning (dev) at CMakeLists.txt:91 (find_package):
+[1.484s]   Policy CMP0146 is not set: The FindCUDA module is removed.  Run "cmake
+[1.484s]   --help-policy CMP0146" for policy details.  Use the cmake_policy command to
+[1.484s]   set the policy and suppress this warning.
+[1.484s] 
+[1.484s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.485s] [0m
+[1.510s] -- Found CUDA: /usr/local/cuda (found version "12.6")
+[1.510s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/install/share/ament_cmake_auto/cmake)
+[2.740s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)
+[2.749s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)
+[2.768s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_cpp/cmake)
+[2.816s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[2.862s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[2.988s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/install/share/rmw_implementation_cmake/cmake)
+[2.998s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/install/share/rmw_fastrtps_cpp/cmake)
+[3.348s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.114s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/install/share/eigen3_cmake_module/cmake)
+[4.120s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[4.491s] [33mCMake Warning at CMakeLists.txt:122 (find_package):
+[4.493s]   By not providing "Findzed_msgs.cmake" in CMAKE_MODULE_PATH this project has
+[4.494s]   asked CMake to find a package configuration file provided by "zed_msgs",
+[4.494s]   but CMake did not find one.
+[4.494s] 
+[4.494s]   Could not find a package configuration file provided by "zed_msgs" with any
+[4.494s]   of the following names:
+[4.495s] 
+[4.495s]     zed_msgsConfig.cmake
+[4.495s]     zed_msgs-config.cmake
+[4.495s] 
+[4.495s]   Add the installation prefix of "zed_msgs" to CMAKE_PREFIX_PATH or set
+[4.495s]   "zed_msgs_DIR" to a directory containing one of the above files.  If
+[4.495s]   "zed_msgs" provides a separate development package or SDK, be sure it has
+[4.495s]   been installed.
+[4.496s] 
+[4.496s] [0m
+[4.534s] [31mCMake Error at CMakeLists.txt:132 (find_package):
+[4.536s]   By not providing "Findnmea_msgs.cmake" in CMAKE_MODULE_PATH this project
+[4.537s]   has asked CMake to find a package configuration file provided by
+[4.539s]   "nmea_msgs", but CMake did not find one.
+[4.541s] 
+[4.543s]   Could not find a package configuration file provided by "nmea_msgs" with
+[4.544s]   any of the following names:
+[4.547s] 
+[4.548s]     nmea_msgsConfig.cmake
+[4.550s]     nmea_msgs-config.cmake
+[4.551s] 
+[4.560s]   Add the installation prefix of "nmea_msgs" to CMAKE_PREFIX_PATH or set
+[4.561s]   "nmea_msgs_DIR" to a directory containing one of the above files.  If
+[4.561s]   "nmea_msgs" provides a separate development package or SDK, be sure it has
+[4.561s]   been installed.
+[4.562s] 
+[4.562s] [0m
+[4.562s] -- Configuring incomplete, errors occurred!
+[4.570s] gmake: *** [Makefile:412: cmake_check_build_system] Error 1
+[4.870s] Invoked command in '/workspace/towen/build/zed_components' returned '2': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/zed_components -- -j6 -l6

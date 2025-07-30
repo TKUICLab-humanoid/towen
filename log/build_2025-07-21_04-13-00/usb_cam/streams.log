@@ -1,0 +1,133 @@
+[0.083s] Invoking command in '/workspace/towen/build/usb_cam': AMENT_PREFIX_PATH=/workspace/towen/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/tku_msgs:/workspace/towen/install/cv_bridge:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/vision_opencv:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake /workspace/towen/src/usb_cam -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/usb_cam
+[0.515s] -- The C compiler identification is GNU 11.4.0
+[0.710s] -- The CXX compiler identification is GNU 11.4.0
+[0.744s] -- Detecting C compiler ABI info
+[0.959s] -- Detecting C compiler ABI info - done
+[0.994s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.994s] -- Detecting C compile features
+[0.995s] -- Detecting C compile features - done
+[1.011s] -- Detecting CXX compiler ABI info
+[1.191s] -- Detecting CXX compiler ABI info - done
+[1.240s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.240s] -- Detecting CXX compile features
+[1.241s] -- Detecting CXX compile features - done
+[1.249s] -- Found ament_cmake_auto: 1.3.10 (/opt/ros/humble/install/share/ament_cmake_auto/cmake)
+[1.625s] -- Found Python3: /usr/local/bin/python3 (found version "3.10.12") found components: Interpreter
+[2.264s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/install/share/rosidl_generator_c/cmake)
+[2.278s] -- Found rosidl_adapter: 3.1.7 (/workspace/towen/install/rosidl_adapter/share/rosidl_adapter/cmake)
+[2.304s] -- Found rosidl_generator_cpp: 3.1.7 (/workspace/towen/install/rosidl_generator_cpp/share/rosidl_generator_cpp/cmake)
+[2.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.405s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.579s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/install/share/rmw_implementation_cmake/cmake)
+[2.593s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/install/share/rmw_fastrtps_cpp/cmake)
+[2.943s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")
+[3.036s] -- Found FastRTPS: /opt/ros/humble/install/include
+[3.178s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.216s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.383s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.387s] -- Found Threads: TRUE
+[4.280s] -- Found OpenCV: /usr (found version "4.5.4")
+[4.292s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+[4.295s] -- Checking for module 'libavcodec'
+[4.338s] --   Found libavcodec, version 58.134.100
+[4.436s] -- Checking for module 'libavutil'
+[4.471s] --   Found libavutil, version 56.70.100
+[4.564s] -- Checking for module 'libswscale'
+[4.612s] --   Found libswscale, version 5.9.100
+[4.759s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+[4.832s] -- Found gtest sources under '/opt/ros/humble/install/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[4.862s] -- Added test 'copyright' to check source files copyright and LICENSE
+[4.869s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.870s] -- Configured cppcheck include dirs: /workspace/towen/src/usb_cam/include
+[4.870s] -- Configured cppcheck exclude dirs and/or files: 
+[4.876s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[4.876s] -- Configured cpplint exclude dirs and/or files: 
+[4.879s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.881s] -- Added test 'lint_cmake' to check CMake code style
+[4.884s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.890s] -- Added test 'uncrustify' to check C / C++ code style
+[4.890s] -- Configured uncrustify additional arguments: 
+[4.892s] -- Added test 'xmllint' to check XML markup files
+[4.904s] -- Configuring done (4.5s)
+[5.012s] -- Generating done (0.1s)
+[5.014s] -- Build files have been written to: /workspace/towen/build/usb_cam
+[5.100s] Invoked command in '/workspace/towen/build/usb_cam' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/tku_msgs:/workspace/towen/install/cv_bridge:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/vision_opencv:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake /workspace/towen/src/usb_cam -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/usb_cam
+[5.106s] Invoking command in '/workspace/towen/build/usb_cam': AMENT_PREFIX_PATH=/workspace/towen/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/tku_msgs:/workspace/towen/install/cv_bridge:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/vision_opencv:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /workspace/towen/build/usb_cam -- -j6 -l6
+[5.379s] [  7%] [32mBuilding CXX object CMakeFiles/usb_cam.dir/src/usb_cam.cpp.o[0m
+[5.389s] [ 21%] [32mBuilding CXX object CMakeFiles/usb_cam_node_exe.dir/rclcpp_components/node_main_usb_cam_node_exe.cpp.o[0m
+[5.390s] [ 21%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[5.393s] [ 28%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[8.288s] [ 35%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[8.440s] [ 35%] Built target gtest_main
+[11.926s] [ 42%] [32m[1mLinking CXX shared library libusb_cam.so[0m
+[12.425s] [ 42%] Built target usb_cam
+[12.466s] [ 50%] [32mBuilding CXX object CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o[0m
+[15.073s] [ 57%] [32m[1mLinking CXX static library libgtest.a[0m
+[15.197s] [ 57%] Built target gtest
+[15.232s] [ 64%] [32mBuilding CXX object CMakeFiles/test_pixel_formats.dir/test/test_pixel_formats.cpp.o[0m
+[15.241s] [ 71%] [32mBuilding CXX object CMakeFiles/test_usb_cam_utils.dir/test/test_usb_cam_utils.cpp.o[0m
+[15.390s] [ 78%] [32m[1mLinking CXX executable usb_cam_node_exe[0m
+[16.212s] [ 78%] Built target usb_cam_node_exe
+[18.863s] [ 85%] [32m[1mLinking CXX executable test_usb_cam_utils[0m
+[19.571s] [ 85%] Built target test_usb_cam_utils
+[20.148s] [ 92%] [32m[1mLinking CXX executable test_pixel_formats[0m
+[20.804s] [ 92%] Built target test_pixel_formats
+[69.722s] [100%] [32m[1mLinking CXX shared library libusb_cam_node.so[0m
+[73.912s] [100%] Built target usb_cam_node
+[73.965s] Invoked command in '/workspace/towen/build/usb_cam' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/tku_msgs:/workspace/towen/install/cv_bridge:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/vision_opencv:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --build /workspace/towen/build/usb_cam -- -j6 -l6
+[74.324s] Invoking command in '/workspace/towen/build/usb_cam': AMENT_PREFIX_PATH=/workspace/towen/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/tku_msgs:/workspace/towen/install/cv_bridge:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/vision_opencv:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /workspace/towen/build/usb_cam
+[74.537s] -- Install configuration: ""
+[74.538s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/environment/library_path.sh
+[74.538s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[74.539s] -- Installing: /workspace/towen/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[74.540s] -- Set non-toolchain portion of runtime path of "/workspace/towen/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+[74.541s] -- Installing: /workspace/towen/install/usb_cam/lib/usb_cam/show_image.py
+[74.544s] -- Installing: /workspace/towen/install/usb_cam/lib/libusb_cam.so
+[74.544s] -- Installing: /workspace/towen/install/usb_cam/lib/libusb_cam_node.so
+[74.591s] -- Set non-toolchain portion of runtime path of "/workspace/towen/install/usb_cam/lib/libusb_cam_node.so" to ""
+[74.592s] -- Installing: /workspace/towen/install/usb_cam/include
+[74.596s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam
+[74.597s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/constants.hpp
+[74.597s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/utils.hpp
+[74.597s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/usb_cam.hpp
+[74.597s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[74.598s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/conversions.hpp
+[74.598s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats
+[74.598s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[74.599s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[74.599s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[74.601s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[74.604s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/utils.hpp
+[74.604s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/mono.hpp
+[74.604s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[74.605s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/m420.hpp
+[74.605s] -- Installing: /workspace/towen/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[74.605s] -- Up-to-date: /workspace/towen/install/usb_cam/lib/libusb_cam_node.so
+[74.605s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/launch
+[74.605s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/launch/camera_config.py
+[74.605s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/launch/__init__.py
+[74.606s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[74.606s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/config
+[74.606s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/config/params_1.yaml
+[74.606s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/config/params_2.yaml
+[74.606s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[74.606s] -- Installing: /workspace/towen/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[74.607s] -- Installing: /workspace/towen/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[74.607s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[74.607s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[74.612s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/environment/path.sh
+[74.612s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/environment/path.dsv
+[74.613s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/local_setup.bash
+[74.613s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/local_setup.sh
+[74.613s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/local_setup.zsh
+[74.613s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/local_setup.dsv
+[74.613s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/package.dsv
+[74.613s] -- Installing: /workspace/towen/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[74.614s] -- Installing: /workspace/towen/install/usb_cam/share/usb_cam/package.xml
+[74.651s] Invoked command in '/workspace/towen/build/usb_cam' returned '0': AMENT_PREFIX_PATH=/workspace/towen/install/tku_msgs:${AMENT_PREFIX_PATH} BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/tku_msgs:/workspace/towen/install/cv_bridge:/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/vision_opencv:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/zed_components/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/local/bin/cmake --install /workspace/towen/build/usb_cam

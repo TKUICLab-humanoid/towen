@@ -1,0 +1,8 @@
+[console_scripts]
+ar = strategy.ar.ar:main
+bb = strategy.bb.bb:main
+mar = strategy.mar.mar:main
+obs = strategy.obs.obs:main
+sp = strategy.sp.sp:main
+sr = strategy.sr.sr:main
+wl = strategy.wl.wl:main

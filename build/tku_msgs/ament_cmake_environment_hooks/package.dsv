@@ -1,0 +1,4 @@
+source;share/tku_msgs/local_setup.bash
+source;share/tku_msgs/local_setup.dsv
+source;share/tku_msgs/local_setup.sh
+source;share/tku_msgs/local_setup.zsh

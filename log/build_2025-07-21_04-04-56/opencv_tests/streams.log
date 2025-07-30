@@ -1,0 +1,44 @@
+[3.112s] Invoking command in '/workspace/towen/src/vision_opencv/opencv_tests': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /workspace/towen/build/opencv_tests/build install --record /workspace/towen/build/opencv_tests/install.log --single-version-externally-managed install_data
+[3.671s] /home/work/.local/lib/python3.10/site-packages/setuptools/_distutils/dist.py:289: UserWarning: Unknown distribution option: 'tests_require'
+[3.672s]   warnings.warn(msg)
+[3.777s] /home/work/.local/lib/python3.10/site-packages/setuptools/dist.py:759: SetuptoolsDeprecationWarning: License classifiers are deprecated.
+[3.778s] !!
+[3.779s] 
+[3.780s]         ********************************************************************************
+[3.781s]         Please consider removing the following classifiers in favor of a SPDX license expression:
+[3.782s] 
+[3.783s]         License :: OSI Approved :: Apache Software License
+[3.784s] 
+[3.785s]         See https://packaging.python.org/en/latest/guides/writing-pyproject-toml/#license for details.
+[3.786s]         ********************************************************************************
+[3.787s] 
+[3.788s] !!
+[3.789s]   self._finalize_license_expression()
+[3.981s] running egg_info
+[4.033s] writing ../../../build/opencv_tests/opencv_tests.egg-info/PKG-INFO
+[4.037s] writing dependency_links to ../../../build/opencv_tests/opencv_tests.egg-info/dependency_links.txt
+[4.039s] writing entry points to ../../../build/opencv_tests/opencv_tests.egg-info/entry_points.txt
+[4.040s] writing requirements to ../../../build/opencv_tests/opencv_tests.egg-info/requires.txt
+[4.041s] writing top-level names to ../../../build/opencv_tests/opencv_tests.egg-info/top_level.txt
+[4.145s] reading manifest file '../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[4.148s] writing manifest file '../../../build/opencv_tests/opencv_tests.egg-info/SOURCES.txt'
+[4.149s] running build
+[4.150s] running build_py
+[4.152s] copying opencv_tests/broadcast.py -> /workspace/towen/build/opencv_tests/build/lib/opencv_tests
+[4.154s] copying opencv_tests/__init__.py -> /workspace/towen/build/opencv_tests/build/lib/opencv_tests
+[4.155s] copying opencv_tests/rosfacedetect.py -> /workspace/towen/build/opencv_tests/build/lib/opencv_tests
+[4.156s] copying opencv_tests/source.py -> /workspace/towen/build/opencv_tests/build/lib/opencv_tests
+[4.158s] running install
+[4.176s] running install_lib
+[4.323s] running install_data
+[4.331s] copying resource/opencv_tests -> /workspace/towen/install/opencv_tests/share/ament_index/resource_index/packages
+[4.331s] copying package.xml -> /workspace/towen/install/opencv_tests/share/opencv_tests
+[4.332s] running install_egg_info
+[4.425s] removing '/workspace/towen/install/opencv_tests/lib/python3.10/site-packages/opencv_tests-3.2.1-py3.10.egg-info' (and everything under it)
+[4.425s] Copying ../../../build/opencv_tests/opencv_tests.egg-info to /workspace/towen/install/opencv_tests/lib/python3.10/site-packages/opencv_tests-3.2.1-py3.10.egg-info
+[4.428s] running install_scripts
+[4.529s] Installing broadcast script to /workspace/towen/install/opencv_tests/lib/opencv_tests
+[4.531s] Installing rosfacedetect script to /workspace/towen/install/opencv_tests/lib/opencv_tests
+[4.531s] Installing source script to /workspace/towen/install/opencv_tests/lib/opencv_tests
+[4.533s] writing list of installed files to '/workspace/towen/build/opencv_tests/install.log'
+[4.618s] Invoked command in '/workspace/towen/src/vision_opencv/opencv_tests' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 PYTHONPATH=/workspace/towen/build/opencv_tests/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /workspace/towen/build/opencv_tests/build install --record /workspace/towen/build/opencv_tests/install.log --single-version-externally-managed install_data

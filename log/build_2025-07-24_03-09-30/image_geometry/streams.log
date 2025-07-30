@@ -1,0 +1,50 @@
+[0.792s] Invoking command in '/workspace/towen/build/image_geometry': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/image_geometry -- -j6 -l6
+[1.353s] [  0%] Built target ament_cmake_python_symlink_image_geometry
+[1.420s] [ 22%] Built target gtest
+[2.477s] running egg_info
+[2.541s] writing image_geometry.egg-info/PKG-INFO
+[2.543s] writing dependency_links to image_geometry.egg-info/dependency_links.txt
+[2.545s] writing top-level names to image_geometry.egg-info/top_level.txt
+[2.744s] reading manifest file 'image_geometry.egg-info/SOURCES.txt'
+[2.751s] writing manifest file 'image_geometry.egg-info/SOURCES.txt'
+[2.872s] [ 22%] Built target ament_cmake_python_build_image_geometry_egg
+[2.915s] [ 44%] Built target gtest_main
+[3.068s] [ 77%] Built target image_geometry
+[3.171s] [100%] Built target image_geometry-utest
+[3.452s] Invoked command in '/workspace/towen/build/image_geometry' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/image_geometry -- -j6 -l6
+[4.501s] Invoking command in '/workspace/towen/build/image_geometry': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/image_geometry
+[5.063s] -- Install configuration: "Release"
+[5.065s] -- Execute custom install script
+[5.066s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/environment/pythonpath.sh
+[5.067s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/environment/pythonpath.dsv
+[5.068s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/PKG-INFO
+[5.069s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/SOURCES.txt
+[5.070s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/dependency_links.txt
+[5.070s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry-3.2.1-py3.10.egg-info/top_level.txt
+[5.071s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/__init__.py
+[5.072s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry/cameramodels.py
+[5.073s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/include/image_geometry/image_geometry/pinhole_camera_model.h
+[5.074s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/include/image_geometry/image_geometry/stereo_camera_model.h
+[5.075s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/include/image_geometry/image_geometry/visibility_control.hpp
+[5.076s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/ament_index/resource_index/package_run_dependencies/image_geometry
+[5.077s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/ament_index/resource_index/parent_prefix_path/image_geometry
+[5.078s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/environment/ament_prefix_path.sh
+[5.079s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/environment/ament_prefix_path.dsv
+[5.080s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/environment/path.sh
+[5.081s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/environment/path.dsv
+[5.082s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/local_setup.bash
+[5.083s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/local_setup.sh
+[5.084s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/local_setup.zsh
+[5.085s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/local_setup.dsv
+[5.087s] -- Symlinking: /workspace/towen/install/image_geometry/share/image_geometry/package.dsv
+[5.088s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/ament_index/resource_index/packages/image_geometry
+[5.089s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_targets-extras.cmake
+[5.091s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.092s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/cmake/image_geometryConfig.cmake
+[5.094s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/cmake/image_geometryConfig-version.cmake
+[5.110s] -- Up-to-date symlink: /workspace/towen/install/image_geometry/share/image_geometry/package.xml
+[5.366s] Listing '/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages/image_geometry'...
+[5.392s] -- Up-to-date: /workspace/towen/install/image_geometry/lib/libimage_geometry.so
+[5.394s] -- Up-to-date: /workspace/towen/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake
+[5.394s] -- Up-to-date: /workspace/towen/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-release.cmake
+[5.534s] Invoked command in '/workspace/towen/build/image_geometry' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --install /workspace/towen/build/image_geometry

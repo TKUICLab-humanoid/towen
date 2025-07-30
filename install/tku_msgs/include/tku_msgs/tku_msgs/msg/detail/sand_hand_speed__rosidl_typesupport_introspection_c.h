@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sand_hand_speed__rosidl_typesupport_introspection_c.h

@@ -1,0 +1,101 @@
+[0.000000] (-) TimerEvent: {}
+[0.000585] (-) JobUnselected: {'identifier': 'cv_bridge'}
+[0.001108] (-) JobUnselected: {'identifier': 'image_geometry'}
+[0.001461] (-) JobUnselected: {'identifier': 'imageprocess'}
+[0.001846] (-) JobUnselected: {'identifier': 'motionpackage'}
+[0.001936] (-) JobUnselected: {'identifier': 'opencv_tests'}
+[0.002076] (-) JobUnselected: {'identifier': 'rosidl_adapter'}
+[0.002167] (-) JobUnselected: {'identifier': 'rosidl_cli'}
+[0.002216] (-) JobUnselected: {'identifier': 'rosidl_cmake'}
+[0.002260] (-) JobUnselected: {'identifier': 'rosidl_generator_c'}
+[0.002321] (-) JobUnselected: {'identifier': 'rosidl_generator_cpp'}
+[0.002375] (-) JobUnselected: {'identifier': 'rosidl_parser'}
+[0.002740] (-) JobUnselected: {'identifier': 'rosidl_runtime_c'}
+[0.002816] (-) JobUnselected: {'identifier': 'rosidl_runtime_cpp'}
+[0.002931] (-) JobUnselected: {'identifier': 'rosidl_typesupport_interface'}
+[0.002996] (-) JobUnselected: {'identifier': 'rosidl_typesupport_introspection_c'}
+[0.003036] (-) JobUnselected: {'identifier': 'rosidl_typesupport_introspection_cpp'}
+[0.003092] (-) JobUnselected: {'identifier': 'rosidl_typesupport_introspection_tests'}
+[0.003132] (-) JobUnselected: {'identifier': 'tku_msgs'}
+[0.003173] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.003399] (-) JobUnselected: {'identifier': 'vision_opencv'}
+[0.003469] (-) JobUnselected: {'identifier': 'web_video_server'}
+[0.003580] (-) JobUnselected: {'identifier': 'zed_components'}
+[0.003646] (-) JobUnselected: {'identifier': 'zed_ros2'}
+[0.003687] (-) JobUnselected: {'identifier': 'zed_wrapper'}
+[0.003744] (strategy) JobQueued: {'identifier': 'strategy', 'dependencies': OrderedDict()}
+[0.003796] (strategy) JobStarted: {'identifier': 'strategy'}
+[0.099456] (-) TimerEvent: {}
+[0.200113] (-) TimerEvent: {}
+[0.301732] (-) TimerEvent: {}
+[0.403179] (-) TimerEvent: {}
+[0.503855] (-) TimerEvent: {}
+[0.604493] (-) TimerEvent: {}
+[0.705097] (-) TimerEvent: {}
+[0.805691] (-) TimerEvent: {}
+[0.906256] (-) TimerEvent: {}
+[1.006870] (-) TimerEvent: {}
+[1.107437] (-) TimerEvent: {}
+[1.208040] (-) TimerEvent: {}
+[1.308688] (-) TimerEvent: {}
+[1.409256] (-) TimerEvent: {}
+[1.509844] (-) TimerEvent: {}
+[1.610797] (-) TimerEvent: {}
+[1.711536] (-) TimerEvent: {}
+[1.812322] (-) TimerEvent: {}
+[1.886521] (strategy) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/workspace/towen/build/strategy/build', '--no-deps', 'symlink_data', '--force'], 'cwd': '/workspace/towen/build/strategy', 'env': {'TWINE_PASSWORD': 'NvidiaJetson24', 'OPENBLAS_CORETYPE': 'ARMV8', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PYTHONFAULTHANDLER': '1', 'TMUX': '/tmp/tmux-1000/default,59,1', 'CUDACXX': '/usr/local/cuda/bin/nvcc', 'BYOBU_SED': 'sed', 'PYTHONIOENCODING': 'utf-8', 'BYOBU_LIGHT': '#EEEEEE', 'PIP_ROOT_USER_ACTION': 'ignore', 'LANGUAGE': 'en_US:en', 'BYOBU_EDITOR': 'sensible-editor', 'PIP_TRUSTED_HOST': 'jetson.webredirect.org', 'PIP_DEFAULT_TIMEOUT': '100', 'PYTHONHASHSEED': 'random', 'HOSTNAME': 'ubuntu', 'TWINE_REPOSITORY_URL': 'http://jao-51/jp6/cu126', 'TAR_INDEX_URL': 'http://jetson.webredirect.org:8000/jp6/cu126', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/workspace/towen/install/zed_components/lib:/workspace/towen/install/webrtc_ros_msgs/lib:/workspace/towen/install/usb_cam/lib:/workspace/towen/install/tku_msgs/lib:/workspace/towen/install/rosidl_typesupport_introspection_cpp/lib:/workspace/towen/install/rosidl_typesupport_introspection_c/lib:/workspace/towen/install/rosidl_runtime_c/lib:/workspace/towen/install/image_geometry/lib:/workspace/towen/install/cv_bridge/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64:', 'HOME': '/home/work', 'BYOBU_TIME': '%H:%M:%S', 'CMAKE_CUDA_COMPILER': '/usr/local/cuda/bin/nvcc', 'TERM_PROGRAM_VERSION': '3.2a', 'TORCH_NVCC_FLAGS': '-Xfatbin -compress-all', 'PYTHONUNBUFFERED': '1', 'ROS_PYTHON_VERSION': '3', 'CUDA_TOOLKIT_ROOT_DIR': '/usr/local/cuda', 'BYOBU_PREFIX': '/usr', 'CUDA_NVCC_EXECUTABLE': '/usr/local/cuda/bin/nvcc', 'CUDNN_LIB_PATH': '/usr/lib/aarch64-linux-gnu', 'CUDAARCHS': '87', 'PIP_CACHE_PURGE': 'true', 'BYOBU_WINDOW_NAME': '-', 'COLCON_PREFIX_PATH': '/workspace/towen/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', 'BYOBU_TERM': 'screen-256color', 'BYOBU_ULIMIT': 'ulimit', 'BYOBU_HIGHLIGHT': '#DD4814', 'SCP_UPLOAD_PASS': 'nvidia', 'BYOBU_ACCENT': '#75507B', 'PIP_DISABLE_PIP_VERSION_CHECK': 'on', 'BYOBU_CHARMAP': 'UTF-8', 'BYOBU_READLINK': 'readlink', 'BYOBU_DISTRO': 'Ubuntu', 'CUDA_ARCHITECTURES': '87', '_': '/usr/bin/colcon', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'TERM': 'screen-256color', 'TWINE_USERNAME': 'jp6', 'QT_X11_NO_MITSHM': '1', 'PATH': '/workspace/towen/install/rosidl_cli/bin:/opt/ros/humble/bin:/usr/local/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'PIP_INDEX_URL': 'https://pypi.jetson-ai-lab.io/jp6/cu126', 'PIP_NO_CACHE_DIR': 'off', 'DISPLAY': ':0', 'SCP_UPLOAD_USER': 'nvidia', 'LANG': 'C.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_fastrtps_cpp', 'XAUTHORITY': '/home/iclab/.Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/humble', 'TERM_PROGRAM': 'tmux', 'AMENT_PREFIX_PATH': '/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge:/opt/ros/humble', 'SCP_UPLOAD_URL': 'jao-51:/dist/jp6/cu126', 'TWINE_NON_INTERACTIVE': '1', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'PYTHON_VERSION': '3.10', 'BYOBU_DATE': '%Y-%m-%d', 'OPENCV_VERSION': '4.10.0', 'BYOBU_PYTHON': 'python3', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'BYOBU_CONFIG_DIR': '/home/work/.byobu', 'BYOBU_PAGER': 'sensible-pager', 'NVCC_PATH': '/usr/local/cuda/bin/nvcc', 'BYOBU_DARK': '#333333', 'BYOBU_RUN_DIR': '/dev/shm/byobu--qNJ4GIoc', 'OPENCV_URL': '', 'PWD': '/workspace/towen/build/strategy', 'LC_ALL': 'C.UTF-8', 'CUDA_HOME': '/usr/local/cuda', 'CUDNN_LIB_INCLUDE_PATH': '/usr/include', 'BYOBU_BACKEND': 'tmux', 'PYTHONPATH': '/workspace/towen/build/strategy/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/webrtc_ros_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/tku_msgs/local/lib/python3.10/dist-packages:/workspace/towen/install/strategy/lib/python3.10/site-packages:/workspace/towen/install/rosidl_typesupport_introspection_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_typesupport_introspection_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_cpp/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_generator_c/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cmake/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_parser/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_adapter/local/lib/python3.10/dist-packages:/workspace/towen/install/rosidl_cli/lib/python3.10/site-packages:/workspace/towen/install/opencv_tests/lib/python3.10/site-packages:/workspace/towen/install/motionpackage/lib/python3.10/site-packages:/workspace/towen/install/imageprocess/lib/python3.10/site-packages:/workspace/towen/install/image_geometry/local/lib/python3.10/dist-packages:/workspace/towen/install/cv_bridge/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CUDA_BIN_PATH': '/usr/local/cuda/bin', 'TMUX_PANE': '%9', 'CMAKE_PREFIX_PATH': '/workspace/towen/install/zed_ros2:/workspace/towen/install/zed_wrapper:/workspace/towen/install/zed_components:/workspace/towen/install/webrtc_ros_msgs:/workspace/towen/install/web_video_server:/workspace/towen/install/vision_opencv:/workspace/towen/install/usb_cam:/workspace/towen/install/tku_msgs:/workspace/towen/install/rosidl_typesupport_introspection_tests:/workspace/towen/install/rosidl_typesupport_introspection_cpp:/workspace/towen/install/rosidl_typesupport_introspection_c:/workspace/towen/install/rosidl_generator_cpp:/workspace/towen/install/rosidl_runtime_cpp:/workspace/towen/install/rosidl_runtime_c:/workspace/towen/install/rosidl_generator_c:/workspace/towen/install/rosidl_typesupport_interface:/workspace/towen/install/rosidl_cmake:/workspace/towen/install/rosidl_parser:/workspace/towen/install/rosidl_adapter:/workspace/towen/install/image_geometry:/workspace/towen/install/cv_bridge', 'BYOBU_TTY': '/dev/pts/2'}, 'shell': False}
+[1.912447] (-) TimerEvent: {}
+[2.013108] (-) TimerEvent: {}
+[2.113842] (-) TimerEvent: {}
+[2.214619] (-) TimerEvent: {}
+[2.315360] (-) TimerEvent: {}
+[2.416117] (-) TimerEvent: {}
+[2.516861] (-) TimerEvent: {}
+[2.617612] (-) TimerEvent: {}
+[2.646577] (strategy) StdoutLine: {'line': b'running develop\n'}
+[2.648382] (strategy) StderrLine: {'line': b'/usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:41: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[2.650342] (strategy) StderrLine: {'line': b'!!\n'}
+[2.650756] (strategy) StderrLine: {'line': b'\n'}
+[2.651063] (strategy) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.651335] (strategy) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[2.651586] (strategy) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[2.651832] (strategy) StderrLine: {'line': b'        standards-based tools.\n'}
+[2.652071] (strategy) StderrLine: {'line': b'\n'}
+[2.652304] (strategy) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[2.652600] (strategy) StderrLine: {'line': b'        ********************************************************************************\n'}
+[2.652844] (strategy) StderrLine: {'line': b'\n'}
+[2.653077] (strategy) StderrLine: {'line': b'!!\n'}
+[2.653307] (strategy) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[2.717772] (-) TimerEvent: {}
+[2.818523] (-) TimerEvent: {}
+[2.919232] (-) TimerEvent: {}
+[3.019952] (-) TimerEvent: {}
+[3.116284] (strategy) StdoutLine: {'line': b'running egg_info\n'}
+[3.120044] (-) TimerEvent: {}
+[3.150535] (strategy) StdoutLine: {'line': b'writing strategy.egg-info/PKG-INFO\n'}
+[3.152354] (strategy) StdoutLine: {'line': b'writing dependency_links to strategy.egg-info/dependency_links.txt\n'}
+[3.153022] (strategy) StdoutLine: {'line': b'writing entry points to strategy.egg-info/entry_points.txt\n'}
+[3.153672] (strategy) StdoutLine: {'line': b'writing requirements to strategy.egg-info/requires.txt\n'}
+[3.154073] (strategy) StdoutLine: {'line': b'writing top-level names to strategy.egg-info/top_level.txt\n'}
+[3.220212] (-) TimerEvent: {}
+[3.226392] (strategy) StdoutLine: {'line': b"reading manifest file 'strategy.egg-info/SOURCES.txt'\n"}
+[3.229716] (strategy) StdoutLine: {'line': b"writing manifest file 'strategy.egg-info/SOURCES.txt'\n"}
+[3.320737] (-) TimerEvent: {}
+[3.353351] (strategy) StdoutLine: {'line': b'running build_ext\n'}
+[3.354055] (strategy) StdoutLine: {'line': b'Creating /workspace/towen/install/strategy/lib/python3.10/site-packages/strategy.egg-link (link to .)\n'}
+[3.357378] (strategy) StdoutLine: {'line': b'Installing ar script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.357889] (strategy) StdoutLine: {'line': b'Installing bb script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.358474] (strategy) StdoutLine: {'line': b'Installing mar script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.358856] (strategy) StdoutLine: {'line': b'Installing obs script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.359194] (strategy) StdoutLine: {'line': b'Installing sp script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.359475] (strategy) StdoutLine: {'line': b'Installing sr script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.359850] (strategy) StdoutLine: {'line': b'Installing wl script to /workspace/towen/install/strategy/lib/strategy\n'}
+[3.360130] (strategy) StdoutLine: {'line': b'\n'}
+[3.360384] (strategy) StdoutLine: {'line': b'Installed /workspace/towen/build/strategy\n'}
+[3.360632] (strategy) StdoutLine: {'line': b'running symlink_data\n'}
+[3.360953] (strategy) StdoutLine: {'line': b'symbolically linking /workspace/towen/build/strategy/resource/strategy -> /workspace/towen/install/strategy/share/ament_index/resource_index/packages\n'}
+[3.361534] (strategy) StdoutLine: {'line': b'symbolically linking /workspace/towen/build/strategy/package.xml -> /workspace/towen/install/strategy/share/strategy\n'}
+[3.420836] (-) TimerEvent: {}
+[3.457799] (strategy) CommandEnded: {'returncode': 0}
+[3.505917] (strategy) JobEnded: {'identifier': 'strategy', 'rc': 0}
+[3.511106] (-) EventReactorShutdown: {}

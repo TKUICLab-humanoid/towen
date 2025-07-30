@@ -1,0 +1,1 @@
+/workspace/towen/build/rosidl_adapter/ament_cmake_core/rosidl_adapterConfig.cmake

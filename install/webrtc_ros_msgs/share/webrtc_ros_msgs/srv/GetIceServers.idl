@@ -1,0 +1,20 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from webrtc_ros_msgs/srv/GetIceServers.srv
+// generated code does not contain a copyright notice
+
+#include "webrtc_ros_msgs/msg/IceServer.idl"
+
+module webrtc_ros_msgs {
+  module srv {
+    @verbatim (language="comment", text=
+      "args")
+    struct GetIceServers_Request {
+      uint8 structure_needs_at_least_one_member;
+    };
+    @verbatim (language="comment", text=
+      "Resp")
+    struct GetIceServers_Response {
+      sequence<webrtc_ros_msgs::msg::IceServer> servers;
+    };
+  };
+};

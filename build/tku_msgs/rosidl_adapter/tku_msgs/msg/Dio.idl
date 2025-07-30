@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/Dio.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct Dio {
+      uint8 data;
+
+      boolean strategy;
+    };
+  };
+};

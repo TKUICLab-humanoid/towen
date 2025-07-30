@@ -1,0 +1,33 @@
+[0.067s] Invoking command in '/workspace/towen/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/web_video_server -- -j6 -l6
+[0.758s] [100%] Built target web_video_server
+[0.883s] Invoked command in '/workspace/towen/build/web_video_server' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --build /workspace/towen/build/web_video_server -- -j6 -l6
+[1.799s] Invoking command in '/workspace/towen/build/web_video_server': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/web_video_server
+[2.177s] -- Install configuration: ""
+[2.178s] -- Up-to-date: /workspace/towen/install/web_video_server/lib/web_video_server/web_video_server
+[2.180s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server
+[2.181s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/vp8_streamer.h
+[2.181s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/vp9_streamer.h
+[2.181s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/h264_streamer.h
+[2.181s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/png_streamers.h
+[2.181s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/libav_streamer.h
+[2.183s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/jpeg_streamers.h
+[2.184s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/web_video_server.h
+[2.184s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/image_streamer.h
+[2.184s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/ros_compressed_streamer.h
+[2.186s] -- Up-to-date: /workspace/towen/install/web_video_server/include/web_video_server/multipart_stream.h
+[2.187s] -- Up-to-date: /workspace/towen/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server
+[2.187s] -- Up-to-date: /workspace/towen/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server
+[2.188s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh
+[2.189s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv
+[2.190s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/environment/path.sh
+[2.190s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/environment/path.dsv
+[2.191s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/local_setup.bash
+[2.192s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/local_setup.sh
+[2.193s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/local_setup.zsh
+[2.194s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/local_setup.dsv
+[2.195s] -- Installing: /workspace/towen/install/web_video_server/share/web_video_server/package.dsv
+[2.198s] -- Up-to-date: /workspace/towen/install/web_video_server/share/ament_index/resource_index/packages/web_video_server
+[2.199s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake
+[2.200s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake
+[2.201s] -- Up-to-date: /workspace/towen/install/web_video_server/share/web_video_server/package.xml
+[2.259s] Invoked command in '/workspace/towen/build/web_video_server' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=/workspace/towen/install/cv_bridge:/workspace/towen/install/image_geometry:/workspace/towen/install/web_video_server:/opt/ros/humble/install:/workspace/towen/install/strategy:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble LD_LIBRARY_PATH=/workspace/towen/install/cv_bridge/lib:/workspace/towen/install/image_geometry/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/opt/ros/humble/install/opt/rviz_ogre_vendor/lib:/opt/ros/humble/install/lib:/usr/local/cuda/compat:/usr/local/cuda/lib64 /usr/local/bin/cmake --install /workspace/towen/build/web_video_server

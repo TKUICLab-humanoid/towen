@@ -1,0 +1,14 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/SandHandSpeed.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct SandHandSpeed {
+      int16 sector;
+
+      int16 speed;
+    };
+  };
+};

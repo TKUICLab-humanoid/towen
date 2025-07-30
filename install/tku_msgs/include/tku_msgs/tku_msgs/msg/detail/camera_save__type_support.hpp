@@ -1,0 +1,1 @@
+/workspace/towen/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/detail/camera_save__type_support.hpp

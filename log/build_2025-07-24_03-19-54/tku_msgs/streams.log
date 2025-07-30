@@ -1,0 +1,366 @@
+[0.977s] Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[1.350s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/install/share/ament_cmake/cmake)
+[2.418s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.448s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/install/share/rosidl_default_generators/cmake)
+[2.473s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[2.491s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/install/share/rosidl_adapter/cmake)
+[2.652s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[2.902s] -- Found std_msgs: 4.2.4 (/opt/ros/humble/install/share/std_msgs/cmake)
+[10.199s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/install/share/ament_cmake_ros/cmake)
+[13.932s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_introspection_c;rosidl_typesupport_fastrtps_c
+[18.736s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp;rosidl_typesupport_fastrtps_cpp
+[18.742s] [33mCMake Warning (dev) at /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:20 (find_package):
+[18.742s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[18.742s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[18.743s]   the cmake_policy command to set the policy and suppress this warning.
+[18.743s] 
+[18.743s] Call Stack (most recent call first):
+[18.743s]   /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[18.743s]   /workspace/towen/install/rosidl_cmake/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[18.743s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[18.743s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[18.743s] [0m
+[18.876s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/install/share/python_cmake_module/cmake)
+[18.896s] [33mCMake Warning (dev) at /opt/ros/humble/install/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:52 (find_package):
+[18.898s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[18.899s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[18.899s]   the cmake_policy command to set the policy and suppress this warning.
+[18.899s] 
+[18.899s] Call Stack (most recent call first):
+[18.899s]   /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[18.899s]   /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[18.900s]   /workspace/towen/install/rosidl_cmake/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[18.900s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[18.900s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[18.900s] [0m
+[19.004s] [33mCMake Warning (dev) at /opt/ros/humble/install/share/python_cmake_module/cmake/Modules/FindPythonExtra.cmake:140 (find_package):
+[19.005s]   Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+[19.005s]   are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+[19.005s]   the cmake_policy command to set the policy and suppress this warning.
+[19.005s] 
+[19.005s] Call Stack (most recent call first):
+[19.006s]   /opt/ros/humble/install/share/rosidl_generator_py/cmake/rosidl_generator_py_generate_interfaces.cmake:23 (find_package)
+[19.006s]   /opt/ros/humble/install/share/ament_cmake_core/cmake/core/ament_execute_extensions.cmake:48 (include)
+[19.006s]   /workspace/towen/install/rosidl_cmake/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:286 (ament_execute_extensions)
+[19.006s]   CMakeLists.txt:19 (rosidl_generate_interfaces)
+[19.006s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[19.007s] [0m
+[19.017s] -- Using PYTHON_EXECUTABLE: /usr/local/bin/python3
+[19.017s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[19.018s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[19.369s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/install/share/ament_lint_auto/cmake)
+[19.463s] -- Added test 'lint_cmake' to check CMake code style
+[19.471s] -- Added test 'xmllint' to check XML markup files
+[19.497s] -- Configuring done (18.2s)
+[20.556s] -- Generating done (1.1s)
+[20.572s] -- Build files have been written to: /workspace/towen/build/tku_msgs
+[20.662s] Invoked command in '/workspace/towen/build/tku_msgs' returned '0': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake /workspace/towen/src/tku_msgs -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/workspace/towen/install/tku_msgs
+[20.663s] Invoking command in '/workspace/towen/build/tku_msgs': BYOBU_DATE=%Y-%m-%d CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/workspace/towen/install/strategy:/workspace/towen/install/rosidl_cli:/workspace/towen/install/opencv_tests:/workspace/towen/install/motionpackage:/workspace/towen/install/imageprocess:/opt/ros/humble /usr/local/bin/cmake --build /workspace/towen/build/tku_msgs -- -j6 -l6
+[23.753s] [  0%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/button_color_form__functions.c.o[0m
+[23.754s] [  0%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/draw_image__functions.c.o[0m
+[23.755s] [  0%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/hsv_value__functions.c.o[0m
+[23.987s] [  1%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/label_model_object_list__functions.c.o[0m
+[25.311s] [  1%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/object_list__functions.c.o[0m
+[25.638s] [  1%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera__functions.c.o[0m
+[26.060s] [  2%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/camera_save__functions.c.o[0m
+[27.150s] [  2%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/location__functions.c.o[0m
+[27.512s] [  2%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/dio__functions.c.o[0m
+[28.004s] [  3%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parameter__functions.c.o[0m
+[28.445s] [  3%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface__functions.c.o[0m
+[29.005s] [  3%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/parametermessage__functions.c.o[0m
+[29.401s] [  4%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/callback__functions.c.o[0m
+[29.723s] [  4%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/head_package__functions.c.o[0m
+[30.155s] [  4%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/interface_send2_sector__functions.c.o[0m
+[30.484s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/pi_dpackage__functions.c.o[0m
+[30.763s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sand_hand_speed__functions.c.o[0m
+[31.116s] [  5%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion__functions.c.o[0m
+[31.466s] [  6%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/save_motion_vector__functions.c.o[0m
+[31.757s] [  6%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_package__functions.c.o[0m
+[32.137s] [  6%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/sensor_set__functions.c.o[0m
+[32.386s] [  7%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/single_motor_data__functions.c.o[0m
+[32.634s] [  7%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/walkingmessage__functions.c.o[0m
+[33.017s] [  7%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/build_model__functions.c.o[0m
+[33.719s] [  8%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/hsv_info__functions.c.o[0m
+[34.288s] [  8%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/save_hsv__functions.c.o[0m
+[34.942s] [  8%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/add__functions.c.o[0m
+[35.362s] [  9%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/camera_info__functions.c.o[0m
+[35.993s] [  9%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/read_motion__functions.c.o[0m
+[36.537s] [  9%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/check_sector__functions.c.o[0m
+[37.478s] [ 10%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__functions.c.o[0m
+[38.543s] [ 10%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/srv/detail/walking_gait_parameter__functions.c.o[0m
+[39.117s] [ 11%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_data__functions.c.o[0m
+[39.382s] [ 11%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_c.dir/rosidl_generator_c/tku_msgs/msg/detail/color_array__functions.c.o[0m
+[39.890s] [ 11%] [32m[1mLinking C shared library libtku_msgs__rosidl_generator_c.so[0m
+[40.038s] [ 12%] Built target tku_msgs__rosidl_generator_c
+[40.155s] [ 12%] Built target ament_cmake_python_symlink_tku_msgs
+[40.349s] [ 12%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/button_color_form__type_support.c.o[0m
+[40.681s] [ 12%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/color_array__type_support.c.o[0m
+[41.175s] [ 13%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/color_data__type_support.c.o[0m
+[41.338s] [ 13%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/draw_image__type_support.c.o[0m
+[41.519s] [ 13%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/hsv_value__type_support.c.o[0m
+[41.652s] [ 14%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/label_model_object_list__type_support.c.o[0m
+[41.960s] [ 14%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/object_list__type_support.c.o[0m
+[42.151s] [ 14%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/camera__type_support.c.o[0m
+[42.441s] [ 15%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/camera_save__type_support.c.o[0m
+[42.581s] [ 15%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/location__type_support.c.o[0m
+[42.816s] [ 15%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/dio__type_support.c.o[0m
+[42.984s] [ 16%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/parameter__type_support.c.o[0m
+[43.098s] [ 16%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/interface__type_support.c.o[0m
+[43.289s] [ 17%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/parametermessage__type_support.c.o[0m
+[43.428s] [ 17%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/callback__type_support.c.o[0m
+[43.583s] [ 17%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/head_package__type_support.c.o[0m
+[43.744s] [ 18%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/interface_send2_sector__type_support.c.o[0m
+[44.014s] [ 18%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/pi_dpackage__type_support.c.o[0m
+[44.235s] [ 18%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sand_hand_speed__type_support.c.o[0m
+[44.475s] [ 19%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/save_motion__type_support.c.o[0m
+[44.943s] [ 19%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/save_motion_vector__type_support.c.o[0m
+[45.226s] [ 19%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sensor_package__type_support.c.o[0m
+[45.518s] [ 20%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/sensor_set__type_support.c.o[0m
+[45.736s] [ 20%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/single_motor_data__type_support.c.o[0m
+[46.033s] [ 20%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/msg/detail/walkingmessage__type_support.c.o[0m
+[46.316s] [ 21%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/build_model__type_support.c.o[0m
+[46.458s] [ 21%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/hsv_info__type_support.c.o[0m
+[46.672s] [ 21%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/save_hsv__type_support.c.o[0m
+[46.970s] [ 22%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/add__type_support.c.o[0m
+[47.190s] [ 22%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/camera_info__type_support.c.o[0m
+[47.512s] [ 22%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/read_motion__type_support.c.o[0m
+[48.062s] [ 23%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/check_sector__type_support.c.o[0m
+[48.326s] [ 23%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/send_hand_speed__type_support.c.o[0m
+[48.555s] [ 23%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/tku_msgs/srv/detail/walking_gait_parameter__type_support.c.o[0m
+[48.756s] [ 24%] [32m[1mLinking C shared library libtku_msgs__rosidl_typesupport_introspection_c.so[0m
+[48.904s] [ 25%] Built target tku_msgs__rosidl_typesupport_introspection_c
+[50.266s] running egg_info
+[50.330s] writing tku_msgs.egg-info/PKG-INFO
+[50.331s] writing dependency_links to tku_msgs.egg-info/dependency_links.txt
+[50.332s] writing top-level names to tku_msgs.egg-info/top_level.txt
+[50.473s] reading manifest file 'tku_msgs.egg-info/SOURCES.txt'
+[50.480s] writing manifest file 'tku_msgs.egg-info/SOURCES.txt'
+[50.610s] [ 25%] Built target ament_cmake_python_build_tku_msgs_egg
+[50.767s] [ 25%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/button_color_form__type_support.cpp.o[0m
+[50.908s] [ 25%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/draw_image__type_support.cpp.o[0m
+[51.051s] [ 25%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/hsv_value__type_support.cpp.o[0m
+[51.346s] [ 26%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/label_model_object_list__type_support.cpp.o[0m
+[51.431s] [ 26%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/object_list__type_support.cpp.o[0m
+[51.506s] [ 26%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/camera__type_support.cpp.o[0m
+[51.596s] [ 27%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/camera_save__type_support.cpp.o[0m
+[51.715s] [ 27%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/location__type_support.cpp.o[0m
+[51.830s] [ 27%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/dio__type_support.cpp.o[0m
+[51.981s] [ 28%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/parameter__type_support.cpp.o[0m
+[52.104s] [ 28%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/interface__type_support.cpp.o[0m
+[52.251s] [ 28%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/parametermessage__type_support.cpp.o[0m
+[52.374s] [ 29%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/callback__type_support.cpp.o[0m
+[52.474s] [ 29%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/head_package__type_support.cpp.o[0m
+[52.568s] [ 29%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/interface_send2_sector__type_support.cpp.o[0m
+[52.693s] [ 30%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/pi_dpackage__type_support.cpp.o[0m
+[52.789s] [ 30%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sand_hand_speed__type_support.cpp.o[0m
+[53.033s] [ 30%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/save_motion__type_support.cpp.o[0m
+[53.120s] [ 31%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/save_motion_vector__type_support.cpp.o[0m
+[53.252s] [ 31%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sensor_package__type_support.cpp.o[0m
+[53.409s] [ 31%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/sensor_set__type_support.cpp.o[0m
+[53.588s] [ 32%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/single_motor_data__type_support.cpp.o[0m
+[53.699s] [ 32%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/walkingmessage__type_support.cpp.o[0m
+[53.817s] [ 32%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/build_model__type_support.cpp.o[0m
+[53.957s] [ 33%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/hsv_info__type_support.cpp.o[0m
+[54.056s] [ 33%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/save_hsv__type_support.cpp.o[0m
+[54.220s] [ 33%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/add__type_support.cpp.o[0m
+[54.313s] [ 34%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/camera_info__type_support.cpp.o[0m
+[54.512s] [ 34%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/read_motion__type_support.cpp.o[0m
+[54.641s] [ 34%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/check_sector__type_support.cpp.o[0m
+[54.783s] [ 35%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/send_hand_speed__type_support.cpp.o[0m
+[55.045s] [ 35%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/srv/walking_gait_parameter__type_support.cpp.o[0m
+[55.223s] [ 36%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/color_data__type_support.cpp.o[0m
+[55.409s] [ 36%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/tku_msgs/msg/color_array__type_support.cpp.o[0m
+[55.553s] [ 36%] [32m[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_c.so[0m
+[55.738s] [ 37%] Built target tku_msgs__rosidl_typesupport_c
+[56.185s] [ 37%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/button_color_form__type_support_c.cpp.o[0m
+[57.495s] [ 37%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/hsv_value__type_support_c.cpp.o[0m
+[59.093s] [ 38%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/label_model_object_list__type_support_c.cpp.o[0m
+[60.392s] [ 38%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/object_list__type_support_c.cpp.o[0m
+[62.077s] [ 38%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/camera__type_support_c.cpp.o[0m
+[64.074s] [ 39%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/camera_save__type_support_c.cpp.o[0m
+[65.490s] [ 39%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/location__type_support_c.cpp.o[0m
+[66.958s] [ 39%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/dio__type_support_c.cpp.o[0m
+[68.286s] [ 40%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/parameter__type_support_c.cpp.o[0m
+[70.133s] [ 40%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/interface__type_support_c.cpp.o[0m
+[71.853s] [ 40%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/parametermessage__type_support_c.cpp.o[0m
+[73.432s] [ 41%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/callback__type_support_c.cpp.o[0m
+[75.183s] [ 41%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/head_package__type_support_c.cpp.o[0m
+[76.732s] [ 41%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/interface_send2_sector__type_support_c.cpp.o[0m
+[78.182s] [ 42%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/pi_dpackage__type_support_c.cpp.o[0m
+[79.415s] [ 42%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sand_hand_speed__type_support_c.cpp.o[0m
+[80.687s] [ 42%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/save_motion__type_support_c.cpp.o[0m
+[82.362s] [ 43%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/save_motion_vector__type_support_c.cpp.o[0m
+[84.002s] [ 43%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sensor_package__type_support_c.cpp.o[0m
+[85.452s] [ 43%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/sensor_set__type_support_c.cpp.o[0m
+[86.640s] [ 44%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/single_motor_data__type_support_c.cpp.o[0m
+[88.079s] [ 44%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/walkingmessage__type_support_c.cpp.o[0m
+[89.769s] [ 44%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/build_model__type_support_c.cpp.o[0m
+[91.258s] [ 45%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/hsv_info__type_support_c.cpp.o[0m
+[92.561s] [ 45%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/save_hsv__type_support_c.cpp.o[0m
+[94.513s] [ 46%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/add__type_support_c.cpp.o[0m
+[96.058s] [ 46%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/camera_info__type_support_c.cpp.o[0m
+[97.624s] [ 46%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/read_motion__type_support_c.cpp.o[0m
+[99.093s] [ 47%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/check_sector__type_support_c.cpp.o[0m
+[100.318s] [ 47%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/send_hand_speed__type_support_c.cpp.o[0m
+[102.001s] [ 47%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/walking_gait_parameter__type_support_c.cpp.o[0m
+[103.747s] [ 47%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/draw_image__type_support_c.cpp.o[0m
+[105.259s] [ 48%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/color_data__type_support_c.cpp.o[0m
+[106.518s] [ 48%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/color_array__type_support_c.cpp.o[0m
+[107.932s] [ 49%] [32m[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[108.594s] [ 50%] Built target tku_msgs__rosidl_typesupport_fastrtps_c
+[108.732s] [ 50%] Built target tku_msgs__cpp
+[109.083s] [ 50%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/button_color_form__type_support.cpp.o[0m
+[110.627s] [ 50%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/draw_image__type_support.cpp.o[0m
+[112.157s] [ 50%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/hsv_value__type_support.cpp.o[0m
+[113.551s] [ 51%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/label_model_object_list__type_support.cpp.o[0m
+[114.931s] [ 51%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/object_list__type_support.cpp.o[0m
+[116.761s] [ 51%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera__type_support.cpp.o[0m
+[118.236s] [ 52%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera_save__type_support.cpp.o[0m
+[120.128s] [ 52%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/location__type_support.cpp.o[0m
+[121.998s] [ 52%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/dio__type_support.cpp.o[0m
+[123.319s] [ 53%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/parameter__type_support.cpp.o[0m
+[125.102s] [ 53%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/interface__type_support.cpp.o[0m
+[126.380s] [ 53%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/parametermessage__type_support.cpp.o[0m
+[127.686s] [ 54%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/callback__type_support.cpp.o[0m
+[129.145s] [ 54%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/head_package__type_support.cpp.o[0m
+[130.525s] [ 54%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/interface_send2_sector__type_support.cpp.o[0m
+[132.083s] [ 55%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/pi_dpackage__type_support.cpp.o[0m
+[133.169s] [ 55%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sand_hand_speed__type_support.cpp.o[0m
+[134.599s] [ 55%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/save_motion__type_support.cpp.o[0m
+[136.100s] [ 56%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/save_motion_vector__type_support.cpp.o[0m
+[137.821s] [ 56%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sensor_package__type_support.cpp.o[0m
+[139.569s] [ 56%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/sensor_set__type_support.cpp.o[0m
+[141.055s] [ 57%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/single_motor_data__type_support.cpp.o[0m
+[142.386s] [ 57%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/walkingmessage__type_support.cpp.o[0m
+[143.592s] [ 57%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/build_model__type_support.cpp.o[0m
+[144.886s] [ 58%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/hsv_info__type_support.cpp.o[0m
+[146.105s] [ 58%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/save_hsv__type_support.cpp.o[0m
+[147.289s] [ 58%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/add__type_support.cpp.o[0m
+[148.718s] [ 59%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/camera_info__type_support.cpp.o[0m
+[150.083s] [ 59%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/read_motion__type_support.cpp.o[0m
+[151.957s] [ 59%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/check_sector__type_support.cpp.o[0m
+[153.124s] [ 60%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/send_hand_speed__type_support.cpp.o[0m
+[154.389s] [ 60%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/walking_gait_parameter__type_support.cpp.o[0m
+[155.868s] [ 61%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_data__type_support.cpp.o[0m
+[157.480s] [ 61%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/color_array__type_support.cpp.o[0m
+[158.620s] [ 62%] [32m[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[158.824s] [ 63%] Built target tku_msgs__rosidl_typesupport_introspection_cpp
+[158.998s] [ 64%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp.o[0m
+[159.706s] [ 64%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/hsv_value__type_support.cpp.o[0m
+[160.472s] [ 65%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/label_model_object_list__type_support.cpp.o[0m
+[161.241s] [ 65%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/object_list__type_support.cpp.o[0m
+[161.935s] [ 65%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera__type_support.cpp.o[0m
+[162.699s] [ 66%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/camera_save__type_support.cpp.o[0m
+[163.431s] [ 66%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/location__type_support.cpp.o[0m
+[164.392s] [ 66%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/dio__type_support.cpp.o[0m
+[165.156s] [ 67%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/parameter__type_support.cpp.o[0m
+[166.030s] [ 67%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/interface__type_support.cpp.o[0m
+[166.790s] [ 67%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/parametermessage__type_support.cpp.o[0m
+[167.699s] [ 68%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/callback__type_support.cpp.o[0m
+[168.594s] [ 68%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/head_package__type_support.cpp.o[0m
+[169.319s] [ 68%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/interface_send2_sector__type_support.cpp.o[0m
+[170.055s] [ 69%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/pi_dpackage__type_support.cpp.o[0m
+[170.731s] [ 69%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sand_hand_speed__type_support.cpp.o[0m
+[171.421s] [ 69%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/save_motion__type_support.cpp.o[0m
+[172.139s] [ 70%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/save_motion_vector__type_support.cpp.o[0m
+[172.952s] [ 70%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sensor_package__type_support.cpp.o[0m
+[173.703s] [ 70%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/sensor_set__type_support.cpp.o[0m
+[174.442s] [ 71%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/single_motor_data__type_support.cpp.o[0m
+[175.445s] [ 71%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/walkingmessage__type_support.cpp.o[0m
+[176.167s] [ 71%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/build_model__type_support.cpp.o[0m
+[176.921s] [ 72%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/hsv_info__type_support.cpp.o[0m
+[177.759s] [ 72%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/save_hsv__type_support.cpp.o[0m
+[178.516s] [ 72%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/add__type_support.cpp.o[0m
+[179.331s] [ 73%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/camera_info__type_support.cpp.o[0m
+[180.108s] [ 73%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/read_motion__type_support.cpp.o[0m
+[180.820s] [ 73%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/check_sector__type_support.cpp.o[0m
+[181.561s] [ 74%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/send_hand_speed__type_support.cpp.o[0m
+[182.654s] [ 74%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/srv/walking_gait_parameter__type_support.cpp.o[0m
+[183.489s] [ 75%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/draw_image__type_support.cpp.o[0m
+[184.459s] [ 75%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/color_data__type_support.cpp.o[0m
+[185.130s] [ 75%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/tku_msgs/msg/color_array__type_support.cpp.o[0m
+[185.796s] [ 75%] [32m[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_cpp.so[0m
+[185.957s] [ 75%] Built target tku_msgs__rosidl_typesupport_cpp
+[186.158s] [ 75%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/button_color_form__type_support.cpp.o[0m
+[187.235s] [ 76%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/label_model_object_list__type_support.cpp.o[0m
+[188.396s] [ 76%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/object_list__type_support.cpp.o[0m
+[189.616s] [ 76%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera__type_support.cpp.o[0m
+[190.736s] [ 77%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/camera_save__type_support.cpp.o[0m
+[192.116s] [ 77%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/location__type_support.cpp.o[0m
+[193.350s] [ 77%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/dio__type_support.cpp.o[0m
+[194.386s] [ 78%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/parameter__type_support.cpp.o[0m
+[195.638s] [ 78%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/interface__type_support.cpp.o[0m
+[196.682s] [ 78%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/parametermessage__type_support.cpp.o[0m
+[197.985s] [ 79%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/callback__type_support.cpp.o[0m
+[199.208s] [ 79%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/head_package__type_support.cpp.o[0m
+[200.272s] [ 79%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/interface_send2_sector__type_support.cpp.o[0m
+[201.575s] [ 80%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/pi_dpackage__type_support.cpp.o[0m
+[202.695s] [ 80%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sand_hand_speed__type_support.cpp.o[0m
+[204.183s] [ 80%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/save_motion__type_support.cpp.o[0m
+[205.703s] [ 81%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/save_motion_vector__type_support.cpp.o[0m
+[207.084s] [ 81%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sensor_package__type_support.cpp.o[0m
+[208.640s] [ 81%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/sensor_set__type_support.cpp.o[0m
+[209.725s] [ 82%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/single_motor_data__type_support.cpp.o[0m
+[210.840s] [ 82%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/walkingmessage__type_support.cpp.o[0m
+[211.863s] [ 82%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/build_model__type_support.cpp.o[0m
+[213.047s] [ 83%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/hsv_info__type_support.cpp.o[0m
+[214.272s] [ 83%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/save_hsv__type_support.cpp.o[0m
+[215.457s] [ 83%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/add__type_support.cpp.o[0m
+[216.586s] [ 84%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/camera_info__type_support.cpp.o[0m
+[217.711s] [ 84%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/read_motion__type_support.cpp.o[0m
+[219.620s] [ 84%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/check_sector__type_support.cpp.o[0m
+[220.816s] [ 85%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/send_hand_speed__type_support.cpp.o[0m
+[221.988s] [ 85%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/srv/detail/dds_fastrtps/walking_gait_parameter__type_support.cpp.o[0m
+[223.254s] [ 85%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/hsv_value__type_support.cpp.o[0m
+[224.358s] [ 85%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/draw_image__type_support.cpp.o[0m
+[225.455s] [ 86%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_data__type_support.cpp.o[0m
+[226.640s] [ 86%] [32mBuilding CXX object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/tku_msgs/msg/detail/dds_fastrtps/color_array__type_support.cpp.o[0m
+[227.917s] [ 86%] [32m[1mLinking CXX shared library libtku_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[228.170s] [ 87%] Built target tku_msgs__rosidl_typesupport_fastrtps_cpp
+[228.213s] [ 87%] Built target tku_msgs
+[228.263s] [ 87%] Built target tku_msgs__py
+[228.533s] [ 88%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_button_color_form_s.c.o[0m
+[228.935s] [ 88%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_label_model_object_list_s.c.o[0m
+[229.310s] [ 89%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_object_list_s.c.o[0m
+[229.768s] [ 89%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_s.c.o[0m
+[230.091s] [ 89%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_camera_save_s.c.o[0m
+[230.450s] [ 90%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_location_s.c.o[0m
+[230.816s] [ 90%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_dio_s.c.o[0m
+[231.197s] [ 90%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_parameter_s.c.o[0m
+[231.678s] [ 91%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_interface_s.c.o[0m
+[232.029s] [ 91%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_parametermessage_s.c.o[0m
+[232.414s] [ 91%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_callback_s.c.o[0m
+[232.722s] [ 92%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_head_package_s.c.o[0m
+[233.064s] [ 92%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_interface_send2_sector_s.c.o[0m
+[233.554s] [ 92%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_pi_dpackage_s.c.o[0m
+[233.998s] [ 93%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sand_hand_speed_s.c.o[0m
+[234.290s] [ 93%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_save_motion_s.c.o[0m
+[234.781s] [ 94%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_save_motion_vector_s.c.o[0m
+[235.125s] [ 94%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sensor_package_s.c.o[0m
+[235.654s] [ 94%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_sensor_set_s.c.o[0m
+[235.999s] [ 95%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_single_motor_data_s.c.o[0m
+[236.333s] [ 95%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_walkingmessage_s.c.o[0m
+[236.680s] [ 95%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_build_model_s.c.o[0m
+[237.031s] [ 96%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_hsv_info_s.c.o[0m
+[237.631s] [ 96%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_save_hsv_s.c.o[0m
+[237.975s] [ 96%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_add_s.c.o[0m
+[238.302s] [ 97%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_camera_info_s.c.o[0m
+[238.663s] [ 97%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_read_motion_s.c.o[0m
+[239.368s] [ 97%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_check_sector_s.c.o[0m
+[239.744s] [ 98%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_send_hand_speed_s.c.o[0m
+[240.195s] [ 98%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/srv/_walking_gait_parameter_s.c.o[0m
+[240.663s] [ 98%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_hsv_value_s.c.o[0m
+[241.065s] [ 99%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_draw_image_s.c.o[0m
+[241.503s] [ 99%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_data_s.c.o[0m
+[241.856s] [ 99%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_generator_py.dir/rosidl_generator_py/tku_msgs/msg/_color_array_s.c.o[0m
+[242.234s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/tku_msgs/libtku_msgs__rosidl_generator_py.so[0m
+[242.375s] [ 99%] Built target tku_msgs__rosidl_generator_py
+[242.467s] [ 99%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[244.196s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[244.281s] [ 99%] Built target tku_msgs__rosidl_typesupport_introspection_c__pyext
+[244.326s] [100%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[246.070s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[246.161s] [100%] Built target tku_msgs__rosidl_typesupport_c__pyext
+[246.208s] [100%] [32mBuilding C object CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[248.051s] [100%] [32m[1mLinking C shared library rosidl_generator_py/tku_msgs/tku_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[248.173s] [100%] Built target tku_msgs__rosidl_typesupport_fastrtps_c__pyext
