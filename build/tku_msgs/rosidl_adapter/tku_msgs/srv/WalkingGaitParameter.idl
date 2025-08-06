@@ -40,6 +40,10 @@ module tku_msgs {
       float now_com_height;
 
       boolean stand_balance;
+
+      float hip_roll;
+
+      float ankle_roll;
     };
   };
 };

@@ -31,7 +31,7 @@ void tku_msgs__msg__Parameter__rosidl_typesupport_introspection_c__Parameter_fin
   tku_msgs__msg__Parameter__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember tku_msgs__msg__Parameter__rosidl_typesupport_introspection_c__Parameter_message_member_array[17] = {
+static rosidl_typesupport_introspection_c__MessageMember tku_msgs__msg__Parameter__rosidl_typesupport_introspection_c__Parameter_message_member_array[19] = {
   {
     "mode",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -320,13 +320,47 @@ static rosidl_typesupport_introspection_c__MessageMember tku_msgs__msg__Paramete
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "hip_roll",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs__msg__Parameter, hip_roll),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "ankle_roll",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs__msg__Parameter, ankle_roll),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers tku_msgs__msg__Parameter__rosidl_typesupport_introspection_c__Parameter_message_members = {
   "tku_msgs__msg",  // message namespace
   "Parameter",  // message name
-  17,  // number of fields
+  19,  // number of fields
   sizeof(tku_msgs__msg__Parameter),
   tku_msgs__msg__Parameter__rosidl_typesupport_introspection_c__Parameter_message_member_array,  // message members
   tku_msgs__msg__Parameter__rosidl_typesupport_introspection_c__Parameter_init_function,  // function to initialize message memory (memory has to be allocated)

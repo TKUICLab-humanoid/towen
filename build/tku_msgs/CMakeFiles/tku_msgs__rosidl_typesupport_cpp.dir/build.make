@@ -142,7 +142,7 @@ rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp: /opt/ro
 rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp: /opt/ros/humble/install/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp: /opt/ros/humble/install/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/towen/build/tku_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support dispatch for ROS interfaces"
-	/usr/local/bin/python3 /opt/ros/humble/install/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /workspace/towen/build/tku_msgs/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_fastrtps_cpp rosidl_typesupport_introspection_cpp
+	/usr/local/bin/python3 /opt/ros/humble/install/lib/rosidl_typesupport_cpp/rosidl_typesupport_cpp --generator-arguments-file /workspace/towen/build/tku_msgs/rosidl_typesupport_cpp__arguments.json --typesupports rosidl_typesupport_introspection_cpp rosidl_typesupport_fastrtps_cpp
 
 rosidl_typesupport_cpp/tku_msgs/msg/color_array__type_support.cpp: rosidl_typesupport_cpp/tku_msgs/msg/button_color_form__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_cpp/tku_msgs/msg/color_array__type_support.cpp

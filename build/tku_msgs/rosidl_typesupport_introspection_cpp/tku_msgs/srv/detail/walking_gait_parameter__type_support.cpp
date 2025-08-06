@@ -156,7 +156,7 @@ void WalkingGaitParameter_Response_fini_function(void * message_memory)
   typed_message->~WalkingGaitParameter_Response();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember WalkingGaitParameter_Response_message_member_array[16] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember WalkingGaitParameter_Response_message_member_array[18] = {
   {
     "x_swing_range",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
@@ -428,13 +428,47 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember WalkingGaitPa
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "hip_roll",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs::srv::WalkingGaitParameter_Response, hip_roll),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "ankle_roll",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs::srv::WalkingGaitParameter_Response, ankle_roll),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers WalkingGaitParameter_Response_message_members = {
   "tku_msgs::srv",  // message namespace
   "WalkingGaitParameter_Response",  // message name
-  16,  // number of fields
+  18,  // number of fields
   sizeof(tku_msgs::srv::WalkingGaitParameter_Response),
   WalkingGaitParameter_Response_message_member_array,  // message members
   WalkingGaitParameter_Response_init_function,  // function to initialize message memory (memory has to be allocated)

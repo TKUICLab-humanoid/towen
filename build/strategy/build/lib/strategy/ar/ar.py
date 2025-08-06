@@ -3,30 +3,33 @@ import rclpy
 from std_msgs.msg import String
 import numpy as np
 import time
+
+
 import math
 import rclpy.duration
 
 HORIZON_HEAD = 3048
 VERTICAL_HEAD = 2048
 HEAD_CHECK = 2080
-HAND_BACK = 222
-LEG_BACK = 1812
+HAND_BACK = 23
+LEG_BACK = 21
 
 X_BENCHMARK = [220, 220, 220, 220, 295] #改大射左 #[最左,中左,中間,中右,最右]
 Y_BENCHMARK = 155 #改大射高
-SHOOT_DELAY = 0.63 #改大變快
+SHOOT_DELAY = 0.0 #改大變快
 
 #motion sector
-PREPARE = 10   #預備動作  需要舉手+夾手的motion list
-SHOOT = 90       #射擊磁區  拉加放手
+PREPARE = 10   #預備動作
+SHOOT = 95       #射擊磁區
 HAND_BACK_SECTOR = 13 #手放回去
-HAND_UP = 111     #抬手(還沒弄)
-LEG_DOWN = 1218   #蹲腳
+HAND_UP = 22     #抬手
+LEG_DOWN = 20   #蹲腳
+
 
 #馬達
-HORIZON_HEAD_MOTOR = 2 #左右扭頭馬達
-VERTICAL_HEAD_MOTOR = 1 #上下扭頭馬達
-WAIST_MOTOR = 17 #腰的馬達
+HORIZON_HEAD_MOTOR = 1 #左右扭頭馬達
+VERTICAL_HEAD_MOTOR = 2 #上下扭頭馬達
+WAIST_MOTOR = 15 #腰的馬達
 
 #========================================================
 RIGHT_TURN = 2.4
@@ -40,57 +43,55 @@ LEFT_TURN = 2.4
 #========================================================
 #找目標
 #改一半而已
-class ArcheryTarget(API):
-    def __init__(self):
-        self.red_x = 0
-        self.red_y = 0
-        self.biggest_blue_idx = 0
-        self.found = False
+# class ArcheryTarget(API):
+#     def __init__(self):
+#         self.red_x = 0
+#         self.red_y = 0
+#         self.biggest_blue_idx = 0
+#         self.found = False
         
-    def find(self):
-        self.found = False
-        print("self.color_counts[2] = ",self.color_counts[2])
-        # self.get_logger().info(f"self.color_counts[2] = {self.color_counts[2]}")
-        #if self.get_object: #API計算，有看到東西 get_object = True
-        # if self.color_counts[2]>0:# 找出最大面積藍色區塊的 index
-        #     self.biggest_blue_idx = np.argmax(self.object_sizes[2])  # 最大值的 index
-        #     self.get_logger().info(f"get biggest blue, number = {self.biggest_blue_idx}")
-        #     self.get_logger().info(f"get biggest blue, size = {self.object_sizes[2][self.biggest_blue_idx]}")
+#     def find(self):
+#         self.found = False
+#         #if self.get_object: #API計算，有看到東西 get_object = True
+#         if self.color_counts[2]>0:# 找出最大面積藍色區塊的 index
+#             self.biggest_blue_idx = np.argmax(self.object_sizes[2])  # 最大值的 index
+#             self.get_logger().info(f"get biggest blue, number = {self.biggest_blue_idx}")
+#             self.get_logger().info(f"get biggest blue, size = {self.object_sizes[2][self.biggest_blue_idx]}")
 
-        #     self.bx = (self.object_x_min[2][self.biggest_blue_idx] + self.object_x_max[2][self.biggest_blue_idx]) // 2
-        #     self.by = (self.object_y_min[2][self.biggest_blue_idx] + self.object_y_max[2][self.biggest_blue_idx]) // 2
+#             self.bx = (self.object_x_min[2][self.biggest_blue_idx] + self.object_x_max[2][self.biggest_blue_idx]) // 2
+#             self.by = (self.object_y_min[2][self.biggest_blue_idx] + self.object_y_max[2][self.biggest_blue_idx]) // 2
 
-        #     for k in range(self.color_counts[1]):  # 黃色
-        #         self.yx = (self.object_x_min[1][k] + self.object_x_max[1][k]) // 2
-        #         self.yy = (self.object_y_min[1][k] + self.object_y_max[1][k]) // 2
+#             for k in range(self.color_counts[1]):  # 黃色
+#                 self.yx = (self.object_x_min[1][k] + self.object_x_max[1][k]) // 2
+#                 self.yy = (self.object_y_min[1][k] + self.object_y_max[1][k]) // 2
 
-        #         for m in range(self.color_counts[5]):  # 紅色
-        #             self.rx = (self.object_x_min[5][m] + self.object_x_max[5][m]) // 2
-        #             self.ry = (self.object_y_min[5][m] + self.object_y_max[5][m]) // 2
+#                 for m in range(self.color_counts[5]):  # 紅色
+#                     self.rx = (self.object_x_min[5][m] + self.object_x_max[5][m]) // 2
+#                     self.ry = (self.object_y_min[5][m] + self.object_y_max[5][m]) // 2
 
                 
-        #             if -5 <= self.bx - self.yx <= 5 and -5 <= self.by - self.yy <= 5:#確定黃圈在藍圈裡面
-        #                 if -5 <= self.yx - self.rx <= 5 and -5 <= self.yy - self.ry <= 5:#確定紅圈在黃圈裡面
-        #                     self.red_x = self.rx
-        #                     self.red_y = self.ry
-        #                     self.found = True
-        #                     self.get_logger().info(f"FOUND!!!!!!!!")
-        #                     return
-            #for j in range (self.color_counts[2]): #藍色
-                #for k in range (self.color_counts[1]): #黃色
-                    #for m in range (self.color_counts[5]): #紅色
-                        #if -5 <= np.array(self.color_mask_subject_X[2])[j] - np.array(self.color_mask_subject_X[1])[k] < 5 and \
-                            #-5 <= np.array(self.color_mask_subject_Y[2])[j] - np.array(self.color_mask_subject_Y[1])[k] <= 5:
-                            #if -5 <= np.array(self.color_mask_subject_X[1])[k] - np.array(self.color_mask_subject_X[5])[m] <= 5 and \
-                                #-5 <= np.array(self.color_mask_subject_Y[1])[k] - np.array(self.color_mask_subject_Y[5])[m] <= 5:
-                                #self.red_x = np.array(self.color_mask_subject_X[5])[m]
-                                #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
-                                #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
-                                #self.found = True
+#                     if -5 <= self.bx - self.yx <= 5 and -5 <= self.by - self.yy <= 5:#確定黃圈在藍圈裡面
+#                         if -5 <= self.yx - self.rx <= 5 and -5 <= self.yy - self.ry <= 5:#確定紅圈在黃圈裡面
+#                             self.red_x = self.rx
+#                             self.red_y = self.ry
+#                             self.found = True
+#                             self.get_logger().info(f"FOUND!!!!!!!!")
+#                             return
+#             #for j in range (self.color_counts[2]): #藍色
+#                 #for k in range (self.color_counts[1]): #黃色
+#                     #for m in range (self.color_counts[5]): #紅色
+#                         #if -5 <= np.array(self.color_mask_subject_X[2])[j] - np.array(self.color_mask_subject_X[1])[k] < 5 and \
+#                             #-5 <= np.array(self.color_mask_subject_Y[2])[j] - np.array(self.color_mask_subject_Y[1])[k] <= 5:
+#                             #if -5 <= np.array(self.color_mask_subject_X[1])[k] - np.array(self.color_mask_subject_X[5])[m] <= 5 and \
+#                                 #-5 <= np.array(self.color_mask_subject_Y[1])[k] - np.array(self.color_mask_subject_Y[5])[m] <= 5:
+#                                 #self.red_x = np.array(self.color_mask_subject_X[5])[m]
+#                                 #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
+#                                 #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
+#                                 #self.found = True
 
-            #self.get_object = False
-        # else:
-        #     self.red_x, self.red_y = 0, 0
+#             #self.get_object = False
+#         else:
+#             self.red_x, self.red_y = 0, 0
 #========================================================)
 
 
@@ -98,8 +99,13 @@ class Strategy(API):
     def __init__(self):
         super().__init__('ar')
         self.get_logger().info('Strategy node started')
-
-        self.archery_target = ArcheryTarget()
+        #######################################
+        self.red_x = 0
+        self.red_y = 0
+        self.biggest_blue_idx = 0
+        self.found = False
+        # self.archery_target = ArcheryTarge
+        #######################################
         self.stand = 0
         self.x_points = []
         self.y_points = []
@@ -153,6 +159,50 @@ class Strategy(API):
         self.turn = 0
     #=================================================================）
 
+    def find(self):
+        self.found = False
+        #if self.get_object: #API計算，有看到東西 get_object = True
+        if self.color_counts[2] > 0:# 找出最大面積藍色區塊的 index
+            self.biggest_blue_idx = np.argmax(self.object_sizes[2])  # 最大值的 index
+            self.get_logger().info(f"get biggest blue, number = {self.biggest_blue_idx}")
+            self.get_logger().info(f"get biggest blue, size = {self.object_sizes[2][self.biggest_blue_idx]}")
+
+            self.bx = (self.object_x_min[2][self.biggest_blue_idx] + self.object_x_max[2][self.biggest_blue_idx]) // 2
+            self.by = (self.object_y_min[2][self.biggest_blue_idx] + self.object_y_max[2][self.biggest_blue_idx]) // 2
+
+            for k in range(self.color_counts[1]):  # 黃色
+                self.yx = (self.object_x_min[1][k] + self.object_x_max[1][k]) // 2
+                self.yy = (self.object_y_min[1][k] + self.object_y_max[1][k]) // 2
+
+                for m in range(self.color_counts[5]):  # 紅色
+                    self.rx = (self.object_x_min[5][m] + self.object_x_max[5][m]) // 2
+                    self.ry = (self.object_y_min[5][m] + self.object_y_max[5][m]) // 2
+                    if -5 <= self.bx - self.yx <= 5 and -5 <= self.by - self.yy <= 5:#確定黃圈在藍圈裡面
+                        if -5 <= self.yx - self.rx <= 5 and -5 <= self.yy - self.ry <= 5:#確定紅圈在黃圈裡面
+                            self.red_x = self.rx
+                            self.red_y = self.ry
+                            self.found = True
+                            self.get_logger().info(f"FOUND!!!!!!!!")
+                            return
+            #for j in range (self.color_counts[2]): #藍色
+                #for k in range (self.color_counts[1]): #黃色
+                    #for m in range (self.color_counts[5]): #紅色
+                        #if -5 <= np.array(self.color_mask_subject_X[2])[j] - np.array(self.color_mask_subject_X[1])[k] < 5 and \
+                            #-5 <= np.array(self.color_mask_subject_Y[2])[j] - np.array(self.color_mask_subject_Y[1])[k] <= 5:
+                            #if -5 <= np.array(self.color_mask_subject_X[1])[k] - np.array(self.color_mask_subject_X[5])[m] <= 5 and \
+                                #-5 <= np.array(self.color_mask_subject_Y[1])[k] - np.array(self.color_mask_subject_Y[5])[m] <= 5:
+                                #self.red_x = np.array(self.color_mask_subject_X[5])[m]
+                                #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
+                                #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
+                                #self.found = True
+
+            #self.get_object = False
+        else:
+            self.red_x, self.red_y = 0, 0
+        time.sleep(0.01)
+
+
+
     
     #=================================================================
     #射擊用
@@ -169,6 +219,7 @@ class Strategy(API):
             self.drawImageFunction(6, 1, self.lowest_x-1, self.lowest_x+1, self.lowest_y-1, self.lowest_y+1, 255, 0, 255) #十字線
             time.sleep(2)
             self.sendBodySector(HAND_BACK_SECTOR)    #手部退回
+            self.get_logger().info(f"RRRRRRRRRRR")
             time.sleep(2)
             #self.timer.shutdown()
             #新東西
@@ -239,24 +290,25 @@ class Strategy(API):
                     # print(self.color_mask_subject_size)
                     
                     self.get_logger().info(f"start find")
-                    self.archery_target.find()#找把(濾波)
+                    self.find()#找把(濾波)
+            
 
                     if self.ctrl_status == 'find_period': #初始status為find_period
-                        if self.archery_target.found:#在self.archery_target.find()結束後被切為True，找到把之後才會進來
-                            self.x_points.append(self.archery_target.red_x)#把red_x值丟到空矩陣x_points中
-                            self.y_points.append(self.archery_target.red_y)#把red_y值丟到空矩陣y_points中
+                        if self.found:#在self.archery_target.find()結束後被切為True，找到把之後才會進來
+                            self.x_points.append(self.red_x)#把red_x值丟到空矩陣x_points中
+                            self.y_points.append(self.red_y)#把red_y值丟到空矩陣y_points中
 
                             
-                            self.get_logger().warn(f"x: {self.archery_target.red_x}")
-                            self.get_logger().warn(f'Y: {self.archery_target.red_y}')
+                            self.get_logger().warn(f"x: {self.red_x}")
+                            self.get_logger().warn(f'Y: {self.red_y}')
                             if not self.first_point:#初始False
                                 if self.x_points[0] and self.y_points[0] != 0:#x_points & y_points矩陣的第一項不為0 #雙重保障，避免開策略第一瞬間沒看到把red_x & red_y = 0丟到矩陣裡
                                     time.sleep(0.2)
                                     self.first_point = True
-                            self.archery_target.found = False 
+                            self.found = False 
 
                             if len(self.x_points) > 1:
-                                dis = ((self.archery_target.red_x-self.x_points[0])**2 + (self.archery_target.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
+                                dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
                                 if dis <= 1.5: #距離<1.5
                                     self.end_time = time.time()
                                     self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
@@ -271,7 +323,7 @@ class Strategy(API):
                                 self.get_logger().info(f'starttime = {self.start_time}')
 
                     elif self.ctrl_status == 'wait_lowest_point':
-                        dis = ((self.archery_target.red_x-self.lowest_x)**2 + (self.archery_target.red_y-self.lowest_y)**2)**0.5#算出新抓到點跟最低點的距離
+                        dis = ((self.red_x-self.lowest_x)**2 + (self.red_y-self.lowest_y)**2)**0.5#算出新抓到點跟最低點的距離
                         if dis <= 1.5:
                             #新東西
                             self.timer = self.create_timer((self.end_time - self.start_time), self.shoot)
@@ -348,7 +400,7 @@ class Strategy(API):
                                 self.get_logger().info(f'HAND_UP_cnt:{self.hand_move_cnt}')
                                 self.hand_move_cnt -= 1
                                 time.sleep(0.5)
-                        self.timer.shutdown()
+                        self.timer.cancel()
                         time.sleep(0.1)
                         self.initial()
                         time.sleep(0.1)
@@ -366,17 +418,27 @@ class Strategy(API):
 
                 else:
                     self.get_logger().info(f"NOT starting")
-                    
-                    #=================================================================
-                    ###以下為歸位會做的事
+                    #if self.color_counts[2] >0:
+                        #self.get_logger().info(f"BLUE{self.object_sizes[2]}")
+                    # self.find()
+                    # self.get_logger().info(f"by = {self.by}")
+                    # self.get_logger().info(f"bx = {self.bx}")
+                    # self.get_logger().info(f"yx = {self.yx}")
+                    # self.get_logger().info(f"yy = {self.yy}")
+                    # self.get_logger().info(f"rx = {self.red_x}")
+                    # self.get_logger().info(f"ry = {self.red_y}")
+
+
+                                        #=================================================================
+                    ###以下為歸位or nothing會做的事
 
                     if self.stand == 0: #stand初始為0
                         self.sendHeadMotor(HORIZON_HEAD_MOTOR, HORIZON_HEAD, 80)
                         time.sleep(0.5)
                         self.sendHeadMotor(HORIZON_HEAD_MOTOR, HORIZON_HEAD, 80)
                         time.sleep(0.5)
-                        self.sendBodySector(PREPARE) #預備動作123
-                        time.sleep(2.8)
+                        #self.sendBodySector(PREPARE) #預備動作123
+                        #time.sleep(3.5)
                         self.stand = 1 #stand變1，預備動作只會預備1次
                         self.get_logger().info(f"預備動作執行完畢")
                     if self.back_flag: #shoot副函式執行完back_flag會變True #大指撥關掉後會進來，把動作復原
@@ -403,7 +465,7 @@ class Strategy(API):
                         for i in range(0, self.leg_back_cnt):
                             self.sendBodySector(LEG_BACK)
                             self.get_logger().info(f'LEG_back_cnt:{self.leg_back_cnt}')
-                            self.hand_back_cnt -= 1
+                            self.leg_back_cnt -= 1
                             time.sleep(0.5)
                         self.back_flag = False
                     #self.get_logger().error('not start')   

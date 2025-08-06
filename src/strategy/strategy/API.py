@@ -3,6 +3,7 @@
 import json
 import rclpy
 from rclpy.node import Node
+from rclpy.duration import Duration
 from std_msgs.msg import String,UInt8MultiArray,Int16
 from tku_msgs.msg import Interface,SensorPackage,SensorSet,Dio,DrawImage,HeadPackage,SingleMotorData
 
@@ -184,7 +185,7 @@ class API(Node):
             f"[object_info] total={total}, by_color={self.color_counts}"
         )
 
-    def reset(self,status):
+    def sendSensorReset(self,status):
         msg = SensorSet()
         msg.reset = status
         self.imu_reset_pub.publish(msg)
@@ -196,6 +197,7 @@ class API(Node):
         self.roll = msg.roll
         self.pitch = msg.pitch
         self.yaw = msg.yaw
+        self.imu_rpy = [self.roll, self.pitch, self.yaw]
         # self.get_logger().info(f'Received IMU data: roll={self.roll}, pitch={self.pitch}, yaw={self.yaw}')
 
     def sendbodyAuto(self, generate):
@@ -240,3 +242,6 @@ class API(Node):
         """
         self.is_start = True if msg.strategy else False
         self.dio = msg.data
+
+    def time_sleep(self, seconds:float):
+        self.get_clock().sleep_for(duration=Duration(seconds))

@@ -37,7 +37,7 @@ void Parameter_fini_function(void * message_memory)
   typed_message->~Parameter();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Parameter_message_member_array[17] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Parameter_message_member_array[19] = {
   {
     "mode",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -326,13 +326,47 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Parameter_mes
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "hip_roll",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs::msg::Parameter, hip_roll),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "ankle_roll",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs::msg::Parameter, ankle_roll),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Parameter_message_members = {
   "tku_msgs::msg",  // message namespace
   "Parameter",  // message name
-  17,  // number of fields
+  19,  // number of fields
   sizeof(tku_msgs::msg::Parameter),
   Parameter_message_member_array,  // message members
   Parameter_init_function,  // function to initialize message memory (memory has to be allocated)

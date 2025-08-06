@@ -15,3 +15,5 @@ float32 com_y_swing
 float32 now_stand_height
 float32 now_com_height
 bool stand_balance
+float32 hip_roll
+float32 ankle_roll

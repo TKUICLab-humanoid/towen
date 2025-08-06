@@ -55,6 +55,8 @@ typedef struct tku_msgs__srv__WalkingGaitParameter_Response
   float now_stand_height;
   float now_com_height;
   bool stand_balance;
+  float hip_roll;
+  float ankle_roll;
 } tku_msgs__srv__WalkingGaitParameter_Response;
 
 // Struct for a sequence of tku_msgs__srv__WalkingGaitParameter_Response.

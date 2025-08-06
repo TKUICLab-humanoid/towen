@@ -119,7 +119,7 @@ void tku_msgs__srv__WalkingGaitParameter_Response__rosidl_typesupport_introspect
   tku_msgs__srv__WalkingGaitParameter_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember tku_msgs__srv__WalkingGaitParameter_Response__rosidl_typesupport_introspection_c__WalkingGaitParameter_Response_message_member_array[16] = {
+static rosidl_typesupport_introspection_c__MessageMember tku_msgs__srv__WalkingGaitParameter_Response__rosidl_typesupport_introspection_c__WalkingGaitParameter_Response_message_member_array[18] = {
   {
     "x_swing_range",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
@@ -391,13 +391,47 @@ static rosidl_typesupport_introspection_c__MessageMember tku_msgs__srv__WalkingG
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "hip_roll",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs__srv__WalkingGaitParameter_Response, hip_roll),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
+    "ankle_roll",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(tku_msgs__srv__WalkingGaitParameter_Response, ankle_roll),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers tku_msgs__srv__WalkingGaitParameter_Response__rosidl_typesupport_introspection_c__WalkingGaitParameter_Response_message_members = {
   "tku_msgs__srv",  // message namespace
   "WalkingGaitParameter_Response",  // message name
-  16,  // number of fields
+  18,  // number of fields
   sizeof(tku_msgs__srv__WalkingGaitParameter_Response),
   tku_msgs__srv__WalkingGaitParameter_Response__rosidl_typesupport_introspection_c__WalkingGaitParameter_Response_message_member_array,  // message members
   tku_msgs__srv__WalkingGaitParameter_Response__rosidl_typesupport_introspection_c__WalkingGaitParameter_Response_init_function,  // function to initialize message memory (memory has to be allocated)

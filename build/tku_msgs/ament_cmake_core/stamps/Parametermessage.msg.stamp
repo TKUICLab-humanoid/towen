@@ -15,3 +15,5 @@ float64 com_y_swing
 float64 now_stand_height
 float64 now_com_height
 bool stand_balance
+float64 hip_roll
+float64 ankle_roll

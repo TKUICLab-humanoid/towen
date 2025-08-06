@@ -21,16 +21,48 @@ namespace msg
 namespace builder
 {
 
+class Init_Parametermessage_ankle_roll
+{
+public:
+  explicit Init_Parametermessage_ankle_roll(::tku_msgs::msg::Parametermessage & msg)
+  : msg_(msg)
+  {}
+  ::tku_msgs::msg::Parametermessage ankle_roll(::tku_msgs::msg::Parametermessage::_ankle_roll_type arg)
+  {
+    msg_.ankle_roll = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::tku_msgs::msg::Parametermessage msg_;
+};
+
+class Init_Parametermessage_hip_roll
+{
+public:
+  explicit Init_Parametermessage_hip_roll(::tku_msgs::msg::Parametermessage & msg)
+  : msg_(msg)
+  {}
+  Init_Parametermessage_ankle_roll hip_roll(::tku_msgs::msg::Parametermessage::_hip_roll_type arg)
+  {
+    msg_.hip_roll = std::move(arg);
+    return Init_Parametermessage_ankle_roll(msg_);
+  }
+
+private:
+  ::tku_msgs::msg::Parametermessage msg_;
+};
+
 class Init_Parametermessage_stand_balance
 {
 public:
   explicit Init_Parametermessage_stand_balance(::tku_msgs::msg::Parametermessage & msg)
   : msg_(msg)
   {}
-  ::tku_msgs::msg::Parametermessage stand_balance(::tku_msgs::msg::Parametermessage::_stand_balance_type arg)
+  Init_Parametermessage_hip_roll stand_balance(::tku_msgs::msg::Parametermessage::_stand_balance_type arg)
   {
     msg_.stand_balance = std::move(arg);
-    return std::move(msg_);
+    return Init_Parametermessage_hip_roll(msg_);
   }
 
 private:

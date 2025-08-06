@@ -65,11 +65,14 @@ class ImageSubscriber(Node):
         # )
         # self.subscription  # prevent unused variable warning
         self.subscription = self.create_subscription(
-            CompressedImage,
-            '/zed/zed_node/right/image_rect_color/compressed',  # 注意: “compressed” 后缀
+            # CompressedImage,
+            Image,
+            # '/zed/zed_node/right/image_rect_color/compressed',  # 注意: “compressed” 后缀
+            '/image_raw',
             self.image_callback,
             10,
         )
+        self.subscription
         self.processed_image = self.create_publisher(Image, 'processed_image', 10)
         self.build_image = self.create_publisher(Image, 'build_image', 10)
         self.mask_pub = self.create_publisher(Image, 'mask_image', 10)
@@ -132,9 +135,9 @@ class ImageSubscriber(Node):
 
     def location_callback(self, loc):
         """讀取 location，並初始化 HSVColorRange"""
-        # print(f"Received location: {loc}")
+        print(f"Received location: {loc}")
         self.path = f"/workspace/towen/src/strategy/strategy/{loc}/Parameter/ColorModelData.ini"
-        # print("path = ",self.path)
+        print("path = ",self.path)
         # """讀取 HSV 參數，更新顏色範圍"""
         # print(f"Received location: {msg.data}")
         # self.path = f"{msg.data}/ColorModelData.ini"
@@ -172,7 +175,7 @@ class ImageSubscriber(Node):
                 else:
                     norm = raw 
                 updates[attr_name] = norm
-            # print(updates)
+            print(updates)
 
             # 寫回 HSVColorRange
             if isinstance(target, dict):
@@ -182,12 +185,12 @@ class ImageSubscriber(Node):
                     setattr(target, attr_name, val)
     ##############################  load hsv  ########################
     def load_hsv_info_callback(self, request, response):
-        # print("Loading HSV data from INI file...")
+        print("Loading HSV data from INI file...")
         # """強制從 .ini 更新後，再回應 HSV 參數"""
         # print(self.HSVColorRange)  # Debug
         self.select_color = request.colorlabel
         color_data = self.HSVColorRange.get(request.colorlabel)
-        # print(f"Retrieved color_data: {color_data}")
+        print(f"Retrieved color_data: {color_data}")
 
         if color_data:
             response.hmin = int(color_data.HueMin) 
@@ -214,10 +217,12 @@ class ImageSubscriber(Node):
         self.lower = np.array([msg.hmin, msg.smin, msg.vmin], dtype=np.uint8)
         self.upper = np.array([msg.hmax, msg.smax, msg.vmax], dtype=np.uint8)
 
-    def image_callback(self, msg: Image):
+    # def image_callback(self, msg: Image):
+    def image_callback(self, msg):
         try:
+            # self.get_logger().info(f"ashdausdghjagdyjhasydas")
             # cv_img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-            cv_img = self.bridge.compressed_imgmsg_to_cv2(msg, desired_encoding='bgr8')
+            cv_img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
             resized = cv2.resize(cv_img, (320, 240))
             hsv     = cv2.cvtColor(resized, cv2.COLOR_BGR2HSV)
             # mask = cv2.inRange(hsv, self.lower, self.upper)
@@ -483,10 +488,10 @@ class ImageSubscriber(Node):
             with open(self.path, "w") as configfile:
                 config.write(configfile)
             
-            # print(f"Saved HSV data to: {self.path}")
+            print(f"Saved HSV data to: {self.path}")
             response.already = True
         else:
-            # print("Error: Could not save HSV data to .ini file!")
+            print("Error: Could not save HSV data to .ini file!")
             response.already = False
         return response
     ###########################################################################

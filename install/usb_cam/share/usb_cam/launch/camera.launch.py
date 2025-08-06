@@ -23,6 +23,12 @@ def generate_launch_description():
     ))
     location = LaunchConfiguration('location')
 
+    ld.add_action(DeclareLaunchArgument(
+        'zoom_in',
+        default_value='1.0',
+        description='影像放大倍率 (float)，例如 2.0 代表放大 2 倍'
+    ))
+    zoom_in = LaunchConfiguration('zoom_in')
     # 建立各個 node
     web_video_server_node = Node(
         package="web_video_server",
@@ -35,16 +41,25 @@ def generate_launch_description():
         output="screen",
     )
     rosbridge_node = Node(
-        package="rosbridge_server",
-        executable="rosbridge_websocket",
-        output="screen",
-        parameters=[{"port": 9090}],
+    package="rosbridge_server",
+    executable="rosbridge_websocket",
+    parameters=[{
+        "default_call_service_timeout": 5.0,
+        "call_services_in_new_thread": True,
+        "send_action_goals_in_new_thread": True,
+    }],
+    output="screen",
+
     )
     imageprocess_node = Node(
         package="imageprocess",
         executable="image",
         output="screen",
-        parameters=[{'location': location}],
+        parameters=[
+            {'location': location},
+            {'zoom_in': zoom_in},  # 新增的參數
+        ],
+
     )
     motion_node = Node(
         package="motionpackage",

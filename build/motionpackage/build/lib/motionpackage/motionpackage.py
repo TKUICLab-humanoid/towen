@@ -8,7 +8,7 @@ import rclpy.logging
 from std_msgs.msg import Int16,Bool
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
-from tku_msgs.msg import SensorPackage,SensorSet,HeadPackage,InterfaceSend2Sector,SaveMotion,SaveMotionVector,Location,Parametermessage,Interface,Dio,SingleMotorData
+from tku_msgs.msg import SensorPackage,SensorSet,HeadPackage,InterfaceSend2Sector,SaveMotion,SaveMotionVector,Location,Parameter,Interface,Dio,SingleMotorData
 from tku_msgs.srv import ReadMotion,CheckSector,WalkingGaitParameter
 import rclpy
 from collections import namedtuple
@@ -94,7 +94,7 @@ class Motionpackage(Node):
         self.Continousback_sub 
         self.ChangeContinuousValue_sub = self.create_subscription(Interface, '/ChangeContinuousValue_Topic', self.ChangeContinuousValueFunction, 1000)
         self.ChangeContinuousValue_sub
-        self.SaveWalkingGaitParameter = self.create_subscription(Parametermessage, '/web/parameter_Topic', self.SaveWalkingGaitFunction, 1000)
+        self.SaveWalkingGaitParameter = self.create_subscription(Parameter, '/web/parameter_Topic', self.SaveWalkingGaitFunction, 1000)
         self.SaveWalkingGaitParameter
         self.Gerente = self.create_subscription(Int16, '/ContinousMode_Topic', self.GerenteFunction, 1000)
         self.Gerente
@@ -107,7 +107,7 @@ class Motionpackage(Node):
         self.robotislistH = []
         self.serial_init()
         self.start_imu_thread()
-        self.standini()
+        # self.standini()
         self.motionsavedata = SaveMotionVector()
         self.savemotionvector = []
         self.serial_head = False
@@ -133,6 +133,7 @@ class Motionpackage(Node):
         self.pre_dio_strategy = False
         self.prev_pin22_val = None
         self.lines = []
+        self.walk_status = 0
 
         # self.port_handler   = PortHandler("/dev/ttyUSB0")
         # self.packet_handler = PacketHandler(PROTOCOL_VERSION)
@@ -171,7 +172,9 @@ class Motionpackage(Node):
                 "base_default_z":   float   (general["BASE_Default_Z"]  ),
                 "now_stand_height": float   (general["now_stand_height"]),
                 "now_com_height":   float   (general["now_com_height"]  ),
-                "stand_balance":    bool    (general["Stand_Balance"]   )
+                "stand_balance":    bool    (general["Stand_Balance"]   ),
+                "hip_roll":         float   (general["Hip_roll"]        ),
+                "ankle_roll":       float   (general["Ankle_roll"]      )
             }
 
             # 使用字典自動設定回傳值
@@ -209,23 +212,26 @@ class Motionpackage(Node):
             config = configparser.ConfigParser()
             config.read(self.path)
             general = config["General"]
-            # 讀取參數
-            response.x_swing_range = float(general["X_Swing_Range"])
-            response.y_swing_range = float(general["Y_Swing_Range"])
-            response.z_swing_range = float(general["Z_Swing_Range"])
-            response.period_t = int(general["Period_T"])
-            response.period_t2 = int(general["Period_T2"])
-            response.sample_time = int(general["Sample_Time"])
-            response.osc_lockrange = float(general["OSC_LockRange"])
-            response.base_default_z = float(general["BASE_Default_Z"])
-            response.x_swing_com = float(general["X_Swing_COM"])
-            response.com_y_swing = float(general["Y_Swing_Shift"])
-            response.base_lift_z = float(general["BASE_LIFT_Z"])
-            response.com_y_swing = float(general["com_y_swing"])
-            response.now_stand_height = float(general["now_stand_height"])
-            response.now_com_height = float(general["now_com_height"])
-            response.stand_balance = bool(general["Stand_Balance"])
+            # 初始化儲存字典
+            self.gait_params = {
+                "com_y_swing":      float   (general["com_y_swing"]     ),
+                "y_swing_range":    float   (general["Y_Swing_Range"]   ),
+                "period_t":         int     (general["Period_T"]        ),
+                "osc_lockrange":    float   (general["OSC_LockRange"]   ),
+                "base_default_z":   float   (general["BASE_Default_Z"]  ),
+                "base_lift_z":      float   (general["Board_High"]      ),
+                "now_stand_height": float   (general["now_stand_height"]),
+                "now_com_height":   float   (general["now_com_height"]  ),
+                "stand_balance":    bool    (general["Stand_Balance"]   ),
+                "hip_roll":         float   (general["Hip_roll"]        ),
+                "ankle_roll":       float   (general["Ankle_roll"]      )
+            }
+            # 使用字典自動設定回傳值
+            for key, value in self.gait_params.items():
+                setattr(response, key, value)
             print(f"Response: {response}")
+            self.SendtoOpenCR(Bool(data=True))
+
 
         return response
 
@@ -233,6 +239,7 @@ class Motionpackage(Node):
         print("SaveWalkingGaitFunction")
         print(f"Mode: {msg.mode}")
         if msg.mode == 0:
+            self.walk_status = 0
             if self.back_falg:
                 self.path = f"{self.location}/{'Continuous_Back.ini'}"
                 config = configparser.ConfigParser()
@@ -244,7 +251,9 @@ class Motionpackage(Node):
                     "BASE_Default_Z": msg.base_default_z,
                     "now_stand_height": msg.now_stand_height,
                     "now_com_height": msg.now_com_height,
-                    "Stand_Balance": msg.stand_balance
+                    "Stand_Balance": msg.stand_balance,
+                    "Hip_roll": msg.hip_roll,
+                    "Ankle_roll": msg.ankle_roll
                 }
                 with open(self.path, 'w') as f:
                     config.write(f)
@@ -259,11 +268,14 @@ class Motionpackage(Node):
                     "BASE_Default_Z": msg.base_default_z,
                     "now_stand_height": msg.now_stand_height,
                     "now_com_height": msg.now_com_height,
-                    "Stand_Balance": msg.stand_balance
+                    "Stand_Balance": msg.stand_balance,
+                    "Hip_roll": msg.hip_roll,
+                    "Ankle_roll": msg.ankle_roll
                 }
                 with open(self.path, 'w') as f:
                     config.write(f)
         elif msg.mode == 3:
+            self.walk_status = 3
             self.path = f"{self.location}/Single_Parameter.ini"
             config = configparser.ConfigParser()
             config["General"] = {
@@ -274,30 +286,31 @@ class Motionpackage(Node):
                 "BASE_Default_Z": msg.base_default_z,
                 "now_stand_height": msg.now_stand_height,
                 "now_com_height": msg.now_com_height,
-                "Stand_Balance": msg.stand_balance
+                "Stand_Balance": msg.stand_balance,
+                "Hip_roll": msg.hip_roll,
+                "Ankle_roll": msg.ankle_roll
             }
             with open(self.path, 'w') as f:
                 config.write(f)
         elif msg.mode in [1, 2]:
             self.path = f"{self.location}/{'LCdown_Parameter.ini' if msg.mode == 2 else 'LCstep_Parameter.ini'}"
+            self.walk_status = 2 if msg.mode == 2 else 1
+
             config = configparser.ConfigParser()
             config["General"] = {
-                "X_Swing_Range": msg.x_swing_range,
+                "com_y_swing": msg.com_y_swing,
                 "Y_Swing_Range": msg.y_swing_range,
-                "Z_Swing_Range": msg.z_swing_range,
                 "Period_T": msg.period_t,
-                "Period_T2": msg.period_t2,
-                "Sample_Time": msg.sample_time,
                 "OSC_LockRange": msg.osc_lockrange,
                 "BASE_Default_Z": msg.base_default_z,
-                "X_Swing_COM": msg.x_swong_com,
-                "Y_Swing_Shift": msg.y_swing_shift,
-                "BASE_LIFT_Z": msg.base_lift_z,
-                "com_y_swing": msg.com_y_swing,
+                "Board_High": msg.base_lift_z,
                 "now_stand_height": msg.now_stand_height,
                 "now_com_height": msg.now_com_height,
-                "Stand_Balance": msg.stand_balance
+                "Stand_Balance": msg.stand_balance,
+                "Hip_roll": msg.hip_roll,
+                "Ankle_roll": msg.ankle_roll
             }
+
             with open(self.path, 'w') as f:
                 config.write(f)
    
@@ -345,35 +358,71 @@ class Motionpackage(Node):
             return
 
         print("SendtoOpenCR")
-
-        # 組 packet
         p = self.gait_params
-        packet = struct.pack(
-            '<B7f?B',
-            0x48,
-            p["com_y_swing"],
-            p["y_swing_range"],
-            float(p["period_t"]),
-            p["osc_lockrange"],
-            p["base_default_z"],
-            p["now_stand_height"],
-            p["now_com_height"],
-            p["stand_balance"],
-            0x45
-        )
+        # 組 packet
+        if self.walk_status == 0:
+            packet = struct.pack(
+                '<B9f?B',
+                0x48,
+                p["com_y_swing"],
+                p["y_swing_range"],
+                float(p["period_t"]),
+                p["osc_lockrange"],
+                p["base_default_z"],
+                p["now_stand_height"],
+                p["now_com_height"],
+                p["hip_roll"],
+                p["ankle_roll"],
+                p["stand_balance"],
+                0x45
+            )
+        elif self.walk_status == 1:
+            packet = struct.pack(
+                '<B10f?B',
+                0x49,
+                p["com_y_swing"],
+                p["y_swing_range"],
+                float(p["period_t"]),
+                p["osc_lockrange"],
+                p["base_default_z"],
+                p["base_lift_z"],
+                p["now_stand_height"],
+                p["now_com_height"],
+                p["now_stand_height"],
+                p["hip_roll"],
+                p["ankle_roll"],
+                0x45
+            )
+        elif self.walk_status == 2:
+            packet = struct.pack(
+                '<B10f?B',
+                0x50,
+                p["com_y_swing"],
+                p["y_swing_range"],
+                float(p["period_t"]),
+                p["osc_lockrange"],
+                p["base_default_z"],
+                p["base_lift_z"],
+                p["now_stand_height"],
+                p["now_com_height"],
+                p["now_stand_height"],
+                p["hip_roll"],
+                p["ankle_roll"],
+                0x45
+            )
 
         # 1) 丟掉殘留
-        self.serial_walk.reset_input_buffer()
+        # self.serial_walk.reset_input_buffer()
 
-        # 2) 寫入並 flush
-        self.serial_walk.write(packet)
-        self.serial_walk.flush()
+        # # 2) 寫入並 flush
+        # self.serial_walk.write(packet)
+        # self.serial_walk.flush()
         print(f"Packet Length: {len(packet)}")
         print(f"Packet: {packet}")
 
         # 3) 讀 ACK
-        line = self.serial_walk.readline().decode("utf-8").strip()
-        print(f"ACK raw: {line}")
+        # line = self.serial_walk.readline().decode("utf-8").strip()
+        # print(f"ACK raw: {line}")
 
     def RobotisListinit(self):
         self.robotislist.clear()
@@ -803,16 +852,16 @@ class Motionpackage(Node):
         except Exception as e:
             self.get_logger().error(f"寫回 now_motion.toml 失敗: {e}")
             return
-
+        handpkg,pkg16 = self.load_packets_from_toml()
         # 5. 重建要送出的 buf（同 standini）
-        payload_vals = pkg16[1:-1]            # 跳過 242 header 與最後的 footer
+        # payload_vals = pkg16[1:-1]            # 跳過 242 header 與最後的 footer
         buf = bytearray([242])
-        for v in payload_vals:
-            vv = v & 0xFFFFFFFF
-            # 低 16 bit
-            buf.extend((vv & 0xFFFF).to_bytes(2, 'little', signed=False))
-            # 高 16 bit
-            buf.extend(((vv >> 16) & 0xFFFF).to_bytes(2, 'little', signed=False))
+        # for v in payload_vals:
+        #     vv = v & 0xFFFFFFFF
+        #     # 低 16 bit
+        #     buf.extend((vv & 0xFFFF).to_bytes(2, 'little', signed=False))
+        #     # 高 16 bit
+        #     buf.extend(((vv >> 16) & 0xFFFF).to_bytes(2, 'little', signed=False))
 
         # 6. 發送給 OpenCR
         try:

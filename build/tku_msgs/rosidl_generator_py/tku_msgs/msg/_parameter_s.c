@@ -203,6 +203,24 @@ bool tku_msgs__msg__parameter__convert_from_py(PyObject * _pymsg, void * _ros_me
     ros_message->stand_balance = (Py_True == field);
     Py_DECREF(field);
   }
+  {  // hip_roll
+    PyObject * field = PyObject_GetAttrString(_pymsg, "hip_roll");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->hip_roll = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // ankle_roll
+    PyObject * field = PyObject_GetAttrString(_pymsg, "ankle_roll");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->ankle_roll = PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -406,6 +424,28 @@ PyObject * tku_msgs__msg__parameter__convert_to_py(void * raw_ros_message)
     field = PyBool_FromLong(ros_message->stand_balance ? 1 : 0);
     {
       int rc = PyObject_SetAttrString(_pymessage, "stand_balance", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // hip_roll
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->hip_roll);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "hip_roll", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // ankle_roll
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->ankle_roll);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "ankle_roll", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

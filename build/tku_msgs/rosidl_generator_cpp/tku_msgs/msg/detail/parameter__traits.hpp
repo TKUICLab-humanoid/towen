@@ -141,6 +141,20 @@ inline void to_flow_style_yaml(
   {
     out << "stand_balance: ";
     rosidl_generator_traits::value_to_yaml(msg.stand_balance, out);
+    out << ", ";
+  }
+
+  // member: hip_roll
+  {
+    out << "hip_roll: ";
+    rosidl_generator_traits::value_to_yaml(msg.hip_roll, out);
+    out << ", ";
+  }
+
+  // member: ankle_roll
+  {
+    out << "ankle_roll: ";
+    rosidl_generator_traits::value_to_yaml(msg.ankle_roll, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -316,6 +330,26 @@ inline void to_block_style_yaml(
     }
     out << "stand_balance: ";
     rosidl_generator_traits::value_to_yaml(msg.stand_balance, out);
+    out << "\n";
+  }
+
+  // member: hip_roll
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "hip_roll: ";
+    rosidl_generator_traits::value_to_yaml(msg.hip_roll, out);
+    out << "\n";
+  }
+
+  // member: ankle_roll
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "ankle_roll: ";
+    rosidl_generator_traits::value_to_yaml(msg.ankle_roll, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

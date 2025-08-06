@@ -37,6 +37,8 @@ typedef struct tku_msgs__msg__Parameter
   double now_stand_height;
   double now_com_height;
   bool stand_balance;
+  double hip_roll;
+  double ankle_roll;
 } tku_msgs__msg__Parameter;
 
 // Struct for a sequence of tku_msgs__msg__Parameter.

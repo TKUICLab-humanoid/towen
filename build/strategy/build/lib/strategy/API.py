@@ -3,8 +3,9 @@
 import json
 import rclpy
 from rclpy.node import Node
+from rclpy.duration import Duration
 from std_msgs.msg import String,UInt8MultiArray,Int16
-from tku_msgs.msg import Interface,SensorPackage,SensorSet,Dio,DrawImage,HeadPackage
+from tku_msgs.msg import Interface,SensorPackage,SensorSet,Dio,DrawImage,HeadPackage,SingleMotorData
 
 import numpy as np
 
@@ -28,6 +29,12 @@ class API(Node):
             String,
             'object_info',
             self.object_info_callback,
+            10
+        )
+
+        self.singlemotor_pub = self.create_publisher(
+            SingleMotorData,
+            '/package/SingleMotorData',
             10
         )
 
@@ -212,6 +219,13 @@ class API(Node):
         self.sector_pub.publish(msg)
         # self.get_logger().info(f'Sent message to /package/Sector: {sector}')
 
+    def sendSingleMotor(self,ID,Position,Speed):
+        SingleData = SingleMotorData()
+        SingleData.id = ID
+        SingleData.position = Position
+        SingleData.speed = Speed
+        self.singlemotor_pub.publish(SingleData)
+
     def sendHeadMotor(self,ID,Position,Speed):	#頭部馬達
         HeadData = HeadPackage()
         HeadData.id = ID
@@ -227,3 +241,6 @@ class API(Node):
         """
         self.is_start = True if msg.strategy else False
         self.dio = msg.data
+
+    def time_sleep(self, seconds:float):
+        self.get_clock().sleep_for(duration=Duration(seconds))

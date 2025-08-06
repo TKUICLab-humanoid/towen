@@ -277,6 +277,10 @@ cdr_serialize(
   cdr << ros_message.now_com_height;
   // Member: stand_balance
   cdr << (ros_message.stand_balance ? true : false);
+  // Member: hip_roll
+  cdr << ros_message.hip_roll;
+  // Member: ankle_roll
+  cdr << ros_message.ankle_roll;
   return true;
 }
 
@@ -337,6 +341,12 @@ cdr_deserialize(
     cdr >> tmp;
     ros_message.stand_balance = tmp ? true : false;
   }
+
+  // Member: hip_roll
+  cdr >> ros_message.hip_roll;
+
+  // Member: ankle_roll
+  cdr >> ros_message.ankle_roll;
 
   return true;
 }
@@ -447,6 +457,18 @@ get_serialized_size(
   // Member: stand_balance
   {
     size_t item_size = sizeof(ros_message.stand_balance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: hip_roll
+  {
+    size_t item_size = sizeof(ros_message.hip_roll);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: ankle_roll
+  {
+    size_t item_size = sizeof(ros_message.ankle_roll);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -617,6 +639,24 @@ max_serialized_size_WalkingGaitParameter_Response(
     current_alignment += array_size * sizeof(uint8_t);
   }
 
+  // Member: hip_roll
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: ankle_roll
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
     // All members are plain, and type is not empty.
@@ -625,7 +665,7 @@ max_serialized_size_WalkingGaitParameter_Response(
     using DataType = tku_msgs::srv::WalkingGaitParameter_Response;
     is_plain =
       (
-      offsetof(DataType, stand_balance) +
+      offsetof(DataType, ankle_roll) +
       last_member_size
       ) == ret_val;
   }

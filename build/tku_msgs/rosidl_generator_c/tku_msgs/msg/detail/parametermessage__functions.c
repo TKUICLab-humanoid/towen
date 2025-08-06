@@ -34,6 +34,8 @@ tku_msgs__msg__Parametermessage__init(tku_msgs__msg__Parametermessage * msg)
   // now_stand_height
   // now_com_height
   // stand_balance
+  // hip_roll
+  // ankle_roll
   return true;
 }
 
@@ -60,6 +62,8 @@ tku_msgs__msg__Parametermessage__fini(tku_msgs__msg__Parametermessage * msg)
   // now_stand_height
   // now_com_height
   // stand_balance
+  // hip_roll
+  // ankle_roll
 }
 
 bool
@@ -136,6 +140,14 @@ tku_msgs__msg__Parametermessage__are_equal(const tku_msgs__msg__Parametermessage
   if (lhs->stand_balance != rhs->stand_balance) {
     return false;
   }
+  // hip_roll
+  if (lhs->hip_roll != rhs->hip_roll) {
+    return false;
+  }
+  // ankle_roll
+  if (lhs->ankle_roll != rhs->ankle_roll) {
+    return false;
+  }
   return true;
 }
 
@@ -181,6 +193,10 @@ tku_msgs__msg__Parametermessage__copy(
   output->now_com_height = input->now_com_height;
   // stand_balance
   output->stand_balance = input->stand_balance;
+  // hip_roll
+  output->hip_roll = input->hip_roll;
+  // ankle_roll
+  output->ankle_roll = input->ankle_roll;
   return true;
 }
 

@@ -46,7 +46,8 @@ class Strategy(API):
                     self.get_logger().info(f"starting")
 
                 else:
-                    self.sendHeadMotor(2,2000,40)
+                    self.sendSingleMotor(15,10,40)
+                    time.sleep(2)
                     # if self.color_counts[1] > 0:
                     #     self.drawImageFunction(1,0,self.object_x_min[1][0],self.object_x_max[1][0],self.object_y_min[1][0],self.object_y_max[1][0],125,70,60)
                     # if self.color_counts[5] > 0:

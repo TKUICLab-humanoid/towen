@@ -55,6 +55,8 @@ struct Parameter_
       this->now_stand_height = 0.0;
       this->now_com_height = 0.0;
       this->stand_balance = false;
+      this->hip_roll = 0.0;
+      this->ankle_roll = 0.0;
     }
   }
 
@@ -81,6 +83,8 @@ struct Parameter_
       this->now_stand_height = 0.0;
       this->now_com_height = 0.0;
       this->stand_balance = false;
+      this->hip_roll = 0.0;
+      this->ankle_roll = 0.0;
     }
   }
 
@@ -136,6 +140,12 @@ struct Parameter_
   using _stand_balance_type =
     bool;
   _stand_balance_type stand_balance;
+  using _hip_roll_type =
+    double;
+  _hip_roll_type hip_roll;
+  using _ankle_roll_type =
+    double;
+  _ankle_roll_type ankle_roll;
 
   // setters for named parameter idiom
   Type & set__mode(
@@ -240,6 +250,18 @@ struct Parameter_
     this->stand_balance = _arg;
     return *this;
   }
+  Type & set__hip_roll(
+    const double & _arg)
+  {
+    this->hip_roll = _arg;
+    return *this;
+  }
+  Type & set__ankle_roll(
+    const double & _arg)
+  {
+    this->ankle_roll = _arg;
+    return *this;
+  }
 
   // constant declarations
 
@@ -332,6 +354,12 @@ struct Parameter_
       return false;
     }
     if (this->stand_balance != other.stand_balance) {
+      return false;
+    }
+    if (this->hip_roll != other.hip_roll) {
+      return false;
+    }
+    if (this->ankle_roll != other.ankle_roll) {
       return false;
     }
     return true;

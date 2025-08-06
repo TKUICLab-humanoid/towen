@@ -198,6 +198,8 @@ class WalkingGaitParameter_Response(metaclass=Metaclass_WalkingGaitParameter_Res
         '_now_stand_height',
         '_now_com_height',
         '_stand_balance',
+        '_hip_roll',
+        '_ankle_roll',
     ]
 
     _fields_and_field_types = {
@@ -217,6 +219,8 @@ class WalkingGaitParameter_Response(metaclass=Metaclass_WalkingGaitParameter_Res
         'now_stand_height': 'float',
         'now_com_height': 'float',
         'stand_balance': 'boolean',
+        'hip_roll': 'float',
+        'ankle_roll': 'float',
     }
 
     SLOT_TYPES = (
@@ -236,6 +240,8 @@ class WalkingGaitParameter_Response(metaclass=Metaclass_WalkingGaitParameter_Res
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('float'),  # noqa: E501
         rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -258,6 +264,8 @@ class WalkingGaitParameter_Response(metaclass=Metaclass_WalkingGaitParameter_Res
         self.now_stand_height = kwargs.get('now_stand_height', float())
         self.now_com_height = kwargs.get('now_com_height', float())
         self.stand_balance = kwargs.get('stand_balance', bool())
+        self.hip_roll = kwargs.get('hip_roll', float())
+        self.ankle_roll = kwargs.get('ankle_roll', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -319,6 +327,10 @@ class WalkingGaitParameter_Response(metaclass=Metaclass_WalkingGaitParameter_Res
         if self.now_com_height != other.now_com_height:
             return False
         if self.stand_balance != other.stand_balance:
+            return False
+        if self.hip_roll != other.hip_roll:
+            return False
+        if self.ankle_roll != other.ankle_roll:
             return False
         return True
 
@@ -564,6 +576,36 @@ class WalkingGaitParameter_Response(metaclass=Metaclass_WalkingGaitParameter_Res
                 isinstance(value, bool), \
                 "The 'stand_balance' field must be of type 'bool'"
         self._stand_balance = value
+
+    @builtins.property
+    def hip_roll(self):
+        """Message field 'hip_roll'."""
+        return self._hip_roll
+
+    @hip_roll.setter
+    def hip_roll(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'hip_roll' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'hip_roll' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._hip_roll = value
+
+    @builtins.property
+    def ankle_roll(self):
+        """Message field 'ankle_roll'."""
+        return self._ankle_roll
+
+    @ankle_roll.setter
+    def ankle_roll(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'ankle_roll' field must be of type 'float'"
+            assert not (value < -3.402823466e+38 or value > 3.402823466e+38) or math.isinf(value), \
+                "The 'ankle_roll' field must be a float in [-3.402823466e+38, 3.402823466e+38]"
+        self._ankle_roll = value
 
 
 class Metaclass_WalkingGaitParameter(type):

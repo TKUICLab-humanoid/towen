@@ -323,6 +323,16 @@ static bool _WalkingGaitParameter_Response__cdr_serialize(
     cdr << (ros_message->stand_balance ? true : false);
   }
 
+  // Field name: hip_roll
+  {
+    cdr << ros_message->hip_roll;
+  }
+
+  // Field name: ankle_roll
+  {
+    cdr << ros_message->ankle_roll;
+  }
+
   return true;
 }
 
@@ -415,6 +425,16 @@ static bool _WalkingGaitParameter_Response__cdr_deserialize(
     uint8_t tmp;
     cdr >> tmp;
     ros_message->stand_balance = tmp ? true : false;
+  }
+
+  // Field name: hip_roll
+  {
+    cdr >> ros_message->hip_roll;
+  }
+
+  // Field name: ankle_roll
+  {
+    cdr >> ros_message->ankle_roll;
   }
 
   return true;
@@ -527,6 +547,18 @@ size_t get_serialized_size_tku_msgs__srv__WalkingGaitParameter_Response(
   // field.name stand_balance
   {
     size_t item_size = sizeof(ros_message->stand_balance);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name hip_roll
+  {
+    size_t item_size = sizeof(ros_message->hip_roll);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name ankle_roll
+  {
+    size_t item_size = sizeof(ros_message->ankle_roll);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -686,6 +718,22 @@ size_t max_serialized_size_tku_msgs__srv__WalkingGaitParameter_Response(
     last_member_size = array_size * sizeof(uint8_t);
     current_alignment += array_size * sizeof(uint8_t);
   }
+  // member: hip_roll
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: ankle_roll
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint32_t);
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
 
   size_t ret_val = current_alignment - initial_alignment;
   if (is_plain) {
@@ -695,7 +743,7 @@ size_t max_serialized_size_tku_msgs__srv__WalkingGaitParameter_Response(
     using DataType = tku_msgs__srv__WalkingGaitParameter_Response;
     is_plain =
       (
-      offsetof(DataType, stand_balance) +
+      offsetof(DataType, ankle_roll) +
       last_member_size
       ) == ret_val;
   }
