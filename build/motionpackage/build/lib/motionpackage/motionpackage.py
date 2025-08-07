@@ -676,19 +676,20 @@ class Motionpackage(Node):
         self.robotislist[msg.id - 1] = updated_motor
 
         # 2. 確保每顆馬達 torque 已打開
-        # for m in self.robotislist:
-        #     res, err = self.packet_handler_1.write1ByteTxRx(
-        #         self.port_handler_1,
-        #         m.ID,
-        #         ADDR_PRO_TORQUE_ENABLE,
-        #         TORQUE_ENABLE
-        #     )
-        #     if res != COMM_SUCCESS:
-        #         # self.get_logger().error(
-        #         #     f"[ID:{m.ID}] Enable torque failed: "
-        #         #     f"{self.packet_handler.getTxRxResult(res)}"
-        #         # )
-        #         pass
+        for m in self.robotislist:
+            res, err = self.packet_handler_1.write1ByteTxRx(
+                self.port_handler_1,
+                m.ID,
+                ADDR_PRO_TORQUE_ENABLE,
+                TORQUE_ENABLE
+            )
+            if res != COMM_SUCCESS:
+                # self.get_logger().error(
+                #     f"[ID:{m.ID}] Enable torque failed: "
+                #     f"{self.packet_handler.getTxRxResult(res)}"
+                # )
+                pass
+            # self.get_logger().info(f"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh")
 
         # 3. 清空上一次的群組參數
         self.groupwrite_1.clearParam()

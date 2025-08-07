@@ -14,9 +14,9 @@ HEAD_CHECK = 2080
 HAND_BACK = 23
 LEG_BACK = 21
 
-X_BENCHMARK = [215, 215, 215, 215, 215] #改大射左 #[最左,中左,中間,中右,最右]
-Y_BENCHMARK = 170 #改大射高
-SHOOT_DELAY = 0.7 #改大變快
+X_BENCHMARK = [220, 220, 220, 220, 220] #改大射左 #[最左,中左,中間,中右,最右]
+Y_BENCHMARK = 180 #改大射高
+SHOOT_DELAY = 0.9 #改大變快
 
 #motion sector
 PREPARE = 10   #預備動作
@@ -35,64 +35,6 @@ WAIST_MOTOR = 15 #腰的馬達
 RIGHT_TURN = 2.4
 LEFT_TURN = 2.4
 #========================================================
-
-####下面這句要用啥替換
-#rospy.loginfo跟rospy.logerr都用self.get_logger().info替換
-#新東西
-
-#========================================================
-#找目標
-#改一半而已
-# class ArcheryTarget(API):
-#     def __init__(self):
-#         self.red_x = 0
-#         self.red_y = 0
-#         self.biggest_blue_idx = 0
-#         self.found = False
-        
-#     def find(self):
-#         self.found = False
-#         #if self.get_object: #API計算，有看到東西 get_object = True
-#         if self.color_counts[2]>0:# 找出最大面積藍色區塊的 index
-#             self.biggest_blue_idx = np.argmax(self.object_sizes[2])  # 最大值的 index
-#             self.get_logger().info(f"get biggest blue, number = {self.biggest_blue_idx}")
-#             self.get_logger().info(f"get biggest blue, size = {self.object_sizes[2][self.biggest_blue_idx]}")
-
-#             self.bx = (self.object_x_min[2][self.biggest_blue_idx] + self.object_x_max[2][self.biggest_blue_idx]) // 2
-#             self.by = (self.object_y_min[2][self.biggest_blue_idx] + self.object_y_max[2][self.biggest_blue_idx]) // 2
-
-#             for k in range(self.color_counts[1]):  # 黃色
-#                 self.yx = (self.object_x_min[1][k] + self.object_x_max[1][k]) // 2
-#                 self.yy = (self.object_y_min[1][k] + self.object_y_max[1][k]) // 2
-
-#                 for m in range(self.color_counts[5]):  # 紅色
-#                     self.rx = (self.object_x_min[5][m] + self.object_x_max[5][m]) // 2
-#                     self.ry = (self.object_y_min[5][m] + self.object_y_max[5][m]) // 2
-
-                
-#                     if -5 <= self.bx - self.yx <= 5 and -5 <= self.by - self.yy <= 5:#確定黃圈在藍圈裡面
-#                         if -5 <= self.yx - self.rx <= 5 and -5 <= self.yy - self.ry <= 5:#確定紅圈在黃圈裡面
-#                             self.red_x = self.rx
-#                             self.red_y = self.ry
-#                             self.found = True
-#                             self.get_logger().info(f"FOUND!!!!!!!!")
-#                             return
-#             #for j in range (self.color_counts[2]): #藍色
-#                 #for k in range (self.color_counts[1]): #黃色
-#                     #for m in range (self.color_counts[5]): #紅色
-#                         #if -5 <= np.array(self.color_mask_subject_X[2])[j] - np.array(self.color_mask_subject_X[1])[k] < 5 and \
-#                             #-5 <= np.array(self.color_mask_subject_Y[2])[j] - np.array(self.color_mask_subject_Y[1])[k] <= 5:
-#                             #if -5 <= np.array(self.color_mask_subject_X[1])[k] - np.array(self.color_mask_subject_X[5])[m] <= 5 and \
-#                                 #-5 <= np.array(self.color_mask_subject_Y[1])[k] - np.array(self.color_mask_subject_Y[5])[m] <= 5:
-#                                 #self.red_x = np.array(self.color_mask_subject_X[5])[m]
-#                                 #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
-#                                 #self.red_y = np.array(self.color_mask_subject_Y[5])[m]
-#                                 #self.found = True
-
-#             #self.get_object = False
-#         else:
-#             self.red_x, self.red_y = 0, 0
-#========================================================)
 
 
 class Strategy(API):
@@ -310,20 +252,17 @@ class Strategy(API):
                                     self.first_point = True
                             self.found = False 
 
-                            if len(self.x_points) > 20:
-                                if not self.first_point:#初始False
-                                    self.first_point = True
-                                else:
-                                    dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
-                                    if dis <= 1: #距離<1.5
-                                        self.end_time = time.time()
-                                        self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
-                                        self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]#紅色最低點的y對應的x丟到lowest_x
-                                        self.get_logger().info(f"endtime = {self.end_time}")
-                                        self.get_logger().info(f"period = {self.end_time - self.start_time}")
-                                        self.get_logger().info(f'low_y = :{self.lowest_y}')
-                                        self.get_logger().info(f'low_x = :{self.lowest_x}')
-                                        self.ctrl_status = 'wait_lowest_point'
+                            if len(self.x_points) > 40:
+                                dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
+                                if dis <= 1.5: #距離<1.5
+                                    self.end_time = time.time()
+                                    self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
+                                    self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]#紅色最低點的y對應的x丟到lowest_x
+                                    self.get_logger().info(f"endtime = {self.end_time}")
+                                    self.get_logger().info(f"period = {self.end_time - self.start_time}")
+                                    self.get_logger().info(f'low_y = :{self.lowest_y}')
+                                    self.get_logger().info(f'low_x = :{self.lowest_x}')
+                                    self.ctrl_status = 'wait_lowest_point'
                             else:
                                 # self.start_time = time.time()
                                 # self.get_logger().info(f'starttime = {self.start_time}')
@@ -366,6 +305,9 @@ class Strategy(API):
                         if self.lowest_x - X_BENCHMARK[self.x_benchmark_type] > 0:#站在左邊
                             self.turn_right = X_BENCHMARK[self.x_benchmark_type] - self.lowest_x
                             self.sendSingleMotor(WAIST_MOTOR,int(RIGHT_TURN*self.turn_right),15)#轉腰
+                            time.sleep(0.5)
+                            self.sendHeadMotor(HORIZON_HEAD_MOTOR, int(3048-(RIGHT_TURN*self.turn_right)),15)
+                            time.sleep(0.5)
                             right = RIGHT_TURN*self.turn_right
                             self.get_logger().info('turn right')
                             self.get_logger().info(f'turn angle:{self.turn_right}')
@@ -377,6 +319,9 @@ class Strategy(API):
                         else:#站在右邊
                             self.turn_left = X_BENCHMARK[self.x_benchmark_type] - self.lowest_x
                             self.sendSingleMotor(WAIST_MOTOR,int(LEFT_TURN*self.turn_left),15)
+                            time.sleep(0.5)
+                            self.sendHeadMotor(HORIZON_HEAD_MOTOR, int(3048-(LEFT_TURN*self.turn_left)),15)
+                            time.sleep(0.5)
                             left = LEFT_TURN*self.turn_left
                             self.get_logger().info('turn left')
                             self.get_logger().info(f'turn angle:{self.turn_left}')
@@ -425,18 +370,8 @@ class Strategy(API):
 
                 else:
                     self.get_logger().info(f"NOT starting")
-                    #if self.color_counts[2] >0:
-                        #self.get_logger().info(f"BLUE{self.object_sizes[2]}")
-                    # self.find()
-                    # self.get_logger().info(f"by = {self.by}")
-                    # self.get_logger().info(f"bx = {self.bx}")
-                    # self.get_logger().info(f"yx = {self.yx}")
-                    # self.get_logger().info(f"yy = {self.yy}")
-                    # self.get_logger().info(f"rx = {self.red_x}")
-                    # self.get_logger().info(f"ry = {self.red_y}")
-
-
-                                        #=================================================================
+                    #
+                    # =================================================================
                     ###以下為歸位or nothing會做的事
 
                     if self.stand == 0: #stand初始為0
@@ -459,10 +394,14 @@ class Strategy(API):
                         if self.turn_right_cnt != 0:
                             self.sendSingleMotor(WAIST_MOTOR,int(-(RIGHT_TURN*self.turn_right)),15)
                             time.sleep(0.5)
+                            self.sendHeadMotor(HORIZON_HEAD_MOTOR, HORIZON_HEAD, 80)
+                            time.sleep(0.5)
                             self.get_logger().info(f'waist_back')
                             time.sleep(2)
                         elif self.turn_left_cnt != 0:
                             self.sendSingleMotor(WAIST_MOTOR,int(-(LEFT_TURN*self.turn_left)),15)
+                            time.sleep(0.5)
+                            self.sendHeadMotor(HORIZON_HEAD_MOTOR, HORIZON_HEAD, 80)
                             time.sleep(0.5)
                             self.get_logger().info(f'waist_back')
                             time.sleep(2)

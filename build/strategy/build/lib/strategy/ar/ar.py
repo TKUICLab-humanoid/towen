@@ -15,8 +15,8 @@ HAND_BACK = 23
 LEG_BACK = 21
 
 X_BENCHMARK = [215, 215, 215, 215, 215] #改大射左 #[最左,中左,中間,中右,最右]
-Y_BENCHMARK = 170 #改大射高
-SHOOT_DELAY = 0.7 #改大變快
+Y_BENCHMARK = 210 #改大射高
+SHOOT_DELAY = 0.2 #改大變快
 
 #motion sector
 PREPARE = 10   #預備動作
@@ -310,7 +310,7 @@ class Strategy(API):
                                     self.first_point = True
                             self.found = False 
 
-                            if len(self.x_points) > 20:
+                            if len(self.x_points) > 50:
                                 if not self.first_point:#初始False
                                     self.first_point = True
                                 else:
@@ -425,6 +425,7 @@ class Strategy(API):
 
                 else:
                     self.get_logger().info(f"NOT starting")
+                    self.get_logger().info(f"aaa")
                     #if self.color_counts[2] >0:
                         #self.get_logger().info(f"BLUE{self.object_sizes[2]}")
                     # self.find()

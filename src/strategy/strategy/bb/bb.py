@@ -27,7 +27,7 @@ FIVEPOINT_HEAD_Y_DEGREE = [1956]      #投出去偏向左邊＝>頭往左轉（�
 #三用電表15.7以上ˇ
 #======================================================================================
 
-CATCH_BALL_LINE = [1536, 1620, 1500]         #degree   # slow_degree,stop_degree,backward_degree
+CATCH_BALL_LINE = [1410, 1430, 1500]         #degree   # slow_degree,stop_degree,backward_degree
 TWO_POINT_LINE  = [1750, 1600, 1500]         #degree   # slow_degree,stop_degree,backward_degree
 THREE_POINT_LINE = [1995, 1970, 1870]        #degree   # forward_stop_size < forward_slow_size < backward_slow_size < backward_stop_size #上下上下-30
 FIVE_POINT_LINE  = [2700, 2800, 3150, 3200]  #size     # forward_stop_size < forward_slow_size < backward_slow_size < backward_stop_size
@@ -41,9 +41,9 @@ class Strategy(API):
         self.initial()
         self.target_pos = Coordinate(0, 0)
         self.now_head_h = 2048
-        self.now_head_v = 1600
+        self.now_head_v = 1300
         self.new_head_h = 2048
-        self.new_head_v = 1600
+        self.new_head_v = 1300
 
     def initial(self):
         self.status = 'Begin'
@@ -66,12 +66,15 @@ class Strategy(API):
         # self.now_head_v = 1600
         self.stop_limit = 0
         self.back_limit = 0
+        self.select = 0
         self.keep_away_limit = 0
+        self.direction_yaw = 0
         self.target_size = 0
         self.now_waist = 2048
         self.next = False
         self.body_auto = False
         self.limit_show = True
+        self.first_in = True
         self.check_target = False
         # self.new_head_h = 2048
         # self.new_head_v = 1600
@@ -115,132 +118,137 @@ class Strategy(API):
         #     self.target_pos.x = (self.object_x_min[color][max_idx] + self.object_x_max[color][max_idx]) // 2
         #     self.target_pos.y = (self.object_y_min[color][max_idx] + self.object_y_max[color][max_idx]) // 2
         #     self.next = True
-        
-        if self.color_counts[color] > 0:
-            target_size = 0
-            for i in range (self.color_counts[color]):
-                if self.object_sizes[color][i] > target_size:
-                    target_size = self.object_sizes[color][i] 
-                    self.target_pos.x = (self.object_x_min[color][i] + self.object_x_max[color][i]) // 2
-                    self.target_pos.y = (self.object_y_min[color][i] + self.object_y_max[color][i]) // 2
-                    self.get_logger().info(f"object_sizes={self.object_sizes[color][i] }")
-            self.next = True
-        
-        elif color == 1 and move:
-            self.get_logger().info(f"WWWW")
-            if self.cnt == 0:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 200, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 200
-                self.new_head_v = HEAD_VERTIVAL + 300
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 1:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 400, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 400
-                self.new_head_v = HEAD_VERTIVAL + 300
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 2:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 600 , 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 600
-                self.new_head_v = HEAD_VERTIVAL + 300
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 3:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 600, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 600
-                self.new_head_v = HEAD_VERTIVAL - 300
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 4:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 400, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 400
-                self.new_head_v = HEAD_VERTIVAL - 300
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 5:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 200, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 200
-                self.new_head_v = HEAD_VERTIVAL - 300
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 6:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 200, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 200
-                self.new_head_v = HEAD_VERTIVAL - 300
-                self.cnt +=1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 7:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 400, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 400
-                self.new_head_v = HEAD_VERTIVAL - 300
-                self.cnt +=1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 8:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 600, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 600
-                self.new_head_v = HEAD_VERTIVAL - 300
-                self.cnt +=1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 9:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 600, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 600
-                self.new_head_v = HEAD_VERTIVAL + 300
-                self.cnt +=1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 10:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 400, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 400
-                self.new_head_v = HEAD_VERTIVAL + 300
-                self.cnt +=1
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            elif self.cnt == 11:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 200, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 200
-                self.new_head_v = HEAD_VERTIVAL + 300
-                self.cnt = 0
-                # self.time_sleep(0.05)
-                # self.time_sleep(1.0)
-            self.time_sleep(1.0)
-        elif color == 5 and move:
-            if self.cnt == 0:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 100, 20)
-                self.sendHeadMotor(2, HEAD_HORIZONTAL, 20)
-                self.new_head_h = HEAD_HORIZONTAL - 100
-                self.new_head_v = HEAD_HORIZONTAL
-                self.cnt += 1
-                self.time_sleep(0.5)
-            elif self.cnt == 1:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 100, 50)
-                self.sendHeadMotor(2, HEAD_HORIZONTAL, 50)
-                self.new_head_h = HEAD_HORIZONTAL + 100
-                self.new_head_v = HEAD_HORIZONTAL
-                self.cnt += 1
-                self.time_sleep(0.5)
-                    
+        self.get_logger().info(f"self.new_object_info={self.new_object_info}")
+        if self.new_object_info :
+            if self.color_counts[color] > 0:
+                target_size = 0
+                for i in range (self.color_counts[color]):
+                    if self.object_sizes[color][i] > target_size:
+                        target_size = self.object_sizes[color][i] 
+                        self.target_pos.x = (self.object_x_min[color][i] + self.object_x_max[color][i]) // 2
+                        self.target_pos.y = (self.object_y_min[color][i] + self.object_y_max[color][i]) // 2
+                        self.get_logger().info(f"object_sizes={self.object_sizes[color][i] }")
+                        self.select = i
+                self.next = True
+            else:
+                if color == 1 and move:
+                    self.get_logger().info(f"WWWW")
+                    if self.cnt == 0:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 200, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL - 200
+                        self.new_head_v = HEAD_VERTIVAL + 300
+                        self.cnt += 1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 1:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 400, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL - 400
+                        self.new_head_v = HEAD_VERTIVAL + 300
+                        self.cnt += 1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 2:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 600 , 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL - 600
+                        self.new_head_v = HEAD_VERTIVAL + 300
+                        self.cnt += 1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 3:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 600, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL - 600
+                        self.new_head_v = HEAD_VERTIVAL - 300
+                        self.cnt += 1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 4:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 400, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL - 400
+                        self.new_head_v = HEAD_VERTIVAL - 300
+                        self.cnt += 1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 5:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 200, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL - 200
+                        self.new_head_v = HEAD_VERTIVAL - 300
+                        self.cnt += 1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 6:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 200, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL + 200
+                        self.new_head_v = HEAD_VERTIVAL - 300
+                        self.cnt +=1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 7:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 400, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL + 400
+                        self.new_head_v = HEAD_VERTIVAL - 300
+                        self.cnt +=1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 8:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 600, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL + 600
+                        self.new_head_v = HEAD_VERTIVAL - 300
+                        self.cnt +=1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 9:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 600, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL + 600
+                        self.new_head_v = HEAD_VERTIVAL + 300
+                        self.cnt +=1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 10:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 400, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL + 400
+                        self.new_head_v = HEAD_VERTIVAL + 300
+                        self.cnt +=1
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    elif self.cnt == 11:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 200, 30)
+                        self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                        self.new_head_h = HEAD_HORIZONTAL + 200
+                        self.new_head_v = HEAD_VERTIVAL + 300
+                        self.cnt = 0
+                        # self.time_sleep(0.05)
+                        # self.time_sleep(1.0)
+                    self.time_sleep(1.0)
+                elif color == 5 and move:
+                    if self.cnt == 0:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL - 100, 20)
+                        self.sendHeadMotor(2, HEAD_HORIZONTAL, 20)
+                        self.new_head_h = HEAD_HORIZONTAL - 100
+                        self.new_head_v = HEAD_HORIZONTAL
+                        self.cnt += 1
+                        self.time_sleep(0.5)
+                    elif self.cnt == 1:
+                        self.sendHeadMotor(1, HEAD_HORIZONTAL + 100, 50)
+                        self.sendHeadMotor(2, HEAD_HORIZONTAL, 50)
+                        self.new_head_h = HEAD_HORIZONTAL + 100
+                        self.new_head_v = HEAD_HORIZONTAL
+                        self.cnt += 1
+                        self.time_sleep(0.5)
+                self.next = False
+            self.new_object_info = False
+            
+            
         #----------------------------yolo----------------------------         
 
 
@@ -264,11 +272,12 @@ class Strategy(API):
     def compute_motor_targets(
         self, x_target, y_target,
         curr_h_angle, curr_v_angle,
-        hfov_deg=64.5, vfov_deg=40.0,
+        hfov_deg=50 , vfov_deg=30.0,
         # hfov_deg=90.0, vfov_deg=60.0,
         image_width=320, image_height=240
     ):
         # logi C930
+        # hfov_deg=64.5, vfov_deg=40.0,
         # hfov_deg=90.0, vfov_deg=60.0
         # zedx mini
         # hfov_deg=110.0, vfov_deg=70.0
@@ -285,8 +294,8 @@ class Strategy(API):
         dy_angle = dy_pixel * deg_per_pixel_y
         dx_angle = dx_angle * 4096 / 360 * 0.1
         dy_angle = dy_angle * 4096 / 360 * 0.1
-        self.get_logger().info(f"new_h_angle={dx_angle}")
-        self.get_logger().info(f"new_v_angle={dy_angle}")
+        # self.get_logger().info(f"new_h_angle={dx_angle}")
+        # self.get_logger().info(f"new_v_angle={dy_angle}")
         
         new_h_angle = int(curr_h_angle - dx_angle)
         new_v_angle = int(curr_v_angle - dy_angle)
@@ -298,7 +307,6 @@ class Strategy(API):
         
         delta_h_ticks = int(-dx_angle / 360 * 4096)
         delta_v_ticks = int(-dy_angle / 360 * 4096)
-
         # return pos_h, pos_v, delta_h_ticks, delta_v_ticks
         return new_h_angle, new_v_angle, delta_h_ticks, delta_v_ticks
 
@@ -314,10 +322,12 @@ class Strategy(API):
         try:
             while rclpy.ok():
                 rclpy.spin_once(self, timeout_sec=0.3)
-                if self.is_start:
+                if self.is_start :
                     if self.status =='Begin':
                         self.sendBodySector(29)
-                        self.time_sleep(0.5)
+                        self.time_sleep(2.5)
+                        # self.sendBodySector(31)
+                        # self.time_sleep(0.5)
                         # self.initial()
                         self.sendHeadMotor(2, self.now_head_v, 30)
                         self.sendHeadMotor(1, self.now_head_h, 30)
@@ -343,10 +353,10 @@ class Strategy(API):
                                 # self.direction = self.imu_rpy[2]
                                 self.next = False
                                 self.status = 'direction_fix'
-                            elif self.consume_object_info():
+                            else:
                                 self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                                self.sendHeadMotor(1, self.now_head_h, 100)
-                                self.sendHeadMotor(2, self.now_head_v, 100)
+                                self.control_head(1, self.now_head_h, 100)
+                                self.control_head(2, self.now_head_v, 100)
                                 self.new_head_h = self.now_head_h
                                 self.new_head_v = self.now_head_v
                                 # self.get_logger().info(f"targetx={self.target_pos.x}")
@@ -355,45 +365,113 @@ class Strategy(API):
                     elif self.status =='direction_fix':
                         self.get_logger().info(f"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
                         self.find_target(1, False)
-                        if self.consume_object_info():
-                            self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                            self.sendHeadMotor(1, self.now_head_h, 100)
-                            self.sendHeadMotor(2, self.now_head_v, 100)
-                            self.new_head_h = self.now_head_h
-                            self.new_head_v = self.now_head_v
-                            # self.time_sleep(0.1)
-                        if (CATCH_BALL_LINE[0] < self.now_head_v < CATCH_BALL_LINE[1]) and (abs(self.now_head_h - 2048) < 100):
-                            if self.body_auto:
-                                self.sendbodyAuto(0)
-                                self.body_auto = False
-                                self.time_sleep(0.05)
-                                self.now_speed_x = 0
-                                self.now_theta = 0
-                            self.next = False
-                            self.status = 'waist_fix'
-                        else:
-                            if self.now_head_v >= CATCH_BALL_LINE[1] or self.now_head_v <= CATCH_BALL_LINE[0]:
-                                self.speed = 1000 if self.now_head_v >= CATCH_BALL_LINE[1] else -3000
+                        self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
+                        self.control_head(1, self.now_head_h, 100)
+                        self.control_head(2, self.now_head_v, 100)
+                        self.new_head_h = self.now_head_h
+                        self.new_head_v = self.now_head_v
+                        # self.time_sleep(0.01)
+                        if self.next:
+                            if (CATCH_BALL_LINE[0] < self.now_head_v < CATCH_BALL_LINE[1]) and (abs(self.now_head_h - 2048) < 100):
+                                if self.body_auto:
+                                    self.sendbodyAuto(0)
+                                    self.body_auto = False
+                                    self.time_sleep(2)
+                                    self.now_speed_x = 0
+                                    self.now_theta = 0
+                                self.sendBodySector(29)
+                                self.time_sleep(2)
+                                self.first_in = True
+                                self.next = False
+                                self.status = 'waist_fix'
                             else:
-                                self.speed = 0
-                            if (self.now_head_h - 2048) > 100 or (self.now_head_h - 2048) < -100:
-                                self.theta = 2 if (self.now_head_h - 2048) > 100 else -2
-                            else:
-                                self.theta = 0 
-                            if not self.body_auto:
-                                self.sendbodyAuto(1)
-                                self.body_auto = True
-                                self.time_sleep(0.05)
+                                if self.now_head_v >= CATCH_BALL_LINE[1] or self.now_head_v <= CATCH_BALL_LINE[0]:
+                                    self.speed_x = 1000 if self.now_head_v >= CATCH_BALL_LINE[1] else -3000
+                                else:
+                                    self.speed_x = 0
+                                if (self.now_head_h - 2048) > 100 or (self.now_head_h - 2048) < -100:
+                                    self.theta = 4 if (self.now_head_h - 2048) > 100 else -4
+                                else:
+                                    self.theta = 0 
+                                if (self.object_sizes[1][self.select] > 2500 or self.now_head_v  < CATCH_BALL_LINE[0] )and self.first_in:
+                                    self.sendBodySector(31)
+                                    self.time_sleep(2)
+                                    self.first_in = False
+                                if not self.body_auto:
+                                    self.sendbodyAuto(1)
+                                    self.body_auto = True
+                                    self.time_sleep(3)
                     elif self.status =='waist_fix':
-                        self.sendHeadMotor(1, 2048, 10)
-                        self.sendSingleMotor(15, (self.new_head_h - 2048), 10)
-                        self.time_sleep(0.5)
-                        # if (CATCH_BALL_LINE[0] < self.now_head_v < CATCH_BALL_LINE[1]) and abs(self.now_head_h - 2048) < 10:
-                        self.get_logger().info(f"dddddddd")
-                        self.sendBodySector(100)
-                        self.time_sleep(20)
+                        
                         self.sendBodySector(29)
-                        self.time_sleep(0.5)
+                        self.time_sleep(5)
+                        self.find_target(1, False)
+                        self.sendHeadMotor(1, 2048, 10)
+                        self.sendSingleMotor(15, (self.new_head_h - 2048)+100, 10)
+                        self.time_sleep(3)
+                        
+                        # self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
+                        # self.time_sleep(0.01)
+                            # else:
+                            #     self.time_sleep(0.5)
+                        if self.object_sizes[1][self.select]  <= 1700:
+                            self.sendBodySector(100)
+                            self.time_sleep(15)
+                        elif 1700 < self.object_sizes[1][self.select] <= 1900:
+                            self.sendBodySector(110)
+                            self.time_sleep(3)
+                            for i in range (2):
+                                self.sendBodySector(32)
+                                self.time_sleep(3)
+                            self.sendBodySector(120)
+                            self.time_sleep(10)
+                        elif 1900 < self.object_sizes[1][self.select] <= 2100:
+                            self.sendBodySector(110)
+                            self.time_sleep(3)
+                            for i in range (3):
+                                self.sendBodySector(32)
+                                self.time_sleep(3)
+                            self.sendBodySector(120)
+                            self.time_sleep(10)
+                        elif 2100 < self.object_sizes[1][self.select] <= 2300:
+                            self.sendBodySector(110)
+                            self.time_sleep(3)
+                            for i in range (4):
+                                self.sendBodySector(32)
+                                self.time_sleep(3)
+                            self.sendBodySector(120)
+                            self.time_sleep(10)
+                        elif 2300 < self.object_sizes[1][self.select] <= 2500:
+                            self.sendBodySector(110)
+                            self.time_sleep(3)
+                            for i in range (5):
+                                self.sendBodySector(32)
+                                self.time_sleep(3)
+                            self.sendBodySector(120)
+                            self.time_sleep(10)
+                        elif 2500 < self.object_sizes[1][self.select] <= 2700:
+                            self.sendBodySector(110)
+                            self.time_sleep(3)
+                            for i in range (6):
+                                self.sendBodySector(32)
+                                self.time_sleep(3)
+                            self.sendBodySector(120)
+                            self.time_sleep(10)
+                        elif 2700 < self.object_sizes[1][self.select] <= 2900:
+                            self.sendBodySector(110)
+                            self.time_sleep(3)
+                            for i in range (7):
+                                self.sendBodySector(32)
+                                self.time_sleep(3)
+                            self.sendBodySector(120)
+                            self.time_sleep(10)
+                        self.sendBodySector(29)
+                        self.time_sleep(2.5)
+                        # self.sendBodySector(31)
+                        # self.time_sleep(2.5)
+                        self.cnt = 0
+                        self.direction_yaw = self.imu_rpy[2]
+
                         self.status ='basket_fix'
                         # else:
                         #     self.get_logger().info(f"cccccccc")
@@ -412,12 +490,12 @@ class Strategy(API):
 
                             
                     elif self.status =='basket_fix':
-                        if abs(self.imu_rpy[2] - 0) < 2:
-                            self.get_logger().info(f"imu<2")
+                        if ((self.direction_yaw < 0) and (self.imu_rpy[2] >= abs(self.direction_yaw ))) or ((self.direction_yaw > 0) and (self.imu_rpy[2] <= -self.direction_yaw)) :
+                            self.get_logger().info(f";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;")
                             if self.body_auto:
                                 self.sendbodyAuto(0)
                                 self.body_auto = False
-                                self.time_sleep(0.05)
+                                self.time_sleep(3)
                                 self.now_speed_x = 0
                             self.find_target(5, True)
                             if self.next:
@@ -437,8 +515,8 @@ class Strategy(API):
                                     self.status = 'throw_fix'
                                 else:
                                     self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                                    self.sendHeadMotor(1, self.now_head_h, 10)
-                                    self.sendHeadMotor(2, self.now_head_v, 10)
+                                    self.control_head(1, self.now_head_h, 10)
+                                    self.control_head(2, self.now_head_v, 10)
                                     self.new_head_h = self.now_head_h
                                     self.new_head_v = self.now_head_v
                                     # self.now_waist -= (self.new_head_h - 2048)
@@ -448,24 +526,44 @@ class Strategy(API):
                                     self.time_sleep(0.1)
                         else:
                             self.get_logger().info(f"imu>2")
-                            self.theta = 2 if self.imu_rpy[2] < 0 else -2
-                            self.speed = -2000
+                            self.theta = 4 if self.direction_yaw < 0 else -4
+                            self.speed_x = -5000
+                            self.sendBodySector(31)
+                            self.time_sleep(2)
                             if not self.body_auto:
                                 self.sendbodyAuto(1)
                                 self.body_auto = True
-                                self.time_sleep(0.05)
+                                self.time_sleep(3)
                     elif self.status =='throw_fix':
                         self.get_logger().info(f"throw")
+                        
                         self.sendHeadMotor(1, 2048, 10)
-                        self.sendSingleMotor(15, (self.new_head_h - 2048), 10)
-                        self.time_sleep(2)
-                        self.sendBodySector(501)
-                        self.time_sleep(10)
-                        self.sendBodySector(502)
-                        self.time_sleep(5)
-                        self.sendBodySector(29)
-                        self.time_sleep(5)
-                        self.status = 'Finish'
+                        if self.object_sizes[5][self.select] > 1800:
+                            if self.body_auto:
+                                self.sendbodyAuto(0)
+                                self.body_auto = False
+                                self.time_sleep(3)
+                                self.now_speed_x = 0
+                            self.sendBodySector(29)
+                            self.time_sleep(5)
+                            self.sendSingleMotor(15, (self.new_head_h - 2048), 10)
+                            self.time_sleep(2)
+                            self.sendBodySector(501)
+                            self.time_sleep(10)
+                            self.sendSingleMotor(15, 150, 10)
+                            self.time_sleep(2)
+                            self.sendBodySector(502)
+                            self.time_sleep(5)
+                            self.sendBodySector(29)
+                            self.time_sleep(5)
+                            self.status = 'Finish'
+                        else:
+                            self.speed_x = 2000
+                            self.theta = 0
+                            if not self.body_auto:
+                                self.sendbodyAuto(1)
+                                self.body_auto = True
+                                self.time_sleep(3)
                         
                         
                     if self.body_auto and (self.pre_speed_x != self.speed_x or self.pre_speed_y != self.speed_y or self.pre_theta != self.theta):
@@ -494,15 +592,16 @@ class Strategy(API):
                             # self.get_logger().info(f"targetx={self.target_pos.x}")
                             # self.get_logger().info(f"targety={self.target_pos.y }")
                             self.get_logger().info(f"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
-                        elif self.consume_object_info():
+                        else:
                             self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
                             self.control_head(1, self.now_head_h, 100)
                             self.control_head(2, self.now_head_v, 100)
                             self.new_head_h = self.now_head_h
                             self.new_head_v = self.now_head_v
-                            # self.get_logger().info(f"targetx={self.target_pos.x}")
-                            # self.get_logger().info(f"targety={self.target_pos.y }")
-                            # self.time_sleep(0.05)
+                            self.get_logger().info(f"targetx={self.target_pos.x}")
+                            self.get_logger().info(f"targety={self.target_pos.y }")
+                            # self.time_sleep(0.01)
+                        self.next = False
                             # self.get_clock().sleep_for(Duration(seconds=0.01))
 
         except EnvironmentError:
@@ -534,6 +633,8 @@ class Strategy(API):
         self.get_logger().info(f"status={self.status}")
         self.get_logger().info(f"target_pos_x={self.target_pos.x}")
         self.get_logger().info(f"target_pos_y={self.target_pos.y}")
+        self.get_logger().info(f"now_h={self.now_head_h}")
+        self.get_logger().info(f"now_v={self.now_head_v}")
         self.get_logger().info(f"speed_x={self.speed_x}")
         self.get_logger().info(f"speed_y={self.speed_y}")
         self.get_logger().info(f"theta={self.theta}")

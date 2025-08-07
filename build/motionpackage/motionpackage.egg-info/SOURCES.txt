@@ -1,5 +1,3 @@
-LICENSE
-README.md
 package.xml
 setup.cfg
 setup.py
@@ -17,7 +15,11 @@ motionpackage/motionpackage.py
 motionpackage/opencr_imu.py
 motionpackage/test.py
 motionpackage/walking.py
+motionpackage.egg-info/PKG-INFO
+motionpackage.egg-info/SOURCES.txt
+motionpackage.egg-info/dependency_links.txt
+motionpackage.egg-info/entry_points.txt
+motionpackage.egg-info/requires.txt
+motionpackage.egg-info/top_level.txt
+motionpackage.egg-info/zip-safe
 resource/motionpackage
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py
