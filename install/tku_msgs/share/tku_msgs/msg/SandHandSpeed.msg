@@ -1,1 +1,2 @@
-/workspace/towen/src/tku_msgs/msg/SandHandSpeed.msg
+int16 sector
+int16 speed

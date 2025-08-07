@@ -91,6 +91,7 @@ class API(Node):
             10
         )
         self.is_start = False
+        self.new_object_info = False
     def drawImageFunction(self,cnt,mode,xmin,xmax,ymin,ymax,r,g,b):
     #影像繪圖(mode 0:直線,mode 1:矩形)
         ImageData = DrawImage()
@@ -184,6 +185,14 @@ class API(Node):
         self.get_logger().debug(
             f"[object_info] total={total}, by_color={self.color_counts}"
         )
+        self.new_object_info = True
+
+    def consume_object_info(self)->bool:
+        if self.new_object_info:
+            self.new_object_info = False
+            return True
+        return False
+
 
     def sendSensorReset(self,status):
         msg = SensorSet()
@@ -194,6 +203,7 @@ class API(Node):
         """
         接收 IMU 資料，並根據 mode 發送不同的訊息
         """
+        self.imu_rpy= []
         self.roll = msg.roll
         self.pitch = msg.pitch
         self.yaw = msg.yaw
@@ -230,6 +240,16 @@ class API(Node):
     def sendHeadMotor(self,ID,Position,Speed):	#頭部馬達
         HeadData = HeadPackage()
         HeadData.id = ID
+        # if id == 1 :
+        #     if Position >= 3096 :
+        #         Position = 3096 
+        #     elif Position <= 1024 : 
+        #         Position = 1024
+        # if id == 2:
+        #     if Position >= 2048 :
+        #         Position = 2048 
+        #     elif Position <= 1024 : 
+        #         Position = 1024     
         HeadData.position = Position
         HeadData.speed = Speed
         self.head_motor_pub.publish(HeadData)
@@ -243,5 +263,5 @@ class API(Node):
         self.is_start = True if msg.strategy else False
         self.dio = msg.data
 
-    def time_sleep(self, seconds:float):
-        self.get_clock().sleep_for(duration=Duration(seconds))
+    def time_sleep(self, second:float):
+        self.get_clock().sleep_for(Duration(seconds=second))

@@ -317,3 +317,18 @@ get_service_type_support_handle<tku_msgs::srv::BuildModel>()
 }
 
 }  // namespace rosidl_typesupport_cpp
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+ROSIDL_TYPESUPPORT_CPP_PUBLIC
+const rosidl_service_type_support_t *
+ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_cpp, tku_msgs, srv, BuildModel)() {
+  return ::rosidl_typesupport_cpp::get_service_type_support_handle<tku_msgs::srv::BuildModel>();
+}
+
+#ifdef __cplusplus
+}
+#endif

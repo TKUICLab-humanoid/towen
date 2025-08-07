@@ -1,1 +1,16 @@
-/workspace/towen/build/tku_msgs/rosidl_adapter/tku_msgs/msg/SingleMotorData.idl
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from tku_msgs/msg/SingleMotorData.msg
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module msg {
+    struct SingleMotorData {
+      int16 id;
+
+      int16 position;
+
+      int16 speed;
+    };
+  };
+};

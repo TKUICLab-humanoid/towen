@@ -1,5 +1,5 @@
 # CMake generated Testfile for 
-# Source directory: /opt/ros/humble/install/src/gtest_vendor
+# Source directory: /opt/ros/humble/src/gtest_vendor
 # Build directory: /workspace/towen/build/usb_cam/gtest
 # 
 # This file includes the relevant testing commands required for 

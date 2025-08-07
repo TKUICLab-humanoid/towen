@@ -1,1 +1,8 @@
-/workspace/towen/src/tku_msgs/msg/SaveMotion.msg
+std_msgs/MultiArrayLayout layout
+string name
+int32 motionstate
+int32 id
+int32 savestate
+bool saveflag
+int32[] motionlist
+int32[] motordata

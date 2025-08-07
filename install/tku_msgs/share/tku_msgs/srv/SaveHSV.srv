@@ -1,1 +1,4 @@
-/workspace/towen/src/tku_msgs/srv/SaveHSV.srv
+bool save
+string location
+---
+bool already

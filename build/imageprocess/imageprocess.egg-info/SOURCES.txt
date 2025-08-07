@@ -1,3 +1,4 @@
+LICENSE
 package.xml
 setup.cfg
 setup.py
@@ -17,11 +18,7 @@ imageprocess/image_0417.py
 imageprocess/image_test.py
 imageprocess/imageprocess.py
 imageprocess/modelparameter.py
-imageprocess.egg-info/PKG-INFO
-imageprocess.egg-info/SOURCES.txt
-imageprocess.egg-info/dependency_links.txt
-imageprocess.egg-info/entry_points.txt
-imageprocess.egg-info/requires.txt
-imageprocess.egg-info/top_level.txt
-imageprocess.egg-info/zip-safe
 resource/imageprocess
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

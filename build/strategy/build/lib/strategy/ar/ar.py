@@ -9,14 +9,14 @@ import math
 import rclpy.duration
 
 HORIZON_HEAD = 3048
-VERTICAL_HEAD = 2048
+VERTICAL_HEAD = 2020
 HEAD_CHECK = 2080
 HAND_BACK = 23
 LEG_BACK = 21
 
-X_BENCHMARK = [220, 220, 220, 220, 295] #改大射左 #[最左,中左,中間,中右,最右]
-Y_BENCHMARK = 155 #改大射高
-SHOOT_DELAY = 0.0 #改大變快
+X_BENCHMARK = [215, 215, 215, 215, 215] #改大射左 #[最左,中左,中間,中右,最右]
+Y_BENCHMARK = 170 #改大射高
+SHOOT_DELAY = 0.7 #改大變快
 
 #motion sector
 PREPARE = 10   #預備動作
@@ -164,8 +164,8 @@ class Strategy(API):
         #if self.get_object: #API計算，有看到東西 get_object = True
         if self.color_counts[2] > 0:# 找出最大面積藍色區塊的 index
             self.biggest_blue_idx = np.argmax(self.object_sizes[2])  # 最大值的 index
-            self.get_logger().info(f"get biggest blue, number = {self.biggest_blue_idx}")
-            self.get_logger().info(f"get biggest blue, size = {self.object_sizes[2][self.biggest_blue_idx]}")
+            # self.get_logger().info(f"get biggest blue, number = {self.biggest_blue_idx}")
+            # self.get_logger().info(f"get biggest blue, size = {self.object_sizes[2][self.biggest_blue_idx]}")
 
             self.bx = (self.object_x_min[2][self.biggest_blue_idx] + self.object_x_max[2][self.biggest_blue_idx]) // 2
             self.by = (self.object_y_min[2][self.biggest_blue_idx] + self.object_y_max[2][self.biggest_blue_idx]) // 2
@@ -182,7 +182,7 @@ class Strategy(API):
                             self.red_x = self.rx
                             self.red_y = self.ry
                             self.found = True
-                            self.get_logger().info(f"FOUND!!!!!!!!")
+                            # self.get_logger().info(f"FOUND!!!!!!!!")
                             return
             #for j in range (self.color_counts[2]): #藍色
                 #for k in range (self.color_counts[1]): #黃色
@@ -199,7 +199,7 @@ class Strategy(API):
             #self.get_object = False
         else:
             self.red_x, self.red_y = 0, 0
-        time.sleep(0.01)
+        # time.sleep(0.01)
 
 
 
@@ -271,7 +271,7 @@ class Strategy(API):
             while rclpy.ok():
                 rclpy.spin_once(self, timeout_sec=0.1)
                 if self.is_start:
-                    self.get_logger().info(f"STARTING")
+                    # self.get_logger().info(f"STARTING")
 
                     #=================================================================
                     #以下為撥策略會做的事
@@ -289,8 +289,9 @@ class Strategy(API):
                         time.sleep(2)
                     # print(self.color_mask_subject_size)
                     
-                    self.get_logger().info(f"start find")
-                    self.find()#找把(濾波)
+                    # self.get_logger().info(f"start find")
+                    if self.consume_object_info():
+                        self.find()#找把(濾波)
             
 
                     if self.ctrl_status == 'find_period': #初始status為find_period
@@ -304,23 +305,29 @@ class Strategy(API):
                             if not self.first_point:#初始False
                                 if self.x_points[0] and self.y_points[0] != 0:#x_points & y_points矩陣的第一項不為0 #雙重保障，避免開策略第一瞬間沒看到把red_x & red_y = 0丟到矩陣裡
                                     time.sleep(0.2)
+                                    self.start_time = time.time()
+                                    self.get_logger().info(f'starttime = {self.start_time}')
                                     self.first_point = True
                             self.found = False 
 
-                            if len(self.x_points) > 1:
-                                dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
-                                if dis <= 1.5: #距離<1.5
-                                    self.end_time = time.time()
-                                    self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
-                                    self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]#紅色最低點的y對應的x丟到lowest_x
-                                    self.get_logger().info(f"endtime = {self.end_time}")
-                                    self.get_logger().info(f"period = {self.end_time - self.start_time}")
-                                    self.get_logger().info(f'low_y = :{self.lowest_y}')
-                                    self.get_logger().info(f'low_x = :{self.lowest_x}')
-                                    self.ctrl_status = 'wait_lowest_point'
+                            if len(self.x_points) > 20:
+                                if not self.first_point:#初始False
+                                    self.first_point = True
+                                else:
+                                    dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
+                                    if dis <= 1: #距離<1.5
+                                        self.end_time = time.time()
+                                        self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
+                                        self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]#紅色最低點的y對應的x丟到lowest_x
+                                        self.get_logger().info(f"endtime = {self.end_time}")
+                                        self.get_logger().info(f"period = {self.end_time - self.start_time}")
+                                        self.get_logger().info(f'low_y = :{self.lowest_y}')
+                                        self.get_logger().info(f'low_x = :{self.lowest_x}')
+                                        self.ctrl_status = 'wait_lowest_point'
                             else:
-                                self.start_time = time.time()
-                                self.get_logger().info(f'starttime = {self.start_time}')
+                                # self.start_time = time.time()
+                                # self.get_logger().info(f'starttime = {self.start_time}')
+                                pass
 
                     elif self.ctrl_status == 'wait_lowest_point':
                         dis = ((self.red_x-self.lowest_x)**2 + (self.red_y-self.lowest_y)**2)**0.5#算出新抓到點跟最低點的距離
@@ -441,6 +448,8 @@ class Strategy(API):
                         #time.sleep(3.5)
                         self.stand = 1 #stand變1，預備動作只會預備1次
                         self.get_logger().info(f"預備動作執行完畢")
+                        self.get_logger().info(f"stop")
+
                     if self.back_flag: #shoot副函式執行完back_flag會變True #大指撥關掉後會進來，把動作復原
                         print('in the back_flag')
                         self.get_logger().info(f'self.turn_right_cnt:{self.turn_right_cnt}')

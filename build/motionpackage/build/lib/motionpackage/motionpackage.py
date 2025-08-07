@@ -8,7 +8,7 @@ import rclpy.logging
 from std_msgs.msg import Int16,Bool
 from rclpy.node import Node
 from rclpy.qos import QoSProfile
-from tku_msgs.msg import SensorPackage,SensorSet,HeadPackage,InterfaceSend2Sector,SaveMotion,SaveMotionVector,Location,Parameter,Interface,Dio,SingleMotorData
+from tku_msgs.msg import SensorPackage,SensorSet,HeadPackage,InterfaceSend2Sector,SaveMotion,SaveMotionVector,Location,Parametermessage,Interface,Dio,SingleMotorData
 from tku_msgs.srv import ReadMotion,CheckSector,WalkingGaitParameter
 import rclpy
 from collections import namedtuple
@@ -39,7 +39,7 @@ ADDR_PRO_X_PROFILE_VELOCITY = 116
 LEN_PRO_GOAL_POSITION       = 8
 PROTOCOL_VERSION            = 2
 DXL_HAND_IDS                = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-DXL_HEAD_IDS                = [28, 29]
+DXL_HEAD_IDS                = [28, 29,15]
 TORQUE_ENABLE               = 1
 TORQUE_DISABLE              = 0
 
@@ -94,7 +94,7 @@ class Motionpackage(Node):
         self.Continousback_sub 
         self.ChangeContinuousValue_sub = self.create_subscription(Interface, '/ChangeContinuousValue_Topic', self.ChangeContinuousValueFunction, 1000)
         self.ChangeContinuousValue_sub
-        self.SaveWalkingGaitParameter = self.create_subscription(Parameter, '/web/parameter_Topic', self.SaveWalkingGaitFunction, 1000)
+        self.SaveWalkingGaitParameter = self.create_subscription(Parametermessage, '/web/parameter_Topic', self.SaveWalkingGaitFunction, 1000)
         self.SaveWalkingGaitParameter
         self.Gerente = self.create_subscription(Int16, '/ContinousMode_Topic', self.GerenteFunction, 1000)
         self.Gerente
@@ -105,16 +105,17 @@ class Motionpackage(Node):
         self.SingleMotor_sub
         self.robotislist = []
         self.robotislistH = []
+        self.robotislistW = []
         self.serial_init()
         self.start_imu_thread()
-        # self.standini()
+        self.standini()
         self.motionsavedata = SaveMotionVector()
         self.savemotionvector = []
         self.serial_head = False
         self.serial_motor = False
         self.dio_tmpstatus = 0
         self.walkdata_receive = False
-        
+        self.walk_status = 0
         self.SendSectorPackage = []
         self.packageMotorData = []
         self.checkSectorPackage = []
@@ -133,23 +134,237 @@ class Motionpackage(Node):
         self.pre_dio_strategy = False
         self.prev_pin22_val = None
         self.lines = []
-        self.walk_status = 0
-
-        # self.port_handler   = PortHandler("/dev/ttyUSB0")
-        # self.packet_handler = PacketHandler(PROTOCOL_VERSION)
-        # self.groupwrite     = GroupSyncWrite(
-        #     self.port_handler,
-        #     self.packet_handler,
-        #     ADDR_PRO_GOAL_POSITION,
-        #     LEN_PRO_GOAL_POSITION
-        # )
-
 
     ######################         walking      ###############################
     def location_callback(self, loc):
         self.location = f"/workspace/towen/src/strategy/strategy/{loc}/Parameter"
         self.get_logger().info(f"Location :{self.location}")
 
+    # def LoadingWalkingGaitFunction(self, request, response):
+    #     print(f"Mode: {request.mode}")
+    #     if request.mode == 0:
+    #         if self.back_falg:
+    #             self.path = f"{self.location}/Continuous_Back.ini"
+    #             print(f"Path: {self.path}")
+    #         else:
+    #             self.path = f"{self.location}/{'Continuous_Parameter.ini'}"
+    #             print(f"Path: {self.path}")
+    #         config = configparser.ConfigParser()
+    #         config.read(self.path)
+    #         general = config["General"]
+
+    #         # 初始化儲存字典
+    #         self.gait_params = {
+    #             "com_y_swing":      float   (general["com_y_swing"]     ),
+    #             "y_swing_range":    float   (general["Y_Swing_Range"]   ),
+    #             "period_t":         int     (general["Period_T"]        ),
+    #             "osc_lockrange":    float   (general["OSC_LockRange"]   ),
+    #             "base_default_z":   float   (general["BASE_Default_Z"]  ),
+    #             "now_stand_height": float   (general["now_stand_height"]),
+    #             "now_com_height":   float   (general["now_com_height"]  ),
+    #             "stand_balance":    bool    (general["Stand_Balance"]   )
+    #         }
+
+    #         # 使用字典自動設定回傳值
+    #         for key, value in self.gait_params.items():
+    #             setattr(response, key, value)
+            
+    #         print(f"Response: {response}")
+    #         self.SendtoOpenCR(Bool(data=True))
+
+    #     elif request.mode == 3:
+    #         self.path = f"{self.location}/Single_Parameter.ini"
+    #         config = configparser.ConfigParser()
+    #         config.read(self.path)
+    #         general = config["General"]
+    #         # 讀取參數
+    #         response.x_swing_range = float(general["X_Swing_Range"])
+    #         response.y_swing_range = float(general["Y_Swing_Range"])
+    #         response.z_swing_range = float(general["Z_Swing_Range"])
+    #         response.period_t = int(general["Period_T"])
+    #         response.period_t2 = int(general["Period_T2"])
+    #         response.sample_time = int(general["Sample_Time"])
+    #         response.osc_lockrange = float(general["OSC_LockRange"])
+    #         response.base_default_z = float(general["BASE_Default_Z"])
+    #         response.x_swing_com = float(general["X_Swing_COM"])
+    #         response.base_lift_z = float(general["BASE_LIFT_Z"])
+    #         response.rightfoot_shift_z = float(general["rightfoot_shift_z"])
+    #         response.com_y_swing = float(general["com_y_swing"])
+    #         response.now_stand_height = float(general["now_stand_height"])
+    #         response.now_com_height = float(general["now_com_height"])
+    #         response.stand_balance = bool(general["Stand_Balance"])
+    #         print(f"Response: {response}")
+
+    #     elif request.mode in [1, 2]:
+    #         self.path = f"{self.location}/{'LCdown_Parameter.ini' if request.mode == 2 else 'LCstep_Parameter.ini'}"
+    #         config = configparser.ConfigParser()
+    #         config.read(self.path)
+    #         general = config["General"]
+    #         # 讀取參數
+    #         response.x_swing_range = float(general["X_Swing_Range"])
+    #         response.y_swing_range = float(general["Y_Swing_Range"])
+    #         response.z_swing_range = float(general["Z_Swing_Range"])
+    #         response.period_t = int(general["Period_T"])
+    #         response.period_t2 = int(general["Period_T2"])
+    #         response.sample_time = int(general["Sample_Time"])
+    #         response.osc_lockrange = float(general["OSC_LockRange"])
+    #         response.base_default_z = float(general["BASE_Default_Z"])
+    #         response.x_swing_com = float(general["X_Swing_COM"])
+    #         response.com_y_swing = float(general["Y_Swing_Shift"])
+    #         response.base_lift_z = float(general["BASE_LIFT_Z"])
+    #         response.com_y_swing = float(general["com_y_swing"])
+    #         response.now_stand_height = float(general["now_stand_height"])
+    #         response.now_com_height = float(general["now_com_height"])
+    #         response.stand_balance = bool(general["Stand_Balance"])
+    #         print(f"Response: {response}")
+
+    #     return response
+
+    # def SaveWalkingGaitFunction(self, msg):
+    #     print("SaveWalkingGaitFunction")
+    #     print(f"Mode: {msg.mode}")
+    #     if msg.mode == 0:
+    #         if self.back_falg:
+    #             self.path = f"{self.location}/{'Continuous_Back.ini'}"
+    #             config = configparser.ConfigParser()
+    #             config["General"] = {
+    #                 "com_y_swing": msg.com_y_swing,
+    #                 "Y_Swing_Range": msg.y_swing_range,
+    #                 "Period_T": msg.period_t,
+    #                 "OSC_LockRange": msg.osc_lockrange,
+    #                 "BASE_Default_Z": msg.base_default_z,
+    #                 "now_stand_height": msg.now_stand_height,
+    #                 "now_com_height": msg.now_com_height,
+    #                 "Stand_Balance": msg.stand_balance
+    #             }
+    #             with open(self.path, 'w') as f:
+    #                 config.write(f)
+    #         else:
+    #             self.path = f"{self.location}/{'Continuous_Parameter.ini'}"
+    #             config = configparser.ConfigParser()
+    #             config["General"] = {
+    #                 "com_y_swing": msg.com_y_swing,
+    #                 "Y_Swing_Range": msg.y_swing_range,
+    #                 "Period_T": msg.period_t,
+    #                 "OSC_LockRange": msg.osc_lockrange,
+    #                 "BASE_Default_Z": msg.base_default_z,
+    #                 "now_stand_height": msg.now_stand_height,
+    #                 "now_com_height": msg.now_com_height,
+    #                 "Stand_Balance": msg.stand_balance
+    #             }
+    #             with open(self.path, 'w') as f:
+    #                 config.write(f)
+    #     elif msg.mode == 3:
+    #         self.path = f"{self.location}/Single_Parameter.ini"
+    #         config = configparser.ConfigParser()
+    #         config["General"] = {
+    #             "com_y_swing": msg.com_y_swing,
+    #             "Y_Swing_Range": msg.y_swing_range,
+    #             "Period_T": msg.period_t,
+    #             "OSC_LockRange": msg.osc_lockrange,
+    #             "BASE_Default_Z": msg.base_default_z,
+    #             "now_stand_height": msg.now_stand_height,
+    #             "now_com_height": msg.now_com_height,
+    #             "Stand_Balance": msg.stand_balance
+    #         }
+    #         with open(self.path, 'w') as f:
+    #             config.write(f)
+    #     elif msg.mode in [1, 2]:
+    #         self.path = f"{self.location}/{'LCdown_Parameter.ini' if msg.mode == 2 else 'LCstep_Parameter.ini'}"
+    #         config = configparser.ConfigParser()
+    #         config["General"] = {
+    #             "X_Swing_Range": msg.x_swing_range,
+    #             "Y_Swing_Range": msg.y_swing_range,
+    #             "Z_Swing_Range": msg.z_swing_range,
+    #             "Period_T": msg.period_t,
+    #             "Period_T2": msg.period_t2,
+    #             "Sample_Time": msg.sample_time,
+    #             "OSC_LockRange": msg.osc_lockrange,
+    #             "BASE_Default_Z": msg.base_default_z,
+    #             "X_Swing_COM": msg.x_swong_com,
+    #             "Y_Swing_Shift": msg.y_swing_shift,
+    #             "BASE_LIFT_Z": msg.base_lift_z,
+    #             "com_y_swing": msg.com_y_swing,
+    #             "now_stand_height": msg.now_stand_height,
+    #             "now_com_height": msg.now_com_height,
+    #             "Stand_Balance": msg.stand_balance
+    #         }
+    #         with open(self.path, 'w') as f:
+    #             config.write(f)
+   
+    # def ChangeContinuousValueFunction(self, msg):
+    #     print("ChangeContinuousValueFunction")
+    #     # 注意这里是 B3fB，不是 8：
+    #     packet = struct.pack('<B3fB', 0x47, msg.x, msg.y, msg.theta, 0x45)
+    #     print(packet)
+
+    #     # 丢掉旧 ACK
+    #     self.serial_walk.reset_input_buffer()
+    #     # 发送并 flush
+    #     self.serial_walk.write(packet)
+    #     self.serial_walk.flush()
+    #     line = self.serial_walk.readline().decode('utf-8', errors='ignore').strip()
+    #     print(f"ACK raw: {line}")
+
+    # #################################################################
+    # def ContinousbackFunction(self, msg):
+    #     print("Continuousback")
+    #     self.back_falg = msg.data
+    # #################################################################
+
+    # def GerenteFunction(self, msg):
+    #     print(f"Gerente: {msg.data}")
+    #     packet = bytes([0x49, msg.data & 0xFF, 0x45])
+
+    #     # 丢掉上一次残留
+    #     self.serial_walk.reset_input_buffer()
+
+    #     # 写包并 flush
+    #     self.serial_walk.write(packet)
+    #     self.serial_walk.flush()
+    #     print(f"Packet Length: {len(packet)}")
+    #     print(f"Packet: {packet}")
+
+    #     line = self.serial_walk.readline().decode("utf-8").strip()
+    #     print(f"ACK raw: {line}")
+
+    # def SendtoOpenCR(self, msg):
+    #     if not self.gait_params:
+    #         print("尚未載入 gait_params，請先呼叫 LoadingWalkingGaitFunction")
+    #         return
+    #     if not msg.data:
+    #         return
+
+    #     print("SendtoOpenCR")
+
+    #     # 組 packet
+    #     p = self.gait_params
+    #     packet = struct.pack(
+    #         '<B7f?B',
+    #         0x48,
+    #         p["com_y_swing"],
+    #         p["y_swing_range"],
+    #         float(p["period_t"]),
+    #         p["osc_lockrange"],
+    #         p["base_default_z"],
+    #         p["now_stand_height"],
+    #         p["now_com_height"],
+    #         p["stand_balance"],
+    #         0x45
+    #     )
+
+    #     # 1) 丟掉殘留
+    #     self.serial_walk.reset_input_buffer()
+
+    #     # 2) 寫入並 flush
+    #     self.serial_walk.write(packet)
+    #     self.serial_walk.flush()
+    #     print(f"Packet Length: {len(packet)}")
+    #     print(f"Packet: {packet}")
+
+    #     # 3) 讀 ACK
+    #     line = self.serial_walk.readline().decode("utf-8").strip()
+    #     print(f"ACK raw: {line}")
     def LoadingWalkingGaitFunction(self, request, response):
         print(f"Mode: {request.mode}")
         if request.mode == 0:
@@ -379,7 +594,7 @@ class Motionpackage(Node):
         elif self.walk_status == 1:
             packet = struct.pack(
                 '<B10f?B',
-                0x49,
+                0x46,
                 p["com_y_swing"],
                 p["y_swing_range"],
                 float(p["period_t"]),
@@ -411,28 +626,45 @@ class Motionpackage(Node):
                 0x45
             )
 
-        # 1) 丟掉殘留
-        # self.serial_walk.reset_input_buffer()
+        # 清 input buffer 避免殘留
+        self.serial_walk.reset_input_buffer()
 
-        # # 2) 寫入並 flush
-        # self.serial_walk.write(packet)
-        # self.serial_walk.flush()
+        # 寫入
+        self.serial_walk.write(packet)
+        self.serial_walk.flush()
         print(f"Packet Length: {len(packet)}")
-        print(f"Packet: {packet}")
+        print(f"Packet (hex): {packet.hex()}")
 
-        # 3) 讀 ACK
-        # line = self.serial_walk.readline().decode("utf-8").strip()
-        # print(f"ACK raw: {line}")
+        # 等待 ACK，loop + timeout（例如 150ms）
+        ack = None
+        deadline = time.time() + 0.15
+        while time.time() < deadline:
+            line = self.serial_walk.readline()
+            if line:
+                try:
+                    ack = line.decode("utf-8", errors="ignore").strip()
+                except Exception:
+                    ack = line.decode("latin1", errors="ignore").strip()
+                break
+            time.sleep(0.005)  # small backoff
 
+        if ack:
+            self.get_logger().info(f"ACK raw: {ack}")
+        else:
+            self.get_logger().info("ACK timeout / empty response")
     def RobotisListinit(self):
         self.robotislist.clear()
         self.robotislistH.clear()
+        self.robotislistW.clear()
         for i in range(1, 16):
             motor = Motor(ID=i, position=2048, speed=511)
             self.robotislistH.append(motor)
+        motor = Motor(ID=15, position=2048, speed=511)
+        self.robotislistW.append(motor)
         for i in range(28, 30):
             motor = Motor(ID=i, position=2048, speed=511)
             self.robotislist.append(motor)
+        
         # self.get_logger().info(f"hand {list(self.robotislistH)},head {list(self.robotislist)}")
 
     def HeadMotorFunction(self, msg):
@@ -444,22 +676,22 @@ class Motionpackage(Node):
         self.robotislist[msg.id - 1] = updated_motor
 
         # 2. 確保每顆馬達 torque 已打開
-        for m in self.robotislist:
-            res, err = self.packet_handler.write1ByteTxRx(
-                self.port_handler,
-                m.ID,
-                ADDR_PRO_TORQUE_ENABLE,
-                TORQUE_ENABLE
-            )
-            if res != COMM_SUCCESS:
-                # self.get_logger().error(
-                #     f"[ID:{m.ID}] Enable torque failed: "
-                #     f"{self.packet_handler.getTxRxResult(res)}"
-                # )
-                pass
+        # for m in self.robotislist:
+        #     res, err = self.packet_handler_1.write1ByteTxRx(
+        #         self.port_handler_1,
+        #         m.ID,
+        #         ADDR_PRO_TORQUE_ENABLE,
+        #         TORQUE_ENABLE
+        #     )
+        #     if res != COMM_SUCCESS:
+        #         # self.get_logger().error(
+        #         #     f"[ID:{m.ID}] Enable torque failed: "
+        #         #     f"{self.packet_handler.getTxRxResult(res)}"
+        #         # )
+        #         pass
 
         # 3. 清空上一次的群組參數
-        self.groupwrite.clearParam()
+        self.groupwrite_1.clearParam()
 
         # 4. 打包並加入速度＋位置
         for m in self.robotislist:
@@ -469,16 +701,17 @@ class Motionpackage(Node):
             # Goal Position (addr=116–119)
             param.extend(m.position.to_bytes(4, 'little', signed=True))
 
-            ok = self.groupwrite.addParam(m.ID, param)
+            ok = self.groupwrite_1.addParam(m.ID, param)
             if not ok:
                 # self.get_logger().error(
                 #     f"[ID:{m.ID}] addParam failed (len={len(param)})"
                 # )
                 pass
 
-        sent = self.groupwrite.txPacket()
+        sent = self.groupwrite_1.txPacket()
         self.get_logger().info(f"Get : {self.robotislist}")
-        self.groupwrite.clearParam()
+        self.groupwrite_1.clearParam()
+        
 
     def serial_init(self):
         self.get_logger().debug(f"Begin serial ini")
@@ -570,6 +803,57 @@ class Motionpackage(Node):
             self.port_handler    = None
             self.packet_handler  = None
             self.groupwrite      = None
+
+
+        self.port_waist_dev = '/dev/ttyUSB1'
+        self.baudrate_head = 1_000_000
+        try:
+            self.get_logger().debug(
+                f"Opening HEAD dynamixel port: {self.port_waist_dev}"
+            )
+
+            # 1) 建 PortHandler & PacketHandler
+            self.port_handler_1   = PortHandler(self.port_waist_dev)
+            self.packet_handler_1 = PacketHandler(PROTOCOL_VERSION)
+
+            # 2) openPort & setBaudRate
+            if not self.port_handler_1.openPort():
+                raise RuntimeError(f"Failed to open port {self.port_waist_dev}")
+            if not self.port_handler_1.setBaudRate(self.baudrate_head):
+                raise RuntimeError(f"Failed to set baudrate {self.baudrate_head}")
+
+            # 3) 建 GroupSyncWrite：從 address 112 (Profile Velocity) 開始，
+            #    長度 8 bytes (4 bytes velocity + 4 bytes position)
+            self.groupwrite_1 = GroupSyncWrite(
+                self.port_handler_1,
+                self.packet_handler_1,
+                112,  # 112
+                8
+            )
+
+            self.get_logger().debug(f"[OK] Dynamixel on {self.port_waist_dev}")
+
+            # 4) 預先 enable torque
+            for dxl_id in DXL_HEAD_IDS:
+                res, err = self.packet_handler_1.write1ByteTxRx(
+                    self.port_handler_1,
+                    dxl_id,
+                    ADDR_PRO_TORQUE_ENABLE,
+                    TORQUE_ENABLE
+                )
+                if res != COMM_SUCCESS:
+                    # self.get_logger().error(
+                    #     f"[ID:{dxl_id}] Enable torque failed: "
+                    #     f"{self.packet_handler.getTxRxResult(res)}"
+                    # )
+                    pass
+
+        except Exception as e:
+            self.get_logger().error(f"[Dynamixel ERROR] {e}")
+            # 如果開 port 失敗，就把 handler 設 None，後面要記得檢查
+            self.port_handler_1    = None
+            self.packet_handler_1  = None
+            self.groupwrite_1      = None
 
     def start_imu_thread(self):
         self.imu_thread = threading.Thread(target=self.imu_port, daemon=True)
@@ -687,6 +971,53 @@ class Motionpackage(Node):
         # self.get_logger().info(f"Get : {self.robotislistH}")
         self.groupwrite.clearParam()
 
+    def send_waist(self,msg):
+        # 1. 更新本地的 robotislist
+        # for idx in range(15):
+        speed, position = msg[14]
+        motor = self.robotislistW[0]
+        updated_motor = Motor(
+            ID=motor.ID,
+            position=position,
+            speed=speed
+        )
+        self.robotislistW[0] = updated_motor
+        # 2. 確保每顆馬達 torque 已打開
+        for m in self.robotislistW:
+            res, err = self.packet_handler_1.write1ByteTxRx(
+                self.port_handler_1,
+                m.ID,
+                ADDR_PRO_TORQUE_ENABLE,
+                TORQUE_ENABLE
+            )
+            if res != COMM_SUCCESS:
+                # self.get_logger().error(
+                #     f"[ID:{m.ID}] Enable torque failed: "
+                #     f"{self.packet_handler_1.getTxRxResult(res)}"
+                # )
+                pass
+
+        # 3. 清空上一次的群組參數
+        self.groupwrite_1.clearParam()
+
+        # 4. 打包並加入速度＋位置
+        for m in self.robotislistW:
+            param = bytearray()
+            # Profile Velocity (addr=112–115)
+            param.extend(m.speed.to_bytes(4, 'little', signed=False))
+            # Goal Position (addr=116–119)
+            param.extend(m.position.to_bytes(4, 'little', signed=True))
+
+            ok = self.groupwrite_1.addParam(m.ID, param)
+            if not ok:
+                self.get_logger().error(
+                    f"[ID:{m.ID}] addParam failed (len={len(param)})"
+                )
+
+        sent = self.groupwrite_1.txPacket()
+        # self.get_logger().info(f"Get : {self.robotislistH}")
+        self.groupwrite_1.clearParam()
+
     def standini(self):
         self.RobotisListinit()
         self.get_logger().info(f"Standini")
@@ -724,6 +1055,7 @@ class Motionpackage(Node):
             written = ser.write(buf)
             ser.flush()
             self.send_hand(handpkg)
+            self.send_waist(handpkg)
             # self.get_logger().info(f"[OpenCR] Sent {written} bytes: {list(buf)}")
             acks = []
             while True:
@@ -844,7 +1176,7 @@ class Motionpackage(Node):
         try:
             with open(now_path, "w") as f:
                 toml.dump(data, f)
-            self.get_logger().debug(
+            self.get_logger().info(
                 f"更新完成 → ID={msg.id} | "
                 f"speed16={msg.speed}, pos16+={msg.position}→{new_p16} | "
                 f"speed32={list(speed_bytes)}, pos32+={msg.position}→{new_pos32}"
@@ -852,9 +1184,11 @@ class Motionpackage(Node):
         except Exception as e:
             self.get_logger().error(f"寫回 now_motion.toml 失敗: {e}")
             return
+        # self.get_logger().info(f"Package16 = {pkg16}")
         handpkg,pkg16 = self.load_packets_from_toml()
+        self.send_waist(handpkg)
         # 5. 重建要送出的 buf（同 standini）
-        # payload_vals = pkg16[1:-1]            # 跳過 242 header 與最後的 footer
+        payload_vals = pkg16[1:-1]            # 跳過 242 header 與最後的 footer
         buf = bytearray([242])
         # for v in payload_vals:
         #     vv = v & 0xFFFFFFFF
@@ -863,25 +1197,25 @@ class Motionpackage(Node):
         #     # 高 16 bit
         #     buf.extend(((vv >> 16) & 0xFFFF).to_bytes(2, 'little', signed=False))
 
-        # 6. 發送給 OpenCR
-        try:
-            ser = self.serial_walk
-            ser.reset_input_buffer()
-            ser.timeout = 0.1
-            written = ser.write(buf)
-            ser.flush()
-            self.get_logger().info(f"[OpenCR] Sent {written} bytes: {list(buf)}")
-            # 讀 ack
-            acks = []
-            while True:
-                line = ser.readline().decode(errors='ignore').strip()
-                if not line:
-                    break
-                acks.append(line)
-            self.get_logger().info(f"move_single_motor_ack: {acks}")
-        except EnvironmentError as e:
-            self.get_logger().error(f"Serial write error: {e}")
-            return
+        # # 6. 發送給 OpenCR
+        # try:
+        #     ser = self.serial_walk
+        #     ser.reset_input_buffer()
+        #     ser.timeout = 0.1
+        #     written = ser.write(buf)
+        #     ser.flush()
+        #     self.get_logger().info(f"[OpenCR] Sent {written} bytes: {list(buf)}")
+        #     # 讀 ack
+        #     acks = []
+        #     while True:
+        #         line = ser.readline().decode(errors='ignore').strip()
+        #         if not line:
+        #             break
+        #         acks.append(line)
+        #     self.get_logger().info(f"move_single_motor_ack: {acks}")
+        # except EnvironmentError as e:
+        #     self.get_logger().error(f"Serial write error: {e}")
+        #     return
 
     def dio(self):
         raw = [GPIO.input(p) for p in self.pins]
@@ -1317,9 +1651,10 @@ class Motionpackage(Node):
                     ser.reset_input_buffer()
                     ser.timeout = 0.1
 
-                    written = ser.write(buf)
+                    written = ser.write(merged_pkg)
                     ser.flush()
                     self.send_hand(handpkg)
+                    self.send_waist(handpkg)
                     self.get_logger().debug(f"[OpenCR] Sent {written} bytes: {list(buf)}")
                     acks = []
                     while True:
@@ -1354,6 +1689,7 @@ class Motionpackage(Node):
             written = ser.write(buf)
             ser.flush()
             self.send_hand(handpkg)
+            self.send_waist(handpkg)
             self.get_logger().debug(f"[OpenCR] Sent {written} bytes: {list(buf)}")
             acks = []
             while True:

@@ -1,1 +1,25 @@
-/workspace/towen/build/tku_msgs/rosidl_adapter/tku_msgs/srv/HSVInfo.idl
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from tku_msgs/srv/HSVInfo.srv
+// generated code does not contain a copyright notice
+
+
+module tku_msgs {
+  module srv {
+    struct HSVInfo_Request {
+      string colorlabel;
+    };
+    struct HSVInfo_Response {
+      int32 hmin;
+
+      int32 hmax;
+
+      int32 smin;
+
+      int32 smax;
+
+      int32 vmin;
+
+      int32 vmax;
+    };
+  };
+};

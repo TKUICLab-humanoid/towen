@@ -4,6 +4,7 @@
 import sys
 from strategy.API import API
 import rclpy
+from rclpy.duration import Duration
 from std_msgs.msg import String
 import time
 import math
@@ -26,7 +27,7 @@ FIVEPOINT_HEAD_Y_DEGREE = [1956]      #投出去偏向左邊＝>頭往左轉（�
 #三用電表15.7以上ˇ
 #======================================================================================
 
-CATCH_BALL_LINE = [1900, 1850, 1500]         #degree   # slow_degree,stop_degree,backward_degree
+CATCH_BALL_LINE = [1536, 1620, 1500]         #degree   # slow_degree,stop_degree,backward_degree
 TWO_POINT_LINE  = [1750, 1600, 1500]         #degree   # slow_degree,stop_degree,backward_degree
 THREE_POINT_LINE = [1995, 1970, 1870]        #degree   # forward_stop_size < forward_slow_size < backward_slow_size < backward_stop_size #上下上下-30
 FIVE_POINT_LINE  = [2700, 2800, 3150, 3200]  #size     # forward_stop_size < forward_slow_size < backward_slow_size < backward_stop_size
@@ -39,6 +40,10 @@ class Strategy(API):
         self.cnt = 0
         self.initial()
         self.target_pos = Coordinate(0, 0)
+        self.now_head_h = 2048
+        self.now_head_v = 1600
+        self.new_head_h = 2048
+        self.new_head_v = 1600
 
     def initial(self):
         self.status = 'Begin'
@@ -57,20 +62,21 @@ class Strategy(API):
         self.speed_step = 100
         self.theta_step = 1
         self.decrease_limit = 0
-        self.now_head_h = 2048
-        self.now_head_v = 1600
+        # self.now_head_h = 2048
+        # self.now_head_v = 1600
         self.stop_limit = 0
         self.back_limit = 0
         self.keep_away_limit = 0
         self.target_size = 0
+        self.now_waist = 2048
         self.next = False
         self.body_auto = False
         self.limit_show = True
         self.check_target = False
-        self.new_head_h = 2048
-        self.new_head_v = 1600
-        self.sendHeadMotor(2, HEAD_VERTIVAL, 20)
-        self.sendHeadMotor(1, HEAD_HORIZONTAL, 20)
+        # self.new_head_h = 2048
+        # self.new_head_v = 1600
+        # self.sendHeadMotor(2, HEAD_VERTIVAL, 20)
+        # self.sendHeadMotor(1, HEAD_HORIZONTAL, 20)
         self.sendSensorReset(True)  
 
     def limit_replace(self):
@@ -92,7 +98,7 @@ class Strategy(API):
             self.keep_away_limit = FIVE_POINT_LINE[3]
         # if self.dio == 0x06 or self.dio == 0x0E or self.dio == 0x16:
         #     self.sendHeadMotor(2, 1400, 50)
-        #     time.sleep(0.5)
+        #     self.time_sleep(0.5)
         #     self.status = 'catch_ball'
             
 
@@ -109,6 +115,7 @@ class Strategy(API):
         #     self.target_pos.x = (self.object_x_min[color][max_idx] + self.object_x_max[color][max_idx]) // 2
         #     self.target_pos.y = (self.object_y_min[color][max_idx] + self.object_y_max[color][max_idx]) // 2
         #     self.next = True
+        
         if self.color_counts[color] > 0:
             target_size = 0
             for i in range (self.color_counts[color]):
@@ -119,39 +126,105 @@ class Strategy(API):
                     self.get_logger().info(f"object_sizes={self.object_sizes[color][i] }")
             self.next = True
         
-        elif color == 0 and move:
+        elif color == 1 and move:
+            self.get_logger().info(f"WWWW")
             if self.cnt == 0:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 500, 30)
+                self.sendHeadMotor(1, HEAD_HORIZONTAL - 200, 30)
                 self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 100
-                self.new_head_v = HEAD_VERTIVAL + 100
+                self.new_head_h = HEAD_HORIZONTAL - 200
+                self.new_head_v = HEAD_VERTIVAL + 300
                 self.cnt += 1
                 # self.time_sleep(0.05)
-                time.sleep(2.5)
+                # self.time_sleep(1.0)
             elif self.cnt == 1:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL - 500, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL - 100
-                self.new_head_v = HEAD_VERTIVAL - 100
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                time.sleep(2.5)
-            elif self.cnt == 2:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 500, 30)
-                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 100
-                self.new_head_v = HEAD_VERTIVAL - 100
-                self.cnt += 1
-                # self.time_sleep(0.05)
-                time.sleep(2.5)
-            elif self.cnt == 3:
-                self.sendHeadMotor(1, HEAD_HORIZONTAL + 500, 30)
+                self.sendHeadMotor(1, HEAD_HORIZONTAL - 400, 30)
                 self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
-                self.new_head_h = HEAD_HORIZONTAL + 100
-                self.new_head_v = HEAD_VERTIVAL + 100
+                self.new_head_h = HEAD_HORIZONTAL - 400
+                self.new_head_v = HEAD_VERTIVAL + 300
+                self.cnt += 1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 2:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL - 600 , 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL - 600
+                self.new_head_v = HEAD_VERTIVAL + 300
+                self.cnt += 1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 3:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL - 600, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL - 600
+                self.new_head_v = HEAD_VERTIVAL - 300
+                self.cnt += 1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 4:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL - 400, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL - 400
+                self.new_head_v = HEAD_VERTIVAL - 300
+                self.cnt += 1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 5:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL - 200, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL - 200
+                self.new_head_v = HEAD_VERTIVAL - 300
+                self.cnt += 1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 6:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL + 200, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL + 200
+                self.new_head_v = HEAD_VERTIVAL - 300
+                self.cnt +=1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 7:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL + 400, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL + 400
+                self.new_head_v = HEAD_VERTIVAL - 300
+                self.cnt +=1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 8:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL + 600, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL - 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL + 600
+                self.new_head_v = HEAD_VERTIVAL - 300
+                self.cnt +=1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 9:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL + 600, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL + 600
+                self.new_head_v = HEAD_VERTIVAL + 300
+                self.cnt +=1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 10:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL + 400, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL + 400
+                self.new_head_v = HEAD_VERTIVAL + 300
+                self.cnt +=1
+                # self.time_sleep(0.05)
+                # self.time_sleep(1.0)
+            elif self.cnt == 11:
+                self.sendHeadMotor(1, HEAD_HORIZONTAL + 200, 30)
+                self.sendHeadMotor(2, HEAD_VERTIVAL + 300, 30)
+                self.new_head_h = HEAD_HORIZONTAL + 200
+                self.new_head_v = HEAD_VERTIVAL + 300
                 self.cnt = 0
                 # self.time_sleep(0.05)
-                time.sleep(2.5)
+                # self.time_sleep(1.0)
+            self.time_sleep(1.0)
         elif color == 5 and move:
             if self.cnt == 0:
                 self.sendHeadMotor(1, HEAD_HORIZONTAL - 100, 20)
@@ -159,14 +232,14 @@ class Strategy(API):
                 self.new_head_h = HEAD_HORIZONTAL - 100
                 self.new_head_v = HEAD_HORIZONTAL
                 self.cnt += 1
-                time.sleep(0.5)
+                self.time_sleep(0.5)
             elif self.cnt == 1:
                 self.sendHeadMotor(1, HEAD_HORIZONTAL + 100, 50)
                 self.sendHeadMotor(2, HEAD_HORIZONTAL, 50)
                 self.new_head_h = HEAD_HORIZONTAL + 100
                 self.new_head_v = HEAD_HORIZONTAL
                 self.cnt += 1
-                time.sleep(0.5)
+                self.time_sleep(0.5)
                     
         #----------------------------yolo----------------------------         
 
@@ -205,20 +278,20 @@ class Strategy(API):
         deg_per_pixel_y = vfov_deg / image_height
         dx_pixel = x_target - cx
         dy_pixel = y_target - cy
-        self.get_logger().info(f"dx_pixel={dx_pixel}")
-        self.get_logger().info(f"dy_pixel={dy_pixel}")
+        # self.get_logger().info(f"dx_pixel={dx_pixel}")
+        # self.get_logger().info(f"dy_pixel={dy_pixel}")
         
         dx_angle = dx_pixel * deg_per_pixel_x
         dy_angle = dy_pixel * deg_per_pixel_y
-        dx_angle = dx_angle * 4096 / 360 * 0.15
-        dy_angle = dy_angle * 4096 / 360 * 0.15
+        dx_angle = dx_angle * 4096 / 360 * 0.1
+        dy_angle = dy_angle * 4096 / 360 * 0.1
         self.get_logger().info(f"new_h_angle={dx_angle}")
         self.get_logger().info(f"new_v_angle={dy_angle}")
         
         new_h_angle = int(curr_h_angle - dx_angle)
         new_v_angle = int(curr_v_angle - dy_angle)
-        self.get_logger().info(f"new_h_angle={new_h_angle}")
-        self.get_logger().info(f"new_v_angle={new_v_angle}")
+        # self.get_logger().info(f"new_h_angle={new_h_angle}")
+        # self.get_logger().info(f"new_v_angle={new_v_angle}")
         
         # pos_h = self.angle_to_position(new_h_angle)
         # pos_v = self.angle_to_position(new_v_angle)
@@ -240,346 +313,160 @@ class Strategy(API):
     def run(self):
         try:
             while rclpy.ok():
-                rclpy.spin_once(self, timeout_sec=0.1)
+                rclpy.spin_once(self, timeout_sec=0.3)
                 if self.is_start:
                     if self.status =='Begin':
                         self.sendBodySector(29)
-                        time.sleep(0.5)
+                        self.time_sleep(0.5)
+                        # self.initial()
+                        self.sendHeadMotor(2, self.now_head_v, 30)
+                        self.sendHeadMotor(1, self.now_head_h, 30)
+                        self.time_sleep(0.5)
                         self.initial()
                         self.limit_replace()
                         self.status = 'find_ball'
                     elif self.status =='find_ball':
                         self.limit_show = False
-                        self.find_target(0, True)
+                        self.find_target(1, True)
                         if self.next:
-                            if abs(self.target_pos.x - 160) <= 5 and abs(self.target_pos.y - 120) <= 5:
+                            if abs(self.target_pos.x - 160) <= 10 and abs(self.target_pos.y - 120) <= 10:
                             # self.get_logger().info(f"targetx={self.target_pos.x}")
                                 # self.get_logger().info(f"targety={self.target_pos.y }")
                                 self.get_logger().info(f"jjjjjjjjjjjjjjjjjjjjjj")
                                 # self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
                                 # self.sendHeadMotor(2, HEAD_VERTIVAL, 50)
-                                self.new_head_h = HEAD_HORIZONTAL
-                                self.new_head_v = HEAD_VERTIVAL
-                                time.sleep(1)
-                                # self.sendSingleMotor(15, self.now_head_h, 50)
-                                # time.sleep(1)
-                                # self.direction = self.imu_rpy[2]
-                                self.next = False
-                                # self.status = 'direction_fix'
-                            else:
-                                self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                                self.sendHeadMotor(1, self.now_head_h, 5)
-                                self.sendHeadMotor(2, self.now_head_v, 5)
                                 self.new_head_h = self.now_head_h
                                 self.new_head_v = self.now_head_v
-                                self.get_logger().info(f"targetx={self.target_pos.x}")
-                                self.get_logger().info(f"targety={self.target_pos.y }")
-                                time.sleep(0.1)
-
-                            # self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                            # # self.sendHeadMotor(2, self.new_head_v, 50)
-                            # # self.sendHeadMotor(1, self.new_head_h, 50)
-                            # # # self.time_sleep(0.05)
-                            # # time.sleep(0.5)
-                            # self.new_head_h = HEAD_HORIZONTAL
-                            # self.new_head_v = HEAD_VERTIVAL
-                            # self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
-                            # self.sendHeadMotor(2, HEAD_VERTIVAL, 50)
-                            # time.sleep(1)
-                            # self.sendSingleMotor(15, self.now_head_h, 50)
-                            # time.sleep(1)
-                            # self.direction = self.imu_rpy[2]
-                            # self.next = False
-                            # self.status = 'direction_fix'
+                                self.time_sleep(1)
+                                # self.sendSingleMotor(15, self.now_head_h, 50)
+                                # self.time_sleep(1)
+                                # self.direction = self.imu_rpy[2]
+                                self.next = False
+                                self.status = 'direction_fix'
+                            elif self.consume_object_info():
+                                self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
+                                self.sendHeadMotor(1, self.now_head_h, 100)
+                                self.sendHeadMotor(2, self.now_head_v, 100)
+                                self.new_head_h = self.now_head_h
+                                self.new_head_v = self.now_head_v
+                                # self.get_logger().info(f"targetx={self.target_pos.x}")
+                                # self.get_logger().info(f"targety={self.target_pos.y }")
+                                # self.time_sleep(0.1)
                     elif self.status =='direction_fix':
-                        if abs(self.direction - self.imu_rpy[2]) > 1:
-                            self.theta = 2 if self.imu_rpy[2] > 0 else -2
-                            self.speed_x = -3000
-                            if not self.body_auto:
-                                self.sendbodyAuto(1)
-                                self.body_auto = True
-                                time.sleep(0.05)
-                        else:
-                            self.status = 'distance_fix'
-                    elif self.status =='distance_fix':
-                        self.find_target(0, False)
-                        if self.next:
-                            if abs(self.target_pos.x - 160) < 3 and abs(self.target_pos.y - 120) < 3:
-                                if self.body_auto:
-                                    self.sendbodyAuto(0)
-                                    self.body_auto = False
-                                    time.sleep(0.05)
-                                    self.now_speed_x = 0
-                                self.sendBodySector(100)
-                                time.sleep(20)
-                                self.sendBodySector(29)
-                                time.sleep(5)
-                                self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
-                                self.sendHeadMotor(2, HEAD_HORIZONTAL, 50)
-                                self.new_head_h = HEAD_HORIZONTAL
-                                time.sleep(1)
-                                self.status = 'find_basket'
-                            else:
-                                if self.target_pos.x > 160:
-                                    self.speed_x = -4000
-                                elif self.target_pos.x < 160:
-                                    self.speed_x = 2000
-                                else:
-                                    self.speed_x = 0
-                                if self.target_pos.y > 120:
-                                    self.theta = -1
-                                elif self.target_pos.y < 120:
-                                    self.theta = 1
-                                else:
-                                    self.theta = 0
-                                if not self.body_auto:
-                                    self.sendbodyAuto(1)
-                                    self.body_auto = True
-                                    time.sleep(0.05)
-                            self.next = False
-                        else:
-                            if self.now_head_v > HEAD_VERTIVAL:
-                                self.speed_x = 3000
-                            elif self.now_head_v < HEAD_VERTIVAL:
-                                self.speed_x = -5000
-                            if not self.body_auto:
-                                    self.sendbodyAuto(1)
-                                    self.body_auto = True
-                                    time.sleep(0.05)
-                    elif self.status =='find_basket':
-                        if abs(self.imu_rpy[2] - 0) < 1:
+                        self.get_logger().info(f"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
+                        self.find_target(1, False)
+                        if self.consume_object_info():
+                            self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
+                            self.sendHeadMotor(1, self.now_head_h, 100)
+                            self.sendHeadMotor(2, self.now_head_v, 100)
+                            self.new_head_h = self.now_head_h
+                            self.new_head_v = self.now_head_v
+                            # self.time_sleep(0.1)
+                        if (CATCH_BALL_LINE[0] < self.now_head_v < CATCH_BALL_LINE[1]) and (abs(self.now_head_h - 2048) < 100):
                             if self.body_auto:
                                 self.sendbodyAuto(0)
                                 self.body_auto = False
-                                time.sleep(0.05)
+                                self.time_sleep(0.05)
+                                self.now_speed_x = 0
+                                self.now_theta = 0
+                            self.next = False
+                            self.status = 'waist_fix'
+                        else:
+                            if self.now_head_v >= CATCH_BALL_LINE[1] or self.now_head_v <= CATCH_BALL_LINE[0]:
+                                self.speed = 1000 if self.now_head_v >= CATCH_BALL_LINE[1] else -3000
+                            else:
+                                self.speed = 0
+                            if (self.now_head_h - 2048) > 100 or (self.now_head_h - 2048) < -100:
+                                self.theta = 2 if (self.now_head_h - 2048) > 100 else -2
+                            else:
+                                self.theta = 0 
+                            if not self.body_auto:
+                                self.sendbodyAuto(1)
+                                self.body_auto = True
+                                self.time_sleep(0.05)
+                    elif self.status =='waist_fix':
+                        self.sendHeadMotor(1, 2048, 10)
+                        self.sendSingleMotor(15, (self.new_head_h - 2048), 10)
+                        self.time_sleep(0.5)
+                        # if (CATCH_BALL_LINE[0] < self.now_head_v < CATCH_BALL_LINE[1]) and abs(self.now_head_h - 2048) < 10:
+                        self.get_logger().info(f"dddddddd")
+                        self.sendBodySector(100)
+                        self.time_sleep(20)
+                        self.sendBodySector(29)
+                        self.time_sleep(0.5)
+                        self.status ='basket_fix'
+                        # else:
+                        #     self.get_logger().info(f"cccccccc")
+                        #     self.find_target(0, False)
+                        #     self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
+                        #     # self.sendHeadMotor(1, self.now_head_h, 5)
+                        #     # self.sendHeadMotor(2, self.now_head_v, 5)
+                        #     self.new_head_h = self.now_head_h
+                        #     self.new_head_v = self.now_head_v
+                        #     # self.now_waist -= (self.new_head_h - 2048)
+                        #     self.get_logger().info(f"self.now_waist={self.now_waist}")
+                            # self.sendHeadMotor(1, 2048, 10)
+                            # self.sendSingleMotor(15, -(self.new_head_h - 2048), 10)
+                            # self.time_sleep(3)
+                            # self.time_sleep(0.1)
+
+                            
+                    elif self.status =='basket_fix':
+                        if abs(self.imu_rpy[2] - 0) < 2:
+                            self.get_logger().info(f"imu<2")
+                            if self.body_auto:
+                                self.sendbodyAuto(0)
+                                self.body_auto = False
+                                self.time_sleep(0.05)
                                 self.now_speed_x = 0
                             self.find_target(5, True)
                             if self.next:
-                                self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                                self.sendSingleMotor(15, self.now_head_h, 50)
-                                time.sleep(1)
-                                self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
-                                self.sendHeadMotor(2, HEAD_HORIZONTAL, 50)
-                                time.sleep(1)
-                                self.direction = self.imu_rpy[2]
-                                self.sendSingleMotor(15, 2048, 50)
-                                time.sleep(1)
-                                self.new_head_v = 2048
-                                self.new_head_h = 2048
-                                self.next = False 
-                                self.status = 'throw_fix'
-                        else:
-                            self.theta = 2 if self.imu_rpy[2] < 0 else -2
-                            self.speed = -3000
-                            if not self.body_auto:
-                                self.sendbodyAuto(1)
-                                self.body_auto = True
-                                time.sleep(0.05)
-                    elif self.status =='throw_fix':
-                        if abs(self.imu_rpy[2] - self.direction) < 1:
-                            if self.body_auto:
-                                self.sendbodyAuto(0)
-                                self.body_auto = False
-                                time.sleep(0.05)
-                                self.now_speed_x = 0
-                            self.find_target(5, False)
-                            if self.next:
-                                if self.target_size > 8000:
-                                    self.sendBodySector(501)
-                                    time.sleep(5)
-                                    self.sendBodySector(502)
-                                    time.sleep(5)
-                                    self.sendBodySector(29)
+                                if abs(self.target_pos.x - 160) <= 5 and abs(self.target_pos.y - 120) <= 5:
+                                # self.get_logger().info(f"targetx={self.target_pos.x}")
+                                    # self.get_logger().info(f"targety={self.target_pos.y }")
+                                    self.get_logger().info(f"jjjjjjjjjjjjjjjjjjjjjj")
+                                    # self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
+                                    # self.sendHeadMotor(2, HEAD_VERTIVAL, 50)
+                                    # self.new_head_h = HEAD_HORIZONTAL
+                                    # self.new_head_v = HEAD_VERTIVAL
+                                    # self.time_sleep(1)
+                                    # self.sendSingleMotor(15, self.now_head_h, 50)
+                                    # self.time_sleep(1)
+                                    # self.direction = self.imu_rpy[2]
+                                    self.next = False
+                                    self.status = 'throw_fix'
                                 else:
-                                    if self.target_size > 9500:
-                                        self.speed_x = -5000
-                                        self.theta = 0
-                                    elif self.target_size > 7500:
-                                        self.speed_x = 3000
-                                        self.theta = 0
-                                    if not self.body_auto:
-                                        self.sendbodyAuto(1)
-                                        self.body_auto = True
-                                        time.sleep(0.05)
+                                    self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
+                                    self.sendHeadMotor(1, self.now_head_h, 10)
+                                    self.sendHeadMotor(2, self.now_head_v, 10)
+                                    self.new_head_h = self.now_head_h
+                                    self.new_head_v = self.now_head_v
+                                    # self.now_waist -= (self.new_head_h - 2048)
+                                    # self.sendSingleMotor(15, (self.new_head_h - 2048), 10)
+                                    # self.get_logger().info(f"targetx={self.target_pos.x}")
+                                    # self.get_logger().info(f"targety={self.target_pos.y }")
+                                    self.time_sleep(0.1)
                         else:
-                            self.theta = 2 if (self.imu_rpy[2] - self.direction) < 0 else -2
-                            self.speed = -3000
+                            self.get_logger().info(f"imu>2")
+                            self.theta = 2 if self.imu_rpy[2] < 0 else -2
+                            self.speed = -2000
                             if not self.body_auto:
                                 self.sendbodyAuto(1)
                                 self.body_auto = True
-                                time.sleep(0.05)
-                            
-                    # elif self.status =='find_ball':
-                    #     self.limit_show = False
-                    #     self.find_target(0, True)
-                    #     if self.next:
-                    #         self.new_head_h, self.new_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, HEAD_HORIZONTAL, HEAD_VERTIVAL)
-                    #         self.sendHeadMotor(2, self.new_head_v, 50)
-                    #         self.sendHeadMotor(1, self.new_head_h, 50)
-                    #         # self.time_sleep(0.05)
-                    #         time.sleep(0.5)
-                    #         self.next = False
-                    #         self.status = 'waist_fix'
-                    # elif self.status == 'waist_fix':
-                    #     self.sendHeadMotor(2, HEAD_VERTIVAL, 50)
-                    #     self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
-                    #     time.sleep(0.5)
-                    #     self.sendSingleMotor(15, self.new_head_h, 50)
-                    #     time.sleep(1)
-                    #     self.direction = self.imu_rpy[2]
-                    #     time.sleep(0.5)
-                    #     # self.sendSingleMotor(15, 2048, 50)
-                    #     # time.sleep(1)
-                    #     self.status = 'catch_ball'
-                    # elif self.status == 'catch_ball':
-                    #     self.find_target(0, False)
-                    #     if self.next:
-                    #         self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
-                    #         time.sleep(0.5)
-                    #         if 157 < self.target_pos.x < 163 and 117 < self.target_pos.y < 123:
-                    #             if self.body_auto:
-                    #                 self.sendbodyAuto(0)
-                    #                 time.sleep(0.5)
-                    #                 self.body_auto = False
-                    #             self.pre_speed_x = 0
-                    #             self.pre_theta = 0
-                    #             self.speed_x = 0
-                    #             self.theta = 0
-                    #             self.sendBodySector(100)
-                    #             time.sleep(20)
-                    #             self.sendBodySector(29)
-                    #             time.sleep(5)
-                    #             self.status = 'target_fix'
-                    #         else:
-                    #             if self.check_target:
-                    #                 if self.body_auto:
-                    #                     self.sendbodyAuto(0)
-                    #                     time.sleep(0.5)
-                    #                     self.body_auto = False
-                    #                 self.new_head_h, self.new_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, HEAD_HORIZONTAL, HEAD_VERTIVAL)
-                    #                 self.sendSingleMotor(15, self.new_head_h, 50)
-                    #                 time.sleep(1)
-                    #                 self.direction = self.imu_rpy[2]
-                    #                 time.sleep(0.5)
-                    #                 self.sendSingleMotor(15, 2048, 50)
-                    #                 time.sleep(1)
-                    #                 self.check_target = False
-                    #             self.now_yaw = self.imu_rpy[2]
-                    #             if self.now_yaw != self.direction:
-                    #                 #!!check this param would get a origin step
-                    #                 self.theta = 2 if self.direction > 0 else -2
-                    #                 self.speed_x = -3000
-                    #             elif 
-                    #     else:
-                    #         self.sendSingleMotor(15, 2048, 50)
-                    #         time.sleep(1)
-                    #         if self.new_head_v < HEAD_VERTIVAL:
-                    #             self.speed_x = -5000 
-                    #         elif self.new_head_v > HEAD_VERTIVAL:
-                    #             self.speed_x = 3000 
-                    #         self.sendHeadMotor(1, self.new_head_h, 50)
-                    #         # self.time_sleep(0.05)
-                    #         time.sleep(0.5)
-                    #         if not self.body_auto:
-                    #             self.sendbodyAuto(1)
-                    #             self.body_auto = True
-                    #         self.check_target = True        
-                                
-                        #     else:
-                        #         if 155 < self.target_pos.x < 165 and self.target_pos.y < 115:
-                        #             self.speed_x = 3000
-                        #             self.get_logger().info(f"!!!!!!!!!!!!!!!!test1!!!!!!!!!!!!!!!")
-                        #         elif 155 < self.target_pos.x < 165 and self.target_pos.y > 140:
-                        #             self.speed_x = -3000
-                        #             self.get_logger().info(f"!!!!!!!!!!!!!!!!hahahahhaa!!!!!!!!!!!!!!!")
-                        #         else:
-                        #             self.new_head_h, self.new_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, HEAD_HORIZONTAL, HEAD_VERTIVAL)
-                        #             self.sendSingleMotor(15, self.new_head_h, 50)
-                        #             time.sleep(1)
-                        #             self.speed_x = 0
-                        #         if not self.body_auto:
-                        #             self.sendbodyAuto(1)
-                        #             self.body_auto = True
-                        #     self.next = False
-                        # else:
-                        #     if self.new_head_v < HEAD_VERTIVAL:
-                        #         self.speed_x = -5000 
-                        #     elif self.new_head_v > HEAD_VERTIVAL:
-                        #         self.speed_x = 3000 
-                        #     if not self.body_auto:
-                        #         self.sendbodyAuto(1)
-                        #         self.body_auto = True
-                    #     if self.pre_speed_x != self.speed_x or self.pre_theta != self.theta:
-                    #         self.speed_change()
-                    #         self.sendContinuousValue(self.now_speed_x, self.now_speed_y, self.now_theta)
-                    #         self.pre_speed_x = self.now_speed_x
-                    #         self.pre_theta = self.now_theta
-                    # elif self.status == 'target_fix':
-                    #     self.find_target(0)
+                                self.time_sleep(0.05)
+                    elif self.status =='throw_fix':
+                        self.get_logger().info(f"throw")
+                        self.sendHeadMotor(1, 2048, 10)
+                        self.sendSingleMotor(15, (self.new_head_h - 2048), 10)
+                        self.time_sleep(2)
+                        self.sendBodySector(501)
+                        self.time_sleep(10)
+                        self.sendBodySector(502)
+                        self.time_sleep(5)
+                        self.sendBodySector(29)
+                        self.time_sleep(5)
+                        self.status = 'Finish'
                         
-                    # elif self.status =='catch_ball':
-                    #     #寫抓球的判斷阿
-                    #     if 150 < self.target_pos.x < 170 and 110 < self.target_pos.y < 130:
-                    #         if self.body_auto:
-                    #             self.sendbodyAuto(0) 
-                    #             self.body_auto = False
-                    #         self.time_sleep(1)
-                    #         self.eye2hand()
-                    #         self.status = 'fix_target'
-                    #     elif self.target_pos.x < 160:
-                    #         if not self.body_auto:
-                    #             self.speed_x = LEFT_CORRECT[0]
-                    #             self.speed_y = LEFT_CORRECT[1]
-                    #             self.theta = LEFT_CORRECT[2]
-                    #             self.sendbodyAuto(1)                    # Generate Walking
-                    #             self.sendContinuousValue(self.speed_x, self.speed_y, self.theta)    # Change Walking (x, y, theta)
-                    #             self.body_auto = True
-                    #     elif self.target_pos.x > 160:
-                    #         if not self.body_auto:
-                    #             self.speed_x = RIGHT_CORRECT[0]
-                    #             self.speed_y = RIGHT_CORRECT[1]
-                    #             self.theta = RIGHT_CORRECT[2]
-                    #             self.sendbodyAuto(1)                    # Generate Walking
-                    #             self.sendContinuousValue(self.speed_x, self.speed_y, self.theta)    # Change Walking (x, y, theta)
-                    #             self.body_auto = True
-                    #     elif self.target_pos.y < 120:
-                    #         if not self.body_auto:
-                    #             self.speed_x = CORRECT[0] + 1000
-                    #             self.speed_y = CORRECT[1]
-                    #             self.theta = CORRECT[2]
-                    #             self.sendbodyAuto(1)                    # Generate Walking
-                    #             self.sendContinuousValue(self.speed_x, self.speed_y, self.theta)    # Change Walking (x, y, theta)
-                    #             self.body_auto = True
-                    #     elif self.target_pos.y > 120:
-                    #         if not self.body_auto:
-                    #             self.speed_x = CORRECT[0] - 1000
-                    #             self.speed_y = CORRECT[1]
-                    #             self.theta = CORRECT[2]
-                    #             self.sendbodyAuto(1)                    # Generate Walking
-                    #             self.sendContinuousValue(self.speed_x, self.speed_y, self.theta)    # Change Walking (x, y, theta)
-                    #             self.body_auto = True
-                    #     if self.body_auto:
-                    #         self.find_target(0)
-                    #         if self.next:
-                    #             new_head_h, new_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, HEAD_HORIZONTAL, HEAD_VERTIVAL)
-                    #             self.sendHeadMotor(2, new_head_v, 50)
-                    #             self.sendHeadMotor(1, new_head_h, 50)
-                    #             self.time_sleep(0.05)
-                    #             self.next = False
-                    # elif self.status =='fix_target':
-                    #     self.sendHeadMotor(2, HEAD_VERTIVAL, 50)
-                    #     self.sendHeadMotor(1, HEAD_HORIZONTAL, 50)
-                    #     self.time_sleep(0.05)
-                    #     self.find_target(5)
-                    #     if self.next:
-                    #         new_head_h, new_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, HEAD_HORIZONTAL, HEAD_VERTIVAL)
-                    #         self.sendHeadMotor(2, new_head_v, 50)
-                    #         self.sendHeadMotor(1, new_head_h, 50)
-                    #         self.time_sleep(0.05)
-                    #         self.next = False
-                    #         self.status = 'throw'
-                    # elif self.status =='throw':
-                    #     self.sendBodySector(999)
                         
                     if self.body_auto and (self.pre_speed_x != self.speed_x or self.pre_speed_y != self.speed_y or self.pre_theta != self.theta):
                         self.get_logger().info(f"?????????????")
@@ -587,46 +474,64 @@ class Strategy(API):
                         self.sendContinuousValue(self.now_speed_x, self.now_speed_y, self.now_theta)
                         self.pre_speed_x = self.now_speed_x
                         self.pre_theta = self.now_theta
-                    # self.data_print()
+                    self.data_print()
                 else:
                     if self.status !='Begin':
                         if self.body_auto:
                             self.sendbodyAuto(0)
-                            time.sleep(0.5)
+                            self.time_sleep(0.5)
                             self.body_auto = False
                         self.initial()
                         self.sendBodySector(50)
-                        time.sleep(5)
+                        self.time_sleep(5)
                         self.sendBodySector(29)
                     self.status = 'Begin'
-                    self.find_target(0, True)
+                    self.find_target(1, True)
+                    # self.get_logger().info(f"targetx={self.target_pos.x}")
+                    # self.get_logger().info(f"targety={self.target_pos.y }")
                     if self.next:
                         if abs(self.target_pos.x - 160) <= 10 and abs(self.target_pos.y - 120) <= 10:
                             # self.get_logger().info(f"targetx={self.target_pos.x}")
                             # self.get_logger().info(f"targety={self.target_pos.y }")
                             self.get_logger().info(f"kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk")
-                        else:
+                        elif self.consume_object_info():
                             self.now_head_h, self.now_head_v, delta_head_h, delta_head_v = self.compute_motor_targets(self.target_pos.x, self.target_pos.y, self.new_head_h, self.new_head_v)
-                            self.sendHeadMotor(1, self.now_head_h, 20)
-                            self.sendHeadMotor(2, self.now_head_v, 20)
+                            self.control_head(1, self.now_head_h, 100)
+                            self.control_head(2, self.now_head_v, 100)
                             self.new_head_h = self.now_head_h
                             self.new_head_v = self.now_head_v
-                            self.get_logger().info(f"targetx={self.target_pos.x}")
-                            self.get_logger().info(f"targety={self.target_pos.y }")
-                            time.sleep(0.1)
+                            # self.get_logger().info(f"targetx={self.target_pos.x}")
+                            # self.get_logger().info(f"targety={self.target_pos.y }")
+                            # self.time_sleep(0.05)
+                            # self.get_clock().sleep_for(Duration(seconds=0.01))
 
         except EnvironmentError:
             rclpy.shutdown()
 
+    def control_head(self,ID,position,speed):
+        if ID == 1:
+            if position > 2548:
+                self.now_head_h = 2548
+            elif position < 1548:
+                self.now_head_h = 1548
+            self.sendHeadMotor(1, self.now_head_h, speed)
+        elif ID == 2:
+            if position > 2048:
+                self.now_head_v = 2048
+            elif position < 1024:
+                self.now_head_v = 1024
+            self.sendHeadMotor(2, self.now_head_v, speed)
+
     def data_print(self):
         self.get_logger().info(f"----------------------------------------------------------------------------------")
-        self.get_logger().info(f"status={self.status}")
+        # self.get_logger().info(f"status={self.status}")
         if self.limit_show:
             self.get_logger().debug(f"point={self.point}")
             self.get_logger().debug(f"decrease_limit={self.decrease_limit}")
             self.get_logger().debug(f"stop_limit={self.stop_limit}")
             self.get_logger().debug(f"back_limit={self.back_limit}")
             self.get_logger().debug(f"keep_away_limit={self.keep_away_limit}")
+        self.get_logger().info(f"status={self.status}")
         self.get_logger().info(f"target_pos_x={self.target_pos.x}")
         self.get_logger().info(f"target_pos_y={self.target_pos.y}")
         self.get_logger().info(f"speed_x={self.speed_x}")

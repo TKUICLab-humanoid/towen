@@ -290,7 +290,8 @@ class Strategy(API):
                     # print(self.color_mask_subject_size)
                     
                     # self.get_logger().info(f"start find")
-                    self.find()#找把(濾波)
+                    if self.consume_object_info():
+                        self.find()#找把(濾波)
             
 
                     if self.ctrl_status == 'find_period': #初始status為find_period
@@ -304,23 +305,29 @@ class Strategy(API):
                             if not self.first_point:#初始False
                                 if self.x_points[0] and self.y_points[0] != 0:#x_points & y_points矩陣的第一項不為0 #雙重保障，避免開策略第一瞬間沒看到把red_x & red_y = 0丟到矩陣裡
                                     time.sleep(0.2)
+                                    self.start_time = time.time()
+                                    self.get_logger().info(f'starttime = {self.start_time}')
                                     self.first_point = True
                             self.found = False 
 
-                            if len(self.x_points) > 50:
-                                dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
-                                if dis <= 1.5: #距離<1.5
-                                    self.end_time = time.time()
-                                    self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
-                                    self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]#紅色最低點的y對應的x丟到lowest_x
-                                    self.get_logger().info(f"endtime = {self.end_time}")
-                                    self.get_logger().info(f"period = {self.end_time - self.start_time}")
-                                    self.get_logger().info(f'low_y = :{self.lowest_y}')
-                                    self.get_logger().info(f'low_x = :{self.lowest_x}')
-                                    self.ctrl_status = 'wait_lowest_point'
+                            if len(self.x_points) > 20:
+                                if not self.first_point:#初始False
+                                    self.first_point = True
+                                else:
+                                    dis = ((self.red_x-self.x_points[0])**2 + (self.red_y-self.y_points[0])**2)**0.5 #算出第二個點跟第一個點的距離(畢氏定理)
+                                    if dis <= 1: #距離<1.5
+                                        self.end_time = time.time()
+                                        self.lowest_y = max(self.y_points)#紅色最低點丟到lowest_y
+                                        self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]#紅色最低點的y對應的x丟到lowest_x
+                                        self.get_logger().info(f"endtime = {self.end_time}")
+                                        self.get_logger().info(f"period = {self.end_time - self.start_time}")
+                                        self.get_logger().info(f'low_y = :{self.lowest_y}')
+                                        self.get_logger().info(f'low_x = :{self.lowest_x}')
+                                        self.ctrl_status = 'wait_lowest_point'
                             else:
-                                self.start_time = time.time()
-                                self.get_logger().info(f'starttime = {self.start_time}')
+                                # self.start_time = time.time()
+                                # self.get_logger().info(f'starttime = {self.start_time}')
+                                pass
 
                     elif self.ctrl_status == 'wait_lowest_point':
                         dis = ((self.red_x-self.lowest_x)**2 + (self.red_y-self.lowest_y)**2)**0.5#算出新抓到點跟最低點的距離

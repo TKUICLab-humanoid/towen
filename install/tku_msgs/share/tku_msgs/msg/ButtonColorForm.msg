@@ -1,1 +1,1 @@
-/workspace/towen/src/tku_msgs/msg/ButtonColorForm.msg
+bool buildingmodel

@@ -5,6 +5,7 @@ Summary: TODO: Package description
 Maintainer: iclab
 Maintainer-email: 612470079@o365.tku.edu.tw
 License: Apache-2.0
+License-File: LICENSE
 Requires-Dist: setuptools
 Provides-Extra: test
 Requires-Dist: pytest; extra == "test"

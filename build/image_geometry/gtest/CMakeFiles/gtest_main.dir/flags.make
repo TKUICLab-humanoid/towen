@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DROS_PACKAGE_NAME=\"image_geometry\"
 
-CXX_INCLUDES = -I/opt/ros/humble/install/src/gtest_vendor/. -isystem /opt/ros/humble/install/src/gtest_vendor/include
+CXX_INCLUDES = -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
 
-CXX_FLAGS = -O3 -DNDEBUG -std=gnu++14 -Wall -Wextra
+CXX_FLAGS = -std=gnu++14 -Wall -Wextra
 

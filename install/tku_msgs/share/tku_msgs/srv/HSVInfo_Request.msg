@@ -1,1 +1,1 @@
-/workspace/towen/build/tku_msgs/rosidl_cmake/srv/HSVInfo_Request.msg
+string colorlabel

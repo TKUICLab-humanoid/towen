@@ -1,1 +1,0 @@
-/workspace/towen/src/rosidl/rosidl_typesupport_interface/include/rosidl_typesupport_interface/macros.h

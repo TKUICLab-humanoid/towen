@@ -1,1 +1,2 @@
-/workspace/towen/build/tku_msgs/rosidl_cmake/srv/Add_Request.msg
+int64 a
+int64 b

@@ -1,3 +1,4 @@
+LICENSE
 package.xml
 setup.cfg
 setup.py
@@ -11,13 +12,6 @@ setup.py
 resource/strategy
 strategy/API.py
 strategy/__init__.py
-strategy.egg-info/PKG-INFO
-strategy.egg-info/SOURCES.txt
-strategy.egg-info/dependency_links.txt
-strategy.egg-info/entry_points.txt
-strategy.egg-info/requires.txt
-strategy.egg-info/top_level.txt
-strategy.egg-info/zip-safe
 strategy/ar/__init__.py
 strategy/ar/ar.py
 strategy/bb/__init__.py
@@ -32,3 +26,6 @@ strategy/sr/__init__.py
 strategy/sr/sr.py
 strategy/wl/__init__.py
 strategy/wl/wl.py
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py

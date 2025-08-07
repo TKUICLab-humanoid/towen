@@ -1,1 +1,0 @@
-/workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/u16string_functions.h

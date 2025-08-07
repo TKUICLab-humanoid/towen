@@ -1,1 +1,27 @@
-/workspace/towen/build/tku_msgs/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_introspection_cpp.hpp
+// generated from rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.h.em
+// with input from tku_msgs:msg/ButtonColorForm.idl
+// generated code does not contain a copyright notice
+
+#ifndef TKU_MSGS__MSG__DETAIL__BUTTON_COLOR_FORM__ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_HPP_
+#define TKU_MSGS__MSG__DETAIL__BUTTON_COLOR_FORM__ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_HPP_
+
+
+#include "rosidl_runtime_c/message_type_support_struct.h"
+#include "rosidl_typesupport_interface/macros.h"
+#include "rosidl_typesupport_introspection_cpp/visibility_control.h"
+
+#ifdef __cplusplus
+extern "C"
+{
+#endif
+
+// TODO(dirk-thomas) these visibility macros should be message package specific
+ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_PUBLIC
+const rosidl_message_type_support_t *
+  ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_cpp, tku_msgs, msg, ButtonColorForm)();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif  // TKU_MSGS__MSG__DETAIL__BUTTON_COLOR_FORM__ROSIDL_TYPESUPPORT_INTROSPECTION_CPP_HPP_

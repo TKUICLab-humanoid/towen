@@ -224,19 +224,6 @@ tku_msgs__rosidl_generator_c/fast:
 .PHONY : tku_msgs__rosidl_generator_c/fast
 
 #=============================================================================
-# Target rules for targets named tku_msgs__rosidl_typesupport_introspection_c
-
-# Build rule for target.
-tku_msgs__rosidl_typesupport_introspection_c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tku_msgs__rosidl_typesupport_introspection_c
-.PHONY : tku_msgs__rosidl_typesupport_introspection_c
-
-# fast build rule for target.
-tku_msgs__rosidl_typesupport_introspection_c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/build
-.PHONY : tku_msgs__rosidl_typesupport_introspection_c/fast
-
-#=============================================================================
 # Target rules for targets named tku_msgs__rosidl_typesupport_fastrtps_c
 
 # Build rule for target.
@@ -248,6 +235,19 @@ tku_msgs__rosidl_typesupport_fastrtps_c: cmake_check_build_system
 tku_msgs__rosidl_typesupport_fastrtps_c/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c.dir/build
 .PHONY : tku_msgs__rosidl_typesupport_fastrtps_c/fast
+
+#=============================================================================
+# Target rules for targets named tku_msgs__rosidl_typesupport_introspection_c
+
+# Build rule for target.
+tku_msgs__rosidl_typesupport_introspection_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tku_msgs__rosidl_typesupport_introspection_c
+.PHONY : tku_msgs__rosidl_typesupport_introspection_c
+
+# fast build rule for target.
+tku_msgs__rosidl_typesupport_introspection_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c.dir/build
+.PHONY : tku_msgs__rosidl_typesupport_introspection_c/fast
 
 #=============================================================================
 # Target rules for targets named tku_msgs__rosidl_typesupport_c
@@ -276,19 +276,6 @@ tku_msgs__cpp/fast:
 .PHONY : tku_msgs__cpp/fast
 
 #=============================================================================
-# Target rules for targets named tku_msgs__rosidl_typesupport_introspection_cpp
-
-# Build rule for target.
-tku_msgs__rosidl_typesupport_introspection_cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tku_msgs__rosidl_typesupport_introspection_cpp
-.PHONY : tku_msgs__rosidl_typesupport_introspection_cpp
-
-# fast build rule for target.
-tku_msgs__rosidl_typesupport_introspection_cpp/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/build
-.PHONY : tku_msgs__rosidl_typesupport_introspection_cpp/fast
-
-#=============================================================================
 # Target rules for targets named tku_msgs__rosidl_typesupport_fastrtps_cpp
 
 # Build rule for target.
@@ -300,6 +287,19 @@ tku_msgs__rosidl_typesupport_fastrtps_cpp: cmake_check_build_system
 tku_msgs__rosidl_typesupport_fastrtps_cpp/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_cpp.dir/build
 .PHONY : tku_msgs__rosidl_typesupport_fastrtps_cpp/fast
+
+#=============================================================================
+# Target rules for targets named tku_msgs__rosidl_typesupport_introspection_cpp
+
+# Build rule for target.
+tku_msgs__rosidl_typesupport_introspection_cpp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tku_msgs__rosidl_typesupport_introspection_cpp
+.PHONY : tku_msgs__rosidl_typesupport_introspection_cpp
+
+# fast build rule for target.
+tku_msgs__rosidl_typesupport_introspection_cpp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_introspection_cpp.dir/build
+.PHONY : tku_msgs__rosidl_typesupport_introspection_cpp/fast
 
 #=============================================================================
 # Target rules for targets named tku_msgs__rosidl_typesupport_cpp
@@ -315,17 +315,17 @@ tku_msgs__rosidl_typesupport_cpp/fast:
 .PHONY : tku_msgs__rosidl_typesupport_cpp/fast
 
 #=============================================================================
-# Target rules for targets named ament_cmake_python_symlink_tku_msgs
+# Target rules for targets named ament_cmake_python_copy_tku_msgs
 
 # Build rule for target.
-ament_cmake_python_symlink_tku_msgs: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_symlink_tku_msgs
-.PHONY : ament_cmake_python_symlink_tku_msgs
+ament_cmake_python_copy_tku_msgs: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ament_cmake_python_copy_tku_msgs
+.PHONY : ament_cmake_python_copy_tku_msgs
 
 # fast build rule for target.
-ament_cmake_python_symlink_tku_msgs/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_symlink_tku_msgs.dir/build.make CMakeFiles/ament_cmake_python_symlink_tku_msgs.dir/build
-.PHONY : ament_cmake_python_symlink_tku_msgs/fast
+ament_cmake_python_copy_tku_msgs/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ament_cmake_python_copy_tku_msgs.dir/build.make CMakeFiles/ament_cmake_python_copy_tku_msgs.dir/build
+.PHONY : ament_cmake_python_copy_tku_msgs/fast
 
 #=============================================================================
 # Target rules for targets named ament_cmake_python_build_tku_msgs_egg
@@ -354,19 +354,6 @@ tku_msgs__rosidl_generator_py/fast:
 .PHONY : tku_msgs__rosidl_generator_py/fast
 
 #=============================================================================
-# Target rules for targets named tku_msgs__rosidl_typesupport_introspection_c__pyext
-
-# Build rule for target.
-tku_msgs__rosidl_typesupport_introspection_c__pyext: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tku_msgs__rosidl_typesupport_introspection_c__pyext
-.PHONY : tku_msgs__rosidl_typesupport_introspection_c__pyext
-
-# fast build rule for target.
-tku_msgs__rosidl_typesupport_introspection_c__pyext/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/build
-.PHONY : tku_msgs__rosidl_typesupport_introspection_c__pyext/fast
-
-#=============================================================================
 # Target rules for targets named tku_msgs__rosidl_typesupport_fastrtps_c__pyext
 
 # Build rule for target.
@@ -378,6 +365,19 @@ tku_msgs__rosidl_typesupport_fastrtps_c__pyext: cmake_check_build_system
 tku_msgs__rosidl_typesupport_fastrtps_c__pyext/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/build
 .PHONY : tku_msgs__rosidl_typesupport_fastrtps_c__pyext/fast
+
+#=============================================================================
+# Target rules for targets named tku_msgs__rosidl_typesupport_introspection_c__pyext
+
+# Build rule for target.
+tku_msgs__rosidl_typesupport_introspection_c__pyext: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tku_msgs__rosidl_typesupport_introspection_c__pyext
+.PHONY : tku_msgs__rosidl_typesupport_introspection_c__pyext
+
+# fast build rule for target.
+tku_msgs__rosidl_typesupport_introspection_c__pyext/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/build
+.PHONY : tku_msgs__rosidl_typesupport_introspection_c__pyext/fast
 
 #=============================================================================
 # Target rules for targets named tku_msgs__rosidl_typesupport_c__pyext
@@ -7019,7 +7019,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... ament_cmake_python_build_tku_msgs_egg"
-	@echo "... ament_cmake_python_symlink_tku_msgs"
+	@echo "... ament_cmake_python_copy_tku_msgs"
 	@echo "... tku_msgs"
 	@echo "... tku_msgs__cpp"
 	@echo "... tku_msgs__py"

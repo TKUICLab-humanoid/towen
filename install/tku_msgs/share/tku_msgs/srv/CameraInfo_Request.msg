@@ -1,1 +1,1 @@
-/workspace/towen/build/tku_msgs/rosidl_cmake/srv/CameraInfo_Request.msg
+bool load

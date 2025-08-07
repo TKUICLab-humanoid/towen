@@ -1,1 +1,1 @@
-/workspace/towen/src/tku_msgs/msg/SensorSet.msg
+bool reset

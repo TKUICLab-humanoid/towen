@@ -1,1 +1,2 @@
-/workspace/towen/build/tku_msgs/rosidl_cmake/srv/SaveHSV_Request.msg
+bool save
+string location

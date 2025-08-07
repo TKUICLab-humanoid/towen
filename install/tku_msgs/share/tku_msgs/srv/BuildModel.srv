@@ -1,1 +1,3 @@
-/workspace/towen/src/tku_msgs/srv/BuildModel.srv
+bool build
+---
+bool already

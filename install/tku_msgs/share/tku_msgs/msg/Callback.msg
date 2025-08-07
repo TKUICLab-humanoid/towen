@@ -1,1 +1,3 @@
-/workspace/towen/src/tku_msgs/msg/Callback.msg
+bool data
+int16 sector
+

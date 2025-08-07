@@ -1,1 +1,1 @@
-/workspace/towen/src/tku_msgs/msg/ObjectList.msg
+ColorArray[] objectlist

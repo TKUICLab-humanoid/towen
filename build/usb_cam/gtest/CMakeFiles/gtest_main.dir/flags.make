@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/ros/humble/install/src/gtest_vendor/. -isystem /opt/ros/humble/install/src/gtest_vendor/include
+CXX_INCLUDES = -I/opt/ros/humble/src/gtest_vendor/. -isystem /opt/ros/humble/src/gtest_vendor/include
 
 CXX_FLAGS = -std=gnu++17 -Wall -Wextra -Wpedantic -Werror
 

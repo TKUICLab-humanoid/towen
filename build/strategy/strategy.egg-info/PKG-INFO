@@ -5,6 +5,7 @@ Summary: TODO: Package description
 Maintainer: iclab
 Maintainer-email: iclab@todo.todo
 License: Apache-2.0
+License-File: LICENSE
 Requires-Dist: setuptools
 Requires-Dist: common_api
 Provides-Extra: test

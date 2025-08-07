@@ -1,5 +1,0 @@
-  File "/workspace/towen/install/strategy/lib/python3.10/site-packages/strategy/ar/ar.py", line 91
-    else:
-    ^^^^
-SyntaxError: invalid syntax
-

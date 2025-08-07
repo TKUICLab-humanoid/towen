@@ -1,1 +1,3 @@
-/workspace/towen/src/tku_msgs/msg/HeadPackage.msg
+int16 id
+int16 position
+int16 speed

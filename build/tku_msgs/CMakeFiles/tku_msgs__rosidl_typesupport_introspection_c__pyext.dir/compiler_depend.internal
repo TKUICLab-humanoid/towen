@@ -3,8 +3,15 @@
 
 CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c.o
  /workspace/towen/build/tku_msgs/rosidl_generator_py/tku_msgs/_tku_msgs_s.ep.rosidl_typesupport_introspection_c.c
- /opt/ros/humble/install/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.h
- /opt/ros/humble/install/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_dimension__struct.h
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/multi_array_layout__struct.h
  /usr/include/aarch64-linux-gnu/asm/bitsperlong.h
  /usr/include/aarch64-linux-gnu/asm/errno.h
  /usr/include/aarch64-linux-gnu/asm/posix_types.h
@@ -41,21 +48,14 @@ CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
  /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h
  /usr/include/aarch64-linux-gnu/bits/sched.h
  /usr/include/aarch64-linux-gnu/bits/select.h
- /usr/include/aarch64-linux-gnu/bits/select2.h
  /usr/include/aarch64-linux-gnu/bits/setjmp.h
  /usr/include/aarch64-linux-gnu/bits/stat.h
  /usr/include/aarch64-linux-gnu/bits/statx-generic.h
  /usr/include/aarch64-linux-gnu/bits/statx.h
  /usr/include/aarch64-linux-gnu/bits/stdint-intn.h
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h
- /usr/include/aarch64-linux-gnu/bits/stdio.h
- /usr/include/aarch64-linux-gnu/bits/stdio2.h
  /usr/include/aarch64-linux-gnu/bits/stdio_lim.h
- /usr/include/aarch64-linux-gnu/bits/stdlib-bsearch.h
  /usr/include/aarch64-linux-gnu/bits/stdlib-float.h
- /usr/include/aarch64-linux-gnu/bits/stdlib.h
- /usr/include/aarch64-linux-gnu/bits/string_fortified.h
- /usr/include/aarch64-linux-gnu/bits/strings_fortified.h
  /usr/include/aarch64-linux-gnu/bits/struct_mutex.h
  /usr/include/aarch64-linux-gnu/bits/struct_rwlock.h
  /usr/include/aarch64-linux-gnu/bits/struct_stat.h
@@ -94,12 +94,10 @@ CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
  /usr/include/aarch64-linux-gnu/bits/typesizes.h
  /usr/include/aarch64-linux-gnu/bits/uintn-identity.h
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h
- /usr/include/aarch64-linux-gnu/bits/unistd.h
  /usr/include/aarch64-linux-gnu/bits/unistd_ext.h
  /usr/include/aarch64-linux-gnu/bits/waitflags.h
  /usr/include/aarch64-linux-gnu/bits/waitstatus.h
  /usr/include/aarch64-linux-gnu/bits/wchar.h
- /usr/include/aarch64-linux-gnu/bits/wchar2.h
  /usr/include/aarch64-linux-gnu/bits/wordsize.h
  /usr/include/aarch64-linux-gnu/bits/xopen_lim.h
  /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h
@@ -351,11 +349,4 @@ CMakeFiles/tku_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_genera
  /workspace/towen/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/walking_gait_parameter__functions.h
  /workspace/towen/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/walking_gait_parameter__struct.h
  /workspace/towen/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/walking_gait_parameter__type_support.h
- /workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/action_type_support_struct.h
- /workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/message_type_support_struct.h
- /workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/primitives_sequence.h
- /workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/service_type_support_struct.h
- /workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/string.h
- /workspace/towen/src/rosidl/rosidl_runtime_c/include/rosidl_runtime_c/visibility_control.h
- /workspace/towen/src/rosidl/rosidl_typesupport_interface/include/rosidl_typesupport_interface/macros.h
 

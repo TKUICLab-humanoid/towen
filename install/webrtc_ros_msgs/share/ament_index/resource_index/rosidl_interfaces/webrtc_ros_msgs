@@ -1,6 +1,0 @@
-msg/IceServer.idl
-msg/IceServer.msg
-srv/GetIceServers.idl
-srv/GetIceServers.srv
-srv/GetIceServers_Request.msg
-srv/GetIceServers_Response.msg

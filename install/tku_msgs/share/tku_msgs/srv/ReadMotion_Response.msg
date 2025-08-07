@@ -1,1 +1,8 @@
-/workspace/towen/build/tku_msgs/rosidl_cmake/srv/ReadMotion_Response.msg
+
+bool readcheck
+int32 vectorcnt
+int32[] motionstate
+int32[] id
+int32[] motionlist
+int32[] relativedata
+int32[] absolutedata

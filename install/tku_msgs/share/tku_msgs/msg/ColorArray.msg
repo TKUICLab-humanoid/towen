@@ -1,1 +1,2 @@
-/workspace/towen/src/tku_msgs/msg/ColorArray.msg
+int32 cnt
+ColorData[] colorarray
