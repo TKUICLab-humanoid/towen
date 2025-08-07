@@ -1,1 +1,1 @@
-string data
+/workspace/towen/src/tku_msgs/msg/Location.msg

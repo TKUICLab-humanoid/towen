@@ -1,6 +1,1 @@
-setup.py
-tku_msgs/__init__.py
-tku_msgs.egg-info/PKG-INFO
-tku_msgs.egg-info/SOURCES.txt
-tku_msgs.egg-info/dependency_links.txt
-tku_msgs.egg-info/top_level.txt
+/workspace/towen/build/tku_msgs/ament_cmake_python/tku_msgs/tku_msgs.egg-info/SOURCES.txt

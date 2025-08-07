@@ -1,4 +1,3 @@
-/workspace/towen/install/web_video_server/lib/web_video_server/web_video_server
 /workspace/towen/install/web_video_server/include/web_video_server/vp8_streamer.h
 /workspace/towen/install/web_video_server/include/web_video_server/vp9_streamer.h
 /workspace/towen/install/web_video_server/include/web_video_server/h264_streamer.h
@@ -9,18 +8,3 @@
 /workspace/towen/install/web_video_server/include/web_video_server/image_streamer.h
 /workspace/towen/install/web_video_server/include/web_video_server/ros_compressed_streamer.h
 /workspace/towen/install/web_video_server/include/web_video_server/multipart_stream.h
-/workspace/towen/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server
-/workspace/towen/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server
-/workspace/towen/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh
-/workspace/towen/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv
-/workspace/towen/install/web_video_server/share/web_video_server/environment/path.sh
-/workspace/towen/install/web_video_server/share/web_video_server/environment/path.dsv
-/workspace/towen/install/web_video_server/share/web_video_server/local_setup.bash
-/workspace/towen/install/web_video_server/share/web_video_server/local_setup.sh
-/workspace/towen/install/web_video_server/share/web_video_server/local_setup.zsh
-/workspace/towen/install/web_video_server/share/web_video_server/local_setup.dsv
-/workspace/towen/install/web_video_server/share/web_video_server/package.dsv
-/workspace/towen/install/web_video_server/share/ament_index/resource_index/packages/web_video_server
-/workspace/towen/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake
-/workspace/towen/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake
-/workspace/towen/install/web_video_server/share/web_video_server/package.xml

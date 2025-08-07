@@ -1,1 +1,1 @@
-SaveMotion[] savemotionvector
+/workspace/towen/src/tku_msgs/msg/SaveMotionVector.msg

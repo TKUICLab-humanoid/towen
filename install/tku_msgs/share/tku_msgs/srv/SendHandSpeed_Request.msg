@@ -1,1 +1,1 @@
-int16 data
+/workspace/towen/build/tku_msgs/rosidl_cmake/srv/SendHandSpeed_Request.msg

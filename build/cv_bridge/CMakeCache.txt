@@ -28,7 +28,7 @@ AMENT_CMAKE_PYTEST_WITH_COVERAGE:BOOL=OFF
 
 //Replace the CMake install command with a custom implementation
 // using symlinks instead of copying resources
-AMENT_CMAKE_SYMLINK_INSTALL:BOOL=OFF
+AMENT_CMAKE_SYMLINK_INSTALL:BOOL=1
 
 //Generate an uninstall target to revert the effects of the install
 // step
@@ -657,6 +657,8 @@ _Python3_LIBRARY_RELEASE:INTERNAL=/usr/lib/aarch64-linux-gnu/libpython3.10.so
 _Python3_NUMPY_SIGNATURE:INTERNAL=27efb1b90a3e66e84ba54eb99c4605ce
 //Path to a file.
 _Python3_NumPy_INCLUDE_DIR:INTERNAL=/home/work/.local/lib/python3.10/site-packages/numpy/core/include
+//Index for unique symlink install targets
+__AMENT_CMAKE_SYMLINK_INSTALL_TARGETS_INDEX:INTERNAL=2
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_python_DIR

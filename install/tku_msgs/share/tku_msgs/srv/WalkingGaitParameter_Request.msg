@@ -1,1 +1,1 @@
-int32 mode
+/workspace/towen/build/tku_msgs/rosidl_cmake/srv/WalkingGaitParameter_Request.msg

@@ -1,15 +1,1 @@
-// generated from rosidl_adapter/resource/srv.idl.em
-// with input from tku_msgs/srv/CheckSector.srv
-// generated code does not contain a copyright notice
-
-
-module tku_msgs {
-  module srv {
-    struct CheckSector_Request {
-      int32 data;
-    };
-    struct CheckSector_Response {
-      boolean checkflag;
-    };
-  };
-};
+/workspace/towen/build/tku_msgs/rosidl_adapter/tku_msgs/srv/CheckSector.idl

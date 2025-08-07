@@ -1,2 +1,1 @@
-
-bool already
+/workspace/towen/build/tku_msgs/rosidl_cmake/srv/SendHandSpeed_Response.msg

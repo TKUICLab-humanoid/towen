@@ -1,2 +1,1 @@
-
-int64 sum
+/workspace/towen/build/tku_msgs/rosidl_cmake/srv/Add_Response.msg

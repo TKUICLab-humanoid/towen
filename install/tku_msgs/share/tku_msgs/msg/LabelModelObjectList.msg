@@ -1,1 +1,1 @@
-char[] labelmodel
+/workspace/towen/src/tku_msgs/msg/LabelModelObjectList.msg

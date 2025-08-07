@@ -1,13 +1,6 @@
 package.xml
 setup.cfg
 setup.py
-../../build/motionpackage/motionpackage.egg-info/PKG-INFO
-../../build/motionpackage/motionpackage.egg-info/SOURCES.txt
-../../build/motionpackage/motionpackage.egg-info/dependency_links.txt
-../../build/motionpackage/motionpackage.egg-info/entry_points.txt
-../../build/motionpackage/motionpackage.egg-info/requires.txt
-../../build/motionpackage/motionpackage.egg-info/top_level.txt
-../../build/motionpackage/motionpackage.egg-info/zip-safe
 motionpackage/__init__.py
 motionpackage/import struct.py
 motionpackage/motion_0725.py

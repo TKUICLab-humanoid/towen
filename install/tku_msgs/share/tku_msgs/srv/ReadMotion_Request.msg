@@ -1,3 +1,1 @@
-bool read
-string name
-int32 readstate
+/workspace/towen/build/tku_msgs/rosidl_cmake/srv/ReadMotion_Request.msg

@@ -1,3 +1,1 @@
-int32 data
----
-bool checkflag
+/workspace/towen/src/tku_msgs/srv/CheckSector.srv

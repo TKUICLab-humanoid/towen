@@ -1,2 +1,1 @@
-uint8 data
-bool strategy
+/workspace/towen/src/tku_msgs/msg/Dio.msg

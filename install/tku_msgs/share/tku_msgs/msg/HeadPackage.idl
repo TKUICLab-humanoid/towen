@@ -1,16 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from tku_msgs/msg/HeadPackage.msg
-// generated code does not contain a copyright notice
-
-
-module tku_msgs {
-  module msg {
-    struct HeadPackage {
-      int16 id;
-
-      int16 position;
-
-      int16 speed;
-    };
-  };
-};
+/workspace/towen/build/tku_msgs/rosidl_adapter/tku_msgs/msg/HeadPackage.idl

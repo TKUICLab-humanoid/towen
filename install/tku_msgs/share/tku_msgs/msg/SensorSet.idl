@@ -1,12 +1,1 @@
-// generated from rosidl_adapter/resource/msg.idl.em
-// with input from tku_msgs/msg/SensorSet.msg
-// generated code does not contain a copyright notice
-
-
-module tku_msgs {
-  module msg {
-    struct SensorSet {
-      boolean reset;
-    };
-  };
-};
+/workspace/towen/build/tku_msgs/rosidl_adapter/tku_msgs/msg/SensorSet.idl

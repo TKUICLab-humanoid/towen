@@ -1,4 +1,1 @@
-int32 package
-string sectorname
-int32[] delay
-int32 cnt
+/workspace/towen/src/tku_msgs/msg/InterfaceSend2Sector.msg
