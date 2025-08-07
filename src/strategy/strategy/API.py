@@ -16,6 +16,7 @@ from tku_msgs.msg import (
     SingleMotorData,
 )
 from rclpy.duration import Duration
+from geometry_msgs.msg import Point
 
 
 class API(Node):
@@ -49,6 +50,14 @@ class API(Node):
             SensorPackage,
             '/package/sensorpackage',
             self.imu,
+            10,
+            callback_group=self.imu_cbg,
+        )
+
+        self.yolo_zed = self.create_subscription(
+            Point,
+            '/zed_yolo_ball',
+            self.Yolo_Zed,
             10,
             callback_group=self.imu_cbg,
         )
@@ -194,6 +203,12 @@ class API(Node):
         self.yaw = msg.yaw
         self.imu_rpy = [self.roll,self.pitch,self.yaw]
 
+    def Yolo_Zed(self, msg: Point) :
+        self.pose_x = msg.x
+        self.pose_y = msg.y
+        self.pose_z = msg.z
+        self.pose = [self.pose_x,self.pose_y,self.pose_z]
+        
     def sendSensorReset(self, status: bool):
         rst = SensorSet()
         rst.reset = status
