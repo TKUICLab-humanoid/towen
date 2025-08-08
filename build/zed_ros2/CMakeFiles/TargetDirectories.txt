@@ -1,9 +1,0 @@
-/workspace/towen/build/zed_ros2/CMakeFiles/uninstall.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/zed_ros2_uninstall.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/all_zed_ros2_files.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/test.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/edit_cache.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/rebuild_cache.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/list_install_components.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/install.dir
-/workspace/towen/build/zed_ros2/CMakeFiles/install/local.dir
