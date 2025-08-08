@@ -1,2 +1,0 @@
-bool save
-string location

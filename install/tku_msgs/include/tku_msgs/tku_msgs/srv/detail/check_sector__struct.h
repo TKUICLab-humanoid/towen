@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/check_sector__struct.h

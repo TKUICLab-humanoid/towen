@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/label_model_object_list__rosidl_typesupport_fastrtps_c.h

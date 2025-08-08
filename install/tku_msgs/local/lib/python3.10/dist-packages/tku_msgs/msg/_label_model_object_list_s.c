@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_label_model_object_list_s.c

@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_cmake/srv/HSVInfo_Response.msg

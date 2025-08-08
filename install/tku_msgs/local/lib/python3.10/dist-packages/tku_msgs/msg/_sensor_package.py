@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_generator_py/tku_msgs/msg/_sensor_package.py

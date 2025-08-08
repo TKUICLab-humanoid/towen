@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_typesupport_introspection_cpp/tku_msgs/srv/detail/add__rosidl_typesupport_introspection_cpp.hpp

@@ -1,5 +1,0 @@
-setuptools
-common_api
-
-[test]
-pytest
