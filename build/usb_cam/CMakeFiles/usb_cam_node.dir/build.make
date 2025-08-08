@@ -93,7 +93,7 @@ usb_cam_node_EXTERNAL_OBJECTS =
 libusb_cam_node.so: CMakeFiles/usb_cam_node.dir/src/usb_cam_node.cpp.o
 libusb_cam_node.so: CMakeFiles/usb_cam_node.dir/build.make
 libusb_cam_node.so: /opt/ros/humble/lib/libcomponent_manager.so
-libusb_cam_node.so: /workspace/towen/install/cv_bridge/lib/libcv_bridge.so
+libusb_cam_node.so: /opt/ros/humble/lib/libcv_bridge.so
 libusb_cam_node.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
 libusb_cam_node.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
 libusb_cam_node.so: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so

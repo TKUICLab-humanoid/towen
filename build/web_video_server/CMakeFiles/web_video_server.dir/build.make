@@ -237,7 +237,7 @@ web_video_server: CMakeFiles/web_video_server.dir/src/jpeg_streamers.cpp.o
 web_video_server: CMakeFiles/web_video_server.dir/src/png_streamers.cpp.o
 web_video_server: CMakeFiles/web_video_server.dir/build.make
 web_video_server: /opt/ros/humble/lib/libasync_web_server_cpp.so.2.0.0
-web_video_server: /workspace/towen/install/cv_bridge/lib/libcv_bridge.so
+web_video_server: /opt/ros/humble/lib/libcv_bridge.so
 web_video_server: /opt/ros/humble/lib/aarch64-linux-gnu/libimage_transport.so
 web_video_server: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 web_video_server: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
