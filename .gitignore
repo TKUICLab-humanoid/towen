@@ -1,6 +1,6 @@
+install/
 build/
 log/
-install/
 
 src/strategy/strategy/ar/__pycache__
 src/strategy/strategy/bb/__pycache__
