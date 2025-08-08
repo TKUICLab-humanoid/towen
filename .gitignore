@@ -1,9 +1,7 @@
 
 build/
-
-log/
-
 install/
+log/
 
 src/strategy/strategy/ar/__pycache__
 src/strategy/strategy/bb/__pycache__
