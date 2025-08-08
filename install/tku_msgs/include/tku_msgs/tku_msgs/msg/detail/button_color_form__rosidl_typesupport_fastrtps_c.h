@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_typesupport_fastrtps_c/tku_msgs/msg/detail/button_color_form__rosidl_typesupport_fastrtps_c.h

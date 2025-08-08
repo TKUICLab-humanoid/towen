@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_generator_c/tku_msgs/srv/detail/send_hand_speed__struct.h

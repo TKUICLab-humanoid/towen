@@ -1,1 +1,0 @@
-/workspace/towen/src/usb_cam/include/usb_cam/formats/rgb.hpp

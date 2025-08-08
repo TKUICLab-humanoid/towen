@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_typesupport_fastrtps_c/tku_msgs/srv/detail/check_sector__rosidl_typesupport_fastrtps_c.h

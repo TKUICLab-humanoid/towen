@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_typesupport_introspection_cpp/tku_msgs/msg/detail/camera__rosidl_typesupport_introspection_cpp.hpp

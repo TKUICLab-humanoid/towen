@@ -1,3 +1,0 @@
-/workspace/towen/install/image_geometry/lib/libimage_geometry.so
-/workspace/towen/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport.cmake
-/workspace/towen/install/image_geometry/share/image_geometry/cmake/export_image_geometryExport-noconfig.cmake

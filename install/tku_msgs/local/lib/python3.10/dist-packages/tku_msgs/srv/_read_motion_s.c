@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_generator_py/tku_msgs/srv/_read_motion_s.c

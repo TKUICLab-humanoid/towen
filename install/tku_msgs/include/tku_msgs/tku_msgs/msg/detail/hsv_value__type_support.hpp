@@ -1,1 +1,0 @@
-/workspace/towen/build/tku_msgs/rosidl_generator_cpp/tku_msgs/msg/detail/hsv_value__type_support.hpp
