@@ -2,6 +2,7 @@
 #coding=utf-8
 
 import sys 
+import os
 from strategy.API import API
 import rclpy
 from std_msgs.msg import String
@@ -11,15 +12,15 @@ import time as time
 import math
 
 PRINT = True
-FORWARD_START_SPEED = 2000
-FORWARD_MAX_SPEED = 2000
-FORWARD_MIN_SPEED = 0
-BACK_START_SPEED = -2000
-BACK_MAX_SPEED = -5000
+FORWARD_START_SPEED = 6000
+FORWARD_MAX_SPEED = 6000
+FORWARD_MIN_SPEED = 2000
+BACK_START_SPEED = -1000
+BACK_MAX_SPEED = -6000
 
 FORWARD_SPEED_ADD = 100
-FORWARD_SPEED_SUB = -50
-BACK_SPEED_ADD = -10
+FORWARD_SPEED_SUB = -100
+BACK_SPEED_ADD = -100
 
 FORWARD_ORIGIN_THETA = 0
 BACK_ORIGIN_THETA = 0
@@ -30,8 +31,8 @@ BACK_THETA = 2
 LEFT = 1
 RIGHT = -1
 
-TARGET_R = 2
-TARGET_L = 1
+TARGET_R = 5
+TARGET_L = 2
 class Strategy(API):
     def __init__(self):
         super().__init__('sp')
@@ -49,14 +50,21 @@ class Strategy(API):
         self.sp_sizel = 0
         self.sp_sizer = 0
         self.sp_ball = 0
+        self.sp_hand_up = False
+        self.sp_stand = True
+        self.sp_hand_down = False
 
     def init(self):
         self.status = 'First'
         # self.forward.speed = FORWARD_START_SPEED
         # self.backward.speed = BACK_START_SPEED
         self.sendHeadMotor(1, 2048, 50)
-        self.sendHeadMotor(2, 1400, 50)
+        self.sendHeadMotor(2, 1250, 50)
         self.sendSensorReset(True)
+        self.speed = 0
+        self.sp_hand_up = False
+        self.sp_stand = True
+        self.sp_hand_down = False
 
     def target_find(self, color):
         img_size = 0
@@ -75,20 +83,38 @@ class Strategy(API):
         elif self.status == 'Decelerating' or self.status == 'Backward':                                 #減速與後退取最大值
             self.speed = max(speed_limit, speed + speed_variation)
 
-        if self.imu_rpy[2] >= 2:
+        if self.imu_rpy[2] >= 6:
             self.theta = RIGHT * theta_value + origin_theta
-        elif self.imu_rpy[2] <= -2:
+        elif self.imu_rpy[2] <= -6:
             self.theta = LEFT * theta_value + origin_theta
         else:
             self.theta = origin_theta
 
     def status_change(self):
-        if 11000 >= self.sp_ball >= 10000:     #到球前減速
+        if 14000 >= self.sp_ball >= 11000:     #到球前減速
             return 'Decelerating'
-        elif self.sp_ball > 13000:   #準備後退
+        elif self.sp_ball > 14000:   #準備後退
             return 'Backward'
 
         return 'Forward'
+    
+    def hand_up(self):
+        if self.speed == 0 and (self.sp_hand_up == True or self.sp_hand_down == True) and self.sp_stand == False:
+            if self.sp_hand_up == True:
+                self.sendBodySector(201) # 手放下
+            else:
+                self.sendBodySector(301)
+            self.sp_hand_up = False
+            self.sp_hand_down = False
+            self.sp_stand = True
+        elif self.speed < 0 and self.sp_hand_up == False and self.sp_stand == True:
+            self.sendBodySector(202) # 手舉起
+            self.sp_hand_up = True
+            self.sp_stand = False
+        elif self.speed > 0 and self.sp_hand_down == False and self.sp_stand == True:
+            self.sendBodySector(302) # 手舉起
+            self.sp_hand_down = True
+            self.sp_stand = False
 
     def run(self):
         try:
@@ -101,7 +127,7 @@ class Strategy(API):
                     if self.status == 'First':
                         self.init()
                         time.sleep(1)
-                        # self.sendBodyAuto(1)
+                        self.sendbodyAuto(1)
                         self.status = 'Forward'
                     elif self.status == 'Forward':
                         self.imu_go(self.speed, FORWARD_SPEED_ADD, FORWARD_MAX_SPEED, FORWARD_THETA, FORWARD_ORIGIN_THETA)
@@ -113,26 +139,29 @@ class Strategy(API):
                         self.imu_go(self.speed, BACK_SPEED_ADD, BACK_MAX_SPEED, BACK_THETA, BACK_ORIGIN_THETA)
                     
                     if self.pre_speed != self.speed or self.pre_theta != self.theta:
-                        # self.sendContinuousValue(self.speed, 0, self.theta)
+                        self.sendContinuousValue(self.speed, 0, self.theta)
                         self.pre_speed = self.speed
                         self.pre_theta = self.theta
+                        self.hand_up()
                     self.data_print()
 
                 else:
                     if self.status != 'First':
-                        # self.sendBodyAuto(0)
+                        self.sendbodyAuto(0)
+                        self.sendBodySector(29)
                         time.sleep(1)
                         self.init()
                     self.status = 'First'
                     self.sp_targetl.x, self.sp_targetl.y, self.sp_sizel = self.target_find(TARGET_L)
                     self.sp_targetr.x, self.sp_targetr.y, self.sp_sizer = self.target_find(TARGET_R)
                     self.sp_ball = self.sp_sizel + self.sp_sizer 
-                    # self.data_print()
+                    self.data_print()
         except EnvironmentError:
             rclpy.shutdown()
 
     def data_print(self):
-        self.get_logger().info(f"----------------------------------------------------------------------------------")
+        print("\033[2J\033[H", end='')  # Clear console]")
+        self.get_logger().info(f"--------------------------------------------")
         self.get_logger().info(f"status={self.status}")
         # self.get_logger().info(f"sp_targetl_x={self.sp_targetl.x}")
         # self.get_logger().info(f"sp_targetl_y={self.sp_targetl.y}")
@@ -143,7 +172,7 @@ class Strategy(API):
         self.get_logger().info(f"speed={self.speed}") 
         self.get_logger().info(f"theta={self.theta}") 
         self.get_logger().info(f"sp_ball={self.sp_ball}")
-        self.get_logger().info(f"----------------------------------------------------------------------------------")
+        self.get_logger().info(f"--------------------------------------------")
 
 class Coordinate:
     def __init__(self, x, y):

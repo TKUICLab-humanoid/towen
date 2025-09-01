@@ -28,7 +28,8 @@ setup(
             'obs = strategy.obs.obs:main',
             'sp = strategy.sp.sp:main',
             'sr = strategy.sr.sr:main',
-            'wl = strategy.wl.wl:main'
+            'wl = strategy.wl.wl:main',
+            'inference_yolo = strategy.mar.ros2_engine_inference:main'
         ],
     },
 )

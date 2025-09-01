@@ -6,9 +6,11 @@ from strategy.API import API
 import rclpy
 from std_msgs.msg import String
 from collections import Counter, deque
+from rclpy.duration import Duration
 import numpy as np
 import time
 import math
+from rclpy.executors import MultiThreadedExecutor
 
 ORIGIN_THETA = 0
 ORIGIN_SPEED = 3500
@@ -30,6 +32,7 @@ class Strategy(API):
         self.upper_center = Coordinate(0, 0)
         self.lower_center = Coordinate(0, 0)
         self.arrow_temp = deque(['None', 'None', 'None', 'None', 'None'], maxlen = 5)
+        self.create_timer(0.05, self.run)
     
     def initial(self):
         self.status = 'First'
@@ -41,7 +44,7 @@ class Strategy(API):
         self.line_status = 'online'
         self.sendHeadMotor(2, 1200, 50)
         self.sendHeadMotor(1, 2048, 50)
-        self.reset(True)
+        self.sendSensorReset(True)
 
     def cvt_list2d2numpy(self, list2d):
         max_len = max([len(sub_lst) for sub_lst in list2d])
@@ -54,15 +57,20 @@ class Strategy(API):
         img_xmax = self.cvt_list2d2numpy(self.object_x_max)
         img_ymin = self.cvt_list2d2numpy(self.object_y_min)
         img_ymax = self.cvt_list2d2numpy(self.object_y_max)
-        # self.get_logger().warn(f"img_size = {img_size}")
+        # self.get_logger().warn(f"object_sizes = {len(self.object_sizes[5])}")
+        # self.get_logger().warn(f"object_x_min = {len(self.object_x_min[5])}")
+        # self.get_logger().warn(f"object_x_max = {len(self.object_x_max[5])}")
+        # self.get_logger().warn(f"object_y_min = {len(self.object_y_min[5])}")
+        # self.get_logger().warn(f"object_y_max = {len(self.object_y_max[5])}")
         # img_size = np.array(send.color_mask_subject_size)
-        # img_xmin = np.array(send.color_mask_subject_XMin)
-        # img_xmax = np.array(send.color_mask_subject_XMax)
-        # img_ymin = np.array(send.color_mask_subject_YMin)
-        # img_ymax = np.array(send.color_mask_subject_YMax)
-        filter_img_size = img_size > 380
+        # img_xmin = np.array(self.object_x_min)
+        # img_xmax = np.array(self.object_x_max)
+        # img_ymin = np.array(self.object_y_min)
+        # img_ymax = np.array(self.object_y_max)
+        filter_img_size = img_size > 1000
+        # self.get_logger().warn(f"filter_img_size = {len(filter_img_size[5])}")
         has_object = filter_img_size.any()
-        # send.data_check = False
+        self.new_object_info = False
         if not has_object:
             self.get_logger().debug(f"no object")
             self.upper_center.x, self.upper_center.y = 0, 0
@@ -231,62 +239,63 @@ class Strategy(API):
         self.sendContinuousValue(self.speed_x, 0 + ORIGIN_TRANSLATION, self.theta)
     
     def run(self):
-        try:
-            while rclpy.ok():
-                rclpy.spin_once(self, timeout_sec=0.1)
-                if self.is_start:
-                    self.get_logger().info(f"status = {self.status}")
-                    if self.status == 'First':
-                        self.initial()
-                        # self.time_sleep(1.0)
-                        time.sleep(1.0)
-                        self.sendbodyAuto(1)
-                        self.status = 'line'  if self.dio == 0x02 else 'Arrow_Part'
-                        if self.status == 'Arrow_Part':
-                            self.sendHeadMotor(2, 1400, 50)
-                    elif self.status == 'line':            
-                        # if self.data_check == True:
-                        self.update()
-                        self.theta_value()
-                        # arrow = self.arrow_yolo()
-                        # if arrow and self.line_status == 'arrow':
-                        #     self.status = 'First_arrow'
-                        #     self.get_logger().warn(f"status = {self.status}")
-                        self.get_logger().warn(f"slope = {self.calculate_slope()}")
-                        if self.pre_speed_x != self.speed_x or self.pre_theta != self.theta:
-                            self.sendContinuousValue(self.speed_x , 0, self.theta)
-                        self.pre_speed_x = self.speed_x
-                        self.pre_theta = self.theta
-                    # elif self.status == 'First_arrow':
-                    #     # if send.data_check == True:
-                    #     self.seek_line.update()
-                    #     self.line_to_arrow()
-                    #     self.sendContinuousValue(self.speed_x, self.speed_y, self.theta)
-                    # elif self.status == 'Arrow_Part':
-                    #     if self.turn_now_flag:
-                    #         self.arrow_turn()
-                    #     else:
-                    #         self.arrow_yolo()
-                    #         if self.can_turn_flag:
-                    #             self.get_logger().info(f"can turn !!!")
-                    #             if self.arrow_center.y >= 190:
-                    #                 self.arrow_cnt_times += 1
-                    #             if self.arrow_cnt_times >= 4:
-                    #                 self.turn_now_flag = True
-                    #                 self.arrow_cnt_times = 0
-                    #         self.imu_go()
-                    # self.get_logger().info(f"status = {self.status}")
-                    self.get_logger().info(f"speed = {self.speed_x}")
-                    self.get_logger().info(f"theta = {self.theta}")
-                else:
-                    if self.status != 'First':
-                        # self.initial()
-                        # self.status = 'First'
-                        self.sendbodyAuto(0)
-                    self.status = 'First'
+        # try:
+        #     while rclpy.ok():
+        #         rclpy.spin_once(self, timeout_sec=0.1)
+        if self.is_start:
+            self.get_logger().info(f"status = {self.status}")
+            if self.status == 'First':
+                self.initial()
+                # self.time_sleep(1.0)
+                self.time_sleep(1.0)
+                self.sendbodyAuto(1)
+                self.status = 'line'  if self.dio == 0x02 else 'Arrow_Part'
+                if self.status == 'Arrow_Part':
+                    self.sendHeadMotor(2, 1400, 50)
+            elif self.status == 'line':            
+                if self.new_object_info:
+                    self.update()
+                    self.theta_value()
+                    # arrow = self.arrow_yolo()
+                    # if arrow and self.line_status == 'arrow':
+                    #     self.status = 'First_arrow'
+                    #     self.get_logger().warn(f"status = {self.status}")
+                self.get_logger().warn(f"slope = {self.calculate_slope()}")
+            # elif self.status == 'First_arrow':
+            #     if self.new_object_info == True:
+            #         self.update()
+            #         self.line_to_arrow()
+            #     # self.sendContinuousValue(self.speed_x, self.speed_y, self.theta)
+            # elif self.status == 'Arrow_Part':
+            #     if self.turn_now_flag:
+            #         self.arrow_turn()
+            #     else:
+            #         self.arrow_yolo()
+            #         if self.can_turn_flag:
+            #             self.get_logger().info(f"can turn !!!")
+            #             if self.arrow_center.y >= 190:
+            #                 self.arrow_cnt_times += 1
+            #             if self.arrow_cnt_times >= 4:
+            #                 self.turn_now_flag = True
+            #                 self.arrow_cnt_times = 0
+            #         self.imu_go()
+            # self.get_logger().info(f"status = {self.status}")
+            if self.pre_speed_x != self.speed_x or self.pre_theta != self.theta:
+                self.sendContinuousValue(self.speed_x , 0, self.theta+1)
+                self.pre_speed_x = self.speed_x
+                self.pre_theta = self.theta
+            self.get_logger().info(f"speed = {self.speed_x}")
+            self.get_logger().info(f"theta = {self.theta}")
+        else:
+            # self.get_logger().info(f"status = {self.status}")
+            if self.status != 'First':
+                # self.initial()
+                # self.status = 'First'
+                self.sendbodyAuto(0)
+            self.status = 'First'
 
-        except EnvironmentError:
-            rclpy.shutdown()
+        # except EnvironmentError:
+        #     rclpy.shutdown()
 
 class Coordinate:
     def __init__(self, x, y):
@@ -376,12 +385,16 @@ class Coordinate:
 def main(args=None):
     rclpy.init(args=args)
     node = Strategy()
-    node.run()
-    node.destroy_node()
+    executor = MultiThreadedExecutor()
+    executor.add_node(node)
+    try:
+        executor.spin()
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
-
 
 '''
 ##### color info #####
