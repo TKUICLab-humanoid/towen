@@ -8,11 +8,12 @@ import rclpy
 from rclpy.node import Node
 from rclpy.callback_groups import ReentrantCallbackGroup
 from rclpy.duration import Duration
-from rclpy.executors import MultiThreadedExecutor
 from rclpy.qos import QoSProfile, HistoryPolicy, ReliabilityPolicy, DurabilityPolicy
 
 from std_msgs.msg import String, UInt8MultiArray, Int16
 from geometry_msgs.msg import Point
+from sensor_msgs.msg import Image as RosImage
+from cv_bridge import CvBridge
 
 from tku_msgs.msg import (
     Interface,
@@ -32,12 +33,19 @@ class API(Node):
     def __init__(self, node_name: str = 'API'):
         super().__init__(node_name)
 
+        # 影像 stamp 與到達間隔的 EMA（毫秒）
+        self.label_matrix_stamp = (0, 0)
+        self._lm_prev_ns = None
+        self.lm_dt_ms_ema = None   # 影像到達間隔的指數移動平均 (ms)
+        self.lm_fps_ema = None     # 影像 FPS 的 EMA
+
+
+
         # --- Callback groups：IMU 與影像分流，避免互相阻塞 ---
         self.imu_cbg = ReentrantCallbackGroup()
         self.image_cbg = ReentrantCallbackGroup()
 
         # ===================== QoS =====================
-        # 只保留最新一筆；如需晚加入者馬上拿到上一筆，將 durability 改成 TRANSIENT_LOCAL（發佈端與訂閱端都要一致）
         self.qos_latest = QoSProfile(
             history=HistoryPolicy.KEEP_LAST, depth=1,
             reliability=ReliabilityPolicy.RELIABLE,
@@ -63,16 +71,20 @@ class API(Node):
         self.yolo_zed = self.create_subscription(
             Point, '/zed_yolo_ball', self.Yolo_Zed, 10, callback_group=self.imu_cbg
         )
-        self.ContinuousValue_sub = self.create_subscription(Interface, '/ChangeContinuousValue_Topic', self.ContinuousValueFunction, 1000)
-        # ===================== 訂閱器（影像偵測） =====================
-        # 1) 總體 label_matrix（全域二值化）
-        self.label_matrix: Optional[np.ndarray] = None
-        self.label_matrix_flatten: Optional[np.ndarray] = None
-        self.mask_sub = self.create_subscription(
-            UInt8MultiArray, 'label_matrix', self.mask_matrix_callback, 10, callback_group=self.image_cbg
+        self.ContinuousValue_sub = self.create_subscription(
+            Interface, '/ChangeContinuousValue_Topic', self.ContinuousValueFunction, 1000
         )
 
-        # 2)（可選）每個顏色的 mask（若偵測端有發布 <color>_mask 才會收到；否則維持 None）
+        # ===================== 訂閱器（影像偵測） =====================
+        # 總體 label_matrix（mono8 Image）
+        self.label_matrix: Optional[np.ndarray] = None
+        self.label_matrix_flatten: Optional[np.ndarray] = None
+        self._bridge = CvBridge()
+        self.label_img_sub = self.create_subscription(
+            RosImage, 'label_matrix', self._label_image_cb, 10, callback_group=self.image_cbg
+        )
+
+        # 每個顏色的 mask（若偵測端有發布 <color>_mask 才會收到；型別仍為 UInt8MultiArray）
         self.latest_masks: Dict[str, Optional[np.ndarray]] = {c: None for c in self.COLORS}
         for c in self.COLORS:
             topic = f'{c}_mask'
@@ -85,7 +97,7 @@ class API(Node):
             )
             self.get_logger().info(f'[mask] Subscribed to {topic}')
 
-        # 3) 每色偵測結果（高頻、精簡）：/detections/<label>
+        # 每色偵測結果（高頻、精簡）：/detections/<label>
         self.latest_objects: Dict[str, List[dict]] = {c: [] for c in self.COLORS}
         self.latest_stamps: Dict[str, Tuple[int, int]] = {c: (0, 0) for c in self.COLORS}
         for c in self.COLORS:
@@ -96,21 +108,16 @@ class API(Node):
             )
             self.get_logger().info(f'[det] Subscribed to {topic}')
 
-        # （若仍保留舊的「整包 object_info」可解開下列註解）
-        # self.object_info_sub = self.create_subscription(
-        #     String, 'object_info', self.object_info_callback, 10, callback_group=self.image_cbg
-        # )
-
         # ===================== 狀態 / 統計 =====================
         self.is_start: bool = False
-        self.dio: Optional[int] = None
+        self.dio: Optional[int] = 0x00
         self.roll = self.pitch = self.yaw = 0.0
-        self.imu_rpy = [0.0, 0.0, 0.0]
+        self.imu_rpy = [self.roll, self.pitch, self.yaw]
 
         self.pose_x = self.pose_y = self.pose_z = 0.0
-        self.pose = [0.0, 0.0, 0.0]
+        self.pose = [self.pose_x, self.pose_y, self.pose_z]
 
-        self.xx,self.yy,self.tt = 0,0,0
+        self.xx, self.yy, self.tt = 0, 0, 0
 
         self.color_counts: List[int] = [0] * len(self.COLORS)
         self.object_sizes: List[List[float]] = [[] for _ in self.COLORS]
@@ -124,11 +131,9 @@ class API(Node):
     # ===================== 共用工具 =====================
     @staticmethod
     def _is_newer_stamp(a: Tuple[int, int], b: Tuple[int, int]) -> bool:
-        """a 是否新於 b；a/b 皆為 (sec, nsec)"""
         return (a[0] > b[0]) or (a[0] == b[0] and a[1] > b[1])
 
     def _recompute_stats(self) -> None:
-        """依據 self.latest_objects 重算 color_counts 與 bbox/area 統計"""
         n = len(self.COLORS)
         self.color_counts = [0] * n
         self.object_sizes = [[] for _ in self.COLORS]
@@ -155,28 +160,22 @@ class API(Node):
 
     # ===================== 偵測（per-color）callback =====================
     def _det_callback(self, msg: String, label: str) -> None:
-        """訂閱每色 detections/<label>，更新最新快照與統計"""
         try:
             data = json.loads(msg.data)
             st = data.get('stamp', {})
             cur = (int(st.get('sec', 0)), int(st.get('nanosec', 0)))
             prev = self.latest_stamps.get(label, (0, 0))
             if not self._is_newer_stamp(cur, prev):
-                # 舊資料忽略
                 return
 
             objs = data.get('objects', [])
             if not isinstance(objs, list):
                 objs = []
 
-            # 更新快照與 stamp
             self.latest_objects[label] = objs
             self.latest_stamps[label] = cur
 
-            # 重算統計
             self._recompute_stats()
-
-            # 標記新資料
             self.new_object_info = True
 
         except Exception as e:
@@ -184,8 +183,7 @@ class API(Node):
 
     # ===================== （可選）整包 object_info callback =====================
     def object_info_callback(self, msg: String) -> None:
-        """若你同時保留整包 object_info，可使用此 callback；不再主推。"""
-        if self.new_object_info == False:
+        if self.new_object_info is False:
             try:
                 data = json.loads(msg.data)
                 if isinstance(data, str):
@@ -194,7 +192,6 @@ class API(Node):
                 self.get_logger().error(f"[object_info] JSON parse error: {e}")
                 return
 
-            # 將整包拆回 per-color 最新快照
             stamp = data.get('_stamp', {'sec': 0, 'nanosec': 0})
             cur_all = (int(stamp.get('sec', 0)), int(stamp.get('nanosec', 0)))
 
@@ -224,18 +221,26 @@ class API(Node):
         except Exception as e:
             self.get_logger().error(f"[mask] 還原 {label} mask 失敗：{e}")
 
-    def mask_matrix_callback(self, msg: UInt8MultiArray) -> None:
-        dims = msg.layout.dim
-        if len(dims) < 2:
-            self.get_logger().error("[label_matrix] layout 格式錯誤")
-            return
-        rows, cols = dims[0].size, dims[1].size
+    def _label_image_cb(self, msg: RosImage) -> None:
         try:
-            arr = np.array(msg.data, dtype=np.uint8).reshape((rows, cols))
+            arr = self._bridge.imgmsg_to_cv2(msg, desired_encoding='mono8')
             self.label_matrix = arr
             self.label_matrix_flatten = arr.flatten()
+
+            # ←← 新增：記下時間戳並估算週期/頻率
+            self.label_matrix_stamp = (int(msg.header.stamp.sec), int(msg.header.stamp.nanosec))
+            cur_ns = self.label_matrix_stamp[0] * 1_000_000_000 + self.label_matrix_stamp[1]
+            if self._lm_prev_ns is not None and cur_ns > self._lm_prev_ns:
+                dt_ms = (cur_ns - self._lm_prev_ns) / 1e6
+                alpha = 0.2  # 平滑係數，可調 0.1~0.3
+                self.lm_dt_ms_ema = dt_ms if self.lm_dt_ms_ema is None else (1 - alpha) * self.lm_dt_ms_ema + alpha * dt_ms
+                if self.lm_dt_ms_ema and self.lm_dt_ms_ema > 1e-6:
+                    self.lm_fps_ema = 1000.0 / self.lm_dt_ms_ema
+            self._lm_prev_ns = cur_ns
+
         except Exception as e:
-            self.get_logger().error(f"[label_matrix] 無法還原：{e}")
+            self.get_logger().error(f"[label_matrix(Image)] 轉換失敗：{e}")
+
 
     # ===================== IMU / YOLO callback =====================
     def dio_callback(self, msg: Dio) -> None:
@@ -297,44 +302,18 @@ class API(Node):
         self.draw_image_pub.publish(img)
 
     def time_sleep(self, second: float) -> None:
-        # 注意：在 callback 內睡會阻塞；建議用 Timer 或 state-machine 節奏控管
         self.get_clock().sleep_for(Duration(seconds=second))
 
     # ===================== 查詢介面（便於決策層使用） =====================
     def get_objects(self, color: Optional[str] = None) -> List[dict]:
-        """
-        color=None → 回傳合併後的所有物件（list）
-        color 指定 → 回傳該色的最新物件 list
-        """
         if color is None:
             all_objs: List[dict] = []
             for c in self.COLORS:
                 all_objs.extend(self.latest_objects.get(c, []))
             return all_objs
         return self.latest_objects.get(color, [])
-    
 
-    def ContinuousValueFunction(self, msg):
+    def ContinuousValueFunction(self, msg: Interface) -> None:
         self.xx = msg.x
         self.yy = msg.y
         self.tt = msg.theta
-
-# def main():
-#     rclpy.init()
-#     node = API()
-
-#     # 使用多執行緒 executor，允許同時處理 IMU/影像回呼
-#     executor = MultiThreadedExecutor(num_threads=2)
-#     executor.add_node(node)
-
-#     try:
-#         executor.spin()
-#     except KeyboardInterrupt:
-#         pass
-#     finally:
-#         executor.shutdown()
-#         node.destroy_node()
-#         rclpy.shutdown()
-
-# if __name__ == '__main__':
-#     main()
