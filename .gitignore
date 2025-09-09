@@ -11,6 +11,9 @@ src/strategy/strategy/sr/__pycache__
 src/strategy/strategy/obs/__pycache__
 src/strategy/strategy/wl/__pycache__
 src/strategy/__pycache__
+src/zed/
+src/zed-ros2-wrapper/
+src/vision_opencv/
 
 *.ods
 detection.jpg

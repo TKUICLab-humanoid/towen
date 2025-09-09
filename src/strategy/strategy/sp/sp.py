@@ -121,6 +121,7 @@ class Strategy(API):
             while rclpy.ok():
                 rclpy.spin_once(self, timeout_sec=0.1)
                 if self.is_start:
+<<<<<<< HEAD
                     self.sp_targetl.x, self.sp_targetl.y, self.sp_sizel = self.target_find(TARGET_L)
                     self.sp_targetr.x, self.sp_targetr.y, self.sp_sizer = self.target_find(TARGET_R)
                     self.sp_ball = self.sp_sizel + self.sp_sizer 
@@ -156,6 +157,50 @@ class Strategy(API):
                     self.sp_targetr.x, self.sp_targetr.y, self.sp_sizer = self.target_find(TARGET_R)
                     self.sp_ball = self.sp_sizel + self.sp_sizer 
                     self.data_print()
+=======
+                    # self.sp_targetl.x, self.sp_targetl.y, self.sp_sizel = self.target_find(TARGET_L)
+                    # self.sp_targetr.x, self.sp_targetr.y, self.sp_sizer = self.target_find(TARGET_R)
+                    # self.sp_ball = self.sp_sizel + self.sp_sizer 
+                    # if self.status == 'First':
+                    #     self.init()
+                    #     time.sleep(1)
+                    #     self.sendbodyAuto(1)
+                    #     self.status = 'Forward'
+                    # elif self.status == 'Forward':
+                    #     self.imu_go(self.speed, FORWARD_SPEED_ADD, FORWARD_MAX_SPEED, FORWARD_THETA, FORWARD_ORIGIN_THETA)
+                    #     self.status = self.status_change()
+                    # elif self.status == 'Decelerating':
+                    #     self.imu_go(self.speed, FORWARD_SPEED_SUB, FORWARD_MIN_SPEED, FORWARD_THETA, FORWARD_ORIGIN_THETA)
+                    #     self.status = self.status_change()
+                    # elif self.status == 'Backward':
+                    #     self.imu_go(self.speed, BACK_SPEED_ADD, BACK_MAX_SPEED, BACK_THETA, BACK_ORIGIN_THETA)
+                    
+                    # if self.pre_speed != self.speed or self.pre_theta != self.theta:
+                    #     self.sendContinuousValue(self.speed, 0, self.theta)
+                    #     self.pre_speed = self.speed
+                    #     self.pre_theta = self.theta
+                    #     self.hand_up()
+                    # self.data_print()
+                    if self.first == True:
+                        self.sendBodySector(101)
+                        time.sleep(1)
+                        self.first = False
+                else:
+                    # if self.status != 'First':
+                    #     self.sendbodyAuto(0)
+                    #     self.sendBodySector(29)
+                    #     time.sleep(1)
+                    #     self.init()
+                    # self.status = 'First'
+                    # self.sp_targetl.x, self.sp_targetl.y, self.sp_sizel = self.target_find(TARGET_L)
+                    # self.sp_targetr.x, self.sp_targetr.y, self.sp_sizer = self.target_find(TARGET_R)
+                    # self.sp_ball = self.sp_sizel + self.sp_sizer 
+                    # self.data_print()
+                    if self.dio == 0x04:
+                        self.sendBodySector(29)
+                        time.sleep(1)
+                    
+>>>>>>> update
         except EnvironmentError:
             rclpy.shutdown()
 

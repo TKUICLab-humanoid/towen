@@ -51,6 +51,7 @@ class Strategy(API):
         np_array = np.vstack([np.pad(np.array(lst), (0, (max_len - len(lst)))) for lst in list2d])
         return np_array
 
+<<<<<<< HEAD
     def update(self):
         img_size = self.cvt_list2d2numpy(self.object_sizes)
         img_xmin = self.cvt_list2d2numpy(self.object_x_min)
@@ -76,47 +77,175 @@ class Strategy(API):
             self.upper_center.x, self.upper_center.y = 0, 0
             self.lower_center.x, self.lower_center.y = 0, 0
             return
+=======
+    # def update(self):
+    #     img_size = self.cvt_list2d2numpy(self.object_sizes)
+    #     img_xmin = self.cvt_list2d2numpy(self.object_x_min)
+    #     img_xmax = self.cvt_list2d2numpy(self.object_x_max)
+    #     img_ymin = self.cvt_list2d2numpy(self.object_y_min)
+    #     img_ymax = self.cvt_list2d2numpy(self.object_y_max)
+    #     # self.get_logger().warn(f"object_sizes = {len(self.object_sizes[5])}")
+    #     # self.get_logger().warn(f"object_x_min = {len(self.object_x_min[5])}")
+    #     # self.get_logger().warn(f"object_x_max = {len(self.object_x_max[5])}")
+    #     # self.get_logger().warn(f"object_y_min = {len(self.object_y_min[5])}")
+    #     # self.get_logger().warn(f"object_y_max = {len(self.object_y_max[5])}")
+    #     # img_size = np.array(send.color_mask_subject_size)
+    #     # img_xmin = np.array(self.object_x_min)
+    #     # img_xmax = np.array(self.object_x_max)
+    #     # img_ymin = np.array(self.object_y_min)
+    #     # img_ymax = np.array(self.object_y_max)
+    #     filter_img_size = img_size > 500
+    #     # self.get_logger().warn(f"filter_img_size = {len(filter_img_size[5])}")
+    #     has_object = filter_img_size.any()
+    #     self.new_object_info = False
+    #     if not has_object:
+    #         self.get_logger().debug(f"no object")
+    #         self.upper_center.x, self.upper_center.y = 0, 0
+    #         self.lower_center.x, self.lower_center.y = 0, 0
+    #         return
+>>>>>>> update
         
-        # print(img_ymin[filter_img_size])
-        img_xmin_new = int(img_xmin[filter_img_size].min())
-        img_xmax_new = int(img_xmax[filter_img_size].max())
-        img_ymin_new = int(img_ymin[filter_img_size].min())
-        img_ymax_new = int(img_ymax[filter_img_size].max())
-        self.drawImageFunction(7, 1, img_xmin_new, img_xmax_new, img_ymin_new, img_ymax_new, 255, 0, 255)
-        #影像輸出為一維陣列，8bitslabel_matrix
-        if self.color_counts:
-            # img_data = np.frombuffer(self.label_matrix_flatten)
-            # self.get_logger().info(f"label_matrix_flatten{img_data}")
-            # img_data = img_data.reshape(240, 320)
-            img_data = self.label_matrix[img_ymin_new : img_ymax_new, img_xmin_new : img_xmax_new]
+    #     # print(img_ymin[filter_img_size])
+    #     img_xmin_new = int(img_xmin[filter_img_size].min())
+    #     img_xmax_new = int(img_xmax[filter_img_size].max())
+    #     img_ymin_new = int(img_ymin[filter_img_size].min())
+    #     img_ymax_new = int(img_ymax[filter_img_size].max())
+    #     self.drawImageFunction(7, 1, img_xmin_new, img_xmax_new, img_ymin_new, img_ymax_new, 255, 0, 255)
+    #     #影像輸出為一維陣列，8bitslabel_matrix
+    #     if self.color_counts:
+    #         # img_data = np.frombuffer(self.label_matrix_flatten)
+    #         # self.get_logger().info(f"label_matrix_flatten{img_data}")
+    #         # img_data = img_data.reshape(240, 320)
+    #         img_data = self.label_matrix[img_ymin_new : img_ymax_new, img_xmin_new : img_xmax_new]
         
-        y_coord, x_coord = np.where(img_data != 0)
+    #     y_coord, x_coord = np.where(img_data != 0)
 
-        if len(x_coord) == 0:
-            self.upper_center.x, self.upper_center.y = 0, 0
-            self.lower_center.x, self.lower_center.y = 0, 0
-            return
+    #     if len(x_coord) == 0:
+    #         self.upper_center.x, self.upper_center.y = 0, 0
+    #         self.lower_center.x, self.lower_center.y = 0, 0
+    #         return
         
-        middle_y = (np.max(y_coord) + np.min(y_coord)) // 2
+    #     middle_y = (np.max(y_coord) + np.min(y_coord)) // 2
+    #     upper_filter = y_coord <= middle_y
+    #     upper_x, upper_y = x_coord[upper_filter], y_coord[upper_filter]
+    #     self.upper_center.x = np.mean(upper_x) + img_xmin_new
+    #     self.upper_center.y = np.mean(upper_y) + img_ymin_new
+    #     # upper_xmin = upper_x.min() + img_xmin_new
+    #     # upper_xmax = upper_x.max() + img_xmin_new
+    #     # upper_ymin = upper_y.min() + img_ymin_new
+    #     # upper_ymax = upper_y.max() + img_ymin_new
+    #     # send.drawImageFunction(5, 1, upper_xmin, upper_xmax, upper_ymin, upper_ymax, 255, 0, 0)
+    #     lower_filter = y_coord > middle_y
+    #     lower_x, lower_y = x_coord[lower_filter], y_coord[lower_filter]
+    #     self.lower_center.x = np.mean(lower_x) + img_xmin_new
+    #     self.lower_center.y = np.mean(lower_y) + img_ymin_new
+    #     # lower_xmin = lower_x.min() + img_xmin_new
+    #     # lower_xmax = lower_x.max() + img_xmin_new
+    #     # lower_ymin = lower_y.min() + img_ymin_new
+    #     # lower_ymax = lower_y.max() + img_ymin_new
+    #     # send.drawImageFunction(6, 1, lower_xmin, lower_xmax, lower_ymin, lower_ymax, 0, 255, 0)
+    #     self.drawImageFunction(2, 0, int(self.upper_center.x), int(self.lower_center.x), int(self.upper_center.y), int(self.lower_center.y), 0, 0, 0)
+
+    def update(self):
+        # 0) 必要資料檢查
+        if self.label_matrix is None:
+            self.get_logger().warn("label_matrix 尚未準備好（尚未收到影像）")
+            self.new_object_info = False
+            return
+
+        SIZE_TH = 500  # 面積門檻（你原本的 500）
+
+        # 1) 逐 color/逐物件收集通過面積門檻的 bbox，避免 2D 布林索引
+        xs_min, xs_max, ys_min, ys_max = [], [], [], []
+        for c in range(len(self.object_sizes)):
+            n = min(
+                len(self.object_sizes[c]),
+                len(self.object_x_min[c]),
+                len(self.object_x_max[c]),
+                len(self.object_y_min[c]),
+                len(self.object_y_max[c]),
+            )
+            for j in range(n):
+                try:
+                    area = float(self.object_sizes[c][j])
+                    if area <= SIZE_TH:
+                        continue
+                    xs_min.append(int(self.object_x_min[c][j]))
+                    xs_max.append(int(self.object_x_max[c][j]))
+                    ys_min.append(int(self.object_y_min[c][j]))
+                    ys_max.append(int(self.object_y_max[c][j]))
+                except Exception:
+                    # 任一筆資料轉型失敗就跳過
+                    continue
+
+        # 這批資料消化完
+        self.new_object_info = False
+
+        # 2) 若沒有通過門檻的物件，重置中心並離開
+        if not xs_min:
+            self.get_logger().debug("no object after size filter")
+            self.upper_center.x = self.upper_center.y = 0
+            self.lower_center.x = self.lower_center.y = 0
+            return
+
+        # 3) 聚合 ROI 並夾邊界
+        img_xmin_new = min(xs_min)
+        img_xmax_new = max(xs_max)
+        img_ymin_new = min(ys_min)
+        img_ymax_new = max(ys_max)
+
+        H, W = self.label_matrix.shape[:2]
+        x1 = int(np.clip(img_xmin_new, 0, max(0, W - 1)))
+        x2 = int(np.clip(img_xmax_new, 0, W))      # 右/下邊界可等於 W
+        y1 = int(np.clip(img_ymin_new, 0, max(0, H - 1)))
+        y2 = int(np.clip(img_ymax_new, 0, H))
+
+        if x2 <= x1 or y2 <= y1:
+            self.get_logger().warn(f"無效 ROI: ({x1},{y1})-({x2},{y2})")
+            self.upper_center.x = self.upper_center.y = 0
+            self.lower_center.x = self.lower_center.y = 0
+            return
+
+        self.drawImageFunction(7, 1, x1, x2, y1, y2, 255, 0, 255)
+
+        # 4) 取 ROI 內非零像素並計算上下半部中心
+        img_data = self.label_matrix[y1:y2, x1:x2]
+        if img_data.size == 0:
+            self.upper_center.x = self.upper_center.y = 0
+            self.lower_center.x = self.lower_center.y = 0
+            return
+
+        y_coord, x_coord = np.where(img_data != 0)
+        if len(x_coord) == 0:
+            self.upper_center.x = self.upper_center.y = 0
+            self.lower_center.x = self.lower_center.y = 0
+            return
+
+        middle_y = (int(np.max(y_coord)) + int(np.min(y_coord))) // 2
         upper_filter = y_coord <= middle_y
+        lower_filter = y_coord >  middle_y
+
         upper_x, upper_y = x_coord[upper_filter], y_coord[upper_filter]
-        self.upper_center.x = np.mean(upper_x) + img_xmin_new
-        self.upper_center.y = np.mean(upper_y) + img_ymin_new
-        # upper_xmin = upper_x.min() + img_xmin_new
-        # upper_xmax = upper_x.max() + img_xmin_new
-        # upper_ymin = upper_y.min() + img_ymin_new
-        # upper_ymax = upper_y.max() + img_ymin_new
-        # send.drawImageFunction(5, 1, upper_xmin, upper_xmax, upper_ymin, upper_ymax, 255, 0, 0)
-        lower_filter = y_coord > middle_y
         lower_x, lower_y = x_coord[lower_filter], y_coord[lower_filter]
-        self.lower_center.x = np.mean(lower_x) + img_xmin_new
-        self.lower_center.y = np.mean(lower_y) + img_ymin_new
-        # lower_xmin = lower_x.min() + img_xmin_new
-        # lower_xmax = lower_x.max() + img_xmin_new
-        # lower_ymin = lower_y.min() + img_ymin_new
-        # lower_ymax = lower_y.max() + img_ymin_new
-        # send.drawImageFunction(6, 1, lower_xmin, lower_xmax, lower_ymin, lower_ymax, 0, 255, 0)
-        self.drawImageFunction(2, 0, int(self.upper_center.x), int(self.lower_center.x), int(self.upper_center.y), int(self.lower_center.y), 0, 0, 0)
+
+        # 5) 防呆：若某半區為空，退化為整體平均
+        if len(upper_x) == 0 or len(lower_x) == 0:
+            cx = float(np.mean(x_coord)) + x1
+            cy = float(np.mean(y_coord)) + y1
+            self.upper_center.x = self.lower_center.x = cx
+            self.upper_center.y = self.lower_center.y = cy
+        else:
+            self.upper_center.x = float(np.mean(upper_x)) + x1
+            self.upper_center.y = float(np.mean(upper_y)) + y1
+            self.lower_center.x = float(np.mean(lower_x)) + x1
+            self.lower_center.y = float(np.mean(lower_y)) + y1
+
+        self.drawImageFunction(
+            2, 0,
+            int(self.upper_center.x), int(self.lower_center.x),
+            int(self.upper_center.y), int(self.lower_center.y),
+            0, 0, 0
+        )
 
     def calculate_slope(self):
         delta = self.upper_center - self.lower_center
@@ -242,14 +371,22 @@ class Strategy(API):
         # try:
         #     while rclpy.ok():
         #         rclpy.spin_once(self, timeout_sec=0.1)
+<<<<<<< HEAD
         if self.is_start:
+=======
+        if not self.is_start:
+>>>>>>> update
             self.get_logger().info(f"status = {self.status}")
             if self.status == 'First':
                 self.initial()
                 # self.time_sleep(1.0)
                 self.time_sleep(1.0)
                 self.sendbodyAuto(1)
+<<<<<<< HEAD
                 self.status = 'line'  if self.dio == 0x02 else 'Arrow_Part'
+=======
+                self.status = 'line'  if self.dio == 0x00 else 'Arrow_Part'
+>>>>>>> update
                 if self.status == 'Arrow_Part':
                     self.sendHeadMotor(2, 1400, 50)
             elif self.status == 'line':            
