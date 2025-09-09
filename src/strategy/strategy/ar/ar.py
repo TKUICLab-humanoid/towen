@@ -856,7 +856,7 @@ LEG_BACK = 21
 # [最左, 中左, 中間, 中右, 最右]
 X_BENCHMARK = [220, 220, 210, 215, 218]  # 改大射左
 Y_BENCHMARK = 200                        # 改大射高
-SHOOT_DELAY = 2.7                       # 改大變快 (秒)
+SHOOT_DELAY = 0                       # 改大變快 (秒)
 
 # motion sector
 PREPARE = 10
@@ -916,6 +916,8 @@ class Strategy(API):
         self.hand_back_cnt = 0
         self.leg_back_cnt = 0
         self.x_benchmark_type = 0
+        self.create_timer(0.05, self.run)
+
 
         # 主迴圈
         self.create_timer(0.05, self.run)

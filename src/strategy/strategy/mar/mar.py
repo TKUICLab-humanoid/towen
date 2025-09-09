@@ -51,33 +51,6 @@ class Strategy(API):
         np_array = np.vstack([np.pad(np.array(lst), (0, (max_len - len(lst)))) for lst in list2d])
         return np_array
 
-<<<<<<< HEAD
-    def update(self):
-        img_size = self.cvt_list2d2numpy(self.object_sizes)
-        img_xmin = self.cvt_list2d2numpy(self.object_x_min)
-        img_xmax = self.cvt_list2d2numpy(self.object_x_max)
-        img_ymin = self.cvt_list2d2numpy(self.object_y_min)
-        img_ymax = self.cvt_list2d2numpy(self.object_y_max)
-        # self.get_logger().warn(f"object_sizes = {len(self.object_sizes[5])}")
-        # self.get_logger().warn(f"object_x_min = {len(self.object_x_min[5])}")
-        # self.get_logger().warn(f"object_x_max = {len(self.object_x_max[5])}")
-        # self.get_logger().warn(f"object_y_min = {len(self.object_y_min[5])}")
-        # self.get_logger().warn(f"object_y_max = {len(self.object_y_max[5])}")
-        # img_size = np.array(send.color_mask_subject_size)
-        # img_xmin = np.array(self.object_x_min)
-        # img_xmax = np.array(self.object_x_max)
-        # img_ymin = np.array(self.object_y_min)
-        # img_ymax = np.array(self.object_y_max)
-        filter_img_size = img_size > 1000
-        # self.get_logger().warn(f"filter_img_size = {len(filter_img_size[5])}")
-        has_object = filter_img_size.any()
-        self.new_object_info = False
-        if not has_object:
-            self.get_logger().debug(f"no object")
-            self.upper_center.x, self.upper_center.y = 0, 0
-            self.lower_center.x, self.lower_center.y = 0, 0
-            return
-=======
     # def update(self):
     #     img_size = self.cvt_list2d2numpy(self.object_sizes)
     #     img_xmin = self.cvt_list2d2numpy(self.object_x_min)
@@ -103,7 +76,6 @@ class Strategy(API):
     #         self.upper_center.x, self.upper_center.y = 0, 0
     #         self.lower_center.x, self.lower_center.y = 0, 0
     #         return
->>>>>>> update
         
     #     # print(img_ymin[filter_img_size])
     #     img_xmin_new = int(img_xmin[filter_img_size].min())
@@ -371,22 +343,14 @@ class Strategy(API):
         # try:
         #     while rclpy.ok():
         #         rclpy.spin_once(self, timeout_sec=0.1)
-<<<<<<< HEAD
-        if self.is_start:
-=======
         if not self.is_start:
->>>>>>> update
             self.get_logger().info(f"status = {self.status}")
             if self.status == 'First':
                 self.initial()
                 # self.time_sleep(1.0)
                 self.time_sleep(1.0)
                 self.sendbodyAuto(1)
-<<<<<<< HEAD
-                self.status = 'line'  if self.dio == 0x02 else 'Arrow_Part'
-=======
                 self.status = 'line'  if self.dio == 0x00 else 'Arrow_Part'
->>>>>>> update
                 if self.status == 'Arrow_Part':
                     self.sendHeadMotor(2, 1400, 50)
             elif self.status == 'line':            
