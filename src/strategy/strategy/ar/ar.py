@@ -852,16 +852,16 @@ VERTICAL_HEAD = 1990
 HEAD_CHECK = 2040
 HAND_BACK = 23
 LEG_BACK = 21
-
+AA = 3
 # [最左, 中左, 中間, 中右, 最右]
-X_BENCHMARK = [220, 220, 210, 215, 218]  # 改大射左
-Y_BENCHMARK = 200                        # 改大射高
-SHOOT_DELAY = 0                       # 改大變快 (秒)
+X_BENCHMARK = [220+AA, 220+AA, 210+AA, 215+AA, 218+AA]  # 改大射左
+Y_BENCHMARK = 160                        # 改大射高
+SHOOT_DELAY = 2.7                     # 改大變快 (秒)
 
 # motion sector
 PREPARE = 10
-SHOOT = 95
-HAND_BACK_SECTOR = 13
+SHOOT = 905
+HAND_BACK_SECTOR = 133
 HAND_UP = 22
 LEG_DOWN = 20
 
@@ -1131,7 +1131,7 @@ class Strategy(API):
 
         elif self.ctrl_status == 'wait_lowest_point':
             # 抵達目標最低點附近 → 排程射擊
-            if abs(self.red_x - self.lowest_x) < 2 and abs(self.red_y - self.lowest_y) < 10 and hasattr(self, 'period_s'):
+            if abs(self.red_x - self.lowest_x) < 2 and abs(self.red_y - self.lowest_y) < 30 and hasattr(self, 'period_s'):
                 fire_delay_s = max(0.0, self.period_s - SHOOT_DELAY)
                 if self.timer is not None:
                     try:
@@ -1147,6 +1147,8 @@ class Strategy(API):
                 self.get_logger().info(f"at lowest y, schedule shoot in {fire_delay_s:.3f}s")
                 self.archery_action_ready = True
                 self.ctrl_status = 'wait_shoot'
+            else:
+                self.get_logger().info(f'wait lowest point')
 
         elif self.ctrl_status == 'archery_action':
             # 決定 X_BENCHMARK 類型
