@@ -1248,11 +1248,11 @@ VERTICAL_HEAD = 1990
 HEAD_CHECK = 2040
 HAND_BACK = 23
 LEG_BACK = 21
-AA = 3
+AA = 15
 # [最左, 中左, 中間, 中右, 最右]
-X_BENCHMARK = [220+AA, 220+AA, 210+AA, 215+AA, 218+AA]  # 改大射左
-Y_BENCHMARK = 160                        # 改大射高
-SHOOT_DELAY = 2.9                     # 改大變快 (秒)
+X_BENCHMARK = [240+AA, 220+AA, 275+AA, 215+AA, 190+AA]  # 改大射左
+Y_BENCHMARK = 200                        # 改大射高
+SHOOT_DELAY = 2.7                     # 改大變快 (秒)
 
 # motion sector
 PREPARE = 10
@@ -1362,6 +1362,7 @@ class Strategy(API):
         self.turn_right_cnt = 0
         self.hand_back_cnt = 0
         self.leg_back_cnt = 0
+        self.findcnt = 0
 
     #=================================================================
     # 以藍-黃-紅同心判定目標中心（red_x, red_y）
@@ -1484,7 +1485,7 @@ class Strategy(API):
 
         # 取最新偵測
         self.x_points_temp = self.red_x
-        self.x_points_temp = self.red_y
+        self.y_points_temp = self.red_y
         self.find()
 
         if self.ctrl_status == 'find_period':
@@ -1500,20 +1501,23 @@ class Strategy(API):
                     self.start_ns = self.cur_det_ns
                     self.get_logger().info(f'start_ns = {self.start_ns}')
                     self.first_point = True
+                    self.findcnt += 1
                 else:
                 # 收集到一定點數，判定是否回到起點附近 → 估計週期
-                    if len(self.x_points) > 1 and self.cur_det_ns and self.start_ns:
-                        # if not (self.red_x - self.x_points_temp) == 0 and  (self.red_y - self.y_points_temp) == 0:
-                        dis = ((self.red_x - self.x_points[0]) ** 2 + (self.red_y - self.y_points[0]) ** 2) ** 0.5
-                        if dis <= 1.5:
-                            self.end_ns = self.cur_det_ns
-                            period_s = max(0.0, (self.end_ns - self.start_ns) / 1e9)
-                            self.lowest_y = max(self.y_points)
-                            self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]
-                            self.get_logger().info(f"period_by_stamp = {period_s:.4f}s")
-                            self.get_logger().info(f'low_y = {self.lowest_y}, low_x = {self.lowest_x}')
-                            self.period_s = period_s
-                            self.ctrl_status = 'archery_action'
+                    if len(self.x_points) > 5 and self.cur_det_ns and self.start_ns:
+                        if self.red_x == self.x_points_temp and self.red_y == self.y_points_temp:
+                            pass
+                        else:
+                            dis = ((self.red_x - self.x_points[0]) ** 2 + (self.red_y - self.y_points[0]) ** 2) ** 0.5
+                            if dis <= 1.5:
+                                self.end_ns = self.cur_det_ns
+                                period_s = max(0.0, (self.end_ns - self.start_ns) / 1e9)
+                                self.lowest_y = max(self.y_points)
+                                self.lowest_x = self.x_points[self.y_points.index(self.lowest_y)]
+                                self.get_logger().info(f"period_by_stamp = {period_s:.4f}s")
+                                self.get_logger().info(f'low_y = {self.lowest_y}, low_x = {self.lowest_x}')
+                                self.period_s = period_s
+                                self.ctrl_status = 'archery_action'
                 # 本輪處理完成
                 self.found = False
 
