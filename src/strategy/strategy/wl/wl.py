@@ -54,7 +54,7 @@ class Strategy(API):
         self.real_bar_center = 160
 
     def walk_switch(self):
-        # self.time_sleep(0.5)
+        # time.sleep(0.5)
         if self.body_auto:
             self.sendbodyAuto(0)
             self.speed_x = 3000
@@ -116,7 +116,7 @@ class Strategy(API):
         if sizes[best_i] < size_filter:
             return False
 
-        if color == 5:  # red bar
+        if color ==5:  # red bar
             self.bar_min.x = xmins[best_i]
             self.bar_max.x = xmaxs[best_i]
             self.bar_min.y = ymins[best_i]
@@ -160,13 +160,13 @@ class Strategy(API):
                     #     self.walk_switch()
                     self.ctrl_status = 'start_line'
                 # self.sendBodySector(1618) #20
-                # self.time_sleep(0.5)
+                # time.sleep(0.5)
                 # self.sendSensorReset(True)   #now
                 # self.sendSensorReset(1,1,1)   #before
                 self.sendSensorReset(True)   #after
                 self.get_logger().info(f"ctrl_status{THIRD_LINE}")
                 self.stop = False
-                self.time_sleep(0.5)
+                time.sleep(0.5)
                 # self.ctrl_status = 'start_line'
             self.get_object(5, 1)
             self.get_object(6, 0)
@@ -189,7 +189,7 @@ class Strategy(API):
                         else:
                             self.ctrl_status = 'start_line'
                             self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
-                            self.time_sleep(0.1)
+                            time.sleep(0.1)
                             # self.sendContinuousValue(1000, 700, 0, 1, 0)
                         # while self.bar_center.x <= 145 or self.bar_center.x > 260: #143
                         #     self.get_object(5, 1)
@@ -212,14 +212,14 @@ class Strategy(API):
                         else:
                             self.ctrl_status = 'start_line'
                             self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
-                            self.time_sleep(0.1)
+                            time.sleep(0.1)
                     else:
                         self.speed_x = 5500         #adjust
                         self.speed_y = 0
                         self.theta = 0
                         self.ctrl_status = 'start_line'
                         self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
-                        self.time_sleep(0.1)
+                        time.sleep(0.1)
 
             elif self.ctrl_status == 'start_line':
                 self.get_logger().info(f"imu ========= {self.imu_rpy[2]}")
@@ -285,25 +285,25 @@ class Strategy(API):
                 if self.body_auto:
                     self.walk_switch()
 
-                self.time_sleep(3)
+                time.sleep(3)
                 self.sendBodySector(29)
-                self.time_sleep(0.5)
+                time.sleep(0.5)
                 self.sendBodySector(81)
-                self.time_sleep(0.5)
+                time.sleep(0.5)
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(PICK_ONE)
                 self.get_logger().info(f"PICK_ONE")
-                self.time_sleep(8)     #12
+                time.sleep(8)     #12
                 self.sendBodySector(PICK_TWO)
                 self.get_logger().info(f"PICK_TWO")
-                self.time_sleep(5)    #10.5
+                time.sleep(5)    #10.5
                 self.sendBodySector(PICK_THREE)
                 self.get_logger().info(f"PICK_THREE")
-                self.time_sleep(8)      #6
+                time.sleep(8)      #6
                 self.get_object(5, 1)
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 # self.sendBodySector(76)
-                # self.time_sleep(0.3)
+                # time.sleep(0.3)
                 self.real_bar_center = self.bar_center.x 
                 self.ctrl_status = 'second_line'
             elif self.ctrl_status == 'second_line':
@@ -323,20 +323,20 @@ class Strategy(API):
                 self.get_logger().info(f"white_Y = {self.line_max.y}")
                 if self.line_max.y >= THIRD_LINE and self.third_line:
                     self.ctrl_status = 'rise_up'
-                    self.time_sleep(10)
+                    time.sleep(10)
                     self.sendHeadMotor(2, 1024, 100)
             elif self.ctrl_status == 'rise_up':
                 if self.body_auto:
                     self.walk_switch()
-                self.time_sleep(1)
+                time.sleep(1)
                 self.sendHeadMotor(2, 1024, 100)
                 self.sendBodySector(LIFT)
                 self.get_logger().info(f"LIFT")
-                self.time_sleep(10)
+                time.sleep(10)
                 self.sendBodySector(78)
-                self.time_sleep(2)
+                time.sleep(2)
                 self.sendBodySector(77)
-                self.time_sleep(2)
+                time.sleep(2)
                 # self.get_logger().info(f"x =============================== {self.real_bar_center}")
                 # if self.real_bar_center > 165 and self.real_bar_center < 210:
                 #     count = (self.real_bar_center - 165) // 7
@@ -345,30 +345,30 @@ class Strategy(API):
                 #     self.get_logger().info(f"count{count}")
                 #     for i in range(count):
                 #         self.sendBodySector(605)
-                #     self.time_sleep(3.5) 
+                #     time.sleep(3.5) 
                 # elif self.real_bar_center < 155 and self.real_bar_center > 120:
                 #     count = (165 - self.real_bar_center) // 7
                 #     count = min(count, 4)
                 #     self.get_logger().info(f"count{count}")
                 #     for i in range(count):
                 #         self.sendBodySector(606)       
-                #     self.time_sleep(3.5) 
+                #     time.sleep(3.5) 
                 # if (FLAG1):
                 #     if WIGHT==80:
                 #         # send.sendBodySector(8889) #field1內
                 #         self.sendBodySector(8880) #field2/field1外
-                #         self.time_sleep(1)
+                #         time.sleep(1)
                 #     elif WIGHT==40:
-                #         self.time_sleep(1)
+                #         time.sleep(1)
                 #     elif WIGHT==86:
                 #         # send.sendBodySector(8680) #field1外
-                #         self.time_sleep(1)
+                #         time.sleep(1)
                 #     elif WIGHT==90:
-                #         self.time_sleep(1)
+                #         time.sleep(1)
                 #     else:
                 #         self.sendBodySector(6660) #2
                 #         # send.sendBodySector(6661) #field1外面
-                #         self.time_sleep(1)
+                #         time.sleep(1)
                 self.ctrl_status = 'final'
             elif self.ctrl_status == 'final':
                 if not self.body_auto:
@@ -390,14 +390,17 @@ class Strategy(API):
                 self.pre_theta = self.now_theta
 
         else:
-            if self.color_counts[5] > 0 :#self.color_counts[6] > 0 :
-                # self.get_object(5, 1)
-                # # self.get_object(6, 0)
+            if self.color_counts[6] > 0 :#self.color_counts[6] > 0 :
+                self.get_object(6, 1)
+                # self.get_object(6, 0)
                 # img_object = (self.object_x_min[5][0] + self.object_x_max[5][0]) // 2
-                # # self.get_logger().info(f"x =============================== {self.bar_center.x}")
-                self.get_logger().info(f"red_y =============================== {self.bar_center.y}")
+                # self.get_logger().info(f"x =============================== {self.bar_center.x}")
+                self.get_logger().info(f"line_center_y =============================== {self.line_center.y}")
+                self.get_logger().info(f"line_center_x =============================== {self.line_center.x}")
                 # self.get_logger().info(f"write_y =============================== {self.object_y_max[6][0]}")
-                # self.time_sleep(1)
+                # time.sleep(1)
+            else:
+                self.get_logger().info(f"no line")
             if self.body_auto:
                 self.walk_switch()
             if not self.stop:
