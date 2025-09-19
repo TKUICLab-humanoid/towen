@@ -8,7 +8,7 @@ import time
 from rclpy.executors import MultiThreadedExecutor
 
 
-HEAD_MOTOR_START = 1150    # 初始位置1456
+HEAD_MOTOR_START = 1170    # 初始位置1456
 # HEAD_MOTOR_SECOND = 1300 
 # HEAD_MOTOR_FINISH = 1350    # 舉起前低頭 1263
 WIGHT = 20  #change
@@ -17,8 +17,9 @@ if WIGHT == 20:
     THIRD_LINE  = 153
     PICK_ONE    = 1002
     PICK_TWO    = 1003
-    PICK_THREE  = 1004
-    LIFT        = 1105
+    # PICK_THREE  = 1004
+    LIFT        = 1004
+    DOWN        = 1234
 
 class Strategy(API):
     def __init__(self):
@@ -94,7 +95,8 @@ class Strategy(API):
     
     def get_object(self, color, kind):
         """
-        kind: 0 = line(白), 1 = bar(紅)
+        color: 5 = red, 6 = white
+        kind: 0 = line, 1 = bar
         回傳 True 表示找到合格目標，並更新 center/min/max；否則回 False。
         """
         try:
@@ -288,18 +290,20 @@ class Strategy(API):
                 time.sleep(3)
                 self.sendBodySector(29)
                 time.sleep(0.5)
-                self.sendBodySector(81)
-                time.sleep(0.5)
+                self.sendBodySector(300)
+                time.sleep(1)
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(PICK_ONE)
                 self.get_logger().info(f"PICK_ONE")
-                time.sleep(8)     #12
+                time.sleep(10)     #12
                 self.sendBodySector(PICK_TWO)
                 self.get_logger().info(f"PICK_TWO")
-                time.sleep(5)    #10.5
-                self.sendBodySector(PICK_THREE)
-                self.get_logger().info(f"PICK_THREE")
-                time.sleep(8)      #6
+                time.sleep(12)    #10.5
+                self.sendBodySector(21)
+                time.sleep(3)
+                # self.sendBodySector(PICK_THREE)
+                # self.get_logger().info(f"PICK_THREE")
+                # time.sleep(8)      #6
                 self.get_object(5, 1)
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 # self.sendBodySector(76)
@@ -314,8 +318,11 @@ class Strategy(API):
                 # self.speed_x = 6000
                 # self.speed_y = 0
                 # self.theta = self.imu_fix()
-                self.sendContinuousValue(6000, 0, self.imu_fix())
-
+                self.sendContinuousValue(4000, 0, self.imu_fix())
+                time.sleep(4)
+                self.ctrl_status = 'seek_rise_line'
+            elif self.ctrl_status == 'seek_rise_line':
+                self.sendContinuousValue(4000, 0, self.imu_fix())
                 self.get_logger().info(f"white_YYY = {self.line_min.y}")
                 if self.line_min.y <= 95 and self.line_min.y > 75:
                     self.third_line = True 
@@ -324,19 +331,19 @@ class Strategy(API):
                 if self.line_max.y >= THIRD_LINE and self.third_line:
                     self.ctrl_status = 'rise_up'
                     time.sleep(10)
-                    self.sendHeadMotor(2, 1024, 100)
+                    self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
             elif self.ctrl_status == 'rise_up':
                 if self.body_auto:
                     self.walk_switch()
                 time.sleep(1)
-                self.sendHeadMotor(2, 1024, 100)
+                self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(LIFT)
                 self.get_logger().info(f"LIFT")
                 time.sleep(10)
-                self.sendBodySector(78)
-                time.sleep(2)
-                self.sendBodySector(77)
-                time.sleep(2)
+                self.sendBodySector(DOWN)
+                time.sleep(4)
+                # self.sendBodySector(77)
+                # time.sleep(2)
                 # self.get_logger().info(f"x =============================== {self.real_bar_center}")
                 # if self.real_bar_center > 165 and self.real_bar_center < 210:
                 #     count = (self.real_bar_center - 165) // 7

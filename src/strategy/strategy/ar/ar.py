@@ -1248,11 +1248,11 @@ VERTICAL_HEAD = 1990
 HEAD_CHECK = 2040
 HAND_BACK = 23
 LEG_BACK = 21
-AA = 15
+X_SHIFT = 0
 # [最左, 中左, 中間, 中右, 最右]
-X_BENCHMARK = [240+AA, 220+AA, 275+AA, 215+AA, 190+AA]  # 改大射左
-Y_BENCHMARK = 200                        # 改大射高
-SHOOT_DELAY = 2.7                     # 改大變快 (秒)
+X_BENCHMARK = [253+X_SHIFT, 245+X_SHIFT, 237+X_SHIFT, 218+X_SHIFT, 190+X_SHIFT]  # 改大射左
+Y_BENCHMARK = 185                        # 改大射高
+SHOOT_DELAY = 2.9                     # 改大變快 (秒)
 
 # motion sector
 PREPARE = 10
@@ -1541,10 +1541,10 @@ class Strategy(API):
                 self.x_benchmark_type = 4  # 最右
             elif 90 < x <= 120:
                 self.x_benchmark_type = 3  # 中右
-            elif x >= 180:
-                self.x_benchmark_type = 0  # 最左
             elif 155 <= x < 190:
                 self.x_benchmark_type = 1  # 中左
+            elif x >= 180:
+                self.x_benchmark_type = 0  # 最左
             else:
                 self.x_benchmark_type = 2  # 中間
             self.get_logger().info(f'X_BENCHMARK:{X_BENCHMARK[self.x_benchmark_type]}')
