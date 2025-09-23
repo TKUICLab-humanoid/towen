@@ -10,8 +10,9 @@ from rclpy.executors import MultiThreadedExecutor
 
 HEAD_MOTOR_START = 1170    # 初始位置1456
 PRETURN = False
+FIX_LEG_FLAG = False
 
-
+THETA_FIX = -1
 WALKING = [[3000,0,0],
            [3000,0,0],
            [3000,0,0]]
@@ -21,12 +22,13 @@ SHIFT_LEFT  = 81
 SHIFT_RIGHT = 82
 # FLAG1 = False
 if WIGHT == 20:
-    THIRD_LINE  = 153
+    THIRD_LINE  = 190
     PICK_ONE    = 1002
     PICK_TWO    = 1003
     # PICK_THREE  = 1004
     LIFT        = 1004
     DOWN        = 1234
+    FIX_LEG     = 23
 
 class Strategy(API):
     def __init__(self):
@@ -65,22 +67,22 @@ class Strategy(API):
         if self.stand:
             time.sleep(1.5)
             self.sendbodyAuto(1)
-            if self.ctrl_status == "start_line":
-                self.speed_x = WALKING[0][0]
-                self.speed_y = WALKING[0][1]
-                self.theta   = WALKING[0][2]
-            elif self.ctrl_status == "second_line":
-                self.speed_x = WALKING[1][0]
-                self.speed_y = WALKING[1][1]
-                self.theta   = WALKING[1][2]
-            elif self.ctrl_status == "final":
-                self.speed_x = WALKING[2][0]
-                self.speed_y = WALKING[2][1]
-                self.theta   = WALKING[2][2]
-            else:
-                self.speed_x = 3000
-                self.speed_y = 1000
-                self.theta   = 0
+            # if self.ctrl_status == "start_line":
+            #     self.speed_x = WALKING[0][0]
+            #     self.speed_y = WALKING[0][1]
+            #     self.theta   = WALKING[0][2]
+            # elif self.ctrl_status == "second_line":
+            #     self.speed_x = WALKING[1][0]
+            #     self.speed_y = WALKING[1][1]
+            #     self.theta   = WALKING[1][2]
+            # elif self.ctrl_status == "final":
+            #     self.speed_x = WALKING[2][0]
+            #     self.speed_y = WALKING[2][1]
+            #     self.theta   = WALKING[2][2]
+            # else:
+            self.speed_x = 6000
+            self.speed_y = 0
+            self.theta   = self.imu_fix() + THETA_FIX
 
             self.now_speed_x = 0
             self.now_speed_y = 0
@@ -93,7 +95,7 @@ class Strategy(API):
     def change_walking_speed(self):
         if not self.stand:
             if self.now_speed_x != self.speed_x:
-                self.now_speed_x += 100 * ((self.speed_x > self.now_speed_x) - (self.speed_x < self.now_speed_x))
+                self.now_speed_x += 50 * ((self.speed_x > self.now_speed_x) - (self.speed_x < self.now_speed_x))
             if self.now_speed_y != self.speed_y:
                 self.now_speed_y += 100 * ((self.speed_y > self.now_speed_y) - (self.speed_y < self.now_speed_y))
             if self.now_theta != self.theta:
@@ -105,9 +107,9 @@ class Strategy(API):
 
     def imu_fix(self):
         theta = 0
-        if self.imu_rpy[2] > 3:
+        if self.imu_rpy[2] > 2:
             theta = -2
-        elif self.imu_rpy[2] < -3:
+        elif self.imu_rpy[2] < -2:
             theta = 4
         return theta
     
@@ -174,9 +176,11 @@ class Strategy(API):
         if self.is_start:
             self.get_logger().info(f"ctrl_status : {self.ctrl_status}")
             self.get_logger().info(f"DIO_Value = {self.dio}")
+
             self.change_walking_speed() #更新當前速度
             if self.ctrl_status == 'head_shake':
-                self.sendHeadMotor(2, 1250, 100)
+                self.sendHeadMotor(1, 2048, 100)
+                self.sendHeadMotor(2, 1350, 100)
                 if self.color_counts[5] < 1:
                     if self.stand:
                         self.walk_switch()
@@ -184,13 +188,17 @@ class Strategy(API):
                     self.ctrl_status = 'start_line'
                 self.sendSensorReset(True)   #after
                 self.get_logger().info(f"ctrl_status{THIRD_LINE}")
-                self.theta = self.imu_fix()
                 self.stop = False
                 # time.sleep(0.5)
 
             self.get_object(5, 1) #bar
             self.get_object(6, 0) #line
 
+            self.get_logger().info(f"line_center_y =============================== {self.line_center.y}")
+            self.get_logger().info(f"line_center_x =============================== {self.line_center.x}")
+            self.get_logger().info(f"紅色x = {self.bar_center.x}")
+            self.get_logger().info(f"紅色y = {self.bar_center.y}")
+            self.get_logger().info(f"紅色y = {self.bar_max.y}")
             if self.ctrl_status == 'preturn':
                 self.get_logger().info(f"DIO_Value = {self.dio}")
                 if self.stand:
@@ -227,41 +235,67 @@ class Strategy(API):
 
             elif self.ctrl_status == 'start_line':
                 self.get_logger().info(f"imu ========= {self.imu_rpy[2]}")
-                self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
-                if self.imu_rpy[2] > 1.5 or self.imu_rpy[2] < -1.5:   #yyyy
-                    if self.bar_center.x > 156:
-                        self.speed_x = 2000
-                        self.speed_y = 0
-                        self.theta = -2
-                        self.get_logger().info(f"右轉")
-                    elif self.bar_center.x < 149 and self.bar_center.x > 0:
-                        self.speed_x = 2000
-                        self.speed_y = 3000
+                # self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
+                if self.bar_center.x > 170:
+                    self.speed_x = 3000
+                    self.speed_y = -1000
+                    if self.imu_rpy[2] > 1.5:
+                        self.theta = -4
+                    elif self.imu_rpy[2] < -1.5:
                         self.theta = 4
-                        self.get_logger().info(f"左轉")
-                else:
-                    if self.bar_center.x > 156:
-                        self.speed_x = 3000
-                        self.speed_y = -3000
+                    else:
                         self.theta = 0
+                    self.get_logger().info(f"右平移")
+                elif self.bar_center.x < 149 and self.bar_center.x > 0:
+                    self.speed_x = 3000
+                    self.speed_y = 2000
+                    if self.imu_rpy[2] > 1.5:
+                        self.theta = -4
+                    elif self.imu_rpy[2] < -1.5:
+                        self.theta = 4
+                    else:
+                        self.theta = 0
+                    self.get_logger().info(f"左平移")
+                else:
+                    self.speed_x = 5000
+                    self.speed_y = 0
+                    self.theta = self.imu_fix()
+
+            # 原本：if self.object_y_max[5][0] >= 180 :
+                if self.bar_max.y >= 150:
+                    self.sendHeadMotor(2, HEAD_MOTOR_START, 0)
+                    self.ctrl_status = 'ready_pick_up'
+                    time.sleep(1.5)
+            
+            elif self.ctrl_status == 'ready_pick_up':
+                if self.bar_max.y >= 186:
+                    self.ctrl_status = 'pick_up'
+                else:
+                    if self.bar_center.x > 170:
+                        self.speed_x = 2000
+                        self.speed_y = -1000
+                        if self.imu_rpy[2] > 1.5:
+                            self.theta = -2
+                        elif self.imu_rpy[2] < -1.5:
+                            self.theta = 4
+                        else:
+                            self.theta = 0
                         self.get_logger().info(f"右平移")
                     elif self.bar_center.x < 149 and self.bar_center.x > 0:
-                        self.speed_x = 3000
-                        self.speed_y = 4000
-                        self.theta = 0
+                        self.speed_x = 2000
+                        self.speed_y = 1000
+                        if self.imu_rpy[2] > 1.5:
+                            self.theta = -2
+                        elif self.imu_rpy[2] < -1.5:
+                            self.theta = 4
+                        else:
+                            self.theta = 0
                         self.get_logger().info(f"左平移")
                     else:
-                        self.speed_x = 5000
+                        self.speed_x = 2000
                         self.speed_y = 0
                         self.theta = self.imu_fix()
 
-                self.get_logger().info(f"紅色x = {self.bar_center.x}")
-                self.get_logger().info(f"紅色y = {self.bar_center.y}")
-                self.get_logger().info(f"紅色y = {self.bar_max.y}")
-            # 原本：if self.object_y_max[5][0] >= 180 :
-                if self.bar_max.y >= 186:
-                    self.ctrl_status = 'pick_up'
-                
             elif self.ctrl_status == 'turn_straight':
                 self.speed_x = 0
                 self.speed_y = 0
@@ -309,30 +343,33 @@ class Strategy(API):
                 self.ctrl_status = 'seek_rise_line'
 
             elif self.ctrl_status == 'seek_rise_line':
-                self.sendContinuousValue(4000, 0, self.imu_fix())
+                self.sendContinuousValue(4000, 0, self.imu_fix()+THETA_FIX)
                 self.get_logger().info(f"white_YYY = {self.line_min.y}")
                 if self.line_min.y <= 95 and self.line_min.y > 75:
                     self.third_line = True 
                 self.get_logger().info(f"self.third_line = {self.third_line}")
                 self.get_logger().info(f"white_Y = {self.line_max.y}")
+                self.theta = self.imu_fix()
                 if self.line_max.y >= THIRD_LINE and self.third_line:
                     self.ctrl_status = 'rise_up'
-                    while self.line_min.y < 200:
-                        self.get_object(6, 0) #line
-                        print("line_min_y",self.line_min.y)
-                        self.sendContinuousValue(4000, 0, self.imu_fix())
-                    time.sleep(2.5)
+                    time.sleep(3)
                     self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
             elif self.ctrl_status == 'rise_up':
                 if not self.stand:
                     self.walk_switch()
-                time.sleep(1)
+                time.sleep(4)
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(LIFT)
                 self.get_logger().info(f"LIFT")
-                time.sleep(10)
+                time.sleep(6)
                 self.sendBodySector(DOWN)
                 time.sleep(4)
+                if FIX_LEG_FLAG:
+                    self.sendBodySector(FIX_LEG)
+                    time.sleep(1)
+                self.now_speed_x = 0
+                self.now_speed_y = 0
+                self.now_theta = 0
                 
                 self.ctrl_status = 'final'
             elif self.ctrl_status == 'final':
@@ -351,13 +388,18 @@ class Strategy(API):
                 self.pre_theta = self.now_theta
 
         else:
+            self.sendSensorReset(True)
             if self.color_counts[6] > 0 :#self.color_counts[6] > 0 :
-                self.get_object(6, 1)
+                self.get_object(5, 1)
+                self.get_object(6, 0)
                 # self.get_object(6, 0)
                 # img_object = (self.object_x_min[5][0] + self.object_x_max[5][0]) // 2
                 # self.get_logger().info(f"x =============================== {self.bar_center.x}")
                 self.get_logger().info(f"line_center_y =============================== {self.line_center.y}")
                 self.get_logger().info(f"line_center_x =============================== {self.line_center.x}")
+                self.get_logger().info(f"紅色x = {self.bar_center.x}")
+                self.get_logger().info(f"紅色y = {self.bar_center.y}")
+                self.get_logger().info(f"紅色y = {self.bar_max.y}")
                 # self.get_logger().info(f"write_y =============================== {self.object_y_max[6][0]}")
                 # time.sleep(1)
             else:
