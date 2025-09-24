@@ -80,7 +80,7 @@ class Strategy(API):
             #     self.speed_y = WALKING[2][1]
             #     self.theta   = WALKING[2][2]
             # else:
-            self.speed_x = 6000
+            self.speed_x = 5500
             self.speed_y = 0
             self.theta   = self.imu_fix() + THETA_FIX
 
@@ -315,12 +315,12 @@ class Strategy(API):
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(PICK_ONE)
                 self.get_logger().info(f"PICK_ONE")
-                time.sleep(10)     #12
+                time.sleep(8)     #12
                 self.sendBodySector(PICK_TWO)
                 self.get_logger().info(f"PICK_TWO")
                 time.sleep(14)    #10.5
                 self.sendBodySector(21)
-                time.sleep(5)
+                time.sleep(3)
       
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 while (self.real_bar_center < 150 or self.real_bar_center > 170):
@@ -367,6 +367,19 @@ class Strategy(API):
                 if FIX_LEG_FLAG:
                     self.sendBodySector(FIX_LEG)
                     time.sleep(1)
+                self.sendWalkParameter(
+                    mode = 0,
+                    com_y_shift = -3.0, 
+                    y_swing = 0.0, 
+                    period_t = 420, 
+                    t_dsp = 0.0, 
+                    base_default_z = 6.5, 
+                    stand_height = 40.0,
+                    com_height = 50.0, 
+                    Stand_Balance = False,
+                    Hip_roll =0.0,
+                    Ankle_roll =0.0
+                )
                 self.now_speed_x = 0
                 self.now_speed_y = 0
                 self.now_theta = 0

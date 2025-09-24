@@ -1251,7 +1251,8 @@ LEG_BACK = 21
 X_SHIFT = 0
 # [最左, 中左, 中間, 中右, 最右]
 X_BENCHMARK = [253+X_SHIFT, 245+X_SHIFT, 237+X_SHIFT, 218+X_SHIFT, 190+X_SHIFT]  # 改大射左
-Y_BENCHMARK = 185                        # 改大射高
+Y_BENCHMARK = 190                        # 改大射高
+# Y_BENCHMARK = 185       舊弓數據
 SHOOT_DELAY = 2.9                     # 改大變快 (秒)
 
 # motion sector
