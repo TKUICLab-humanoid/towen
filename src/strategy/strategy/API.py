@@ -23,6 +23,7 @@ from tku_msgs.msg import (
     DrawImage,
     HeadPackage,
     SingleMotorData,
+    Parameter,
 )
 
 class API(Node):
@@ -60,7 +61,7 @@ class API(Node):
         self.head_motor_pub = self.create_publisher(HeadPackage, '/package/HeadMotor', 10)
         self.sector_pub = self.create_publisher(Int16, '/package/Sector', 10)
         self.draw_image_pub = self.create_publisher(DrawImage, '/drawimage', 10)
-
+        self.walkparameter_pub = self.create_publisher(Parameter, '/strategy/walkparameter', 10)
         # ===================== 訂閱器（IMU/FPGA/YOLO） =====================
         self.dio_sub = self.create_subscription(
             Dio, '/package/FPGAack', self.dio_callback, 1, callback_group=self.imu_cbg
@@ -301,8 +302,33 @@ class API(Node):
         img.rvalue, img.gvalue, img.bvalue = r, g, b
         self.draw_image_pub.publish(img)
 
-    def time_sleep(self, second: float) -> None:
-        self.get_clock().sleep_for(Duration(seconds=second))
+    def sendWalkParameter(self,
+            mode : int,
+            com_y_shift : float, 
+            y_swing : float, 
+            period_t : int, 
+            t_dsp : float, 
+            base_default_z : float, 
+            stand_height : float,
+            com_height :float, 
+            Stand_Balance : bool,
+            Hip_roll : float,
+            Ankle_roll : float
+        ):
+        msg = Parameter()
+        msg.mode = mode
+        msg.com_y_swing = com_y_shift 
+        msg.y_swing_range = y_swing
+        msg.period_t = period_t
+        msg.osc_lockrange = t_dsp
+        msg.base_default_z = base_default_z
+        msg.now_stand_height = stand_height
+        msg.now_com_height = com_height
+        msg.stand_balance = Stand_Balance
+        msg.hip_roll = Hip_roll
+        msg.ankle_roll = Ankle_roll
+        print("com_y_shift:",com_y_shift)
+        self.walkparameter_pub.publish(msg)
 
     # ===================== 查詢介面（便於決策層使用） =====================
     def get_objects(self, color: Optional[str] = None) -> List[dict]:

@@ -121,12 +121,12 @@ class Strategy(API):
             y_swing = 0.0, 
             period_t = 420, 
             t_dsp = 0.0, 
-            base_default_z = 5.0, 
+            base_default_z = 6.5, 
             stand_height = 40.0,
             com_height = 50.0, 
-            Stand_Balance = False,
-            Hip_roll =-3.0,
-            Ankle_roll =0.0
+            stand_balance = False,
+            hip_roll = 0.0,
+            ankle_roll = 0.0
         )
     
     def get_object(self, color, kind):
@@ -315,10 +315,10 @@ class Strategy(API):
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(PICK_ONE)
                 self.get_logger().info(f"PICK_ONE")
-                time.sleep(8)     #12
+                time.sleep(5)     #12
                 self.sendBodySector(PICK_TWO)
                 self.get_logger().info(f"PICK_TWO")
-                time.sleep(14)    #10.5
+                time.sleep(13)    #10.5
                 self.sendBodySector(21)
                 time.sleep(3)
       
@@ -361,9 +361,9 @@ class Strategy(API):
                 self.sendHeadMotor(2, HEAD_MOTOR_START, 100)
                 self.sendBodySector(LIFT)
                 self.get_logger().info(f"LIFT")
-                time.sleep(6)
-                self.sendBodySector(DOWN)
                 time.sleep(4)
+                self.sendBodySector(DOWN)
+                time.sleep(3)
                 if FIX_LEG_FLAG:
                     self.sendBodySector(FIX_LEG)
                     time.sleep(1)
@@ -373,7 +373,7 @@ class Strategy(API):
                     y_swing = 0.0, 
                     period_t = 420, 
                     t_dsp = 0.0, 
-                    base_default_z = 6.5, 
+                    base_default_z = 7.0, 
                     stand_height = 40.0,
                     com_height = 50.0, 
                     Stand_Balance = False,
@@ -422,6 +422,7 @@ class Strategy(API):
             if not self.stop:
                 self.sendHeadMotor(2, 1150, 100)
                 self.initial()
+                self.walk_parameter()
                 self.get_logger().info(f"stop")
             
 
